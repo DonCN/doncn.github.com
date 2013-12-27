@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: 一个BeOS难民的故事(Tales of a BeOS Refugee - Scot Hacker)
 summary: Scot Hacker是[BeOS Bile](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统不再开发之后，无奈转向其他操作系统，最终找到MAC OS X。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优势做了深入的介绍。虽然BeOS已经是十多年前就停止开发了，但是很多忠诚爱好者还是不愿放弃，其中一批人开发了旨在复制BeOS的开源操作系统[Haiku OS](http://haiku-cn.org/)([英文主页](http://haiku-os.org/))，这篇文章也非常有助于对Haiku OS的了解。
