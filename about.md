@@ -6,5 +6,5 @@ title: about
 ## Abuout Me ###
 ================
 Name: Don Liu
-email: donliucn@gmail.com
+Email: donliucn@gmail.com
 

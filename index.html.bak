@@ -25,7 +25,7 @@
         
 
 <script language="javascript">
-window.a=function(){document.body.style.visibility="visible"};function b(i){return window.document.getElementById(i)};var c="Don Liu's Blog";var d=c.length;var e=0;var f=0;var g;function h(){if(e==d){if(0==f){b("codes_2").style.display="block";c="Haiku OS";e=0;f=1;d=c.length}else if(1==f){b("codes_3").style.display="block";c="Things of PC,Life...";e=0;f=2;d=c.length}else if(2==f){b("codes_4").style.display="block";c="Welcome!";e=0;f=3;d=c.length}else{clearInterval(g);document.location="http://doncn.github.com/blog"}}else{if(0==f){b("codes_1").innerHTML+=c.charAt(e)}else if(1==f){b("codes_2").innerHTML+=c.charAt(e)}else if(2==f){b("codes_3").innerHTML+=c.charAt(e)}else if(3==f){b("codes_4").innerHTML+=c.charAt(e)};e++}};g=setInterval(function(){h()},45);
+window.a=function(){document.body.style.visibility="visible"};function b(i){return window.document.getElementById(i)};var c="cd doncn.github.com";var d=c.length;var e=0;var f=0;var g;function h(){if(e==d){if(0==f){b("codes_2").style.display="block";c="Login:doncn";e=0;f=1;d=c.length}else if(1==f){b("codes_3").style.display="block";c="Password:********";e=0;f=2;d=c.length}else if(2==f){b("codes_4").style.display="block";c="Success,Welcome!";e=0;f=3;d=c.length}else{clearInterval(g);document.location="http://doncn.github.com/blog"}}else{if(0==f){b("codes_1").innerHTML+=c.charAt(e)}else if(1==f){b("codes_2").innerHTML+=c.charAt(e)}else if(2==f){b("codes_3").innerHTML+=c.charAt(e)}else if(3==f){b("codes_4").innerHTML+=c.charAt(e)};e++}};g=setInterval(function(){h()},45);
 </script>
 
 
