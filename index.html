@@ -1,17 +1,33 @@
----
-layout: default
-title: Dill Liu|博客
-keywords: "Dill Liu的博客"
-description: "Dill Liu的个人站点,记录心情与知识。"
----
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <style type="text/css">
+                        body { background-color: #000; font-family: "Courier New", "Courier"; font-size: 12px; color: #999999;}
+                        div {font-family: "Courier New", "Courier"; font-size: 24px; color: #FFF; text-decoration:none}
+                        div.main {margin-top:120px; text-align: center;}
+                        .showCodes {
+                                font-size:25px;
+                                width:640px;
+                                margin:0px auto;
+                                color:#00FF00;
+                        }
+                </style>
+        </head>
+        <body style="visibility:visible;">
+                <div class="main">
+                        <a style="border:solid 0px #FFF" title="点击进入技术分享页" href="http://doncn.github.com/blog"><img style="border:none;" src="images/unix.jpg"></a>
+                        <br>
+                        <br>
+                </div>
+                <div id="codes_1" class="showCodes" >>> </div>
+                <div id="codes_2" class="showCodes" style="display: none;">>> </div>
+                <div id="codes_3" class="showCodes" style="display: none;">>> </div>
+                <div id="codes_4" class="showCodes" style="display: none;">>> </div>
+        
 
-<h2>最近日志<a class="pull-right" href="/posts.html">更多...</a></h2>
-<hr>
-{% for post in site.posts limit:3 %}
-<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-<p>{{ post.content | strip_html | truncatewords: 5 }}</p>
-<span class="label label-primary">日期:</span> <span class="label label-warning">{{ post.date | date: "%Y年%m月%d日" }}</span>
-<span class="label label-primary">标签:</span>{% for tag in post.tags%} <span class="label label-warning">{{ tag }}</span>{% endfor %}
-<span class="label label-primary">评论:</span> <span class="label label-warning"><a href="{{ post.url }}#uyan_frame" id="uyan_count_unit"> (0)</a></span>
-<hr>
-{% endfor %}
+<script language="javascript">
+window.a=function(){document.body.style.visibility="visible"};function b(i){return window.document.getElementById(i)};var c="cd doncn.github.com";var d=c.length;var e=0;var f=0;var g;function h(){if(e==d){if(0==f){b("codes_2").style.display="block";c="Login:doncn";e=0;f=1;d=c.length}else if(1==f){b("codes_3").style.display="block";c="Password:********";e=0;f=2;d=c.length}else if(2==f){b("codes_4").style.display="block";c="Success,Welcome!";e=0;f=3;d=c.length}else{clearInterval(g);document.location="http://doncn.github.com/blog"}}else{if(0==f){b("codes_1").innerHTML+=c.charAt(e)}else if(1==f){b("codes_2").innerHTML+=c.charAt(e)}else if(2==f){b("codes_3").innerHTML+=c.charAt(e)}else if(3==f){b("codes_4").innerHTML+=c.charAt(e)};e++}};g=setInterval(function(){h()},45);
+</script>
+
+
+        </body>
+</html>
