@@ -554,10 +554,8 @@ generate bit-perfect copies of hard drives, data CDs, and audio CDs
 </p>
 
 
-<div align="center">
-
 ![diskimage](/images/TalesBeOS-diskimage.jpg)
-</div><br>
+
 <i>A lot of OS X software is distributed as mountable disk images - 
 double-click and a new virtual volume mounts on the desktop / in the 
 Finder. Gotta love  those (optional) giant icons... </i>
