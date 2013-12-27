@@ -380,9 +380,7 @@ time.
 </p>
 
 <div align="center">
-
-![TalesBeOS-transparency](/images/TalesBeOS-transparency.jpg)
-
+<img src="images/TalesBeOS-transparency.jpg" alt="transparency" height="212" width="633">
 </div><br>
 <i>Transparency effects in OS X are pretty pervasive, and are a weird 
 mix between useful and annoying. On occassion it can be useful to be 
@@ -554,9 +552,9 @@ generate bit-perfect copies of hard drives, data CDs, and audio CDs
 
 </p>
 
-
-![diskimage](/images/TalesBeOS-diskimage.jpg)
-
+<div align="center">
+<img src="images/TalesBeOS-diskimage.jpg" alt="diskimage" height="256" width="378">
+</div><br>
 <i>A lot of OS X software is distributed as mountable disk images - 
 double-click and a new virtual volume mounts on the desktop / in the 
 Finder. Gotta love  those (optional) giant icons... </i>
