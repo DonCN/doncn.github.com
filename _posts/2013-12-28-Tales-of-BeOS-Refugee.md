@@ -382,6 +382,7 @@ time.
 <div align="center">
 
 ![TalesBeOS-transparency](/images/TalesBeOS-transparency.jpg)
+
 </div><br>
 <i>Transparency effects in OS X are pretty pervasive, and are a weird 
 mix between useful and annoying. On occassion it can be useful to be 
