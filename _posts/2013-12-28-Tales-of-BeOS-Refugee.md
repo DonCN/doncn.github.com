@@ -13,7 +13,7 @@ published: true
 
 【译文正文】
 
-<h3>从BeOS到OS X (也经历过Windows、Linux)</h3>
+<h3>从BeOS到OS X (也试用过Windows、Linux)</h3>
 
 <a href="http://birdhouse.org/etc/mail.php?to=shacker">Scot Hacker</a>, 12/2001
 
@@ -23,19 +23,15 @@ published: true
 </p>
 
 <p>
-<b>Note: The publication of this article  generated more than 500 email 
-responses. Rather than respond to everyone individually, I've written an
- addendum to this document  summarizing reactions and my responses to 
-them, as well as errors in this piece. Please read <a href="http://www.birdhouse.org/beos/refugee/redux.html">BeOS Refugee Redux</a> before responding to this  article.</b>
+<b>注: 这篇文章发表后收到500多封邮件回复. 因此，我写了一篇附文作为对这篇文章的补充，也作为这些邮件的回应，不再对每篇来信一一回复。附文请见 <a href="http://www.birdhouse.org/beos/refugee/redux.html">BeOS Refugee Redux</a> </b>
 </p>
-
 
 
 <p>
-<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">Download PDF / printable version</a>
+<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">本文的PDF版下载</a>
 </p>
 
-<h3>Out of the Frying Pan...</h3>
+<h3>走出煎熬...</h3>
 
 
 <p>
