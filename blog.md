@@ -1,4 +1,4 @@
-﻿---
+---
 layout: index 
 title: Don Liu's blog
 ---
