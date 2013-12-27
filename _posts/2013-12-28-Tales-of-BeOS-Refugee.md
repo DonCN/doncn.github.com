@@ -554,6 +554,7 @@ generate bit-perfect copies of hard drives, data CDs, and audio CDs
 
 
 <div align="center">
+
 ![diskimage](/images/TalesBeOS-diskimage.jpg)
 </div><br>
 <i>A lot of OS X software is distributed as mountable disk images - 
