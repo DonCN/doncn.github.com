@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title:  blog move to github
 summary: 见到kurain在github建立个人博客，忍不住手痒，弄个站试试看
