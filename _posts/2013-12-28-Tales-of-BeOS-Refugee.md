@@ -554,7 +554,7 @@ generate bit-perfect copies of hard drives, data CDs, and audio CDs
 
 
 <div align="center">
-<img src="Tales%20of%20a%20BeOS%20Refugee_files/diskimage.jpg" alt="diskimage" height="256" width="378">
+![diskimage](/images/TalesBeOS-diskimage.jpg)
 </div><br>
 <i>A lot of OS X software is distributed as mountable disk images - 
 double-click and a new virtual volume mounts on the desktop / in the 
