@@ -1,6 +1,6 @@
 ﻿---
 layout: index 
-title: Don's blog
+title: Don Liu's blog
 ---
 
 {% for post in site.posts %}
