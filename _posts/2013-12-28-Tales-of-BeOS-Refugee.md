@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 一个BeOS难民的故事(译自[Tales of a BeOS Refugee - Scot Hacker](http://www.birdhouse.org/beos/refugee/))
-summary: Scot Hacker是[BeOS Bile](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统不再开发之后，无奈转向其他操作系统，最终找到MAC OS X。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优势做了深入的介绍。虽然BeOS已经是十多年前就停止开发了，但是很多忠诚爱好者还是不愿放弃，其中一批人开发了旨在复制BeOS的开源操作系统Haiku OS([中文主页](http://haiku-cn.org/),[英文主页](http://haiku-os.org/))，这篇文章也非常有助于对Haiku OS的了解。
+title: 一个BeOS难民的故事(译文)
+summary: 本文译自[Tales of a BeOS Refugee - Scot Hacker](http://www.birdhouse.org/beos/refugee/)。原作者Scot Hacker是[BeOS Bile](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统不再开发之后，无奈转向其他操作系统，最终找到MAC OS X。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优势做了深入的介绍。虽然BeOS已经是十多年前就停止开发了，但是很多忠诚爱好者还是不愿放弃，其中一批人开发了旨在复制BeOS的开源操作系统Haiku OS([中文主页](http://haiku-cn.org/),[英文主页](http://haiku-os.org/))，这篇文章也非常有助于对Haiku OS的了解。
 categories: [Haiku OS]
 tags: [Haiku OS]
 published: true
@@ -10,6 +10,8 @@ published: true
 # {{ page.title }} #
 
 {{page.summary}}
+
+【译文正文】
 
 <h3>从BeOS到OS X (也经历过Windows、Linux)</h3>
 
@@ -2253,4 +2255,6 @@ Brunson, and Jim Rippie for their comments on and contributions to this
 piece.</i>
 </blockquote>
 <p></p>
+
+【译文结束】
 
