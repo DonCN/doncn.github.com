@@ -381,13 +381,13 @@ time.
 
 <div align="center">
 <img src="/images/TalesBeOS-transparency.jpg" alt="transparency" height="212" width="633">
-
+</div>
 <i>Transparency effects in OS X are pretty pervasive, and are a weird 
 mix between useful and annoying. On occassion it can be useful to be 
 able to read a URL or other snippet of data behind an app at the front. 
 But overall, the purpose of transparency seems to be mostly limited to 
 looking cool. Which is fine by me.</i>
-</div>
+
 
 <p>
 On the other hand (and this was actually pointed out by an Apple 
@@ -554,11 +554,11 @@ generate bit-perfect copies of hard drives, data CDs, and audio CDs
 
 <div align="center">
 <img src="/images/TalesBeOS-diskimage.jpg" alt="diskimage" height="256" width="378">
-
+</div>
 <i>A lot of OS X software is distributed as mountable disk images - 
 double-click and a new virtual volume mounts on the desktop / in the 
 Finder. Gotta love  those (optional) giant icons... </i>
-</div>
+
 
 <p>
 <br>
@@ -566,11 +566,11 @@ Finder. Gotta love  those (optional) giant icons... </i>
 
 <div align="center">
 <img src="/TalesBeOS-newimage/TalesBeOS-newimage.gif" alt="newimage" height="150" width="322">
-
+</div>
 <i>The built-in DiskCopy utility makes it embarrassingly simple to 
 create disk images from file collections or devices such as CD-ROM 
 drives. DiskCopy puts Linux/BeOS' "dd" command to shame.  </i>
-</div>
+
 
 <p>
 One inconsistency worth noting: To burn a data CD, you drag the volume 
@@ -684,7 +684,7 @@ genres country or punk was a piece of cake in BeOS.
 
 <p>
 </p><div align="center">
-<img src="TalesBeOS-id3attrs/TalesBeOS-id3attrs.gif" alt="id3attrs" height="274" width="682">
+<img src="/TalesBeOS-id3attrs/TalesBeOS-id3attrs.gif" alt="id3attrs" height="274" width="682">
 </div><br>
 <i>A Tracker view of MP3 files, with multiple attributes showing and the
  actual filenames hidden. Notice how much data is displayed in the 
@@ -717,7 +717,7 @@ within a single interface.
 
 <p>
 </p><div align="center">
-<a href="http://www.birdhouse.org/beos/refugee/itunes.gif" target="_blank"><img src="TalesBeOS-itunes/TalesBeOS-itunes.jpg" alt="itunes" border="0" height="304" width="500"></a>
+<a href="http://www.birdhouse.org/beos/refugee/itunes.gif" target="_blank"><img src="/TalesBeOS-itunes/TalesBeOS-itunes.jpg" alt="itunes" border="0" height="304" width="500"></a>
 </div><br>
 <i>iTunes lets me store and query on the same array of metadata that 
 BeOS does, except that BeOS does it without locking me into a single 
@@ -894,7 +894,7 @@ rewriting it to meet the demands and expectations of the Mac community,
 and it shows. 
 </p>
 <div align="center">
-<a href="http://www.birdhouse.org/beos/refugee/office.jpg" target="_blank"><img src="TalesBeOS-office/TalesBeOS-office.jpg" alt="office" border="0" height="236" width="350"></a>
+<a href="http://www.birdhouse.org/beos/refugee/office.jpg" target="_blank"><img src="/TalesBeOS-office/TalesBeOS-office.jpg" alt="office" border="0" height="236" width="350"></a>
 </div><br>
 <i>Microsoft makes it so hard. You finally break free of their OS, only 
 to find yourself in love with their software on another platform. 
