@@ -382,6 +382,9 @@ time.
 <div align="center">
 <img src="images/TalesBeOS-transparency.jpg" alt="transparency" height="212" width="633">
 </div><br>
+
+![TalesBeOS-transparency](/images/TalesBeOS-transparency.jpg)
+
 <i>Transparency effects in OS X are pretty pervasive, and are a weird 
 mix between useful and annoying. On occassion it can be useful to be 
 able to read a URL or other snippet of data behind an app at the front. 
