@@ -380,7 +380,7 @@ time.
 </p>
 
 <div align="center">
-<img src="images/TalesBeOS-transparency.jpg" alt="transparency" height="212" width="633">
+<img src="/images/TalesBeOS-transparency.jpg" alt="transparency" height="212" width="633">
 </div><br>
 
 ![TalesBeOS-transparency](/images/TalesBeOS-transparency.jpg)
