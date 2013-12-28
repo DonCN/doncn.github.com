@@ -381,13 +381,12 @@ time.
 
 <div align="center">
 <img src="/images/TalesBeOS-transparency.jpg" alt="transparency" height="212" width="633">
-</div><br>
 <i>Transparency effects in OS X are pretty pervasive, and are a weird 
 mix between useful and annoying. On occassion it can be useful to be 
 able to read a URL or other snippet of data behind an app at the front. 
 But overall, the purpose of transparency seems to be mostly limited to 
 looking cool. Which is fine by me.</i>
-
+</div>
 
 <p>
 On the other hand (and this was actually pointed out by an Apple 
@@ -554,21 +553,21 @@ generate bit-perfect copies of hard drives, data CDs, and audio CDs
 
 <div align="center">
 <img src="/images/TalesBeOS-diskimage.jpg" alt="diskimage" height="256" width="378">
-</div><br>
 <i>A lot of OS X software is distributed as mountable disk images - 
 double-click and a new virtual volume mounts on the desktop / in the 
 Finder. Gotta love  those (optional) giant icons... </i>
+</div>
 
 <p>
 <br>
 </p>
 
 <div align="center">
-<img src="TalesBeOS-newimage/TalesBeOS-newimage.gif" alt="newimage" height="150" width="322">
-</div><br>
+<img src="/TalesBeOS-newimage/TalesBeOS-newimage.gif" alt="newimage" height="150" width="322">
 <i>The built-in DiskCopy utility makes it embarrassingly simple to 
 create disk images from file collections or devices such as CD-ROM 
 drives. DiskCopy puts Linux/BeOS' "dd" command to shame.  </i>
+</div>
 
 <p>
 One inconsistency worth noting: To burn a data CD, you drag the volume 
