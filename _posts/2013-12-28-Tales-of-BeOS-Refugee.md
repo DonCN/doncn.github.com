@@ -53,57 +53,28 @@ published: true
 
 <p>
 <blockquote>
-如果你不熟悉造就BeOS的全部科技，我会在下面一一介绍。这篇文章<a href="http://birdhouse.org/beos/byte/29-10000ft/" target="_blank">BeOS: The 10,000-Foot View</a>是一个简介。如果你对BeOS一点都不了解，你应该看看浏览下这篇文章。
+如果你不熟悉造就BeOS的全部科技，我会在下面一一介绍。这篇文章<a href="http://birdhouse.org/beos/byte/29-10000ft/" target="_blank">BeOS: The 10,000-Foot View</a>是一个简介。如果你对BeOS一点都不了解，你应该浏览下这篇文章。
 </blockquote>
 </p>
 
 <p>
-Needless to say, not everything went as planned for Be, and by the late 
-90s the BeOS movement was no longer on the upswing. Be wasn't getting 
-the market buy-in they had hoped for, and the VC well was running dry. 
-When Be announced they were going to focus on delivering an OS for 
-Internet Appliances, most of us saw the writing on the wall. App 
-developers and users began to pull out of the platform, and talk changed
- from what it was going to be like when half the world was running BeOS 
-to how in hell we were going to keep the platform alive. 
+很显然，事情并没有完全按照Be的意愿发展，在90年代末，BeOS就不再向上发展。Be没能获得市场的成功，风险投资也渐渐枯竭。当Be宣布将转向网络应用的操作系统，大部分人意识到了不妙。应用程序开发者和用户开始离开这个平台，不再讨论半个世界都运行着BeOS会是怎样，转而讨论如何让这个平台继续活下去。 
 </p>
 
 <p>
-After the "focus shift," the BeOS scene became dreary. Rather than 
-mounting a revolution, BeOS users were reduced to begging for crumbs, 
-resorting to work-arounds for all the unfinished bits in the OS, trading
- pirated copies of the never-released replacement network stack that had
- been in development at Be prior to the shift, and watching as more and 
-more unsupported hardware emerged on the landscape. 
+在“焦点转移”之后，BeOS的场面就沉闷起来。BeOS用户并未奢求彻底的逆转，只是希望尽量将未完成的代码完成，私下交换着Be未完成的网络模块的代码，同时无奈的看着越来越多的Be不支持的硬件涌现。
 </p>
 
 <p>
-I decided it was time to move on and re-join the world of the living. 
-After a five-year hiatus, I went back to Windows (Win2K). For a while, 
-it was fun. Windows had become much better in the years since I had last
- used it, and the abundance of software was almost overwhelming. I had 
-become so accustomed to making do with limited software options that I 
-had forgotten what it was like to be able to do basically anything I 
-wanted with my computer. 
+我觉得是时候继续向前，重新进入BeOS之外的PC世界了。在5年的BeOS时光之后，我再次回归到Windows(Win2K)。开始还好，自从我上次(5年前)使用Windows以后，它有了长足的进步，有了海量的软件。我已经习惯了BeOS下有限的软件可供选择，忘记了计算机里有任何你想要的软件会是什么样子的。
 </p>
 
 <p>
-But the fun was short-lived. Within weeks, I became bored. Sure, Windows
- got the job done, and the cornucopia of software was definitely worth 
-exploring, but the user experience was monotonous. All function and no 
-form. I felt like I was working in a clip-art factory. I missed the love
- affair aspect of using BeOS. And while Win2K was far better than the 
-Win95/98 crap I had used in a previous life, the politics of using 
-Windows had become too much for me to bear. My intimate involvement with
- BeOS had given me a too-close glimpse of the depths of Microsoft's 
-business practices. I couldn't shake the feeling that I had just rolled 
-over and capitulated to that which bothered me so deeply. Something 
-about using Windows made me feel hypocritical and slutty. Between the 
-boring user experience and the politics, I knew I needed to find my way 
-back to more exciting, less noxious territory.
+但是这段快乐是如此短暂。不到一周，我就厌烦了。当然，Windows可以完成工作，海量的软件也值得探索，但是它的用户体验非常枯燥。只有功能，没有体验(All function and no 
+form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用BeOS的快乐。尽管Win2K比以前用的破烂Win95/98好太多，可Windows的使用方法多得让我难以忍受。对BeOS的深入研究让我对微软的商业行为有了深刻的认识。我无法摆脱和屈从于那深刻的厌烦之感。使用Windows让我感动虚伪和放荡。在糟糕的使用体验之间，我实在需要重新找到激情。
 </p>
 
-<h3>... And Into the Fire...</h3>
+<h3>... 再获激情...</h3>
 
 <p>
 So what did I do? I went and made things worse. I decided to switch to 
