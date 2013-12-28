@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 一个BeOS难民的故事(译文)
-summary: 本文译自[Tales of a BeOS Refugee - Scot Hacker](http://www.birdhouse.org/beos/refugee/)。原作者Scot Hacker是[BeOS Bile](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统不再开发之后，无奈转向其他操作系统，最终找到MAC OS X。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优势做了深入的介绍。虽然BeOS已经是十多年前就停止开发了，但是很多忠诚爱好者还是不愿放弃，其中一批人开发了旨在复制BeOS的开源操作系统Haiku OS([中文主页](http://haiku-cn.org/),[英文主页](http://haiku-os.org/))，这篇文章也非常有助于对Haiku OS的了解。
+summary: 本文译自[Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/) - Scot Hacker，2001。原作者Scot Hacker是[BeOS Bile](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统停止开发之后，无奈转向其他操作系统，最终转到MAC OS X。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优势做了深入的介绍。虽然BeOS已经是十多年前就停止开发了，但是很多忠诚爱好者还是不愿放弃，其中一批人开发了旨在复制BeOS的开源操作系统Haiku OS([中文主页](http://haiku-cn.org/),[英文主页](http://haiku-os.org/))，这篇文章也非常有助于对Haiku OS的了解。
 categories: [Haiku OS]
 tags: [Haiku OS]
 published: true
@@ -11,12 +11,10 @@ published: true
 
 {{page.summary}}
 
-【译文正文】
+
+【译文正文】(<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">本文英文版PDF下载</a>)
 
 <h3>从BeOS到OS X (也试用过Windows、Linux)</h3>
-
-<a href="http://birdhouse.org/etc/mail.php?to=shacker">Scot Hacker</a>, 12/2001
-
 
 <p>
 <i>这个故事讲述了一个BeOS难民丧失了对计算机的未来的信仰，进而转向Windows，却发现它及其糟糕，linux也会让你拔光自己的头发，最后在Mac OS X那里才再次找到计算机的乐趣。</i>
@@ -26,81 +24,38 @@ published: true
 <b>注: 这篇文章发表后收到500多封邮件回复. 因此，我写了一篇附文作为对这篇文章的补充，也作为这些邮件的回应，不再对每篇来信一一回复。附文请见 <a href="http://www.birdhouse.org/beos/refugee/redux.html">BeOS Refugee Redux</a> </b>
 </p>
 
-
-<p>
-<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">本文的PDF版下载</a>
-</p>
-
 <h3>走出煎熬...</h3>
 
-
 <p>
-Most users of Mac OS X come to it evolutionarily  --  they've been using
- Macs for years, enduring the slings and arrows of Win32 and *nix users 
-who complained that Mac OS had terrible memory management, an antiquated
- flavor of multitasking known as "cooperative" (which was usually 
-anything but), and a slow file system. To rub salt into wounds, Mac OS 
-opponents have historically loved complaining that the Mac was saddled 
-with ill-conceived evolutionary sink-holes like the single-button mouse 
-and the coup de grace, a total absence of anything resembling a command 
-line. 
+大部分用户都是渐进的转到Mac OS X上 - 他们已经用了多年的Mac计算机, 经历了Win32(即windows)和*nix用户抱怨Mac OS糟糕的内存管理、过时的协作式多任务处理(cooperative multitasking)和缓慢的文件系统。 更糟的是，反对者们向来喜欢指责Mac OS蹩脚的单键鼠标操作习惯和缺乏类似命令行的功能。
 </p>
 
 <p>
-I know all the snarly, bitter epithets that have been hurled at Mac OS 
-because I used to be a Mac-hater. I admit it. At cocktail parties and in
- columns for other publications, I have publicly declared my dislike for
- the Macintosh and all things Mac OS (though I've always been honest 
-about how much I appreciated the velvety feel of the Mac GUI).
+我知道所有这些对Mac OS的挖苦和嘲讽，因为我自己曾经就是一个Mac反对者。我承认，在一些聚会和论坛等公共场所，我公开说过我不喜欢Mac计算机和Mac OS的一切(尽管我很欣赏Mac光滑、细腻的图形界面)。
 </p>
 
 <p>
-The Germans have a word for this sort of self-indulgent vitriol: <i>Schadenfreude</i>
-  -- a handy word which translates loosely as "taking pleasure in the 
-misery of others." For many Windows and Linux users, it's not enough to 
-simply refrain from using Mac OS  --  you have to slander it before a 
-large audience to really drive your point home. 
+德语中有个形容这种放肆挖苦的词叫<i>Schadenfreude(幸灾乐祸)</i>，简单翻译过来就是：将自己的快乐建立在别人的痛苦之上。对许多 Windows和Linux用户来说，仅仅自己不使用Mac OS还不够，还要向别人宣扬自己对Mac的厌恶。
 </p>
 
 <p>
-Okay, so I indulged in a little Schadenfreude against the holy Mac 
-universe from time to time, pissing off thousands. I'm not proud. But 
-neither am I a bad person. I've just always wanted the most from my 
-computer, and it always seemed like the Mac offered very little of the 
-best, and a whole lot of the worst. But recently I've seen the light, 
-and am here to make amends for my blasphemy. I hereby publicly apologize
- for my past life as a Mac-hater. Not only that, but thanks to OS X, I'm
- now a bona fide Mac OS lover. Bygones.
-</p>
-
-
-
-<p>
-It's worth pointing out that I never criticized the Mac as a typical 
-Windows- or Linux-loving Mac-hater. I was a BeOS-loving Mac hater. For, 
-although I disliked the Mac, I harbored plenty of distaste for Windows 
-and Linux as well.
+是的，我有时是对Mac世界的遭遇幸灾乐祸，也激怒了很多人。但我不是个坏人，我没为此骄傲。我只是对我的计算机要求很多，可Mac却只能满足我很少的苛求，却又有太多让我不满意。但是最近，我又看到了希望，我收回对Mac的挖苦，为我这个曾经的Mac反对者道歉。不止于此，我应该感谢OS X，我现在是一个真诚的Mac OS爱好者了。让过去的都随风而去吧。
 </p>
 
 <p>
-In the mid-90s, I discovered BeOS and fell in love. Here, for the first 
-time, I found a truly fast and efficient OS, designed from a clean slate
- to meet the needs of the future of computing, incorporating a raft of 
-modern technologies and design concepts, and which also had a Unix 
-command-line. At last, I had found the grace of the Mac and the power of
- Unix in one place (many years before the Mac got around to delivering 
-same). I began to write professionally about BeOS. I created the <a href="http://www.betips.net/" target="_blank">BeOS Tip Server</a>, and wrote <a href="http://www.birdhouse.org/beos/bible/" target="_blank">The BeOS Bible</a>.
- BeOS really was the promised land of operating systems, as far as I was
- concerned, and it was only a matter of time before the rest of the 
-world saw the light. Or so I thought.
+需要指出的是，我从来不是爱好Windows或Linux的Mac反对者，我曾经是爱好BeOS的Mac反对者，我同样不喜欢Windows或Linux。
 </p>
 
 <p>
-</p><blockquote>
-If you're not familiar with all the technology that made BeOS great, I'm
- not going to re-hash all of that here. For a quick summary, read <a href="http://www.byte.com/documents/s%3D1115/byt20010806s0002/" target="_blank">BeOS: The 10,000-Foot View</a>. In fact, if you're not familiar with BeOS, I'll consider that piece required reading for this one.
+在90年代中期，我发现了BeOS，并喜欢上了它。我第一次发现了一个真正快速、高效的操作系统，为满足未来的个人计算而重新设计，采用了大量的现代科技和设计理念，同样拥有Unix那样的命令行。我发现了它同时具有Mac那样的优雅和Unix的强大(这超前Mac达到同等水平很多年)。 我开始了BeOS的专业写作，我创立了<a href="http://www.betips.net/" target="_blank">BeOS Tip Server</a>，创作了<a href="http://www.birdhouse.org/beos/bible/" target="_blank">The BeOS Bible</a>。
+对我而言，BeOS是一个让我非常满意的操作系统，人们很快就会发现这一点。
+</p>
+
+<p>
+<blockquote>
+如果你不熟悉造就BeOS的全部科技，我会在下面一一介绍。这篇文章<a href="http://birdhouse.org/beos/byte/29-10000ft/" target="_blank">BeOS: The 10,000-Foot View</a>是一个简介。如果你对BeOS一点都不了解，你应该看看浏览下这篇文章。
 </blockquote>
-<p></p>
+</p>
 
 <p>
 Needless to say, not everything went as planned for Be, and by the late 
