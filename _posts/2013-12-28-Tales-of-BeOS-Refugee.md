@@ -14,8 +14,11 @@ published: true
 
 【译文正文】(<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">本文英文版PDF下载</a>)
 
-<h2>一个BeOS难民的故事 (Tales of a BeOS Refugee)</h2>
-<h3>从BeOS到OS X - 也试用过Windows、Linux (From BeOS to OS X - by way of Windows and Linux)</h3>
+<h2>一个BeOS难民的故事</h2>
+Tales of a BeOS Refugee
+
+<h3>从BeOS到OS X (也试用过Windows、Linux)</h3>
+From BeOS to OS X (by way of Windows and Linux)
 
 <p>
 <i>这个故事讲述了一个BeOS难民丧失了对计算机的未来的信仰，进而转向Windows，却发现它及其糟糕，linux也会让你拔光自己的头发，最后在Mac OS X那里才再次找到计算机的乐趣。</i>
@@ -25,7 +28,8 @@ published: true
 <b>注: 这篇文章发表后收到500多封邮件回复. 因此，我写了一篇附文作为对这篇文章的补充，也作为这些邮件的回应，不再对每篇来信一一回复。附文请见 <a href="http://www.birdhouse.org/beos/refugee/redux.html">BeOS Refugee Redux</a> </b>
 </p>
 
-<h3>走出煎熬... (Out of the Frying Pan...)</h3>
+<h3>走出煎熬... </h3>
+Out of the Frying Pan...
 
 <p>
 大部分用户都是渐进的转到Mac OS X上 - 他们已经用了多年的Mac计算机, 经历了Win32(即windows)和*nix用户抱怨Mac OS糟糕的内存管理、过时的协作式多任务处理(cooperative multitasking)和缓慢的文件系统。 更糟的是，反对者们向来喜欢指责Mac OS蹩脚的单键鼠标操作习惯和缺乏类似命令行的功能。
@@ -75,7 +79,8 @@ published: true
 form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用BeOS的快乐。尽管Win2K比以前用的破烂Win95/98好太多，可Windows的使用方法多得让我难以忍受。对BeOS的深入研究让我对微软的商业行为有了深刻的认识。我无法摆脱和屈从于那深刻的厌烦之感。使用Windows让我感动虚伪和放荡。在糟糕的使用体验之间，我实在需要重新找到激情。
 </p>
 
-<h3>... 再获激情... (... And Into the Fire...)</h3>
+<h3>... 再获激情... </h3>
+... And Into the Fire...
 
 <p>
 那么我做了什么？我让事情变得更糟。我选择了转向Linux。我当时是怎么想的？我深入了解了Linux，我很欣赏开源软件的很多优点，但是开源同样有着深刻和棘手的问题，这些问题导致了可怕的用户体验。我了解到Mandrake被认为是最好用的Linux发行版，所以我选择了它。
@@ -106,7 +111,8 @@ form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用
 </p>
 
 <p>
-<h3>回到家的感觉来了 (Smells Like Home Cookin')</h3>
+<h3>回到家的感觉来了 </h3>
+Smells Like Home Cookin'
 </p>
 
 <p>
@@ -443,7 +449,7 @@ Finder. Gotta love  those (optional) giant icons... </i>
 </p>
 
 <div align="center">
-<img src="/TalesBeOS-newimage/TalesBeOS-newimage.gif" alt="newimage" height="150" width="322">
+<img src="/images/TalesBeOS-newimage.gif" alt="newimage" height="150" width="322">
 </div>
 <i>The built-in DiskCopy utility makes it embarrassingly simple to 
 create disk images from file collections or devices such as CD-ROM 
@@ -562,8 +568,8 @@ genres country or punk was a piece of cake in BeOS.
 
 <p>
 </p><div align="center">
-<img src="/TalesBeOS-id3attrs/TalesBeOS-id3attrs.gif" alt="id3attrs" height="274" width="682">
-</div><br>
+<img src="/images/TalesBeOS-id3attrs.gif" alt="id3attrs" height="274" width="682">
+</div>
 <i>A Tracker view of MP3 files, with multiple attributes showing and the
  actual filenames hidden. Notice how much data is displayed in the 
 Tracker simultaneously. Even if the OS X Finder did support meta-data, 
@@ -595,8 +601,8 @@ within a single interface.
 
 <p>
 </p><div align="center">
-<a href="http://www.birdhouse.org/beos/refugee/itunes.gif" target="_blank"><img src="/TalesBeOS-itunes/TalesBeOS-itunes.jpg" alt="itunes" border="0" height="304" width="500"></a>
-</div><br>
+<a href="http://www.birdhouse.org/beos/refugee/itunes.gif" target="_blank"><img src="/images/TalesBeOS-itunes.jpg" alt="itunes" border="0" height="304" width="500"></a>
+</div>
 <i>iTunes lets me store and query on the same array of metadata that 
 BeOS does, except that BeOS does it without locking me into a single 
 playback application (and one provided by the OS vendor at that). 
@@ -772,8 +778,8 @@ rewriting it to meet the demands and expectations of the Mac community,
 and it shows. 
 </p>
 <div align="center">
-<a href="http://www.birdhouse.org/beos/refugee/office.jpg" target="_blank"><img src="/TalesBeOS-office/TalesBeOS-office.jpg" alt="office" border="0" height="236" width="350"></a>
-</div><br>
+<a href="http://www.birdhouse.org/beos/refugee/office.jpg" target="_blank"><img src="/images/TalesBeOS-office.jpg" alt="office" border="0" height="236" width="350"></a>
+</div>
 <i>Microsoft makes it so hard. You finally break free of their OS, only 
 to find yourself in love with their software on another platform. 
 Between Office X and Internet Explorer, it's tough to say no. Click  for
@@ -885,7 +891,7 @@ Architecturally speaking, point goes to BeOS.
 
 <p>
 </p><div align="center">
-<a href="http://www.birdhouse.org/beos/refugee/bemail.jpg" target="_blank"><img src="Tales%20of%20a%20BeOS%20Refugee_files/bemail.jpg" alt="bemail" border="0" height="146" width="400"></a>
+<a href="http://www.birdhouse.org/beos/refugee/bemail.jpg" target="_blank"><img src="/images/TalesBeOS-bemail.jpg" alt="bemail" border="0" height="146" width="400"></a>
 </div><br>
 <i>BeMail messages are individual files stored in the Tracker. Sort them
  however you like, or create virtual mail folders via system queries 
@@ -918,7 +924,7 @@ abandoned Eudora).
 <p>
 </p>
 <div align="center">
-<img src="Tales%20of%20a%20BeOS%20Refugee_files/mail.gif" alt="mail" border="0" height="575" width="552">
+<img src="/images/TalesBeOS-mail.gif" alt="mail" border="0" height="575" width="552">
 </div><br>
 <i>Apple's "Mail" is a bit underpowered but does a nice job and looks 
 great doing it. I'm addicted to the multi-colored quoting mechanism that
@@ -1312,8 +1318,8 @@ the Be File System doubles as a database.
 
 <p>
 </p><div align="center">
-<a href="http://www.birdhouse.org/beos/refugee/trackerbase.gif"><img src="Tales%20of%20a%20BeOS%20Refugee_files/trackerbase.gif" alt="trackerbase" border="0" height="169" width="405"></a>
-</div><br>
+<a href="http://www.birdhouse.org/beos/refugee/trackerbase.gif"><img src="/images/TalesBeOS-trackerbase.gif" alt="trackerbase" border="0" height="169" width="405"></a>
+</div>
 <i>Be's filesystem doubles as a database. Users can use built-in 
 filetypes with existing attributes, or create entirely new filetypes 
 with custom collections of attributes. These files were used to deliver a
@@ -1456,8 +1462,8 @@ would dictate.
 
 <p>
 </p><div align="center">
-<img src="Tales%20of%20a%20BeOS%20Refugee_files/binding_prio.gif" alt="xray" height="343" width="468">
-</div><br>
+<img src="/images/TalesBeOS-binding_prio.gif" alt="xray" height="343" width="468">
+</div>
 <i>OS X prioritizes Creator code over file type in the application 
 binding process. Since the document's creator is logically irrelevant to
  the determination of the best app to launch the document in, and 
@@ -1535,8 +1541,8 @@ and bindings.
 
 <p>
 </p><div align="center">
-<img src="Tales%20of%20a%20BeOS%20Refugee_files/filetypes.jpg" alt="be_filetypes" border="0" height="406" width="570">
-</div><br>
+<img src="/images/TalesBeOS-filetypes.jpg" alt="be_filetypes" border="0" height="406" width="570">
+</div>
 <i>The BeOS FileTypes preferences panel gives the user total control 
 over MIME types, icons, associations between applications and filetypes 
 (application binding), optional filename extensions, and attributes. 
@@ -1650,8 +1656,8 @@ Finder needs to become more adept at displaying them.
 
 <p>
 </p><div align="center">
-<img src="Tales%20of%20a%20BeOS%20Refugee_files/shortnames.gif" alt="shortnames" height="330" width="535">
-</div><br>
+<img src="/images/TalesBeOS-shortnames.gif" alt="shortnames" height="330" width="535">
+</div>
 <i>Short filenames like these are no way to treat your MP3 collection, 
 but neither iTunes nor Audion will generate anything but. Then again, 
 this Finder view is terrible at displaying long filenames. But on the 
@@ -1813,8 +1819,8 @@ interrupts the workflow and the train of thought.
 
 <p>
 </p><div align="center">
-<img src="Tales%20of%20a%20BeOS%20Refugee_files/dialog.png" alt="dialog" height="258" width="187">
-</div><br>
+<img src="/images/TalesBeOS-dialog.png" alt="dialog" height="258" width="187">
+</div>
 <i>I have two problems with OS X dialogs. 1) You can tab through fields 
 with the Tab key, but you can't use the arrow or tab keys to move 
 between buttons. 2) Buttons don't have associated trigger keys, which 
