@@ -14,7 +14,8 @@ published: true
 
 【译文正文】(<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">本文英文版PDF下载</a>)
 
-<h3>从BeOS到OS X (也试用过Windows、Linux)</h3>
+<h2>一个BeOS难民的故事 (Tales of a BeOS Refugee)</h2>
+<h3>从BeOS到OS X - 也试用过Windows、Linux (From BeOS to OS X - by way of Windows and Linux)</h3>
 
 <p>
 <i>这个故事讲述了一个BeOS难民丧失了对计算机的未来的信仰，进而转向Windows，却发现它及其糟糕，linux也会让你拔光自己的头发，最后在Mac OS X那里才再次找到计算机的乐趣。</i>
@@ -24,7 +25,7 @@ published: true
 <b>注: 这篇文章发表后收到500多封邮件回复. 因此，我写了一篇附文作为对这篇文章的补充，也作为这些邮件的回应，不再对每篇来信一一回复。附文请见 <a href="http://www.birdhouse.org/beos/refugee/redux.html">BeOS Refugee Redux</a> </b>
 </p>
 
-<h3>走出煎熬...</h3>
+<h3>走出煎熬... (Out of the Frying Pan...)</h3>
 
 <p>
 大部分用户都是渐进的转到Mac OS X上 - 他们已经用了多年的Mac计算机, 经历了Win32(即windows)和*nix用户抱怨Mac OS糟糕的内存管理、过时的协作式多任务处理(cooperative multitasking)和缓慢的文件系统。 更糟的是，反对者们向来喜欢指责Mac OS蹩脚的单键鼠标操作习惯和缺乏类似命令行的功能。
@@ -74,88 +75,39 @@ published: true
 form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用BeOS的快乐。尽管Win2K比以前用的破烂Win95/98好太多，可Windows的使用方法多得让我难以忍受。对BeOS的深入研究让我对微软的商业行为有了深刻的认识。我无法摆脱和屈从于那深刻的厌烦之感。使用Windows让我感动虚伪和放荡。在糟糕的使用体验之间，我实在需要重新找到激情。
 </p>
 
-<h3>... 再获激情...</h3>
+<h3>... 再获激情... (... And Into the Fire...)</h3>
 
 <p>
-So what did I do? I went and made things worse. I decided to switch to 
-Linux full-time. What was I thinking? I had dabbled in Linux enough to 
-know that, while I appreciated many of the benefits of open source 
-software, there were also deep and intractable problems in the open 
-source development model that resulted in a terrible user experience. 
-But I did some reading, learned that Mandrake was considered to be the 
-most user-friendly of the distros, and went for it.
+那么我做了什么？我让事情变得更糟。我选择了转向Linux。我当时是怎么想的？我深入了解了Linux，我很欣赏开源软件的很多优点，但是开源同样有着深刻和棘手的问题，这些问题导致了可怕的用户体验。我了解到Mandrake被认为是最好用的Linux发行版，所以我选择了它。
 </p>
 
 <p>
-After a few false starts, I had a running Mandrake box. But contrary to 
-its reputation, Linux was crashing and freezing on me left and right. I 
-had made the mistake of thinking that Linux had evolved enough by then 
-to offer dual-processor capabilities as sophisticated as Be's. Wrong. 
-Moving to a single-processor box fixed the stability issues, and I was 
-free to explore the OS. 
+经历了几次失败之后，我成功运行了Mandrake。与Linux的良好声望相反，它总是崩溃或死机。我错误的认为Linux已经发展的可以像Be那样完美的支持双处理器。错了！我把Mandrake移到单处理器PC上后，稳定问题才解决，才能正常使用这个系统。
 </p>
 
 <p>
-While I staunchly disagree with RMS et al. that all software must be 
-free on principle, it's very inspiring to become immersed in a global 
-community effort of volunteerism and charity, not to mention the 
-contagion of revolutionary zeal. And it felt good to be able to download
- and use pretty much any software I wanted. Everyone likes free beer.
+虽然我不认同Richard Matthew Stallman的自由软件的理念：所有软件必须免费，但是投入开源国际社区还是令人深受鼓舞，也被那革命般的热情所感染。能下载和使用那么多我想要的软件的感觉不错。人们都喜欢免费。
 </p>
 
 <p>
-So while the politics of Linux felt good for the most part, virtually 
-everything about the user experience drove me bananas. It was impossible
- to cut/copy/paste between apps cleanly without banging my head against 
-disagreements in the CLI / Gnome / KDE models. Nothing in the desktop 
-experience felt finished or composed. RPM software installation was an 
-endless hell of conflicting dependencies (yes, I know apt-get is much 
-better, but my Debian experience as a whole was far worse than the 
-Mandrake experience  --  don't get me started). In some cases, not even 
-continuous correspondence with the app developers themselves could 
-figure out why I couldn't get their software installed and working. I 
-was spending more time wrestling with the desktop than I was actually 
-getting work done (some Linux zealots appear to believe that wrestling 
-is the whole point).
+尽管Linux用起来大部分还好，但是它的用户体验就让我发狂了。不管在命令行，还是Gnome / KDE桌面，我都没办法在程序间方便的剪切/复制/粘贴，那般痛苦让我只想撞墙。桌面上的任何体验都不完整，不舒服。软件包的安装也是无尽的依赖冲突(是的，apt-get包管理命令好多了，但是我的Debian体验比Mandrake还要糟糕)。有时，甚至软件开发者本人也不明白为什么我这里不能正常安装和使用他的软件。我折腾Linux桌面的时间比我用其工作的时间都长(一些Linux信徒认为“折腾”才是其中的目的和乐趣所在)。
 </p>
 
 <p>
-Don't get me wrong  --  I don't mind having to use the command line. In 
-fact, I'm very comfortable in bash and tcsh, and don't have much 
-interest in using an OS without a Unix shell. But I'm not at the command
- line most of the time, and my guess is that very few users are. The 
-rest of the time, I just want to get my work done cleanly, quickly, and 
-efficiently, with mature apps that work the way I expect them to. I like
- all my apps to follow a coherent set of human interface guidelines. But
- Linux apps are not developed under a single roof, and lack a consistent
- vision of how things should look and act. Bio-diversity is both the 
-greatest strength and the greatest weakness of open source software. It 
-is what will keep Linux thriving no matter how depressed the tech 
-industry gets (unlike Be), but it is also that which practically 
-guarantees that the Linux experience will never feel internally 
-consistent. 
+别误会，我不介意使用命令行，我用起bash和tcsh来很舒适，也不喜欢使用没有Unix shell的操作系统。但我大部分时间不是在用命令行，我猜大部分用户也是如此。其他时间，我只想用成熟的程序，按我期待的方式，干净利索、快速、高效的完成我的工作。我希望所有的程序有着统一连贯的用户界面。但是，Linux程序不是一个统一的标准下开发的，它们的外观和行为缺乏统一设计。生物的多样性既是开源软件最多的优势，又是它的最大缺点，它使得Linux不管科技产业如何萧条也会继续发展(与Be相反)，同时Linux的用户体验也永远不会统一连贯。
 </p>
 
 <p>
-Despite my complaints, I did manage to get the Mandrake box set up as a 
-PHP/MySQL web server running betips.net (which I sadly had to move off 
-its former BeOS web server because BeOS was never really up to the task 
-of full-time serving). I also set up a Samba network / print server on 
-the Linux box. 
+尽管有抱怨，我还是尽力在我的Mandrake上建起了PHP/MySQL网络服务来运行betips.net网站 (我不得不关闭了之前的BeOS网络服务，因为BeOS不能全天的运行这个服务)。此外，我还在Linux机器上建立了Samba网络/打印服务。
 </p>
 
 <p>
-So where did that leave me? BeOS was dead. I couldn't deal with the 
-politics of Windows and had sworn never to own a Passport. I had given 
-Linux a four-month opportunity to impress me on the desktop, and it had 
-utterly failed to do so. It wasn't that there weren't enough apps, and I
- don't mind compiling software. In fact, I like getting guts all over my
- hands from time to time. But I don't like being <i>forced</i> to strap on a tool belt and wrench around when all I want is to get an app installed and start working. 
+那么我该去哪里？BeOS死了。我也不适应Windows的方式(发誓再也不用它)。我给了Linux四个月的机会来打动我，可惜失败了。不是因为它没有足够的软件，我也不介意编译软件源码。事实上，我喜欢自己动手编译软件。但是我不喜欢<b>被迫</b>时不时的编译、修理这些软件，我只想装上软件就开始工作。
 </p>
 
 <p>
-</p><h3>Smells Like Home Cookin'</h3>
-<p></p>
+<h3>回到家的感觉来了 (Smells Like Home Cookin')</h3>
+</p>
 
 <p>
 Tech workers spend all day, every day dwelling within the environments 
@@ -253,10 +205,10 @@ and whoop about OS X, and then I'm going to bitch and moan like nobody's
 </p>
  
 <p>
-</p><h1>A Lot To Like</h1>
-<p></p>
+<h1>很多喜欢 (A Lot To Like)</h1>
+</p>
 
-<h3>First Impressions</h3>
+<h3>第一印象 (First Impressions)</h3>
 
 <p>
 Pulling a new G4 out of its box is not like uncrating an x86 machine. 
