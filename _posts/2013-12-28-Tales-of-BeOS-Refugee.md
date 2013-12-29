@@ -14,11 +14,9 @@ published: true
 
 【译文正文】(<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">本文英文版PDF下载</a>)
 
-<h2>一个BeOS难民的故事</h2>
-Tales of a BeOS Refugee
+<h2>一个BeOS难民的故事 / Tales of a BeOS Refugee</h2>
 
-<h3>从BeOS到OS X (也试用过Windows、Linux)</h3>
-From BeOS to OS X (by way of Windows and Linux)
+<h3>从BeOS到OS X (也试用过Windows、Linux) / From BeOS to OS X (by way of Windows and Linux)</h3>
 
 <p>
 <i>这个故事讲述了一个BeOS难民丧失了对计算机的未来的信仰，进而转向Windows，却发现它及其糟糕，linux也会让你拔光自己的头发，最后在Mac OS X那里才再次找到计算机的乐趣。</i>
@@ -28,8 +26,8 @@ From BeOS to OS X (by way of Windows and Linux)
 <b>注: 这篇文章发表后收到500多封邮件回复. 因此，我写了一篇附文作为对这篇文章的补充，也作为这些邮件的回应，不再对每篇来信一一回复。附文请见 <a href="http://www.birdhouse.org/beos/refugee/redux.html">BeOS Refugee Redux</a> </b>
 </p>
 
-<h3>走出煎熬... </h3>
-Out of the Frying Pan...
+<h3>走出煎熬... / Out of the Frying Pan...</h3>
+
 
 <p>
 大部分用户都是渐进的转到Mac OS X上 - 他们已经用了多年的Mac计算机, 经历了Win32(即windows)和*nix用户抱怨Mac OS糟糕的内存管理、过时的协作式多任务处理(cooperative multitasking)和缓慢的文件系统。 更糟的是，反对者们向来喜欢指责Mac OS蹩脚的单键鼠标操作习惯和缺乏类似命令行的功能。
@@ -79,8 +77,7 @@ Out of the Frying Pan...
 form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用BeOS的快乐。尽管Win2K比以前用的破烂Win95/98好太多，可Windows的使用方法多得让我难以忍受。对BeOS的深入研究让我对微软的商业行为有了深刻的认识。我无法摆脱和屈从于那深刻的厌烦之感。使用Windows让我感动虚伪和放荡。在糟糕的使用体验之间，我实在需要重新找到激情。
 </p>
 
-<h3>... 再获激情... </h3>
-... And Into the Fire...
+<h3>... 再获激情... / ... And Into the Fire...</h3>
 
 <p>
 那么我做了什么？我让事情变得更糟。我选择了转向Linux。我当时是怎么想的？我深入了解了Linux，我很欣赏开源软件的很多优点，但是开源同样有着深刻和棘手的问题，这些问题导致了可怕的用户体验。我了解到Mandrake被认为是最好用的Linux发行版，所以我选择了它。
@@ -111,8 +108,7 @@ form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用
 </p>
 
 <p>
-<h3>回到家的感觉来了 </h3>
-Smells Like Home Cookin'
+<h3>回到家的感觉来了 / Smells Like Home Cookin'</h3>
 </p>
 
 <p>
@@ -211,10 +207,10 @@ and whoop about OS X, and then I'm going to bitch and moan like nobody's
 </p>
  
 <p>
-<h1>很多喜欢 (A Lot To Like)</h1>
+<h1>很多喜欢 / A Lot To Like</h1>
 </p>
 
-<h3>第一印象 (First Impressions)</h3>
+<h3>第一印象 / First Impressions</h3>
 
 <p>
 Pulling a new G4 out of its box is not like uncrating an x86 machine. 
@@ -1604,8 +1600,8 @@ encountered.
 
 <p>
 </p><div align="center">
-<a href="http://www.birdhouse.org/beos/refugee/horiz_scroll.gif" target="_blank"><img src="Tales%20of%20a%20BeOS%20Refugee_files/horiz_scroll_thumb.jpg" alt="horiz" border="0" height="161" width="400"></a>
-</div><br>
+<a href="http://www.birdhouse.org/beos/refugee/horiz_scroll.gif" target="_blank"><img src="/images/TalesBeOS-horiz_scroll_thumb.jpg" alt="horiz" border="0" height="161" width="400"></a>
+</div>
 <i>The Finder's horizontal scrolling view is easy to work in and quite 
 elegant, but I still miss spring-loaded folders. Click for larger  
 version.</i>
