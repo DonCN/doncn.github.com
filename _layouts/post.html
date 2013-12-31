@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: index
 ---
 
 <article id="post">
@@ -33,34 +33,6 @@ layout: default
 	</div>
 	<hr />
 </article>
-
-
-<aside class="aside">
-	<div>
-		<h3>About Me</h3>
-		<ul>
-			<li>Don Liu, 书生 爱国者 一个好人</li>
-			<li><a href="http://doncn.github.io/2013/12/28/HaikuOS-learning-notes.html" target="_blank">Haiku OS</a>, PC, Life</li>
-			<li>Email: donliucn@gmail.com</li>
-		</ul>
-	</div>
-	<div>
-		<h3>分类</h3>
-		<ul>
-			{% for category in site.categories %}
-			<li><a href="/category.html#{{category[0]}}">{{category[0]}} ({{category[1] | size}})</a></li>
-			{% endfor %}
-		</ul>
-	</div>
-	<div>
-		<h3>友情链接</h3>
-		<ul>
-			<li><a href="http://haiku-os.org/" target="_blank">Haiku OS 英文站</a></li>
-			<li><a href="http://haiku-cn.org/" target="_blank">Haiku OS 中文站</a></li>
-			<li><a href="http://haiku-cn.github.io/" target="_blank">Haiku中文文档</a></li>
-		</ul>
-	</div>	
-</aside>
 
 
 <!--Disqus begin-->
