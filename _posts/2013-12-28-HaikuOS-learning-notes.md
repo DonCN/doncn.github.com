@@ -16,7 +16,8 @@ published: true
 
 HaikuOS官方主页：<http://www.haiku-os.org/><p>
 HaikuOS中文社区：<http://haiku-cn.org/><p>
-HaikuOS测试版本下载：<http://haiku-files.org/haiku/development/>
+HaikuOS测试版本下载：<http://haiku-files.org/haiku/development/><p>
+HaikuOS源码编译指南：<http://www.haiku-os.org/guides/building><p>
 
 
 ## 设计理念 ##

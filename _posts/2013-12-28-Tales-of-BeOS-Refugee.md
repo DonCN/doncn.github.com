@@ -108,7 +108,7 @@ form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用
 </p>
 
 <p>
-<h3>回到家的感觉来了 / Smells Like Home Cookin'</h3>
+<h3>闻起来就像家常菜 / Smells Like Home Cookin'</h3>
 </p>
 
 <p>
