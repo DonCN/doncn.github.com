@@ -104,106 +104,43 @@ form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用
 </p>
 
 <p>
-那么我该去哪里？BeOS死了。我也不适应Windows的方式(发誓再也不用它)。我给了Linux四个月的机会来打动我，可惜失败了。不是因为它没有足够的软件，我也不介意编译软件源码。事实上，我喜欢自己动手编译软件。但是我不喜欢<b>被迫</b>时不时的编译、修理这些软件，我只想装上软件就开始工作。
+那么我该去哪里？BeOS死了。我也不适应Windows的方式(发誓再也不用它)。我给了Linux四个月的机会来打动我，可惜失败了。不是因为它没有足够的软件，我也不介意编译软件源码。事实上，我喜欢自己动手编译软件。但是我不喜欢<i>被迫 </i>时不时的编译、修理这些软件，我只想装上软件就开始工作。
 </p>
 
 <p>
-<h3>闻起来就像家常菜 / Smells Like Home Cookin'</h3>
+<h3>家的感觉 / Smells Like Home Cookin'</h3>
 </p>
 
 <p>
-Tech workers spend all day, every day dwelling within the environments 
-provided by their operating systems. After a while, that environment 
-needs to begin to feel like home. Linux never felt that way for me. 
-Never felt like a place I'd want to hang my hat.  Linux just has no <i>feng shui</i>.
- No sense that all the pieces were ever meant to hang together, to work 
-together as a unified whole. I missed that feeling I got from BeOS, that
- me and it were somehow destined to be together, as if I had found my 
-dream home. In BeOS, I could have all the Unix power I wanted (or 
-nearly) and still feel like I was enjoying myself. In Linux, I had 
-plenty of Unix power, but very little enjoyment. And my wife was getting
- tired of hearing me swear at the computer.
+科技人员成天工作在操作系统提供的工作环境中，一段时间之后，这个工作环境应该给人家的感觉。但Linux从没给我这种感觉，从没让我感到家的舒适。Linux没有那种<i>风水 </i>，它的各个部分从没有统一起来、浑然一体的工作。我怀念这种在BeOS上体验，就像我和系统注定要在一起，它就是我理想的家园。在BeOS上，我几乎拥有我想要的Unix所有的功能，同时还能乐在其中。我的妻子都厌倦了我不断的抱怨Linux电脑。
 </p>
 
 <p>
-Half a year before, I had written <a href="http://www.byte.com/documents/s%3D465/byt20001031s0001/" target="_blank">a piece</a>
- for Byte on Mac OS X, about how pleasantly impressed I had been with my
- early exposures to it. My conclusion in that piece was that OS X might 
-be destined to become the BeOS that never was. Both BeOS and OS X were 
-designed to address shortcomings in Mac OS. BeOS was designed and built 
-by a team of mostly ex-Apple engineers, and Be's CEO had been head of 
-product development at Apple for many years. Both offered Mac-like grace
- coupled with a Unix shell. Both were committed to providing a great 
-user experience. Both put the goals of media content creation and 
-consumption high on the list of priorities.
-</p>
-
-
-
-<p>
-In October 2001 I took one last look at the Linux box, then reached for a
- kitchen cleaver, cut off its head, and bought a Mac. The Linux box 
-still hums along happily beside me, doing its work in a lightweight, 
-GUI-free environment, never complaining, never crashing. I love having a
- Linux server in the home. It's quiet, reliable, and fun to tweak on 
-from time to time. But it will be a while before I try to use Linux as a
- desktop OS again.
-</p>
-
-
-<p>
-Like many people, I had always been hesitant to spend premium bread on a
- proprietary machine, but I decided to put my reluctance aside and go 
-for it. I bought a new PowerMac G4 867 with 60GB HDD, a DVD-writing 
-SuperDrive, and 640MBs of memory. MacWorld SF came up days before my 
-machine arrived, and I was able to pick up the OS X.1 upgrade CD just in
- time. 
+半年前，我曾经给Byte网站写过一篇关于Mac OS X的文章，关于我之前对Mac OS X的良好印象。在文中，我的结论是OS X可能会达到BeOS所未达到的高度。BeOS和OS X的设计都是为了弥补Mac OS的缺陷。BeOS是由一组前苹果工程师设计和开发，Be的 执行总裁曾经领导苹果的产品研发多年。BeOS和OS X都具有Mac的优雅和Unix功能，都有很好的用户体验，并且都把多媒体的制作和播放作为一个重要目的。
 </p>
 
 <p>
-I didn't know it at the time, but the next few months were going to be a
- weird mixture of elation and disappointment. Some of my prayers were 
-about to be answered, and I was about to discover that the Mac could do 
-things I had never imagined. I was about to begin discovering what I now
- firmly believe is the best consumer desktop and (almost) server 
-operating system currently available. But at the same time, I was going 
-to find disappointment lurking in unexpected corners.
+在2001年的10月，我最后看了一眼Linux机器，然后去买了台Mac机器。现在，这台Linux机器仍然正常的运行着，是任务不重的没有图形界面的环境，从没出问题或者崩溃。在家有台Linux服务器也不错，它安静、可靠，不时地调整一下也很有趣。但是我估计很长时间都不会把Linux用作桌面操作系统了。
 </p>
 
 <p>
-There is no such thing as a perfect operating system. All of them have 
-their advantages and disadvantages. Similarly, there are good and bad 
-evangelists for every OS. You can tell the bad ones because they're 
-basically <a href="http://www.adequacy.org/public/stories/2001.10.2.33542.4010.html" target="_blank">apologists</a>
- for the OS for which they're soap-boxing. They'll trumpet the 
-advantages of their favorite OS 'til day breaks, but they always have a 
-litany of excuses at their fingertips to explain away the bugs and bad 
-design decisions (Hint: It's never the fault of the OS vendor, and all 
-the crucial fixes are always right around the corner). 
+跟很多人一样，我之前也总是不愿在购买机器上花额外的钱，但这次我决定改变一下。我先买了一台PowerMac G4 867，它有60GB的硬盘、可读写的DVD驱动器和640MB的内存。正好MacWorld SF在我的机器到的前几天举办，所以之后我又及时的买到了OS X.1的升级CD。
 </p>
 
 <p>
-Like any operating system, OS X is a mixed bag. The only way to describe
- the experience of the BeOS migrant is to describe what I like and don't
- like about OS X. Despite its limitations, BeOS sets some very high 
-standards in certain departments - --  expectations that are bound to be
- disappointed. My initial - --  and incorrect -- assumption was that OS X
- would have most of the modern technologies found in BeOS, but coupled 
-with the magic of industry momentum. My thinking was that Apple had had 
-the same opportunity that Be had had - --  to start over with a clean 
-slate and do everything right this time. To not saddle the user with the
- leftovers of poor decisions made in the past. But I neglected to 
-account for one important fact: Apple did not have the luxury of 
-starting over. They had backwards compatibility to worry about, not to 
-mention the responsibility of satisfying the expectations and habits of 
-millions of Mac users and two decades of noble Mac tradition. 
+当时不知道，在接下来的几个月里我将交织在兴奋与失望之中。我之前的一些期待将有结果，我将会发现Mac能做到的超出我的想象。我将遇到我期待的最好的个人桌面操作系统，甚至是服务器操作系统。但是同时，也会对其中的某些部分感到失望。
 </p>
 
+<p>
+没有完美的操作系统，每种系统都有它的优点和不足。同样，每种系统都有好和不好的支持者。之所以称他们为不好的支持者，是因为他们只是他们宣扬的某个系统的<a href="http://www.adequacy.org/public/stories/2001.10.2.33542.4010.html" target="_blank">卫道士</a>。他们总是鼓吹他们喜欢的系统的优点，并为系统的缺点和糟糕的设计找各种理由，比如，这不是系统开发公司的错，这些错误马上就可以解决。
+</p>
 
 <p>
-But I digress. This is all very simple. I'm going to jump up and down 
-and whoop about OS X, and then I'm going to bitch and moan like nobody's
- business.
+跟其他操作系统一样，OS X也是一个混合体。唯一能描述我从BeOS转到OS X的体验的方法也许就是我指出我对OS X的喜欢和失望之处。尽管有不足，但BeOS在某些方面树立了很高的标准，在这些方面OS X注定会令我失望了。我初始的，也许不一定正确的假设是OS X拥有BeOS所具有的所有现代操作系统的技术，并且拥有光明的前景。我认为苹果公司拥有Be公司曾经有过的那种机会：全新完美设计，没有历史负担，让用户不再背负以前的错误设计带来的历史遗留负担。这里，我忽略了苹果公司的一个重要因素：它并不是没有历史负担，他们得考虑向前兼容旧的Mac OS，并且满足数百万Mac用户的使用习惯和期望，以及过去二十多年Mac的高雅传统。
+</p>
+
+<p>
+我可能会离题，这很容易。我可能正兴高采烈的讲述着OS X，转眼就开始哀叹抱怨。
 </p>
  
 <p>
