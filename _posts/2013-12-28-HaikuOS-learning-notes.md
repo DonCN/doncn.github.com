@@ -25,18 +25,24 @@ HaikuOS的设计理念继承于BeOS，采用先进的64位BeFS文件系统，支
 
 ## 特性详情 ##
 
-- __多线程 Multithreaded__<p>
-    HaikuOS（以及BeOS）是多线程化的操作系统。每创建一个窗口，系统都会自动为这个窗口创建一个新的线程。所有的线程都由系统处理、维护。<p>
-- __多处理器支持 Multiprocessor Support__<p>
-    HaikuOS采用对称多重处理（symmetric multiprocessing, or SMP）方式支持多处理器，自动根据各处理器的负荷情况为其分配不同的线程，提高系统性能。<p>
-- __抢占式多任务处理 Preemptive Multitasking__<p>
-    HaikuOS将根据任务优先级来分配任务。<p>
-- __内存保护 Protected Memory__<p>
-    系统为每个程序分配单独的内存，并不受其他程序崩溃的影响。<p>
-- __虚拟内存 Virtual Memory__<p>
-    系统提供了虚拟内存，保证多个程序并行运行的内存要求。<p>
-- __没有历史兼容负担 Less Hindered by Backward Compatibility__<p>
-   HaikuOS（以及BeOS）作为全新设计的个人电脑操作系统，充分利用了现代硬件和现代计算机技术，没有旧系统和程序兼容的负担。<p>
+1. __多线程 Multithreaded__<p>
+    HaikuOS（以及BeOS）是多线程化的操作系统。每创建一个窗口，系统都会自动为这个窗口创建一个新的线程。所有的线程都由系统处理、维护。
+
+2. __多处理器支持 Multiprocessor Support__<p>
+    HaikuOS采用对称多重处理（symmetric multiprocessing, or SMP）方式支持多处理器，自动根据各处理器的负荷情况为其分配不同的线程，提高系统性能。
+
+3. __抢占式多任务处理 Preemptive Multitasking__<p>
+    HaikuOS将根据任务优先级来分配任务。
+
+4. __内存保护 Protected Memory__<p>
+    系统为每个程序分配单独的内存，并不受其他程序崩溃的影响。
+
+5. __虚拟内存 Virtual Memory__<p>
+    系统提供了虚拟内存，保证多个程序并行运行的内存要求。
+
+6. __没有历史兼容负担 Less Hindered by Backward Compatibility__<p>
+   HaikuOS（以及BeOS）作为全新设计的个人电脑操作系统，充分利用了现代硬件和现代计算机技术，没有旧系统和程序兼容的负担。
+
 
 ## 系统架构 ##
 
@@ -44,9 +50,31 @@ HaikuOS的设计理念继承于BeOS，采用先进的64位BeFS文件系统，支
 <img src="/images/BeOS_Structure.png" alt="BeOS_Structure.png" height="212" width="633"><p>
 应用程序和硬件之间的系统层次结构
 </div>
-- __microkernel__<p>
-- __server__<p>
-- __software kits__<p>
+1. __微内核层microkernel__<p>
+    操作系统的最底层是微内核，它直接工作在硬件及其驱动之上，处理计算机的底层任务，如内存访问管理。内核还提供其他程序使用的一些基础功能，如线程调度、文件系统工具等。
+
+2. __服务层server__<p>
+    微内核之上是服务层。服务server层包含多个服务servers，在后台处理程序请求的系统功能，如输入服务Input Server处理键盘、鼠标等输入设备操作；应用服务Application Server处理图形显示、应用程序通信。作为程序员，不能直接操作服务层，需要通过下面的软件开发包提供的接口操作服务层。
+
+3. __软件开发包层software kits__<p>
+    软件开发包包含各种编程需要的面向对象的类库（用C++编写），这些类库构成了操作系统的应用程序接口API（haikuOS兼容BeOS的API）。一般应用程序通过调用软件开发包software kits里的类与对应的服务server通信来完成指定的任务；也有些软件开发包software kits直接与服务层通信，而不需要经过开发包。
+
+    HaikuOS(BeOS)包含十几个软件开发包，一般的编程只需熟悉几个常用的开发包，比如显示一个窗口只用到应用开发包Application Kit 和 接口开发包Interface Kit。
+
+    全部开发包的功能简介：
+    *Application Kit
+    *Interface Kit
+    *Storage Kit
+    *Support Kit
+    *Media Kit
+    *Midi Kit
+    *Kernel Kit
+    *Device Kit
+    *Network Kit
+    *OpenGL Kit
+    *Translation Kit
+    *Mail Kit
+    *Game Kit
 
 参考：[Programming the Be Operating System](http://www.haiku-os.org/legacy-docs/programming_the_be_operating_system.pdf)
 
