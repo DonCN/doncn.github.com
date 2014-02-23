@@ -23,18 +23,28 @@ HaikuOS源码编译指南：<http://www.haiku-os.org/guides/building><p>
 ## 设计理念 ##
 HaikuOS的设计理念继承于BeOS，采用先进的64位BeFS文件系统，支持多处理器，其多媒体性能异常优越。Haiku能够充分利用多处理器系统通过模块化的I/O带宽，多线程，抢断式的多任务和被称为BFS的定制64位日志文件系统。Haiku的GUI遵循清晰整洁的设计原理而开发。其API是用C++编写而成，非常容易编程。虽非源于Unix的操作系统，但其实现了POSIX兼容，并通过Bash shell 命令行界面来访问。
 
+## 特性详情 ##
+
+- __多线程 Multithreaded__<p>
+    HaikuOS（以及BeOS）是多线程化的操作系统。每创建一个窗口，系统都会自动为这个窗口创建一个新的线程。所有的线程都由系统处理、维护。<p>
+- __多处理器支持 Multiprocessor Support__<p>
+    HaikuOS采用对称多重处理（symmetric multiprocessing, or SMP）方式支持多处理器，自动根据各处理器的负荷情况为其分配不同的线程，提高系统性能。<p>
+- __抢占式多任务处理 Preemptive Multitasking__<p>
+    HaikuOS将根据任务优先级来分配任务。<p>
+- __内存保护 Protected Memory__<p>
+    系统为每个程序分配单独的内存，并不受其他程序崩溃的影响。<p>
+- __虚拟内存 Virtual Memory__<p>
+    系统提供了虚拟内存，保证多个程序并行运行的内存要求。<p>
+- __没有历史兼容负担 Less Hindered by Backward Compatibility__<p>
+   HaikuOS（以及BeOS）作为全新设计的个人电脑操作系统，充分利用了现代硬件和现代计算机技术，没有旧系统和程序兼容的负担。<p>
+
 ## 系统架构 ##
-- microkernel
-- server
-- software kits
+<div align="center">
+<img src="/images/BeOS_Structure.png" alt="BeOS_Structure.png" height="212" width="633">
+</div>
+- __microkernel__<p>
+- __server__<p>
+- __software kits__<p>
 
 参考：[Programming the Be Operating System](http://www.haiku-os.org/legacy-docs/programming_the_be_operating_system.pdf)
 
-## 特性详情 ##
-
-- Multithreaded
-- Multiprocessor Support
-- Preemptive Multitasking
-- Protected Memory
-- Virtual Memory
-- Less Hindered by Backward Compatibility
