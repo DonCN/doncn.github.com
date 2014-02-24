@@ -106,6 +106,6 @@ HaikuOS的设计理念继承于BeOS，采用先进的64位BeFS文件系统，支
 
 
 ###扩展阅读：
-[1]: [译文: Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/)   [一个BeOS难民的故事(by Don)](http://doncn.github.io/2013/12/28/Tales-of-BeOS-Refugee.html)
+[1] [译文: Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/)   [一个BeOS难民的故事(by Don)](http://doncn.github.io/2013/12/28/Tales-of-BeOS-Refugee.html)
 
-[2]: [Programming the Be Operating System](http://www.haiku-os.org/legacy-docs/programming_the_be_operating_system.pdf)
+[2] [Programming the Be Operating System](http://www.haiku-os.org/legacy-docs/programming_the_be_operating_system.pdf)
