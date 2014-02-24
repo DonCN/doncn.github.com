@@ -63,18 +63,43 @@ HaikuOS的设计理念继承于BeOS，采用先进的64位BeFS文件系统，支
 
     全部开发包的功能简介：
     *Application Kit
+        The Application Kit is the starting point for developing applications and includes classes for messaging and for interacting with the rest of the system.
+
     *Interface Kit
+        The Interface Kit is used to create responsive and attractive graphical user interfaces building on the messaging facilities provided by the Application Kit.
+
+        The Layout API is a new addition to the Interface Kit in Haiku which provides resources to layout your application flexibly and easily.
+
     *Storage Kit
+        The Storage Kit is a collection of classes that deal with storing and retrieving information from disk.
+
     *Support Kit
+        The Support Kit contains support classes to use in your application including resources for thread safety, IO, and serialization.
+
     *Media Kit
+        The Media Kit provides a unified and consistent interface for media streams and applications to intercommunicate.
+
     *Midi Kit
-    *Kernel Kit
+        The MIDI 2 Kit describes an interface to generating, processing, and playing music in MIDI format. For reference documentation on the The old Midi Kit (libmidi.so) is also included.
+    
     *Device Kit
+
+
     *Network Kit
-    *OpenGL Kit
+        The Network Kit handles everything network related, from interface IP address settings to HTTP connections.
+
     *Translation Kit
+        The Translation Kit provides a framework for converting data streams between media formats.
+
     *Mail Kit
+
+
     *Game Kit
+        The Game Kit provides classes for producing game sounds and working with full screen apps.
+    *Locale Kit 
+        The Locale Kit includes classes to localize your application to different languages, timezones, number formatting conventions and much more.
+
+    *Kernel Kit和OpenGL Kit *
 
 参考：[Programming the Be Operating System](http://www.haiku-os.org/legacy-docs/programming_the_be_operating_system.pdf)
 
