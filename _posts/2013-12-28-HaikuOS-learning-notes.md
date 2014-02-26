@@ -21,28 +21,42 @@ HaikuOS源码编译指南：<http://www.haiku-os.org/guides/building><p>
 
 
 ## 设计理念 ##
-HaikuOS的设计理念继承于BeOS，采用先进的64位BeFS文件系统，支持多处理器，其多媒体性能异常优越。Haiku能够充分利用多处理器系统通过模块化的I/O带宽，多线程，抢断式的多任务和被称为BFS的定制64位日志文件系统。Haiku的GUI遵循清晰整洁的设计原理而开发。其API是用C++编写而成，非常容易编程。虽非源于Unix的操作系统，但其实现了POSIX兼容，并通过Bash shell 命令行界面来访问。
+HaikuOS的设计理念继承于BeOS，专门用于多媒体处理的“多媒体操作系统”。设计目标是尽可能的减少内核延迟，从而实时处理大量多媒体数据，如音频和视频流。它充分利用了现代硬件和技术的优点，如使用模块化I/O带宽的多处理器系统，深入的多线程，抢断式的多任务和被称为BFS的定制64位日志文件系统。
+
+Haiku的GUI遵循清晰整洁的设计原则开发。其API是用C++编写而成，非常容易编程。虽非源于Unix的操作系统，但其实现了POSIX兼容，并通过Bash shell 命令行界面来访问。
+
+__参考__：  
+[1] [BeOS Wiki](http://en.wikipedia.org/wiki/Beos)  
+[2] [The Art of Unix Programming](http://www.catb.org/esr/writings/taoup/html/ch03s02.html#beos)  
 
 ## 特性详情 ##
 
-1. __多线程 Multithreaded__<p>
+* __数据库式64位文件系统 Databese-like 64bit File System__<p>
+    HaikuOS（以及BeOS）采用的是Unix模型，在字节级以上没有文件结构，支持和使用文件属性，整个文件系统就像一个数据库，可以按任意属性索引。
+
+* __多线程 Multithreaded__<p>
     HaikuOS（以及BeOS）是多线程化的操作系统。每创建一个窗口，系统都会自动为这个窗口创建一个新的线程。所有的线程都由系统处理、维护。
 
-2. __多处理器支持 Multiprocessor Support__<p>
+    HaikuOS（BeOS）的“线程”实际上是Unix术语中的轻量级进程。线程间通信通过共享内存实现，快速而高效
+
+* __多处理器支持 Multiprocessor Support__<p>
     HaikuOS采用对称多重处理（symmetric multiprocessing, or SMP）方式支持多处理器，自动根据各处理器的负荷情况为其分配不同的线程，提高系统性能。
 
-3. __抢占式多任务处理 Preemptive Multitasking__<p>
+* __抢占式多任务处理 Preemptive Multitasking__<p>
     HaikuOS将根据任务优先级来分配任务。
 
-4. __内存保护 Protected Memory__<p>
+* __内存保护 Protected Memory__<p>
     系统为每个程序分配单独的内存，并不受其他程序崩溃的影响。
 
-5. __虚拟内存 Virtual Memory__<p>
+* __虚拟内存 Virtual Memory__<p>
     系统提供了虚拟内存，保证多个程序并行运行的内存要求。
 
-6. __没有历史兼容负担 Less Hindered by Backward Compatibility__<p>
+* __没有历史兼容负担 Less Hindered by Backward Compatibility__<p>
    HaikuOS（以及BeOS）作为全新设计的个人电脑操作系统，充分利用了现代硬件和现代计算机技术，没有旧系统和程序兼容的负担。
 
+__参考__：  
+[1] [Programming the Be Operating System](http://www.haiku-os.org/legacy-docs/programming_the_be_operating_system.pdf)  
+[2] [The Art of Unix Programming](http://www.catb.org/esr/writings/taoup/html/ch03s02.html#beos)  
 
 ## 系统架构 ##
 
@@ -106,6 +120,6 @@ HaikuOS的设计理念继承于BeOS，采用先进的64位BeFS文件系统，支
 
 
 ###扩展阅读：
-[1] [译文: Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/)   [一个BeOS难民的故事(by Don)](http://doncn.github.io/2013/12/28/Tales-of-BeOS-Refugee.html)
-
-[2] [Programming the Be Operating System](http://www.haiku-os.org/legacy-docs/programming_the_be_operating_system.pdf)
+[1] [Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/)   [译文: 一个BeOS难民的故事(by Don)](http://doncn.github.io/2013/12/28/Tales-of-BeOS-Refugee.html)  
+[2] [Programming the Be Operating System](http://www.haiku-os.org/legacy-docs/programming_the_be_operating_system.pdf)  
+[3] [The Art of Unix Programming](http://www.catb.org/esr/writings/taoup/html/ch03s02.html#beos)   
