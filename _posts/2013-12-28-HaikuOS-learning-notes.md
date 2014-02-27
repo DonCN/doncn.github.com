@@ -77,46 +77,45 @@ __参考__：
 
     全部开发包的功能简介：
 
-    * __Application kit__   
-        The Application Kit is the starting point for developing applications and includes classes for messaging and for interacting with the rest of the system.
+    * __应用开发包 Application kit__   
+        应用开发包（Application Kit）是开发应用程序的开始，每个应用程序都是基于一个继承自该包中的BApplication的类开发的。定义了消息系统、程序间通信等。
 
-    * __Interface kit__   
-        The Interface Kit is used to create responsive and attractive graphical user interfaces building on the messaging facilities provided by the Application Kit.
+    * __接口开发包 Interface kit__   
+        这是目前最大的一个软件开发包。提供了基于应用开发包的消息系统之上的图形用户接口，定义了窗口及其包含的各种元素。
 
-        The Layout API is a new addition to the Interface Kit in Haiku which provides resources to layout your application flexibly and easily.
+        此外haiku在接口开发包之外又增加了布局接口Layout API，使程序布局更灵活和简单。
 
-    * __Storage Kit__   
-        The Storage Kit is a collection of classes that deal with storing and retrieving information from disk.
+    * __存储开发包 Storage Kit__   
+        存储开发包Storage Ki包含了在磁盘保存和更新数据的一些类。
 
-    * __Support Kit__  
-        The Support Kit contains support classes to use in your application including resources for thread safety, IO, and serialization.
+    * __支持开发包 Support Kit__  
+        支持开发包Support Kit包含程序中使用的一些支持类，包括线程安全、IO、和序列化（serialization）用到的资源，如数据类型、常数等的定义。 
 
-    * __Media Kit__  
-        The Media Kit provides a unified and consistent interface for media streams and applications to intercommunicate.
+    * __媒体开发包 Media Kit__  
+        媒体开发包 Media Kit为媒体数据流和程序间通信提供了统一的接口。
 
-    * __Midi Kit__      
-        The MIDI 2 Kit describes an interface to generating, processing, and playing music in MIDI format. For reference documentation on the The old Midi Kit (libmidi.so) is also included.
+    * __音频设备数字接口开发包 Midi Kit__      
+        音频设备数字接口开发包MIDI(Musical Instrument Digital Interface) Kit 提供了处理MIDI格式音频数据的接口。Haiku在此基础上新加了MIDI2 Kit，扩展了部分功能。
  
-    * __Device Kit__   
+    * __设备开发包 Device Kit__    
+        设备开发包Device Kit提供了硬件连接的接口，主要用于驱动开发。
 
+    * __网络开发包 Network Kit__   
+        网络开发包Network Kit处理网络相关的各种事物，从IP地址设置接口到HTTP连接。
 
-    * __Network Kit__   
-        The Network Kit handles everything network related, from interface IP address settings to HTTP connections.
+    * __转换开发包 Translation Kit__   
+        转换开发包Translation Kit不是传统意义上的语言翻译转换，而是媒体格式的转换，如jpg图片转换为png图片等。
 
-    * __Translation Kit__   
-        The Translation Kit provides a framework for converting data streams between media formats.
+    * __邮件开发包 Mail Kit__     
+        邮件开发包Mail Kit提供了电子邮件的相关服务。
 
-    * __Mail Kit__    
+    * __游戏开发包 Game Kit__  
+        游戏开发包Game Kit提供了处理游戏声音等全屏程序的一些类。
 
+    * __本地化开发包 Locale Kit__   
+        本地化开发包Locale Kit包含了本地化程序到各种语言、时区、数字格式等的类。
 
-    * __Game Kit__
-    
-        The Game Kit provides classes for producing game sounds and working with full screen apps.
-
-    * __Locale Kit__   
-        The Locale Kit includes classes to localize your application to different languages, timezones, number formatting conventions and much more.
-
-    *Kernel Kit和OpenGL Kit *
+    *Kernel Kit（在底层直接操作内核）和OpenGL Kit（为程序增加3D效果，以及处理三维对象） *
 
 
 ###扩展阅读：
