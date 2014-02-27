@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 一个BeOS难民的故事(译文)(进行中...)
-summary: 本文译自[Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/) - Scot Hacker，2001。原作者Scot Hacker是[BeOS Bible](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统停止开发之后，无奈转向其他操作系统，最终转到MAC OS X。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优势做了深入的介绍。虽然BeOS已经是十多年前就停止开发了，但是很多忠诚爱好者还是不愿放弃，其中一批人开发了旨在复制BeOS的开源操作系统Haiku OS([中文主页](http://haiku-cn.org/),[英文主页](http://haiku-os.org/))，这篇文章也非常有助于对Haiku OS的了解。
-categories: [Haiku OS]
-tags: [Haiku OS]
-published: true
+summary: 本文译自[Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/) - Scot Hacker，2001。原作者Scot Hacker是[BeOS Bible](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统停止开发之后，无奈转向其他操作系统，最终转到MAC OS X。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优势做了深入的介绍。虽然BeOS已经是十多年前就停止开发了，但是很多忠诚爱好者还是不愿放弃，其中一批人开发了旨在复制BeOS的开源操作系统Haiku OS([中文主页](http://haiku-cn.org/),[英文主页](http://haiku-os.org/))，这篇文章也非常有助于对Haiku OS的了解。   
+categories: [Haiku OS]  
+tags: [Haiku OS]  
+published: true  
 ---
 
 # {{ page.title }} #
@@ -13,7 +13,8 @@ published: true
 
 (<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">本文英文版PDF下载</a>)
 
-【译文正文】
+_【译文正文】_
+
 
 ## 一个BeOS难民的故事 / Tales of a BeOS Refugee
 
@@ -213,7 +214,7 @@ While OS X's networking is already more advanced than Be's ever was,
 it's not yet perfect, and more advanced users have run into some 
 problems. Irfon-Kim Ahmad offers these notes:
 
-</p><blockquote>
+<blockquote>
  If running Apache and SSH servers is a top priority, it's excellent. If
  you want to connect up to your workplace's VPN as a client, however, go
  find a Windows box.  There are some pptp tools, but little by way of 
@@ -227,7 +228,6 @@ pertains to networking: If all of your DNS servers are down, you might
 as well forget it -- OS X will take 10+ minutes to boot, and then act 
 flaky. That's probably a fairly easy to bug to correct though.
 </blockquote>
-<p> 
  
 Overall, the foundation for world-class networking is present in OS X. 
 It's secure, it's stable, it's Unix... but it's not finished. If we were
@@ -237,8 +237,8 @@ think that in the future OS X won't become fully competitive with
 Linux/BSD as a world-class server OS as well. For now, people who want 
 to run an ISP from a Mac should choose OS X Server. 
 
-</p><h3>CD Burning, Disk Images</h3>
-<p>
+<h3>CD Burning, Disk Images</h3>
+
 Everywhere I look in OS X, smooth integration is the operative phrase. 
 One of the smoothest examples of this is in CD burning. Stick in a blank
  CD and OS X asks if you want to make an ISO, HFS+, or audio CD. If you 
@@ -295,8 +295,8 @@ iTunes doesn't show the mounted volume. Instead, you simply make
 playlists and burn them. A minor quibble.
 
 
-</p><h3>PDF Everywhere</h3>
-<p>
+<h3>PDF Everywhere</h3>
+
 
 One of the more interesting innovations in OS X is the fact that PDF 
 technology is pervasive in the operating system -- the Quartz display 
@@ -312,8 +312,8 @@ The <a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank"
 
 
 
-</p><h2>Applications</h2>
-<p>
+<h2>Applications</h2>
+
 I've heard pundits say that OS X still suffers from a lack of apps. 
 While it's true that Photoshop still had not been Carbon/Cocoa-ized, far
  more  --  and more mature  --  applications have been released for OS X
@@ -342,8 +342,8 @@ want to skip it if you're just looking for the OS comparisons. However, I
 total OS experience, so included it here.
 </blockquote>
 
-</p><h3>iTunes</h3>
-<p>
+<h3>iTunes</h3>
+
 There are still a few areas where BeOS surpasses other OSes in general 
 usefulness, and audio file creation, storage, and playback is one of 
 them. The combination of the database-like file system (BFS), Be's 
@@ -358,14 +358,14 @@ indexed automatically, search results are instantaneous, regardless the
 amount of data to be searched. In essence, the file system itself serves
  as a database. 
 
-</p><blockquote>
+<blockquote>
 Side note: Microsoft is in the early stages of moving to a model where 
 all of their applications and the operating system itself will sit <a href="http://www.idg.net/crd_idgsearch_0.html?url=http%3A%2F%2Fwww%2Einfoworld%2Ecom%2Farticles%2Fhn%2Fxml%2F01%2F12%2F05%2F011205hndatastore%2Exml&amp;sc" target="_blank">on top of a common data store</a>,
  based on SQL Server. If they're able to pull it off, this will be one 
 of the more significant changes to the  Windows product line in 
 Microsoft history.
 </blockquote>
-<p>
+
 Building an OS around a virtual database has implications for userland 
 functionality throughout the OS, and MP3 storage is just one example 
 (more later). MP3 encoding tools for BeOS store meta-data not just in 
@@ -377,7 +377,7 @@ genres country or punk was a piece of cake in BeOS.
 
 
 
-</p><div align="center">
+<div align="center">
 <img src="/images/TalesBeOS-id3attrs.gif" alt="id3attrs" height="274" width="682">
 </div>
 <i>A Tracker view of MP3 files, with multiple attributes showing and the
@@ -387,7 +387,7 @@ it wouldn't be able to pack this much data into a viewable space without
  using a smaller font. But since Tinker Tool does let you change the 
 Finder font, we can probably expect to see that enabled by Apple  in a 
 future version of OS X.</i>
-<p>
+
 
 
 
@@ -406,7 +406,7 @@ are essentially immediate), iTunes wins because everything happens
 within a single interface.
 
 
-</p><div align="center">
+<div align="center">
 <a href="http://www.birdhouse.org/beos/refugee/itunes.gif" target="_blank"><img src="/images/TalesBeOS-itunes.jpg" alt="itunes" border="0" height="304" width="500"></a>
 </div>
 <i>iTunes lets me store and query on the same array of metadata that 
@@ -417,7 +417,7 @@ in BeOS, and I can't query for it from Sherlock, like I can in BeOS. But
  I gotta admit, the iTunes playlist manager is genuinely useful, and 
 reasonably attractive. iTunes skins would be nice. Click for larger 
 image.</i>
-<p>
+
 
 Another pleasant iTunes surprise came the day I used a batch tool to 
 rename thousands of MP3s at once. I expected that I would have to 
@@ -450,8 +450,8 @@ for just about everything else related to MP3 creation, storage, remote
 control, stereo interface, etc.
 
 
-</p><h3>iMovie, iDVD</h3>
-<p>
+<h3>iMovie, iDVD</h3>
+
 Since Apple wants to be taken seriously as the "digital hub" of your 
 life, it makes sense for them to include a basic movie making 
 application with every copy of the operating system. As I learned when I
@@ -501,8 +501,8 @@ Point goes to OS X, with caveats.
 
 
 
-</p><h3>Camera</h3>
-<p>
+<h3>Camera</h3>
+
 A week before I got my Mac, I had spent some time migrating dear old Dad
  from BeOS to Windows 98. Until that point, he had the honor of being 
 the oldest, least technically savvy BeOS user on the planet. He loved 
@@ -538,8 +538,8 @@ wouldn't be surprised if similar capabilities were now part of MS
 Windows. But if I come across a secret stash of cash, I'm buying Dad an 
 OS X machine. 
 
-</p><h3>Office X</h3>
-<p>
+<h3>Office X</h3>
+
 Despite my political problems with Microsoft, the truth is that some of 
 the most sophisticated software available for OS X comes from Redmond. 
 I'm not a big user of office apps, but when you need 'em, you need 'em. 
@@ -586,8 +586,8 @@ has announced plans to release a Linux version in the near future.</i>
 
 
 
-</p><h3>Browsers and E-Mail</h3>
-<p>
+<h3>Browsers and E-Mail</h3>
+
 One of the longest-standing complaints of the BeOS user is the fact that
  the available web browsers are all sub-standard. If BeOS had appeared a
  couple of years earlier, Netscape probably would have built a BeOS 
@@ -622,7 +622,7 @@ the header meta-data (To:, From:, Subject, etc.) stored as attributes.
 Store each message in the user's home folder as individual files. There 
 are two big advantages to this approach: 
 
-</p><ol>
+<ol>
 	<li>Users can find messages on any criteria via system Find  --  canned
  queries can pull up mailing lists and associated messages instantly 
 without even having to sort them into folders first. </li>
@@ -635,10 +635,10 @@ Tracker itself as the email organization app, utilizing the simple but
 clean BeMail viewer / composer to read and write.</li>
 </ol>
 
-<p>
+
 Architecturally speaking, point goes to BeOS.
 
-</p><div align="center">
+<div align="center">
 <a href="http://www.birdhouse.org/beos/refugee/bemail.jpg" target="_blank"><img src="/images/TalesBeOS-bemail.jpg" alt="bemail" border="0" height="146" width="400"></a>
 </div><br>
 <i>BeMail messages are individual files stored in the Tracker. Sort them
@@ -647,7 +647,7 @@ Architecturally speaking, point goes to BeOS.
 messages, while other apps give more advanced functionality on top of 
 the central message store. Click for larger version.</i>
 
-<p>
+
 Trouble is, none of the email apps available to read this central 
 message store are quite finished. There are several that are decent, and
  BeatWare's <a href="http://www.bebits.com/app/502" target="_blank">Mail-It</a>
@@ -680,8 +680,8 @@ there was some way to get all these vendors to discard the proprietary
 message store bull-hockey and agree on a single mail format, I'd be in 
 heaven.
 
-</p><h3>Power Editors</h3>
-<p>
+<h3>Power Editors</h3>
+
 The most powerful text / scripting / HTML editor for BeOS is Maarten Hekkelman's <a href="http://www.birdhouse.org/www.hekkelman.com/" target="_blank">Pe</a>.
  I lived in Pe for years. I maintained three web sites, did all my shell
  scripting, and wrote two books and countless articles in Pe. Hekkelman 
@@ -706,8 +706,8 @@ Point: love-love.
 
 
 
-</p><h3>X Compatibility</h3>
-<p>
+<h3>X Compatibility</h3>
+
 
 For those wanting to run *nix applications both BeOS and OS X have the 
 ability to run an X server and client, and to run X applications. In OS 
@@ -731,8 +731,8 @@ the domain of people who keep one foot planted firmly in the *nix world.
 Point goes to OS X.
 
 
-</p><h3>Software Costs</h3>
-<p>
+<h3>Software Costs</h3>
+
 One downside I didn't expect about OS X software is that it gets 
 expensive fast. I don't come from the camp that believes software must 
 be free, and I love to support developers who do good work. It makes me 
@@ -753,8 +753,8 @@ kind of like Apple hardware - you pay more, but you  also get more.
 
 
 
-</p><h2>Community</h2>
-<p>
+<h2>Community</h2>
+
 Hang out on some of the BeOS mailing lists for a while and you'll notice
  something interesting: There is a larger concentration of intelligent 
 and friendly users in BeOS-land than in any computing community I've 
@@ -790,7 +790,7 @@ the BeOS community.
 
 Point: BeOS, by a narrow margin.
 
-</p><blockquote>
+<blockquote>
  On the community note: As I began to pick up steam on OS X, I decided 
 to create a site similar to betips.net, but for OS X users. But when I 
 discovered that <a href="http://www.macosxhints.com/" target="_blank">MacOSXhints.com</a>
@@ -799,11 +799,11 @@ discovered that <a href="http://www.macosxhints.com/" target="_blank">MacOSXhint
 corresponding, and soon listed each other as "sister sites." I even 
 helped Rob to edit his excellent <a href="http://homepage.mac.com/rgriff/osxguide2.html" target="_blank">OS X Power Guide</a>, which I highly recommed to anyone looking for ways to get more productive in OS X quickly.
 </blockquote>
-<p>
 
 
-</p><h2>Happiness Quotient</h2>
-<p>
+
+<h2>Happiness Quotient</h2>
+
 So. I'm using this OS that provides a great experience. Everywhere I 
 turn, things are integrated, smooth, composed, designed, fluid, 
 beautiful to look at, a joy to use. I'm pretty much convinced that OS X 
@@ -821,22 +821,22 @@ command line.
 I know I'm not alone in finding OS X a happy campground for the despairing BeOS refugee. This LiveJournal <a href="http://www.livejournal.com/talkread.bml?itemid=13186510&amp;view=16922846#t16922846" target="_blank">comment</a> from Balatro mirrors my own experiences pretty accurately:
 
 
-</p><blockquote>
+<blockquote>
 I suffered with OS9 for a while, it was usable but crash prone. Then OS X
  came out (Which I had been waiting for months). It was a dream come 
 true (though slow as hell on the iBooks 66Mhz bus). Finally I bought the
  bullet and bought a Titanium 400.
-<p>
+
 OS X 10.1 is the only OS other than BeOS that I truly ENJOY working 
 with. Windows is just "there." It offers me no joy -- only 
 compatibility. Linux/Unix is like pulling teeth, and has a horrible 
 appearance no matter how hard you try to dress it up. OS X is a 
 beautiful marriage of elegance and power.
-</p></blockquote>
-<p>
+</blockquote>
 
-</p><h1>The Bad and The Ugly</h1>
-<p>
+
+<h1>The Bad and The Ugly</h1>
+
 
 
 Overall, I'm happier than a pig in shit. What could I possibly find to complain about? 
@@ -924,8 +924,8 @@ Be's performance bar is going to be a tough hurdle for Apple.
 Unfortunately, the vast, vast majority of the Mac-using population has 
 never tried BeOS, and doesn't know what they're missing. 
 
-</p><h2>File System Shoot-Out</h2>
-<p>
+<h2>File System Shoot-Out</h2>
+
 Speaking of not know what you're missing, we now come to the single 
 largest usability difference between BeOS and OS X  --  the file system 
 and the practices and policies used to work in it. I've written at great
@@ -973,7 +973,7 @@ users are allowed to extend and customize these, and to create entirely
 new file types with entirely new arrays of attributes. In other words, 
 the Be File System doubles as a database. 
 
-</p><div align="center">
+<div align="center">
 <a href="http://www.birdhouse.org/beos/refugee/trackerbase.gif"><img src="/images/TalesBeOS-trackerbase.gif" alt="trackerbase" border="0" height="169" width="405"></a>
 </div>
 <i>Be's filesystem doubles as a database. Users can use built-in 
@@ -981,7 +981,7 @@ filetypes with existing attributes, or create entirely new filetypes
 with custom collections of attributes. These files were used to deliver a
  dynamic web site out of the BFS database without using 3rd-party 
 database software. Click for larger image.</i>
-<p>
+
 It is difficult to describe to users of other operating systems just how
  advantageous an operating system built on top of a virtual database can
  be. Only other BeOS users really seem to understand the power and 
@@ -992,23 +992,23 @@ Some examples of Be's database-like file system in action:
 
 
 <ul>
-	</p><li>Copy your MP3 files' ID3 tags to Artist, Title, Year, Genre 
+	<li>Copy your MP3 files' ID3 tags to Artist, Title, Year, Genre 
 attributes. Sift and sort through your collection in the Tracker in 
 almost anyway imaginable, or build playlists from MP3 attribute queries 
 with far more flexibility than you get in other OSes. </li>
-<p>
-	</p><li>BeMail messages store Subject, From, To, CC:, Date, etc. in 
+
+	<li>BeMail messages store Subject, From, To, CC:, Date, etc. in 
 attributes. Create virtual mailboxes based on live, instantaneous query 
 results. This lets you obtain views of your email store that are 
 irrespective of the actual folder locations of BeMail messages on disk.</li>
-<p>
-	</p><li>Years ago, I created a custom file type based on text, with 
+
+	<li>Years ago, I created a custom file type based on text, with 
 attributes for author, title, email, URL, etc. Then I wrote a CGI script
  in perl to extract and dish up these attributes over the web. In other 
 words, I was serving up a database-backed web site without having to 
 install or learn any database software whatsoever. That site now runs on
  <a href="http://www.onlamp.com/" target="_blank">LAMP</a>, but you can see how the site was created <a href="http://www.betips.net/TrackerBase/" target="_blank">here</a>.</li>
-<p>
+
 </ul>
 
 
@@ -1038,8 +1038,8 @@ equalization and cross-fade settings for MP3 files. The possibilities
 are endless.
 
 
-</p><h3>Application-Binding Policies</h3>
-<p>
+<h3>Application-Binding Policies</h3>
+
 Neither BeOS nor Mac  OS 9 require users to add extensions to their  
 filenames. Without extensions, some other means of identifying a file's 
 type and associated application is necessary. All versions of Mac OS 
@@ -1091,7 +1091,7 @@ in the screenshot below from <a href="http://www.brockerhoff.net/xray/" target="
 the file type third - the exact opposite of what logic and usability 
 would dictate.
 
-</p><div align="center">
+<div align="center">
 <img src="/images/TalesBeOS-binding_prio.gif" alt="xray" height="343" width="468">
 </div>
 <i>OS X prioritizes Creator code over file type in the application 
@@ -1101,7 +1101,7 @@ because it often results in unexpected and undesirable document
 launching behavior, and because more flexible and powerful application 
 binding can be accomplished through file type-based binding, I find this
  100% backwards.</i>
-<p>
+
 
 If Apple is ultimately to provide a central FileTypes preferences panel,
  and simultaneously wants to satsify users who for some reason feel 
@@ -1156,7 +1156,7 @@ and bindings.
 
 
 
-</p><div align="center">
+<div align="center">
 <img src="/images/TalesBeOS-filetypes.jpg" alt="be_filetypes" border="0" height="406" width="570">
 </div>
 <i>The BeOS FileTypes preferences panel gives the user total control 
@@ -1165,7 +1165,7 @@ over MIME types, icons, associations between applications and filetypes
 This is the global (system-wide) preferences panel. A separate FileType 
 panel for individual files or groups of files lets you override the 
 global settings on a local level.</i>
-<p>
+
 On this note, an additional BeOS advantage is that the MIME typing 
 system allows the OS to easily keep track of which apps can handle which
  file types, and thus to suggest candidate applications. For example, if
@@ -1177,10 +1177,10 @@ provide a list of all text-handling apps on the user's system. This
 capability also comes into play when displaying the "Open With..." 
 context menu when right-clicking a file in the Tracker. 
 
-</p><blockquote>
+<blockquote>
 For a detailed discussion on the entire filetyping / binding / identification / customization schema in BeOS, buy a copy of <a href="http://www.birdhouse.org/beos/bible/" target="_blank">The BeOS Bible</a>. To read an excerpt from the chapter on filetyping, <a href="http://www.beosbible.com/exc_filetype.html" target="_blank">click here</a>.
 </blockquote>
-<p>
+
 
 <h3>Alien Filesystems</h3>
 
@@ -1196,8 +1196,8 @@ use. OS X did a great job of reading a FAT32 volume I stuck in my G4 for
 elegantly.
 
 
-</p><h3>Finder</h3>
-<p> 
+<h3>Finder</h3>
+ 
 Overall, my experience with the OS X Finder has been a wash -- it's both
  better and worse than the BeOS Tracker. On one hand, I love and use 
 constantly the horizontal scrolling column view. And dynamic resizing of
@@ -1207,13 +1207,13 @@ scroll | navigate mechanism provides the fastest means of navigating,
 copying, and moving files around in a file system of any I've 
 encountered.
 
-</p><div align="center">
+<div align="center">
 <a href="http://www.birdhouse.org/beos/refugee/horiz_scroll.gif" target="_blank"><img src="/images/TalesBeOS-horiz_scroll_thumb.jpg" alt="horiz" border="0" height="161" width="400"></a>
 </div>
 <i>The Finder's horizontal scrolling view is easy to work in and quite 
 elegant, but I still miss spring-loaded folders. Click for larger  
 version.</i>
-<p>
+
 But my real complaint with the Finder is that it does a poor job of 
 displaying large quantities of information at once. The default Finder 
 font is too large, and is not user-configurable. However, the 3rd-party 
@@ -1251,7 +1251,7 @@ filenames. OS X apps need to learn to start creating them, and the
 Finder needs to become more adept at displaying them.
 
 
-</p><div align="center">
+<div align="center">
 <img src="/images/TalesBeOS-shortnames.gif" alt="shortnames" height="330" width="535">
 </div>
 <i>Short filenames like these are no way to treat your MP3 collection, 
@@ -1259,7 +1259,7 @@ but neither iTunes nor Audion will generate anything but. Then again,
 this Finder view is terrible at displaying long filenames. But on the 
 other other hand, being able to preview MP3s and movies directly in the 
 Finder is pretty cool...</i>
-<p>
+
 
 The BeOS Tracker uses a technology called "node monitoring" which lets 
 the Tracker give instant feedback to the user and to other apps. For 
@@ -1278,8 +1278,8 @@ force them to.
 
 
 
-</p><h3>Sherlock Shmerlock</h3>
-<p>
+<h3>Sherlock Shmerlock</h3>
+
 The OS X Find panel is still known as Sherlock, and basically gets the 
 job done, but is a bit too cutesy for my tastes. Cosmetics aside, search
  capabilities under OS X are not as flexible as they are BeOS, with its 
@@ -1328,14 +1328,14 @@ Internet, but I'm happy with the mighty Google, and get the impression
 from talking to other people that Sherlock is used for file finding the 
 vast majority of the time.</i>
 
-</p><h2>Miscellaneous Moans and Groans</h2>
-<p>
+<h2>Miscellaneous Moans and Groans</h2>
+
 
 So, those are my biggest complaints about OS X. But there are other, smaller differences I have to get off my chest.
 
 
-</p><h3>Scripting</h3>
-<p>
+<h3>Scripting</h3>
+
 OS X embraces and enhances the time-honored AppleScript system for 
 automating tasks. AppleScript is a pretty cool language, with one big 
 disadvantage -- you have to learn it,  even if you already consider 
@@ -1365,8 +1365,8 @@ life easier and more productive.
 I don't mind AppleScript. I wish the system were open to other languages, but AppleScript does a fine job, and is very powerful.
 
 
-</p><h3>Keyboardability</h3>
-<p>
+<h3>Keyboardability</h3>
+
 Mac OS has never stood up to other operating systems in the 
 keyboardability department. OS X is a little better than OS 9 in this 
 regard, but still has some puzzling omissions. For example, it is not 
@@ -1378,7 +1378,7 @@ much faster. For example, if I'm doing a search and replace in a Windows
 default Replace. In OS X, I have to stop and reach for the mouse, which 
 interrupts the workflow and the train of thought.
 
-</p><div align="center">
+<div align="center">
 <img src="/images/TalesBeOS-dialog.png" alt="dialog" height="258" width="187">
 </div>
 <i>I have two problems with OS X dialogs. 1) You can tab through fields 
@@ -1388,7 +1388,7 @@ means you can't activate any but the default button from the keyboard.
 If I want to Replace All from this BBEdit dialog, I'll have to reach for
  the mouse. </i> 
 
-<p>
+
 For the record, I was never completely happy with BeOS' keyboardability 
 either, and found Linux inconsistent here (Gnome and KDE dialogs behave 
 differently, for example). I've never used an OS that was as 
@@ -1433,8 +1433,8 @@ dictates mapping the easiest / most plainly marked keys to those tasks.
 Or am I missing something?
 
 
-</p><h3>Workspaces</h3>
-<p>
+<h3>Workspaces</h3>
+
 I'm pretty surprised to see some equivalent of workspaces missing from 
 OS X. In BeOS, you get up to 32 virtual desktops to spread your apps and
  windows amongst. Each desktop can have a different resolution and color
@@ -1457,8 +1457,8 @@ Apple.
 
 
 
-</p><h3>Dotfiles</h3>
-<p>
+<h3>Dotfiles</h3>
+
 I love the Samba connectivity in OS X, but am frustrated that the Finder
  creates .dotfiles in every directory it touches on the remote SMB host.
  This, unfortunately, puts OS X users in the uncomfortable position of 
@@ -1471,8 +1471,8 @@ hope one is forthcoming.
 
 
 
-</p><h3>Window Positions</h3>
-<p>
+<h3>Window Positions</h3>
+
 This is fairly minor, but it seems that some apps remember their window 
 positions when closed and some do not. Mail.app and Internet Explorer do
  remember their exact size and position between runs, but Terminal and 
@@ -1481,8 +1481,8 @@ the user experience.
 
 
 
-</p><h3>Cropping Images</h3>
-<p>
+<h3>Cropping Images</h3>
+
 Another fairly minor point: In BeOS, the concept of snippets / clippings
  is extended to images. Launch an image in the built-in ShowImage app, 
 drag out a region of it, and drag it to the desktop -- you get a new 
@@ -1497,8 +1497,8 @@ rather than all images, as you get with BeOS (of course, one can always
 take a regional screenshot of a screenshot...)
 
 
-</p><h3>Case (In)sensitivity</h3>
-<p>
+<h3>Case (In)sensitivity</h3>
+
 Open a Terminal and type:
 
 <pre>touch foo
@@ -1521,8 +1521,8 @@ rather, BFS) got this one right.
 
 
 
-</p><h2>All Told, Life Is Good</h2>
-<p>
+<h2>All Told, Life Is Good</h2>
+
 I was once fond of referring to BeOS as "the promised land" of operating
  systems. Well, I wasn't wrong -- it really was, in many ways. 
 Unfortunately, BeOS never attracted enough visitors to turn the promised
@@ -1603,12 +1603,12 @@ tremendously expensive proof-of-concept. But that's a pessimistic view
 of things. I agree with Urban Lindeskog, who recently posted on a Be 
 mailing list:
 
-</p><blockquote>
+<blockquote>
 ... in that sense BeOS has not been a waste of time, on the contrary. It
  has added to the collective knowledge, and showed us some interesting 
 views of the art of computing.
 </blockquote>
-<p>
+
 In any case, anyone who has spent time with BeOS is forever spoiled, their expectations for OS technology permanently affected. 
 
 
@@ -1626,11 +1626,11 @@ responses. Rather than respond to everyone individually, I've written an
  addendum to this document  summarizing reactions and my responses to 
 them, as well as errors in this piece. Please read <a href="http://www.birdhouse.org/beos/refugee/redux.html">BeOS Refugee Redux</a> before responding to this  article.</b>
 
-</p><blockquote>
+<blockquote>
 <i>Many thanks to Irfon Kim-Ahmad, Kurt von Finck, Balatro, Allen 
 Brunson, and Jim Rippie for their comments on and contributions to this 
 piece.</i>
 </blockquote>
-<p>
-【译文结束】
+
+_【译文结束】_
 
