@@ -144,9 +144,10 @@ __Table__ Haiku OS Naming Conventions
 |Constant       | B_     | All uppercase                     | B_LONG_TYPE |
 |Global variable| be_    | All lowercase                     | e_clipboard |
 
-#### 接口开发包Interface Kit的继承结构
 
-<div align="center">
+#### 接口开发包Interface Kit的继承结构 
+
+<p><div align="center">
 <img src="/images/InterfaceKit_hierarchy.png" alt="InterfaceKit_hierarchy.png" width="633"><p>
 接口开发包Interface Kit的继承结构
 </div>
