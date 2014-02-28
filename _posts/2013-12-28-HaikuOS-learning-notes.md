@@ -19,7 +19,7 @@ published: true
 同年，一群忠实爱好者开始了OpenBeOS开源项目，目标是创立一个与BeOS兼容的自由操作系统。2003年，在纽约州成立了一个非营利的组织[Haiku,Inc](http://www.haiku-inc.org/) 以支持该项目。2004年，由于版权原因，项目名称改为Haiku(一种日本古典短诗-俳句的发音)。2009年9月，经过世界各地的十几个核心开发人员8年的努力，项目组终于发布了第一个测试版Haiku R1/Alpha1。目前，已经发布了4个Alpha版本，即将进入Beta发布阶段。
 
 HaikuOS官方主页：<http://www.haiku-os.org/><p>
-HaikuOS中文社区：<http://haiku-cn.org/><p>
+HaikuOS中文社区：<http://haiku-cn.org/> (目前链接失效中...)<p>
 HaikuOS测试版本下载：<http://haiku-files.org/haiku/development/><p>
 HaikuOS源码编译指南：<http://www.haiku-os.org/guides/building><p>
 
@@ -70,6 +70,7 @@ __参考__：
 <img src="/images/BeOS_Structure.png" alt="BeOS_Structure.png" height="212" width="633"><p>
 应用程序和硬件之间的系统层次结构
 </div>
+
 1. __微内核层microkernel__<p>
     操作系统的最底层是微内核，它直接工作在硬件及其驱动之上，处理计算机的底层任务，如内存访问管理。内核还提供其他程序使用的一些基础功能，如线程调度、文件系统工具等。
 
@@ -79,49 +80,77 @@ __参考__：
 3. __软件开发包层software kits__<p>
     软件开发包包含各种编程需要的面向对象的类库（用C++编写），这些类库构成了操作系统的应用程序接口API（haikuOS兼容BeOS的API）。一般应用程序通过调用软件开发包software kits里的类与对应的服务server通信来完成指定的任务；也有些软件开发包software kits直接与服务层通信，而不需要经过开发包。
 
-    HaikuOS(BeOS)包含十几个软件开发包，一般的编程只需熟悉几个常用的开发包，比如显示一个窗口只用到应用开发包Application Kit 和 接口开发包Interface Kit。
+    HaikuOS(BeOS)包含十几个软件开发包，一般的编程只需熟悉几个常用的开发包，比如显示一个窗口只用到应用开发包Application Kit 和 接口开发包Interface Kit，所有开发包介绍见下节：。
 
-    全部开发包的功能简介：
+## 软件开发包 software kits##
 
-    * __应用开发包 Application kit__   
-        应用开发包（Application Kit）是开发应用程序的开始，每个应用程序都是基于一个继承自该包中的BApplication的类开发的。定义了消息系统、程序间通信等。
+上节系统架构的三层中的软件开发包层包含了十几个软件开发包，简介如下：
 
-    * __接口开发包 Interface kit__   
-        这是目前最大的一个软件开发包。提供了基于应用开发包的消息系统之上的图形用户接口，定义了窗口及其包含的各种元素。
+* __应用开发包 Application kit__   
+    应用开发包（Application Kit）是开发应用程序的开始，每个应用程序都是基于一个继承自该包中的BApplication的类开发的。定义了消息系统、程序间通信等。
 
-        此外haiku在接口开发包之外又增加了布局接口Layout API，使程序布局更灵活和简单。
+* __接口开发包 Interface kit__   
+    这是目前最大的一个软件开发包。提供了基于应用开发包的消息系统之上的图形用户接口，定义了窗口及其包含的各种元素。
 
-    * __存储开发包 Storage Kit__   
+    此外haiku在接口开发包之外又增加了布局接口Layout API，使程序布局更灵活和简单。
+
+* __存储开发包 Storage Kit__   
         存储开发包Storage Ki包含了在磁盘保存和更新数据的一些类。
 
-    * __支持开发包 Support Kit__  
-        支持开发包Support Kit包含程序中使用的一些支持类，包括线程安全、IO、和序列化（serialization）用到的资源，如数据类型、常数等的定义。 
+* __支持开发包 Support Kit__  
+    支持开发包Support Kit包含程序中使用的一些支持类，包括线程安全、IO、和序列化（serialization）用到的资源，如数据类型、常数等的定义。 
 
-    * __媒体开发包 Media Kit__  
-        媒体开发包 Media Kit为媒体数据流和程序间通信提供了统一的接口。
+* __媒体开发包 Media Kit__  
+    媒体开发包 Media Kit为媒体数据流和程序间通信提供了统一的接口。
 
-    * __音频设备数字接口开发包 Midi Kit__      
-        音频设备数字接口开发包MIDI(Musical Instrument Digital Interface) Kit 提供了处理MIDI格式音频数据的接口。Haiku在此基础上新加了MIDI2 Kit，扩展了部分功能。
+* __音频设备数字接口开发包 Midi Kit__      
+    音频设备数字接口开发包MIDI(Musical Instrument Digital Interface) Kit 提供了处理MIDI格式音频数据的接口。Haiku在此基础上新加了MIDI2 Kit，扩展了部分功能。
  
-    * __设备开发包 Device Kit__    
-        设备开发包Device Kit提供了硬件连接的接口，主要用于驱动开发。
+* __设备开发包 Device Kit__    
+    设备开发包Device Kit提供了硬件连接的接口，主要用于驱动开发。
 
-    * __网络开发包 Network Kit__   
-        网络开发包Network Kit处理网络相关的各种事物，从IP地址设置接口到HTTP连接。
+* __网络开发包 Network Kit__   
+    网络开发包Network Kit处理网络相关的各种事物，从IP地址设置接口到HTTP连接。
 
-    * __转换开发包 Translation Kit__   
-        转换开发包Translation Kit不是传统意义上的语言翻译转换，而是媒体格式的转换，如jpg图片转换为png图片等。
+* __转换开发包 Translation Kit__   
+    转换开发包Translation Kit不是传统意义上的语言翻译转换，而是媒体格式的转换，如jpg图片转换为png图片等。
 
-    * __邮件开发包 Mail Kit__     
-        邮件开发包Mail Kit提供了电子邮件的相关服务。
+* __邮件开发包 Mail Kit__     
+    邮件开发包Mail Kit提供了电子邮件的相关服务。
 
-    * __游戏开发包 Game Kit__  
-        游戏开发包Game Kit提供了处理游戏声音等全屏程序的一些类。
+* __游戏开发包 Game Kit__  
+    游戏开发包Game Kit提供了处理游戏声音等全屏程序的一些类。
 
-    * __本地化开发包 Locale Kit__   
-        本地化开发包Locale Kit包含了本地化程序到各种语言、时区、数字格式等的类。
+* __本地化开发包 Locale Kit__   
+    本地化开发包Locale Kit包含了本地化程序到各种语言、时区、数字格式等的类。
 
-    *Kernel Kit（在底层直接操作内核）和OpenGL Kit（为程序增加3D效果，以及处理三维对象） *
+*Kernel Kit（在底层直接操作内核）和OpenGL Kit（为程序增加3D效果，以及处理三维对象）这两个BeOS中的开发包在Haiku的源码库中找不到，等弄清楚了Haiku的修改后再补充。*
+
+### 软件开发包的继承结构
+
+上述的各种软件开发包不是独立的，它们之间有类的继承关系。比如一个开发包的类可能派生自几个其他的开发包。将这些所有的类根据功能和概念分成多个开发包便于整理和应用。
+
+#### 源码的命名规则
+
+为了便于介绍开发包的类，首先简单介绍下源码的命名规则
+
+__Table__ Haiku OS Naming Conventions
+
+|Category       | Prefix | Spelling                          |  Example    |
+| :-------------| :------| :---------------------------------| :-----------|
+|Class name     | B      | Begin words with uppercase letter | BTextView   |
+|Member function| none   | Begin words with uppercase letter | OffsetBy()  |
+|Data member    | none   | Begin words (excepting the first) with uppercase letter |  bottom    |
+|Constant       | B_     | All uppercase                     | B_LONG_TYPE |
+|Global variable| be_    | All lowercase                     | e_clipboard |
+
+#### 接口开发包Interface Kit的继承结构
+
+<div align="center">
+<img src="/images/InterfaceKit_hierarchy.png" alt="InterfaceKit_hierarchy.png" width="633"><p>
+接口开发包Interface Kit的继承结构
+</div>
+
 
 
 ###扩展阅读：
