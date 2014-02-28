@@ -3,7 +3,8 @@ layout: post
 title: HaikuOS学习笔记(简介、编程基础...进行中)
 summary: Haiku OS是一个开源、免费的操作系统，主要面向个人计算机。它兼容、继承了BeOS的理念，是一个快速、简洁优雅、易学易用，而且非常强大的操作系统。它有着<ul><li>- 统一的、简洁优雅的全图形用户界面；</li><li>- 定制的快速响应的内核；</li><li>- 对多处理器、多线程的完全支持和内存保护；</li><li>- 优雅的内置程序间通讯；</li><li>- 模块化设计和面向对象API便于快速开发；</li><li>- 先进的数据库式、全日志的64位文件系统；</li><li>- 基于属性的快速索引和查询。</li></ul>它的众多特性和优点让我非常着迷，这篇文章是我的HaikuOS学习笔记和一些相关资源链接。<p><center><a href="/images/HaikuOS-desktop.png" target="_blank"><img src="/images/HaikuOS-desktop.png" alt="HaikuOS-desktop" height="500" width="633"></a><p>Haiku OS 桌面</center><p>
 categories: [Haiku OS]
-tags: [Haiku OS] [Haiku OS learning notes]
+tags: - Haiku OS 
+      - Haiku OS learning notes 
 published: true
 ---
 
