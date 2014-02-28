@@ -67,7 +67,7 @@ __参考__：
 ## 系统架构 ##
 
 <div align="center">
-<img src="/images/BeOS_Structure.png" alt="BeOS_Structure.png" height="212" width="633"><p>
+<img src="/images/BeOS_Structure.png" alt="BeOS_Structure.png"><p>
 应用程序和硬件之间的系统层次结构
 </div>
 
