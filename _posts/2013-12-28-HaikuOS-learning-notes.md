@@ -26,11 +26,13 @@ HaikuOS源码编译指南：<http://www.haiku-os.org/guides/building><p>
 
 ## 设计理念和特点 ##
 
-HaikuOS的设计理念继承于BeOS，专门用于多媒体处理的完全图形化的“多媒体操作系统”。设计目标是尽可能的减少内核延迟，从而实时处理大量多媒体数据，如音频和视频流。它充分利用了现代硬件和技术的优点，如使用模块化I/O带宽的多处理器系统，深入的多线程，抢断式的多任务和被称为BFS的定制64位日志文件系统。
+HaikuOS的设计理念继承于BeOS，专注于个人PC的完全图形化的“多媒体操作系统”。设计目标是尽可能的减少内核延迟，从而实时处理大量多媒体数据，如音频和视频流。它充分利用了现代硬件和技术的优点，如使用模块化I/O带宽的多处理器系统，深入的多线程，抢断式的多任务和被称为BFS的定制64位日志文件系统。
 
-Haiku的内核基于开源内核[NewOS](http://www.newos.org)，由曾经的Be雇员、参与文件系统和内核编写的[Travis Geiselbrecht](http://tkgeisel.com/)创建。同样继承了BeOS多处理器、多线程、内存保护等特点。
+Haiku的内核基于开源内核[NewOS](http://www.newos.org)，由曾经的Be雇员、参与文件系统和内核编写的[Travis Geiselbrecht](http://tkgeisel.com/)创建。同样继承了BeOS模块化、多处理器、多线程、内存保护等特点。
 
-Haiku的GUI遵循清晰整洁的设计原则开发。其API是用C++编写而成，非常容易编程。虽非源于Unix的操作系统，但其实现了POSIX兼容，并通过Bash shell 命令行界面来访问。
+Haiku的GUI遵循清晰整洁的设计原则开发。其API兼容于BeOS R5，由C++编写而成，非常容易编程。虽非源于Unix的操作系统，但其实现了POSIX兼容，并通过Bash shell 命令行界面来访问。
+
+相比BeOS，Haiku在多方面进行了改进：内核中增加网络模块、文件缓存集成到虚拟内存中、矢量图标使得系统界面更现代、现代硬件支持，如USB、WiFi和显卡等。
 
 __参考__：  
 [1] [BeOS Wiki](http://en.wikipedia.org/wiki/Beos)  
@@ -149,15 +151,39 @@ __Table__ Haiku OS Naming Conventions
 | Global variable| be_    | All lowercase                     | e_clipboard | 
 
 
-#### 接口开发包Interface Kit的继承结构 ####
+#### 开发包的继承结构（以Interface Kit为例） ####
 
 <p><div align="center">
 <img src="/images/InterfaceKit_hierarchy.png" alt="InterfaceKit_hierarchy.png" width="633"><p>
 接口开发包Interface Kit的继承结构
 </div>
 
+系统的开发包都是C++编写的，因此它的类都是面向对象的，自然的采用了继承结构。由上图可以看到接口开发包的类大都是继承自其它的类，如Support Kit、Application Kit。理解这个继承结构，有利于快速选择采用哪个类来实现既定功能。
+
+## Haiku OS 编程基础 ##
+
+### 消息、线程、程序通信 ###
+
+前面提到“深入的多线程”造就了Haiku的快速响应和高性能，这是如何实现的呢？
+
+* **消息 Message**
+
+一个Haiku OS程序的开始，是创建一个继承自应用开发包中的BApplication类的新派生类的对象，如下图所示为一个应用开发包的继承结构。
+
+<p><div align="center">
+<img src="/images/ApplicationKit_hierarchy.png" alt="ApplicationKit_hierarchy.png" width="633"><p>
+应用开发包Interface Kit的继承结构
+</div>
+
+创建一个应用对象就建立了程序的主线程，用来与应用服务Application Server联络（这就是前述系统三层结构中的开发包层与服务层的联络，服务层的Server通过开发包为程序提供服务）。应用服务管理着许多程序的基础任务，如向应用程序报告用户事件（点击鼠标或按下键盘），这个报告的是以消息（Message）的形式传递的，被程序的主线程接受。消息（Message）本身是一个对象，即包含了事件细节的数据包。由系统（应用服务）确定用户事件，然后用独立的线程传递消息细节给程序的主线程，这让编程工作变得简单。
+
+点击鼠标或按下键盘的消息是系统消息，是系统自己产生的；还可以在程序中自己定义消息BMessage对象。
+
+* **消息循环和处理(Message loops and message handling)**
 
 
+
+-----------------------------
 ###扩展阅读：###
 [1] [Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/)   [译文: 一个BeOS难民的故事(by Don)](http://doncn.github.io/2013/12/28/Tales-of-BeOS-Refugee.html)  
 [2] [Programming the Be Operating System](http://www.haiku-os.org/legacy-docs/programming_the_be_operating_system.pdf)  

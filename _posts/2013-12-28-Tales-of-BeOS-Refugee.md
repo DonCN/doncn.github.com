@@ -90,14 +90,7 @@ form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用
 
 ### 第一印象 / First Impressions
 
-Pulling a new G4 out of its box is not like uncrating an x86 machine. 
-The styrofoam is contoured to the gently rounded shape of the machine. 
-Even the printed material is designed to seduce.  The CD tray glides 
-open when you touch a key on the  USB keyboard. Other keys control 
-volume for the built-in Harmon-Kardon speaker (which sounds heavenly 
-compared to traditional built-in speakers). Pressing a volume control 
-key causes a subtle visual to appear over the desktop before  fading 
-gently into the background. Brushing your hand over the glowing dot  on 
+从盒子中取出苹果PowerBook G4跟打开x86机器时可不一样。泡沫板的波浪曲线包裹着机器柔和的圆角, 即使印刷材料看起来都很诱人。你只要在USB键盘上按一个键就能打开光驱，还有按键可以控制内置的Harmon-Kardon扬声器(它的声音比起其他的内置扬声器好太多了)。按下音量控制键，桌面会有个精致的图标显示出来，然后就慢慢隐去。 Brushing your hand over the glowing dot  on 
 an Apple Studio or Cinema display brings up the OS's display preferences
  panel. The power button on the monitor doesn't just turn off the 
 display  --  it puts the machine to sleep with a single wave of the 
