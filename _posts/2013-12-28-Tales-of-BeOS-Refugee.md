@@ -1,7 +1,7 @@
 ---
-layout: post
-title: 一个BeOS难民的故事(译文)(进行中...)
-summary: 本文译自[Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/) - Scot Hacker，2001。原作者Scot Hacker是[BeOS Bible](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统停止开发之后，无奈转向其他操作系统，最终转到MAC OS X。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优势做了深入的介绍。虽然BeOS已经是十多年前就停止开发了，但是很多忠诚爱好者还是不愿放弃，其中一批人开发了旨在复制BeOS的开源操作系统Haiku OS([英文主页](http://haiku-os.org/))，这篇文章也非常有助于对Haiku OS的了解。   
+layout: post 
+title: 2001：一个BeOS难民的故事(译文)(进行中...) 
+summary: 本文译自[Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/) - Scot Hacker。原作者Scot Hacker是[BeOS Bible](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在2001年[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统停止开发之后，无奈尝试转向其他操作系统，经历一番试用比较，最终转到MAC OS X。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优势做了深入的介绍。虽然BeOS已经停止了开发，但是很多忠诚爱好者还是不愿放弃，其中一批人在2001年开始了旨在重现BeOS的Haiku OS([英文主页](http://haiku-os.org/))开源项目，目前Haiku处于Beta测试阶段。自从两年前发现了Haiku，我也成了她的忠诚粉丝。这篇文章虽然成于2001年，但是现在读来依然有趣，也非常有助于对Haiku OS的了解，特地翻译出来，希望大家喜欢。   
 categories: [Haiku OS]  
 tags: [Haiku OS]  
 published: true  
@@ -11,9 +11,10 @@ published: true
 
 {{page.summary}}
 
-(<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">本文英文版PDF下载</a>)
 
-_【译文正文】_
+[译者Don Liu注：由于译者本人并没有苹果电脑的使用经历且英文水平有限，其中难免有疏漏之处，请不吝指出。Email: dongliucn@gmail.com]
+
+_【译文正文】_(<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">本文英文版PDF下载</a>)
 
 
 ## 一个BeOS难民的故事 / Tales of a BeOS Refugee
@@ -90,202 +91,68 @@ form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用
 
 ### 第一印象 / First Impressions
 
-从盒子中取出苹果PowerBook G4跟打开x86机器时可不一样。泡沫板的波浪曲线包裹着机器柔和的圆角, 即使印刷材料看起来都很诱人。你只要在USB键盘上按一个键就能打开光驱，还有按键可以控制内置的Harmon-Kardon扬声器(它的声音比起其他的内置扬声器好太多了)。按下音量控制键，桌面会有个精致的图标显示出来，然后就慢慢隐去。 Brushing your hand over the glowing dot  on 
-an Apple Studio or Cinema display brings up the OS's display preferences
- panel. The power button on the monitor doesn't just turn off the 
-display  --  it puts the machine to sleep with a single wave of the 
-hand.
+从盒子中取出苹果PowerBook G4跟打开x86机器时可不一样。泡沫板的波浪曲线包裹着机器柔和的圆角, 即使印刷材料看起来都很诱人。你只要在USB键盘上按一个键就能打开光驱，还有按键可以控制内置的Harmon-Kardon扬声器(它的声音比起其他的内置扬声器好太多了)。按下音量控制键，桌面会有个精致的图标显示出来，然后就慢慢隐去。 手指划过苹果电脑显示器（Apple Cinema display）的小光点，屏幕上就会出现显示设置面板。显示器上的电源按钮不只是用来关掉显示器，还能通过挥手的手势让机器进入睡眠模式。
 
-Hardware aside, it is difficult to describe how visually beautiful OS X 
-is. Screen shots don't do it justice. Much has been said about animated 
-elements in OS X  --  dialogs that slide into position, the "genie" 
-effect upon window minimization, the poof of smoke that appears as you 
-drag an item out of the Dock, etc. But the important point about these 
-animations is that they aren't just eye candy. Each of them is a 
-carefully designed quantum of feedback. The OS is informing you 
-non-verbally where something has gone or what needs to be done next. 
-These UI cues are clear enough to speak for themselves, but unobtrusive 
-enough not to annoy power users.
+硬件之外，很难描述OS X系统界面在视觉上是如何的美。屏幕截图并不能完全表现出这点来。前面已经描述了很多OS X的动画效果--滑入位置的对话框，精灵般的窗口最小化效果，从Dock拖走图标时的幻影，等等。但更重要的是这些动画效果不只是为了吸引眼球，它们还是精心设计的操作反馈，系统通过这个反馈提示用户某物消失或下一步需要做什么。这些动画小提示足以表达含义，又不会干扰到高级用户。
 
-Visually, OS X is stunning. Not just in the unusual "lickable" 
-appearance of the Aqua UI (which I don't mind at all, though I know 
-others do), but in unexpected areas. Because the Quartz display engine 
-is vector-based, it's possible to do things like providing sliders that 
-adjust the size of the photo-quality icons from miniscule to immense 
-with no dithering.
+在视觉上，OS X是惊人的。这并不只体现在它直接表现出来的不寻常的浅绿色界面（我对此并不介意，但我知道有人不喜欢这个），还体现在其他方面。由于显示引擎是基于矢量的，因而可以根据界面的大小调整图标大小，而不会引起图像失真。
 
-I have mixed feelings about all the transparency in the OS. On one hand,
- it's novel and attractive, and is sometimes genuinely useful. For 
-example, it's great to be able to see what iTunes is currently playing 
-even when it's behind another window. And thanks to <a href="http://www.versiontracker.com/moreinfo.fcgi?id=11967&amp;db=mac" target="_blank">Tinker Tool</a>,
- I've got a partially transparent Terminal window as well, so I can work
- at the command line and see what's going on in the Finder at the same 
-time. 
+我对系统的透明特性有着复杂的感觉。一方面，它新颖，有吸引力，有时的确有用。例如，能在另一个窗口下看到iTunes目前正在播放的歌曲就很好。感谢Tinker这个工具，使终端窗口部分透明，这样我就可以在使用命令行窗口的时候还能同时看到下面的Finder窗口的变化。
 
 <div align="center">
 <img src="/images/TalesBeOS-transparency.jpg" alt="transparency" height="212" width="633">
 </div>
-<i>Transparency effects in OS X are pretty pervasive, and are a weird 
-mix between useful and annoying. On occassion it can be useful to be 
-able to read a URL or other snippet of data behind an app at the front. 
-But overall, the purpose of transparency seems to be mostly limited to 
-looking cool. Which is fine by me.</i>
+<i>透明效果在OS X系统中相当普遍，有时候很方便，有时候又会带来干扰，感觉很纠结呀。比如，在读到下层窗口的一个网络地址或一段数据时候会很有用。但总体来说，透明效果的目的只是为了摆酷，这对我来说还行。</i>
+
+另一方面（这实际上是由一个苹果工程师指出的），在印刷行业人们花了很多钱研究让纸张不透明，这样相邻页的文字就不会透过纸张互相干扰，而OS X花费宝贵的CPU周期来达到相反的效果。透明度有时让事情看起来很杂乱，难以阅读。
+
+可惜的是，OS X的界面目前是不可定制的。BeOS却能让你在BeOS, Windows, AmigaOS, and Mac OS9等不同窗口外观之间切换。提供这么多的窗口皮肤，多大的勇气啊！（What about the guts?）
 
 
-On the other hand (and this was actually pointed out by an Apple 
-engineer), people in the print industry pay good money for paper opaque 
-enough not to let other pages show through, while OS X spends valuable 
-CPU cycles to enable the opposite effect. Transparency can sometimes 
-make things look cluttered and hard to read.
+### 网络的重生 / Networking Nirvana
 
-Unfortunately, OS X's UI is currently not customizable. BeOS does let 
-you switch between the appearances of BeOS, Windows, AmigaOS, and Mac OS
- 9, but that's about it. So much for window dressing. What about the 
-guts?
+网络和多用户功能关系相近，所以在这里一起讨论。
 
+BeOS一个失败的可能原因就是他们没有实现多用户功能。Be的文件系统有支持多用户的能力，应用可以实现这些，但系统级别的执行权限的限制却很少，也没有任何用户界面来管理用户。BeOS符合POSIX标准，并包括一个bash shell，但她本质上并不是一个Unix。而OS X则是一个真正的Unix(尽管可能有人对什么是真正的Unix有异议)【译者注：OS X的内核来源于Unix-BSD】。 苹果系统内建了漂亮的界面来管理用户，进行用户权限控制。但是目前却没有与用户管理相对应的组管理。我可以很方便的为朋友或家人建立桌面账号和SSH登陆账号。
 
-<h3>Networking Nirvana</h3>
+说到SSH和网络，我只需点击网络设置的一个按钮来运行一个安全壳守护进程，而不像BeOS那样不安全的telnet远程登录。远程管理我的OS X系统在开机后分分钟内就能实现。同样，每个OS X系统内都内置有Apache Web服务器，默认配置下<a href="http://oreillynet.com/pub/a/mac/2001/12/07/apache.html" target="_blank">[OS X的apache配置，英文]</a> 就能为公共root文件夹和<tt>~/Sites/</tt>文件夹下的页面服务. 
 
+苹果正在或将很快成为世界上最大的UNIX系统供应商。创建一个用户友好的UNIX，几十年来一直作为最高目标，当然是很多Linux开发人员的目标。事实上，苹果（也包括Be公司）成功地给那些需要的人提供UNIX的强大功能，而不会让一般用户具有我之前说的那样的感受——开源的产品很难有好的用户体验。创造一个良好的用户体验，要求为项目工作的每个人都有一致的观点——而开源社区很难达到这点。在当年我为BeOS写作的时候，我就一遍又一遍地指出这一点，现在苹果的新经历再次证明了它的正确。Be和苹果用了很少的开发人员就提供了UNIX shell的强大功能，同时又拥有良好的用户体验，这比开源社区引入X11窗口管理器要早多年。
 
-Networking and multi-user capabilities go hand-in-hand, so I'll discuss them together here.
+为一般的消费者提供UNIX的力量，就在一定程度上应该知道如何将用户体验与具体实现细节分开。例如，如果你希望使用Apache默认设置之外的高级配置，你应该知道如何找到并编辑<tt>/etc/httpd/httpd.conf</tt>。因为<tt>/etc</tt>在默认情况下对Finder是隐藏的，并且需要管理员密码权限来编辑,因而对普通用户是安全的。而这些普通用户可以从一个世界级的网络服务器上提交页面，而不用打开终端或输入一行命令。多棒！
 
-One of Be's failings was that they never completed a multi-user 
-implementation. The Be file system had multi-user capabilities and apps 
-could be constructed to respect these, but there was little OS-level 
-enforcement of permissions, nor was there any UI to administer users. 
-BeOS is POSIX-compliant and includes a bash shell, but it's not genuine 
-Unix. OS X, on the other hand, is Unix (though some will surely argue 
-about what makes something "true" Unix). And Apple has built in a fine 
-interface for adding and deleting users, with all the security controls 
-which follow from that. However, there is currently no group management 
-console to accompany the user manager. I was able to set up desktop 
-accounts and SSH login shells for friends and family with zero fuss.
+更棒的是，PHP预装并配置好了，可以直接与Apache工作, 而MySQL按照简单明了的安装说明就能下载. 相反，BeOS的内核缺少<tt>mmap()</tt>意味着她仍然不能安装MySQL。苹果还包括一个内置的FTP服务器，可以工作在用户目录，还可以载入Samba，AFP和WebDAV共享。Be内置的FTP服务器只是单用户登录，并可以访问整个文件系统。在BeOS，SMB（Server Message Block，服务消息块，协议名）勉强能用。
 
-Speaking of SSH and networking, I only had to click a single button in 
-the network prefs to be running a secure shell daemon, rather than the 
-insecure telnet offered by BeOS. Remote administration of my OS X box 
-was possible minutes after booting. Similarly, the Apache web server is 
-built into every copy of OS X, <a href="http://oreillynet.com/pub/a/mac/2001/12/07/apache.html" target="_blank">pre-configured</a> to serve pages both from a common root directory and from <tt>~/Sites/</tt> folders. 
-
-It's been pointed out that Apple is now, or will soon be the world's 
-largest vendor of Unix systems. Creating a user-friendly Unix has been 
-something of a holy grail for decades, and is of course the goal of many
- Linux developers. The fact that Apple (and, to a lesser extent, Be) 
-succeeded in providing the power of Unix to those who want it while not 
-requiring the average user ever to think about it is an example of what I
- was saying earlier  --  that good user experiences don't tend to flow 
-easily from the open source development model. Creating a good user 
-experience requires that everyone working on a project be on the same 
-page  --  something that is decidedly not the case in the open source 
-community. I made this point again and again through the years I was 
-writing about BeOS, and the new Apple experience underlines its truth. 
-Be and Apple have been able to create good user experiences alongside 
-the Unix shell with far fewer developers and years than the open source 
-community has put into the various X11 window managers.
-
-Providing the power of Unix to general consumers carries with it a 
-certain level of responsibility to know how and where to separate 
-userland shine from the grimy nuts and bolts. For example, if you want 
-to further configure the Apache defaults, you need to know how to find 
-and edit <tt>/etc/httpd/httpd.conf</tt>. Because <tt>/etc</tt> is hidden
- from the Finder by default and requires an admin password to edit, it's
- safe from non-savvy users. On the other hand, those same users can dish
- up pages from a world-class web server without ever opening a Terminal 
-window or tweaking a single Apache directive. Seamless.
-
-It gets better. PHP was pre-installed and configured to work with 
-Apache, and MySQL was a simple download with clear, fail-safe 
-installation instructions. In contrast, the lack of <tt>mmap()</tt> in 
-the BeOS kernel means that it's still not possible to install MySQL for 
-BeOS. Apple also includes a built-in FTP server configured to work with 
-user directories, as well as the ability to mount Samba, AFP, and WebDAV
- shares. Be's built-in FTP server accomodates only a single login, and 
-gives access to the entire filesystem. SMB connectivity in BeOS is a 
-spotty affair at best. 
-
-While OS X's networking is already more advanced than Be's ever was, 
-it's not yet perfect, and more advanced users have run into some 
-problems. Irfon-Kim Ahmad offers these notes:
+OS X的网络已经比以前的Be更先进。虽然它的仍不完善，高级用户会遇到一些问题。Irfon-Kim Ahmad提供了这些笔记：
 
 <blockquote>
- If running Apache and SSH servers is a top priority, it's excellent. If
- you want to connect up to your workplace's VPN as a client, however, go
- find a Windows box.  There are some pptp tools, but little by way of 
-documentation, and I haven't been able to actually get any of them 
-working yet (although I've just started trying recently).  Many people 
-I've spoken with have had troubles with their passwords to their 
-wireless networks being spontaneously 'forgotten' on a regular basis by 
-Keychain, although I haven't had that problem since I reinstalled the 
-OS.  One MAJOR minus to OS X that I only discovered this weekend that 
-pertains to networking: If all of your DNS servers are down, you might 
-as well forget it -- OS X will take 10+ minutes to boot, and then act 
-flaky. That's probably a fairly easy to bug to correct though.
+ 如果主要用（OS X）作Apache和SSH服务器，就很好。但是你若想用塔连接你工作室的VPN，还是用windows吧。尽管（OS X）有一些pptp工具，但是相应文档很少，我也从没成功运行过它们。 许多人都跟我谈到他们遇到过无线网络的密码不能一直保存，会定期的‘被遗忘’，我自从重装系统后还没遇到这样的问题。不过我发现OS X的一个主要减分项也是关于网络的：如果所有的DNS服务器断了之后，你可能会忘了它，而OS X则需要10多分钟才能开机，并且会出现各种怪状。这可能只是一个很容易纠正的小错误。
 </blockquote>
  
-Overall, the foundation for world-class networking is present in OS X. 
-It's secure, it's stable, it's Unix... but it's not finished. If we were
- comparing to Linux networking, Linux would win. But in comparison to 
-BeOS, OS X takes this round hands-down. However, there's no reason to 
-think that in the future OS X won't become fully competitive with 
-Linux/BSD as a world-class server OS as well. For now, people who want 
-to run an ISP from a Mac should choose OS X Server. 
+总的来说，OS X中网络功能大体上式世界级水平的。它是安全、稳定的，跟UNIX一样…只是它还没有完成。如果我们把它与Linux网络相比较，Linux会赢。但是若与BeOS比较，OS X就成了赢家。然而，没有理由认为在未来OS X不能成为Linux和BSD那样世界级的服务器操作系统。现在，那些想在Mac上运行ISP（Internet service provider，网络服务提供商），则需要选择MAC OS X的服务器版本。
 
-<h3>CD Burning, Disk Images</h3>
+<h3>CD刻录与磁盘镜像 / CD Burning, Disk Images</h3>
 
-Everywhere I look in OS X, smooth integration is the operative phrase. 
-One of the smoothest examples of this is in CD burning. Stick in a blank
- CD and OS X asks if you want to make an ISO, HFS+, or audio CD. If you 
-choose ISO or HFS+, the disc mounts on the desktop. Drag what you want 
-onto the volume, then drag it toward the Trash. As soon as you begin to 
-drag, the Trash icon turns into a burn icon (thus mitigating the old 
-complaint that it makes no sense to trash a volume you wish to eject). 
-Click burn, let it rip, and it's done. No 3rd-party software required. 
+仔细观察OS X系统的任何地方，你只会想到‘融合、统一’这个描述。以CD刻录为例，插入一张空白CD，OS X会问你是想让制作一个ISO，HFS +，还是音频CD。如果你选择ISO或HFS+，光盘会加载到桌面，只要把你想要刻录的东西拖到里面，然后将它拖到垃圾桶。一旦你开始拖，垃圾桶图标变成一个刻录图标（人们常抱怨将希望刻录的光盘拖到垃圾桶让人费解）。点击刻录，等等吧，剩下的工作由系统搞定，无需第三方软件。 
 
 
-If you want to make an audio CD, iTunes is launched automatically. Drag 
-stuff from your music library onto a playlist entry, click Burn, and 
-that's it. Again, no 3rd-party software required. No ambiguity, no 
-wrestling, no coasters. While Be's CDBurner application shares pretty 
-much the same ease of use when creating audio CDs, burning data CDs in 
-BeOS was never a particularly elegant affair. And I never succeeded in 
-making anything but coasters in Linux, either with the GUI tools bundled
- in Mandrake or with the command line <tt>cdrecord</tt>, use of which I had already mastered in BeOS. In OS X, this stuff "just works." 
+如果你刻录一个音频CD，iTunes会自动启动。将要刻录的音乐从你的音乐库拖动到一个播放列表，点击刻录，就行了。再次强调，无需第三方软件。没有歧义的，没有折磨，没有意外发生。虽然Be的cd刻录程序在刻录音乐的时候也有很多相同的易于使用的特点，刻录数据CD一直都不那么好用。而在Linux上，无论是用Mandrake发行版自带图形界面工具，还是命令行的<tt>cdrecord</tt>，我从来没有成功过，就像过山车一样，会有各种惊险发生。对于命令行，我在BeOS下就已经掌握了. 在OS X中, 这些事就是"小菜一碟" 。
 
-In BeOS, I had learned to <a href="http://www.betips.net/chunga.php?ID=317" target="_blank">create disk images</a> with <tt>dd</tt>, <tt>mkisofs</tt> and <tt>mkfbs</tt>,
- and to mount them in the Tracker. The process was useful in some 
-instances, but far from painless. With OS X, Apple has 
-"institutionalized" the use of disk images. Many OS X software downloads
- are <tt>.dmg</tt> files; opening one causes it to be check-summed and 
-mounted in the Finder. It's an  elegant way for developers to distribute
- software, and for users to create backups of disk volumes, including 
-CDs they own. By masking the complexities of disk image creation, 
-mounting, and unmounting, Apple's DiskCopy utility makes it easy to 
-generate bit-perfect copies of hard drives, data CDs, and audio CDs 
-(regardless of file system). 
-
+在BeOS中, 我学会了用<tt>dd</tt>、<tt>mkisofs</tt>和<tt>mkfbs</tt>等命令<a href="http://betips.net/1997/09/09/burning-cds-with-beos/" target="_blank">刻录CD</a>，并加载到Tracker。这个过程一般情况都顺利，但也不是没有任何问题。而在OS X下， 苹果有自己的一套处理磁盘镜像的习惯。许多OS X下的软件下载下来是<tt>.dmg</tt>文件，打开它就能检查索引，并被加入Finder检索中。这对开发者来说是一种优雅方便的发布软件的方法，也便于用户创建磁盘和CD备份。隐藏了创建磁盘镜像以及加载、卸载的复杂性，苹果的DiskCopy工具就能完美的创建硬盘、数据CD、音乐CD的拷贝，而不用考虑文件系统。
 
 <div align="center">
 <img src="/images/TalesBeOS-diskimage.jpg" alt="diskimage" height="256" width="378">
 </div>
-<i>A lot of OS X software is distributed as mountable disk images - 
-double-click and a new virtual volume mounts on the desktop / in the 
-Finder. Gotta love  those (optional) giant icons... </i>
-
+<i>许多OS X软件都是可加载磁盘镜像格式发行的 - 双击它就能通过虚拟光驱加载到桌面和Finder检索，爱死这些大图标了... </i>
 
 <br>
 
 <div align="center">
 <img src="/images/TalesBeOS-newimage.gif" alt="newimage" height="150" width="322">
 </div>
-<i>The built-in DiskCopy utility makes it embarrassingly simple to 
-create disk images from file collections or devices such as CD-ROM 
-drives. DiskCopy puts Linux/BeOS' "dd" command to shame.  </i>
+<i>自带的DiskCopy工具使得从文件或光盘创建磁盘镜像极其简单。DiskCopy让Linux/BeOS的"dd"命令相形见绌</i>
 
-
-One inconsistency worth noting: To burn a data CD, you drag the volume 
-toward the Trash. To burn an audio CD, you don't. The reason is that 
-iTunes doesn't show the mounted volume. Instead, you simply make 
-playlists and burn them. A minor quibble.
+一个不协调的缺点就是：刻录数据CD，需要将镜像拖到垃圾桶图标。而刻录音乐CD，就不需要。原因是iTunes不显示加载的镜像。而是直接在播放列表里刻录。一点小瑕疵。
 
 
 <h3>PDF Everywhere</h3>
