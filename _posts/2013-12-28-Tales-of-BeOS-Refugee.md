@@ -1,7 +1,7 @@
 ---
 layout: post 
 title: 2001：一个BeOS难民的故事(译文)(进行中...) 
-summary: 本文译自[Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/) - Scot Hacker。原作者Scot Hacker是[BeOS Bible](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在2001年[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统停止开发之后，无奈尝试转向其他操作系统，经历一番试用比较，最终转到MAC OS X。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优势做了深入的介绍。虽然BeOS已经停止了开发，但是很多忠诚爱好者还是不愿放弃，其中一批人在2001年开始了旨在重现BeOS的Haiku OS([英文主页](http://haiku-os.org/))开源项目，目前Haiku处于Beta测试阶段。自从两年前发现了Haiku，我也成了她的忠诚粉丝。这篇文章虽然成于2001年，但是现在读来依然有趣，也非常有助于对Haiku OS的了解，特地翻译出来，希望大家喜欢。   
+summary: 本文译自[Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/) - Scot Hacker。原作者Scot Hacker是[BeOS Bible](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在2001年[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统停止开发之后，无奈尝试转向其他操作系统，经历一番试用比较，最终转到MAC OS X。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优势做了深入的介绍。虽然BeOS已经停止了开发，但是很多忠诚爱好者还是不愿放弃，其中一批人在2001年开始了旨在重现BeOS的Haiku OS([英文主页](http://haiku-os.org/))开源项目，目前Haiku处于Beta测试阶段，在重现BeOS的同时也做了大量的改进。自从两年前发现了Haiku，我也成了她的忠诚粉丝。这篇文章虽然成于2001年，但是现在读来依然有趣，也非常有助于对Haiku OS的了解，特地翻译出来，希望大家喜欢。   
 categories: [Haiku OS]  
 tags: [Haiku OS]  
 published: true  
@@ -155,162 +155,54 @@ OS X的网络已经比以前的Be更先进。虽然它的仍不完善，高级�
 一个不协调的缺点就是：刻录数据CD，需要将镜像拖到垃圾桶图标。而刻录音乐CD，就不需要。原因是iTunes不显示加载的镜像。而是直接在播放列表里刻录。一点小瑕疵。
 
 
-<h3>PDF Everywhere</h3>
+<h3>到处都是PDF / PDF Everywhere</h3>
 
 
-One of the more interesting innovations in OS X is the fact that PDF 
-technology is pervasive in the operating system -- the Quartz display 
-engine is built on top of Display PostScript, as was NeXTStep's. This 
-means it's possible to output from any application that can print 
-directly to PDF. Select Print, then click Preview. The document is 
-rendered to PDF and displayed in the built-in Preview application. Do a 
-Save As... and you've got your PDF. No need to purchase or install 
-Acrobat, and no need for 3rd party software to integrate with particular
- applications. It's just there. Very nice.
+OS X的一个有趣的创新就是PDF技术在系统中得到了广泛的应用--石英显示引擎（Quartz display engine）建立在PDF的页面描述语言PostScript之上，这和NeXTStep上是一样的。这意味着任何程序都可以直接打印输出到PDF。选择打印，再点击预览（Preview），文本就转换为PDF，并显示在内置的预览程序中，另存就可以得到PDF文件了。不用再购买、安装Acrobat或者第三方软件。就这么简单，棒极了！
 
-The <a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">printable version</a> of this document was created with this technique.
+本文的<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">英文PDF版本</a>就是用这个方法得到的。
 
 
+<h2>应用软件 / Applications</h2>
 
-<h2>Applications</h2>
+我曾经听到某些‘专家’说OS X仍然缺少应用软件。的确，Photoshop还没有从OS 9升级到OS X新界面，但是有许多软件在发行的第一年就会发布它的OS X版本。而BeOS则软件很少，我们这些BeOS用户已经习惯了请求软件发行者发布BeOS版本，任何小的软件都让我们感激。实际上还未升级到新界面的程序在OS 9经典模式*下都能很好运行。我没有老的Mac软件，所以不需要在经典模式下花费太多时间。偶尔使用，也很顺利（除了这些经典模式下的程序不能使用Samba共享，我的大量图像和文件都是采用的这个方式保存的）。
 
-I've heard pundits say that OS X still suffers from a lack of apps. 
-While it's true that Photoshop still had not been Carbon/Cocoa-ized, far
- more  --  and more mature  --  applications have been released for OS X
- in its first year of existence than appeared in the seven or so years 
-since BeOS was released. Like I said, we BeOS users are accustomed to 
-begging for software crumbs, grateful for anything that dribbles our 
-way. What looks to some like a dearth of apps appears to me as a great 
-wealth of code. And virtually anything that hasn't yet been Carbonized 
-runs fine in Classic mode*. Since I don't own a pile of old Mac 
-software, I don't spend much time in Classic mode. When I do, it works 
-just fine (except for the annoying fact that Classic apps can't open 
-files residing on Samba shares, where I keep most of my images and 
-documents).
-
-
-* At least the Classic apps I've tried. Others have complained that a 
-variety of audio applications and games in particular give Classic mode 
-fits. However, Apple has just released an update to OS 9 designed to 
-improved Classic mode compatibility.
+* 我试用的经典模式下的程序有限。有人抱怨说各种音频软件和游戏在经典模式下兼容性不好。苹果刚刚发布了一个OS 9的更新来提高经典模式下的兼容性。
 
 <blockquote>
-Most of this applications section isn't really about operating systems, 
-but about the apps available for the operating systems, so you might 
-want to skip it if you're just looking for the OS comparisons. However, I
- believe that the applications landscape  is an integral part of the 
-total OS experience, so included it here.
+下面的大部分软件都不是关于操作系统的，只是操作系统提供的一些软件，你可以跳过去看接下来的操作系统比较。但是我觉得这些程序是操作系统及操作体验的一部分，还是应该包含进来。
 </blockquote>
 
-<h3>iTunes</h3>
+<h3>音乐播放器 / iTunes</h3>
 
-There are still a few areas where BeOS surpasses other OSes in general 
-usefulness, and audio file creation, storage, and playback is one of 
-them. The combination of the database-like file system (BFS), Be's 
-extremely efficient media handling capabilities, and the exceptionally 
-flexible <a href="http://www.bebits.com/app/156" target="_blank">SoundPlay</a>
- make for an unbeatable combination. As an MP3 addict, I soon went 
-hunting for MP3 functionality to match Be's. In BeOS, arbitrary arrays 
-of meta-data can be associated with files or file types and stored as 
-"attributes." These attributes can be sifted and sorted through in the 
-Tracker, or queried for through the Find panel. Because attributes are 
-indexed automatically, search results are instantaneous, regardless the 
-amount of data to be searched. In essence, the file system itself serves
- as a database. 
+BeOS在某些方面还是要超过其他系统的，比如总体易用性，音频文件的创建、存储与播放。结合数据库式的文件系统——BFS（Be File System），Be操作系统处理多媒体文件及其高效，比如音频播放软件<a href="http://www.bebits.com/app/156" target="_blank">SoundPlay</a>与系统融合的很好，使用又非常灵活。作为对MP3音乐的爱好者，我马上就在OS X上寻找能达到Be系统里那样功能的MP3播放器。在BeOS中，任意的元数据（meta-data，属性标签）都可以与文件或某类型文件结合起来，并保存为属性（attributes）。这些属性可以在文件浏览器中进行筛选、排序和查询。因为属性是系统自动索引的，所以查询结果瞬间可得，不管查询的数据量有多大。在本质上，Be的文件系统就是一个数据库。
 
 <blockquote>
-Side note: Microsoft is in the early stages of moving to a model where 
-all of their applications and the operating system itself will sit <a href="http://www.idg.net/crd_idgsearch_0.html?url=http%3A%2F%2Fwww%2Einfoworld%2Ecom%2Farticles%2Fhn%2Fxml%2F01%2F12%2F05%2F011205hndatastore%2Exml&amp;sc" target="_blank">on top of a common data store</a>,
- based on SQL Server. If they're able to pull it off, this will be one 
-of the more significant changes to the  Windows product line in 
-Microsoft history.
+注：微软还处于将所有的应用程序和操作系统本身置于一个基于SQL Server的共同的数据存储之上的早期阶段。如果他们能够成功，这将是微软历史上Windows产品线的一个重大变化。
 </blockquote>
 
-Building an OS around a virtual database has implications for userland 
-functionality throughout the OS, and MP3 storage is just one example 
-(more later). MP3 encoding tools for BeOS store meta-data not just in 
-ID3 tags, but in the file system itself, and this meant I was able to 
-create customized playlists unlike anything possible in Windows or Linux
- (without being locked into the use of tertiary tools). For example, 
-creating a playlist of all tracks written between 1978 and 1984 in the 
-genres country or punk was a piece of cake in BeOS. 
-
-
+在一个虚拟数据库之上建立一个操作系统会对整个操作系统的功能产生影响，MP3的存储就是一个例子。BeOS的MP3编码工具存储元数据，不只是存储在ID3标签中，还保存于文件系统中。这就意味着我们能够创建自定义的播放列表，而不像Windows或Linux那样需要借助第三方工具。例如，在BeOS中创建一个播放列表，包括1978-1984年之间的所有乡村或朋克类型的歌曲，那就是小菜一碟。
 
 <div align="center">
 <img src="/images/TalesBeOS-id3attrs.gif" alt="id3attrs" height="274" width="682">
 </div>
-<i>A Tracker view of MP3 files, with multiple attributes showing and the
- actual filenames hidden. Notice how much data is displayed in the 
-Tracker simultaneously. Even if the OS X Finder did support meta-data, 
-it wouldn't be able to pack this much data into a viewable space without
- using a smaller font. But since Tinker Tool does let you change the 
-Finder font, we can probably expect to see that enabled by Apple  in a 
-future version of OS X.</i>
+<i>文件浏览器Tracker中的MP3文件列表，包含了多种属性，而隐藏了实际文件名。注意浏览器同时显示了多少属性信息。尽管OS X的查询工具Finder也支持元数据，但是它也无法在视图内显示这么多的数据，除非缩小字体。既然Tinker工具可以改变Finder的字体，那么我们或许可以期待未来的OS X在这方面做出改进。</i>
 
-
-
-
-
-My collection is meticulously ID3 tagged, but I had resigned myself to 
-the fact that I was going to sacrifice having these custom playlists in 
-OS X. But as I expanded the iTunes window and enabled more of the ID3 
-columns, I realized I could sort through the collection by pretty much 
-any criteria. The small search window at the top of the app looked too 
-innocent to be powerful, but I soon realized it was capable of finding 
-strings in any ID3 field. Drag the search results into a new playlist, 
-and I had replicated the BFS database functionality, without the 
-assistance of attributes. While these large-collection searches on 
-arbitrary criteria are no faster in iTunes than they are in BFS (both 
-are essentially immediate), iTunes wins because everything happens 
-within a single interface.
-
+我收藏的mp3音乐文件包含了详细的ID3标签，但是我在OS X中不得不顺从地接受事实，牺牲我那些自定义的播放列表。为了能显示更多的ID3列，我放大了iTunes窗口。我意识到可以用很多规则整理我的音乐文件。应用程序顶部的小的搜索窗口看起来不怎么样，可我很快意识到它能在任何ID3标签字段找到字符串。将搜索结果拖到一个新的播放列表，我就可以重现BFS的数据库功能，而无需属性功能。虽然在iTunes中，这些大量的，按任意规则的搜索不比直接在BFS文件系统下更快，但都是很快就能完成。在OS X下，因为一切都发生在iTunes这样单一的窗口内，反而会更好。
 
 <div align="center">
 <a href="http://www.birdhouse.org/beos/refugee/itunes.gif" target="_blank"><img src="/images/TalesBeOS-itunes.jpg" alt="itunes" border="0" height="304" width="500"></a>
 </div>
-<i>iTunes lets me store and query on the same array of metadata that 
-BeOS does, except that BeOS does it without locking me into a single 
-playback application (and one provided by the OS vendor at that). 
-Unfortunately, I can't see this same meta-data in the Finder, as I can 
-in BeOS, and I can't query for it from Sherlock, like I can in BeOS. But
- I gotta admit, the iTunes playlist manager is genuinely useful, and 
-reasonably attractive. iTunes skins would be nice. Click for larger 
-image.</i>
+<i>iTunes可以实现跟BeOS一样的元数据的存储和查询，只是BeOS限定在一个由操作系统供应商提供单一播放软件中。不幸的是，我无法在Finder中看到相同的元数据，而我在BeOS下就可以；我不能从Sherlock中查询，而BeOS下就可以。但我得承认，iTunes播放列表管理真的很好用，很有吸引力。此外，iTunes的皮肤更棒。</i>
+
+iTunes给我的另一个惊喜是，有一天我用一个批处理工具批量修改mp3文件的名字。我以为修改后所有的文件名称都改变了，需要重新建立播放列表。但是，当操作完之后，我惊讶的发现，所有的播放列表仍然完好。这是符号链接的魔力，它在对象移动时还能保持链接。这样的功能在老的Mac用户看来是理所当然的，但对我传统的x86思维却是极大的震撼。
+
+我对iTunes的一大抱怨就是缺少插件。目前，我见到的唯一的插件是可视化工具（visualizers）。用起来不错，但是谁在乎呢？我希望的是一些真正有用的插件，就像WinAmp或者BeOS的SoundPlay的那种插件。最近，我花了一晚上时间，尝试了能在<a href="http://www.versiontracker.com/" target="_blank">VersionTracker</a>找到的各种MP3播放器。我所需要的就是在某个指定端口广播前降低采样频率。可我还是空手而归。而用BeOS的SoundPlay实现同样的功能就很容易——启用LiveEncoder插件，指定使用的位率（比特率）、采样频率以及广播端口就好了。这样你在SoundPlay播放的音乐也会同时广播到网络。BeOS还有各种工具来控制你的MP3收藏，即使是远程的，比如搜索、随机播放，远程建立播放列表等等。我不知道iTunes的插件是否有这些功能，还是因为某些原因开发者没有实现，可插件目录却是开放的，很怪。
+
+OS X的强项是它的iTunes有非常棒的播放列表管理，而BeOS则是任何关于MP3的创建、保存、远程控制、立体声接口等等。
 
 
-Another pleasant iTunes surprise came the day I used a batch tool to 
-rename thousands of MP3s at once. I expected that I would have to 
-rebuild all my iTunes playlists afterwards, since I expected all the 
-filename references to be broken. But when the operation was complete, I
- was amazed to discover all my playlists perfectly intact. Ah, the magic
- of symlinks (aliases) that don't break when the target is moved  --  a 
-luxury that old-time Mac users probably take for granted, but which 
-fairly blew my crusty, bigoted x86 mind.
-
-My one big complaint with iTunes is the lack of available plug-ins for 
-it. So far, the only iTunes plug-ins I've seen are visualizers. Fun, but
- who cares?  What I'd like to see are some of the really useful plug-ins
- you see for WinAmp, or for BeOS' SoundPlay. Recently I spent an evening
- trying every MP3 streamer I could find on <a href="http://www.versiontracker.com/" target="_blank">VersionTracker</a>.
- All I wanted was something capable of down-sampling audio before 
-broadcasting it out over a specified port. I came up empty-handed. On 
-the other hand, doing the same from SoundPlay in BeOS is cake - enable 
-the LiveEncoder plug-in, tell it what bitrate and sampling frequency to 
-use, which port to broadcast over, and you're done. Anything you're 
-currently playing in SoundPlay will also be broadcast over the internet.
- And there are a variety of BeOS tools you can use to control your MP3 
-collection remotely as well (e.g. search through, skip around in, build 
-playlists over the web...) I don't know if the iTunes plug-in doesn't 
-allow this, or whether it just hasn't occurred to developers for some 
-reason, but the category is oddly wide open.
-
-Point goes to OS X for iTunes' excellent playlist manager, and to BeOS 
-for just about everything else related to MP3 creation, storage, remote 
-control, stereo interface, etc.
-
-
-<h3>iMovie, iDVD</h3>
+<h3>视频播放 / iMovie, iDVD</h3>
 
 Since Apple wants to be taken seriously as the "digital hub" of your 
 life, it makes sense for them to include a basic movie making 
@@ -356,9 +248,6 @@ unseating Premiere in the NLE universe, the Mac is still the place to be
  for DV editing.
 
 Point goes to OS X, with caveats.
-
-
-
 
 
 <h3>Camera</h3>
@@ -443,7 +332,6 @@ downsave first).
 Point goes to OS X.
 <i>*Note: Productive 3 was just released for Windows, and the company 
 has announced plans to release a Linux version in the near future.</i>
-
 
 
 <h3>Browsers and E-Mail</h3>
@@ -564,10 +452,7 @@ BBEdit hasn't offered any real-world advantages over Pe. They're equally
 
 Point: love-love.
 
-
-
 <h3>X Compatibility</h3>
-
 
 For those wanting to run *nix applications both BeOS and OS X have the 
 ability to run an X server and client, and to run X applications. In OS 
@@ -586,10 +471,7 @@ categories, and so far I haven't found an app category not filled either
  by Carbon/Cocoa apps or by Classic mode. I'm happy to let XonX remain 
 the domain of people who keep one foot planted firmly in the *nix world.
  
-
-
 Point goes to OS X.
-
 
 <h3>Software Costs</h3>
 
@@ -610,8 +492,6 @@ Fortunately, the quality of the software I've  been digging up has been
 extremely high in general - independent Mac OS developers really seem to
  put a lot of care into their craft. In a way, software for Mac OS is 
 kind of like Apple hardware - you pay more, but you  also get more.
-
-
 
 <h2>Community</h2>
 
@@ -660,8 +540,6 @@ corresponding, and soon listed each other as "sister sites." I even
 helped Rob to edit his excellent <a href="http://homepage.mac.com/rgriff/osxguide2.html" target="_blank">OS X Power Guide</a>, which I highly recommed to anyone looking for ways to get more productive in OS X quickly.
 </blockquote>
 
-
-
 <h2>Happiness Quotient</h2>
 
 So. I'm using this OS that provides a great experience. Everywhere I 
@@ -677,9 +555,7 @@ until you can guarantee them a big userbase / chunk of change). I've got
 protection, all kinds of open source networking software, and a Unix 
 command line. 
 
-
 I know I'm not alone in finding OS X a happy campground for the despairing BeOS refugee. This LiveJournal <a href="http://www.livejournal.com/talkread.bml?itemid=13186510&amp;view=16922846#t16922846" target="_blank">comment</a> from Balatro mirrors my own experiences pretty accurately:
-
 
 <blockquote>
 I suffered with OS9 for a while, it was usable but crash prone. Then OS X
@@ -696,8 +572,6 @@ beautiful marriage of elegance and power.
 
 
 <h1>The Bad and The Ugly</h1>
-
-
 
 Overall, I'm happier than a pig in shit. What could I possibly find to complain about? 
 
@@ -871,10 +745,6 @@ install or learn any database software whatsoever. That site now runs on
 
 </ul>
 
-
-
-
-
 OS X's closest approximation is the pathetic <a href="http://www.Mac%20OS%20Xhints.com/article.php?story=2001103013060434" target="_blank">comments field</a>,
  which is a pain to use (hell, you can't even enter Comments directly 
 into the Finder), and which offers next to nothing in comparison to BFS 
@@ -888,7 +758,6 @@ compatibility with the world at large (download a file from the internet
  and its type can be gleaned from the HTTP header, without use of 
 extensions), and BeOS web servers don't need to maintain separate MIME 
 tables - each file's type is taken directly from the file system. 
-
 
 Attributes are used by StyledEdit to allow for rich formatting in plain 
 text documents, which are still viewable as plain text on other 
@@ -977,7 +846,6 @@ and third. In other words, Apple could not only match Be's level of
 flexibility, but could surpass it.
 
 
-
 The other part of the problem is that OS X offers no central file types 
 preferences panel. It needs one, badly. Without it, OS X will never be 
 able to depart from the cursed practice of respecting the Creator code, 
@@ -1013,8 +881,6 @@ when looking around, and why a friend had to point out to me that it was
 A central FileTypes panel would be more intuitive, more powerful, and 
 would give the user much more control over every aspect of file types 
 and bindings.
-
-
 
 <div align="center">
 <img src="/images/TalesBeOS-filetypes.jpg" alt="be_filetypes" border="0" height="406" width="570">
@@ -1178,10 +1044,6 @@ Finder which allowed functionality similar to that provided by BeOS
 Tracker add-ons. Having the functionality of the file manager be 
 essentially infinitely expandable is a powerful feature, and I'm looking
  forward to seeing that functionality restored in OS X.
-
-
-
-
 
 <i>* Sherlock has other advantages if you want to use it to search the 
 Internet, but I'm happy with the mighty Google, and get the impression 
