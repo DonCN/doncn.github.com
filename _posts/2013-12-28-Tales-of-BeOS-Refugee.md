@@ -204,90 +204,28 @@ OS X的强项是它的iTunes有非常棒的播放列表管理，而BeOS则是任
 
 <h3>视频播放 / iMovie, iDVD</h3>
 
-Since Apple wants to be taken seriously as the "digital hub" of your 
-life, it makes sense for them to include a basic movie making 
-application with every copy of the operating system. As I learned when I
- was working at <a href="http://www.adamation.com/" target="_blank">Adamation</a>,
- editing digital video is an inherently complex process, both from the 
-programmer's perspective and from the end user's perspective. At 
-Adamation, I spent a couple of weeks evaluating every non-linear editor I
- could get my hands on. When I say there isn't an NLE in the land that's
- as easy to learn and use as  iMovie, I speak from experience. Apple has
- gone to great lengths to remove as many of the confusing aspects as 
-possible from the video editing experience, while still allowing users 
-to create glitch-free, smoooth-running presentations.
+既然苹果希望成为用户生活的数字中心，那么她的操作系统中就应该包含基本的视频制作程序。当我在<a href="http://www.adamation.com/" target="_blank">Adamation</a>工作时了解到编辑数字视频无论从程序员角度还是用户角度都是一个很复杂的过程。在Adamation我曾经花了几周时间尝试各种非线性编辑器。经过尝试，我发现没有一种非线性编辑器像iMovie这样容易学习和使用。苹果已经尽力去除了很多视频编辑的让人困惑的体验，让用户可以无故障、流畅播放的视频。
 
-That doesn't mean iMovie is powerful, however. With one video and two 
-audio layers, a small handful of special effects, and very limited 
-editing possibilities, savvy users will bump  their  heads up against 
-its limitations very quickly (and be tempted  to spring for the $1,000 
-Final Cut Pro instead). Adamation's $29 personalStudio (once available 
-for BeOS, now only for Windows), handles 10 layers (any media type) in 
-real time, with no rendering, and far more power editing possibilities 
-and only a slightly steeper learning curve. In contrast to 
-personalStudio, I find iMovie unnecessarily limiting. But I'm still 
-impressed at it's clear, clean workflow and presentation. And it kicks 
-ass on the pathetic excuse for an NLE bundled with Windows ME and XP.
+但不能说iMovie功能强大，它只有一个视频和两个音频层和及其有限的编辑功能，精明的用户会很快发现这些局限，并转而使用1000美元的Final Cut Pro来替代。adamation的29美元的personalstudio（曾经可以用在BeOS上，现在只有windows版），可以实时处理10层任何类型的多媒体，没有渲染，只要一个稍微有点陡峭的学习曲线，就能获得强大的编辑功能。与personalstudio相反，我发现iMovie中有不必要的限制。但我仍然对它的清晰，干净的工作流和演示印象深刻。它可以轻松击败Windows ME和XP上的非线性编辑器。
 
-I've only begun to experiment with iDVD, but so far, its style and 
-presentation seem very much in keeping with iMovie - not super powerful,
- but very easy to create polished results in quickly. For the first 
-time, I'm hoping to create DVDs of small movies I've made for friends 
-and family this Christmas.
+我只是开始尝试iDVD，但到目前为止，它的风格和表现似乎与iMovie一致，都不是非常强大，但很容易快速创建漂亮的成果。我第一次产生了为朋友和家人制作圣诞DVD小电影的念头。
 
-As far as the platforms compare, this is exactly the kind of stuff BeOS 
-was designed for, and the very reason Adamation had the gall to try and 
-do 10 layers in real time with no rendering in the first place. Apple 
-has a lot to learn from what Adamation originally accomplished on BeOS, 
-and has now accomplished on Windows. But in practical terms, the Mac has
- always been a favored platform for DV editing and video production. 
-Since Adamation pulled out of BeOS, there are no NLEs available for the 
-platform at all. On the other hand, Final Cut Pro 3 has just been 
-announced for OS X. With FCP quickly becoming an industry standard and 
-unseating Premiere in the NLE universe, the Mac is still the place to be
- for DV editing.
+至于平台对比，这正是BeOS的设计目标，以及为什么Adamation试图实时处理10个层次而不渲染。苹果需要从Adamation当初在BeOS上，以及目前在windows上的工作中学习很多。在实际应用中，MAC一直是DV编辑和视频制作的不错的平台。由于Adamation离开了BeOS平台，这个平台完全没有可用的非线性编辑器。另一方面，Final Cut Pro 3（FCP）已经宣布发行OS X版本。随着FCP迅速成为行业标准，风行于非线性编辑器领域，MAC仍然是DV编辑的一个好选项。
 
-Point goes to OS X, with caveats.
+这次比较，OS X险胜。
 
 
 <h3>Camera</h3>
 
-A week before I got my Mac, I had spent some time migrating dear old Dad
- from BeOS to Windows 98. Until that point, he had the honor of being 
-the oldest, least technically savvy BeOS user on the planet. He loved 
-using BeOS. It never failed him, was 100% virus proof (only because 
-there are no known BeOS virii), and was as simple to use as the antique 
-Macintosh it had replaced. But he was tired of receiving attachments he 
-couldn't open and visiting web sites that didn't work in BeOS's 
-sub-standard browsers. 
+在我得到我的MAC前一周，我花了一些时间将老爸的电脑从BeOS转移到了Windows 98。在那之前，他应该就是地球上最老的熟悉BeOS的用户了。他爱用BeOS。它也从没让人失望，100%防病毒（因为没有已知的BeOS病毒），并且像古老的Macintosh一样简单易用。但他厌倦了收到邮件，却打不开附件，访问网站，BeOS的垃圾浏览器却无法工作。
 
-The migration itself was pretty painless until it came time to hook up 
-his digital still camera (serial). While BeOS' built-in Camera app had 
-functioned flawlessly, and <a href="http://www.bebits.com/app/1341" target="_blank">ImageGrinder</a>
- had let him batch-resize his images easily enough, the Windows software
- for the camera was ugly, arcane, and barely functional. I spent half a 
-day trying to find free alternative software that would do the trick. 
-The final solution was that he would boot into BeOS to capture and 
-resize his images, then copy them to his Win partition from there, 
-reboot into Windows, and do his printing and mailing. 
+这次系统更换开始很顺利，直到他的数码相机串口连接电脑时。这在BeOS上用内置的摄像程序可以完美运行，用ImageGrinder批量修改照片大小也相当容易。而Windows的对应程序就很难看、难用，几乎不能完成。我花了半天时间寻找免费的、可用的替代品。最后的解决方案是，他得 切换到BeOS上处理照片，然后复制到windows分区，再重启回到windows，接着打印和发邮件。
 
-With that headache fresh in mind, I was stoked to plug my camera into 
-the Mac and have a simple, friendly capture app pop up automatically. 
-The app even offered to make web pages out of the images as they were 
-being captured. Now I needed to do some batch-resizing. All of the OS X 
-shareware apps I found for the job were a bit too spendy and overkill. 
-Then I remembered I had seen <a href="http://www.apple.com/applescript/MacOSx/toolbar_scripts/" target="_blank">a section</a>
- of Apple's site hosting dozens of Finder-integrated AppleScripts. Sure 
-enough, I found one that could be embedded in the Finder toolbar. Drag a
- pile of images onto the icon, enter a Scale By % factor, and all my 
-images were resized in seconds. Again, no 3rd-party tools required. 
+开始遇到了这种让人头痛的问题，所以当我的相机接到MAC，有一个简单的，友好的应用窗口自动弹出，让我很吃惊。这个程序甚至提供用这些照片制作网页的选项。当我批量修改照片大小时，我发现OS X的软件强大到奢侈、功能过剩。这时，我记得我见到过苹果网站有很多集成在Finder的脚本。我找到了一个嵌入Finder工具栏的脚本，将一批照片拖到这个图标，输入一个百分数比例，所有的照片瞬间就可以改变大小。无需第三方软件。
 
-I've heard that Windows XP has much better camera support, and I 
-wouldn't be surprised if similar capabilities were now part of MS 
-Windows. But if I come across a secret stash of cash, I'm buying Dad an 
-OS X machine. 
+我听说Windows XP能更好的支持相机，若windows具有类似的能力，我也不会惊讶。但是，如果我钱够的话，我会为爸爸买一台OS X电脑。
 
-<h3>Office X</h3>
+<h3>办公软件 / Office X</h3>
 
 Despite my political problems with Microsoft, the truth is that some of 
 the most sophisticated software available for OS X comes from Redmond. 
