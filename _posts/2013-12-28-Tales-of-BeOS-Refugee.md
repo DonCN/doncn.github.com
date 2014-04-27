@@ -12,11 +12,6 @@ published: true
 {{page.summary}}
 
 
-[译者Don Liu注：由于译者本人并没有苹果电脑的使用经历且英文水平有限，其中难免有疏漏之处，请不吝指出。Email: dongliucn@gmail.com]
-
-_【译文正文】_(<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">本文英文版PDF下载</a>)
-
-
 ## 一个BeOS难民的故事 / Tales of a BeOS Refugee
 
 —— 从BeOS到OS X (也试用过Windows、Linux) / From BeOS to OS X (by way of Windows and Linux)
@@ -1293,4 +1288,9 @@ piece.</i>
 </blockquote>
 
 _【译文结束】_
+
+[译者Don Liu注：由于译者本人并没有苹果电脑的使用经历且英文水平有限，其中难免有疏漏之处，请不吝指出。Email: dongliucn@gmail.com]
+
+(<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">本文英文版PDF下载</a>)
+
 
