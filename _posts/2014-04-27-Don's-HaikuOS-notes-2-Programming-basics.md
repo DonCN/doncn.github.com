@@ -1,6 +1,6 @@
 ---
 layout: post   
-title: Don's HaikuOS Notes (2): 编程基础(进行中...)   
+title: Don's HaikuOS Notes (2):编程基础(进行中...)   
 summary: 本篇介绍Haiku OS的开发包继承结构、消息通信机制等编程基础。——Don Liu， Email：donliucn@gmail.com <p>
 categories: [Haiku OS]  
 tags: [Haiku OS, HaikuOS notes]   
