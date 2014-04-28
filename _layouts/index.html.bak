@@ -32,6 +32,14 @@ layout: default
 		</ul>
 	</div>
 	<div>
+		<h3>文章列表</h3>
+		<ul>
+			{% for post in site.posts %}
+			<li>[{{ post.title }}]({{ post.url }})</li>
+			{% endfor %}			
+		</ul>
+	</div>
+	<div>
 		<br/>
 		<h3>访问统计：
 		<!-- hitwebcounter Code START -->
