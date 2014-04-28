@@ -43,7 +43,7 @@ ul{list-style:circle;}
 #header h1 a{color:#333;}
 #header h1 a{text-decoration:none;}
 #header .describe{float:left;padding-left:2em;margin-top:1.6em;}
-.header-info{position:fix;}
+.header-info{position:relative;}
 .navigation{position:absolute;top:1.3em;right:3px;}
 .navigation li{float:left;margin:0;padding:10px 20px;font-size:1.2em;}
 
