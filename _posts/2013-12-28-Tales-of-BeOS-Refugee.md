@@ -162,7 +162,7 @@ OS X的一个有趣的创新就是PDF技术在系统中得到了广泛的应用-
 
 我曾经听到某些‘专家’说OS X仍然缺少应用软件。的确，Photoshop还没有从OS 9升级到OS X新界面，但是有许多软件在发行的第一年就会发布它的OS X版本。而BeOS则软件很少，我们这些BeOS用户已经习惯了请求软件发行者发布BeOS版本，任何小的软件都让我们感激。实际上还未升级到新界面的程序在OS 9经典模式*下都能很好运行。我没有老的Mac软件，所以不需要在经典模式下花费太多时间。偶尔使用，也很顺利（除了这些经典模式下的程序不能使用Samba共享，我的大量图像和文件都是采用的这个方式保存的）。
 
-* 我试用的经典模式下的程序有限。有人抱怨说各种音频软件和游戏在经典模式下兼容性不好。苹果刚刚发布了一个OS 9的更新来提高经典模式下的兼容性。
+*我试用的经典模式下的程序有限。有人抱怨说各种音频软件和游戏在经典模式下兼容性不好。苹果刚刚发布了一个OS 9的更新来提高经典模式下的兼容性。
 
 <blockquote>
 下面的大部分软件都不是关于操作系统的，只是操作系统提供的一些软件，你可以跳过去看接下来的操作系统比较。但是我觉得这些程序是操作系统及操作体验的一部分，还是应该包含进来。
@@ -222,146 +222,61 @@ OS X的强项是它的iTunes有非常棒的播放列表管理，而BeOS则是任
 
 <h3>办公软件 / Office X</h3>
 
-Despite my political problems with Microsoft, the truth is that some of 
-the most sophisticated software available for OS X comes from Redmond. 
-I'm not a big user of office apps, but when you need 'em, you need 'em. 
-And Office X has, as <a href="http://www.wired.com/news/technology/0,1282,48160,00.html" target="_blank">Wired puts it</a>,
- "transformed a tired old productivity suite into a work of art." Tens 
-of thousands of lines of new code, hundreds of new widgets and icons  
-...  it's a gorgeous piece of software  --  as beautiful as OS X itself.
- The Mac programming team at MS isn't just porting software,  they're 
-rewriting it to meet the demands and expectations of the Mac community, 
-and it shows. 
+尽管我不认同微软的理念，但是事实上OS X上一些最复杂的软件来自微软。我使用办公软件并不多，但当需要时还是需要的。对于微软为Mac平台提供的Offic X，就像<a href="http://www.wired.com/news/technology/0,1282,48160,00.html" target="_blank">连线杂志评论文章“乔布斯喜欢盖茨的新办公软件”</a>里说的，将一堆旧的办公套件变成一件艺术品。增加了成千上万行代码，数百新部件和图标。这是一件和OS X本身一样华丽的软件。入驻微软的Mac移植团队不只是移植软件，他们为满足Mac用户的需求重写了大量代码。
+
 <div align="center">
 <a href="http://www.birdhouse.org/beos/refugee/office.jpg" target="_blank"><img src="/images/TalesBeOS-office.jpg" alt="office" border="0" height="236" width="350"></a>
 </div>
-<i>Microsoft makes it so hard. You finally break free of their OS, only 
-to find yourself in love with their software on another platform. 
-Between Office X and Internet Explorer, it's tough to say no. Click  for
- larger version.</i>
+<i>面对微软会有纠结。你最终离开了他们的操作系统，可是突然发现你喜欢上了他们在另一个平台上的软件。的确，面对Office和Internet Explorer你很难拒绝。</i>
 
-Kind of ironic though that my political feelings toward Microsoft are 
-part of what drove me away from Windows to begin with, and now I find 
-myself enjoying their software under Mac OS. Reality bites.
+值得讽刺的是，我对微软的主观反感是我离开Windows系统的一个原因，而现在我发现我喜欢上了Mac OS上的微软的Office软件。残酷的现实啊。
 
-Under BeOS, one turns to <a href="http://www.gobe.com/" target="_blank">Gobe Productive</a>
- for office needs. Productive is probably the most sophisticated piece 
-of software available for BeOS, and takes a unique approach to 
-integrated word processing / spreadsheets / presentations / bitmap 
-editing / vector graphics -- one app, one file format, five integrated 
-modes. I love it and wish it were available for OS X*.
+在BeOS上，人们使用Gobe Productive办公软件。这可能是BeOS上最复杂的软件了，它以一种独特的方法集成文字处理/表格/演示/位图编辑/矢量图形——一个应用程序，一种文件格式，却集成五个模式。我很喜欢它，希望它能移植到OS X*上。
+
+可惜的是，因为微软没有公开它的Office文件格式，Word和Excel文件的兼容性与Gobe Productive并不完美。在大多数情况下，完全可用，但它不能处理一些更复杂的文件类型，如文档与数据透视表和修订跟踪。而Office X就一切正常，十分完美。不仅如此，但他们终于解决了所有的MAC和Windows Office DOC的兼容性问题，包括扩展字符集和向后兼容（Office X的文件可以在Windows的Word 97中完美的打开，而无需先保存为老的兼容格式）。
+
+这轮比较OS X胜。
+
+<i>*注：Gobe Productive 3 只发行了Windows版，他们声明计划在近期发布Linux版本。</i>
 
 
- Unfortunately, because MS doesn't openly document their file formats, 
-Word and Excel document compatibility with Productive is imperfect. 
-Totally usable in most cases, but it fails on some of the more complex 
-document types, such as docs with pivot tables and revision tracking. 
-With Office X, everything works. Perfectly. Not only that, but they've 
-finally ironed out all Mac/Windows Office doc compatibility glitches, 
-including the extended character bugaboos and backwards compatibility 
-(Office X docs open perfectly in Word 97 for Windows, without having to 
-downsave first).
+<h3>浏览器和邮件 / Browsers and E-Mail</h3>
 
-Point goes to OS X.
-<i>*Note: Productive 3 was just released for Windows, and the company 
-has announced plans to release a Linux version in the near future.</i>
+BeOS用户抱怨最多的问题就是现有的Web浏览器很差。如果BeOS早出现几年，那么Netscape可能会为BeOS发行一个浏览器版本。可事实不是如此。多年来，BeOS上唯一的浏览器就是自带的netpositive，它是快速和高效的，事实上在大多时候用着还不错，但它不能处理Java、JavaScript、DHTML或CSS。无论BeOS多么现代或科幻，如果她上面没有相应现代的的软件，那她就名不副实。Opera 3.62可以用在BeOS上，但它仍然不完美。Mozilla的浏览器也可以用在BeOS，但它臃肿，经常崩溃。BeOS上没有好的浏览器呀。
 
+而相反的，苹果是与魔鬼共骑。OS X将移植的IE 5.5作为它的默认浏览器。虽然与Windows上的版本不完全相同，但是很漂亮，所有的网站都能完美解析，打开也非常快。它对于我的最大不足就是不支持日益流行的PNG图像格式。
 
-<h3>Browsers and E-Mail</h3>
+如果你不讨厌在Mac上运行MS的软件，还有一个更好的替代品。<a href="http://www.omnigroup.com/" target="_blank">OmniWeb</a>是一个稍慢，但是我见过的将网页显示的最漂亮的，只需启用OS X的脚本功能。iCab、Opera和Navigator 6都是现代的浏览器。OS X下浏览器的选择取决于个人的偏好，而不是像在BeOS上那样妥协和牺牲。 
 
-One of the longest-standing complaints of the BeOS user is the fact that
- the available web browsers are all sub-standard. If BeOS had appeared a
- couple of years earlier, Netscape probably would have built a BeOS 
-version of Navigator. But it didn't happen that way. For years, the only
- real browser for BeOS was the bundled NetPositive, which is fast and 
-highly efficient (a joy to use in many ways, in fact), but does not 
-handle JavaScript, Java, DHTML, or CSS. No matter how modern or 
-futuristic BeOS' underpinnings may be, they aren't worth jack without 
-modern apps to run on top of them. Opera 3.62 is available for BeOS, but
- it remains unpolished. Regular builds of Mozilla appear for BeOS, but 
-are bloated and crashy. The browser scene is dismal.
+浏览器的比较，OS X胜。
 
-In contrast, Apple is riding with the devil. OS X ships with IE 5.5 as 
-its default browser. While not identical to the Windows version, it's 
-very slick, renders all sites perfectly, and is perfectly fast. It's 
-biggest failing in my book is its mysterious lack of support for the 
-increasingly popular PNG image format.
-
-If you can't bear the thought of running MS software on your Mac, there are alternatives  --  good ones. <a href="http://www.omnigroup.com/" target="_blank">OmniWeb</a>
-  is a bit slower, but renders what are probably the most beautiful 
-pages I've ever seen in a browser by tapping into OS X's native 
-PostScript capabilities. iCab, Opera, and Navigator 6 are all highly 
-capable modern browsers. The browser choice comes  down to personal 
-preference under OS X, rather than compromise and sacrifice, as it does 
-under BeOS.
-
-Point goes to OS X.
-
-On the email front, Be had a wonderful idea: Provide a single, 
-sanctioned email format, in a single, shared message store with all of 
-the header meta-data (To:, From:, Subject, etc.) stored as attributes. 
-Store each message in the user's home folder as individual files. There 
-are two big advantages to this approach: 
+对于email客户端前台程序，Be的理念非常棒：提供一个单一的、标准的邮件格式，将邮件头的多属性元数据（如收件人、发件人、主题等），作为属性存储在统一的、共享的消息存储中。将每个消息（邮件）当作一个单独的文件存在用户的个人文件夹中。这种方法有两大优势：
 
 <ol>
-	<li>Users can find messages on any criteria via system Find  --  canned
- queries can pull up mailing lists and associated messages instantly 
-without even having to sort them into folders first. </li>
+	<li>用户可以通过系统查询，用收件人、发件人、主题等任意字段找到邮件，而不用首先进入邮件夹或打开邮件。</li>
 
-	<li>All email apps can use the same message store. There is no such 
-thing as a proprietary email message format on BeOS, and users often 
-switch back and forth between email clients at will, without ever having
- to worry about converting between formats. Users can even use the 
-Tracker itself as the email organization app, utilizing the simple but 
-clean BeMail viewer / composer to read and write.</li>
+	<li>所有的电子邮件应用程序都可以使用同一个消息存储。BeOS上没有专有的电子邮件格式，用户可以自由的更换各种电子邮件客户端，而不必担心格式之间的转换。用户甚至可以使用Tracker文件浏览器本身作为电子邮件的组织程序，利用简洁的BeMail客户端读写邮件。</li>
 </ol>
 
+从体系结构上来说，这轮比较BeOS获胜。
 
-Architecturally speaking, point goes to BeOS.
-
-<div align="center">
+<br><div align="center">
 <a href="http://www.birdhouse.org/beos/refugee/bemail.jpg" target="_blank"><img src="/images/TalesBeOS-bemail.jpg" alt="bemail" border="0" height="146" width="400"></a>
-</div><br>
-<i>BeMail messages are individual files stored in the Tracker. Sort them
- however you like, or create virtual mail folders via system queries 
-(not shown). The BeMail reader simply displays and creates BeMail 
-messages, while other apps give more advanced functionality on top of 
-the central message store. Click for larger version.</i>
+</div>
+<i>BeMail的每个消息都是一个单独的文件，存储于Tracker文件浏览器。可以按个人喜好排序，或通过定制系统查询来创建虚拟的邮件文件夹。可以通过BeMail客户端简单的阅读和书写邮件，而用其他的应用程序提供的更强大功能处理集中保存的邮件消息。</i>
 
+可问题是，目前还没有很好的电子邮件软件来处理邮件消息。有几款不错的软件，如BeatWare的<a href="http://www.bebits.com/app/502" target="_blank">Mail-It</a>就是Eudora的一个很好的替代。但是BeatWare很早就放弃了BeOS平台的发展，所以这个Mail-It有不少缺陷和不足，无法得到修正。
 
-Trouble is, none of the email apps available to read this central 
-message store are quite finished. There are several that are decent, and
- BeatWare's <a href="http://www.bebits.com/app/502" target="_blank">Mail-It</a>
- is a pretty darn good Eudora replacement. However, BeatWare abandoned 
-the platform long ago, so the bugs and limitations in Mail-It are 
-permanent.
+另一方面，Qualcomm很早之前就移植了Beta测试版的Eudora到OS X平台，这个测试版达到了98%的完成度。我在BeOS上使用Eudora工作多年，于是在OS X上也使用它。但是，出于好奇，我尝试了几天苹果自带的邮件客户端，然后再也没有回到Eudora。这是超级整洁，可以处理多个帐户，有足够（但不是很棒）的规则/过滤器，有颜色标签代表的资料等级——与我一直非常喜欢的Mail-It上的特性相同，这也是为什么我遗憾的放弃了Eudora。 
 
-On the other hand, Qualcomm ported a beta version of Eudora to OS X long
- ago, and the beta is 98% complete. Having used Eudora for many years at
- work, I jumped on the OS X version. But out of curiosity, I gave 
-Apple's "Mail" a whirl for a few days, and never went back. It's 
-super-clean, handles multiple accounts, has adequate (but not great) 
-rules/filters, and color-codes quote levels  --  a feature shared with 
-Mail-It, and one I've grown addicted to (which is why I've sadly 
-abandoned Eudora). 
-
-<div align="center">
+<br><div align="center">
 <img src="/images/TalesBeOS-mail.gif" alt="mail" border="0" height="575" width="552">
-</div><br>
-<i>Apple's "Mail" is a bit underpowered but does a nice job and looks 
-great doing it. I'm addicted to the multi-colored quoting mechanism that
- makes longer threads much easier to read. Mail also does a good job of 
-rewrapping quoted text, so you never end up with jaggy right edges in 
-the text as mail threads grow longer.</i>
-As if that wasn't enough, Office X includes Entourage, which is the Mac 
-version of Outlook/Express. I haven't tried it but hear great things 
-about it. Between these three and the choice of half a dozen other 
-mature email apps, the actual usability point goes to OS X. If only 
-there was some way to get all these vendors to discard the proprietary 
-message store bull-hockey and agree on a single mail format, I'd be in 
-heaven.
+</div>
+<i>苹果的邮件客户端不够强大，但用起来不错，看起来很好看。我非常喜欢它的彩色标签，使得同一个主题的邮件增多时更易于阅读。邮件也很好地处理引用的文本，所以同主题邮件增加时，锯齿状的表现收发邮件很贴心。</i>
 
-<h3>Power Editors</h3>
+如果这还不够的话，Office X中还包括Entourage，这是Windows下Outlook/Express的MAC版本。我还没试过，但听说不错。由于有这三款不错的选择，还有另外的多款其他电子邮件应用程序，所以这轮比较OS X获胜。如果有什么办法让这些厂商抛弃私有的邮件消息存储，而是以一个统一的格式存储，那就完美了。
+
+<h3>文本编辑 / Power Editors</h3>
 
 The most powerful text / scripting / HTML editor for BeOS is Maarten Hekkelman's <a href="http://www.birdhouse.org/www.hekkelman.com/" target="_blank">Pe</a>.
  I lived in Pe for years. I maintained three web sites, did all my shell
