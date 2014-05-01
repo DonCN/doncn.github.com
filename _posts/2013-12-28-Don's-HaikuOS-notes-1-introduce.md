@@ -1,6 +1,6 @@
 ---
 layout: post   
-title: Don's HaikuOS Notes (1):简介   
+title: Don's HaikuOS Notes (1):简介 v1.0    
 summary: Haiku OS是一个开源、免费的操作系统，主要面向个人计算机。它兼容、继承了BeOS的理念，是一个快速、简洁优雅、易学易用，而且非常强大的操作系统。它有着：<ul><li>- 统一的、简洁、优雅的全图形用户界面；</li><li>- 拼贴和标签式堆叠的窗口管理。</li><li>- 快速响应的内核；</li><li>- 对多处理器、多线程的完全支持和内存保护；</li><li>- 优雅的内置程序间通讯；</li><li>- 模块化设计和面向对象API便于快速开发；</li><li>- 先进的数据库式、全日志的64位文件系统；</li><li>- 基于属性的快速索引和查询；</li></ul>有人说，Haiku会给人一种别样的美好感觉，她将让你重新认识个人计算机。的确，自从认识了Haiku，我就被她的别样风情和众多特性迷住了。这篇文章是我的HaikuOS学习笔记，以及一些相关材料的整理。希望能让大家体会、认识到一个别样美好的操作系统。——Don Liu， Email：donliucn@gmail.com<p><center><a href="/images/HaikuOS-desktop.png" target="_blank"><img src="/images/HaikuOS-desktop.png" alt="HaikuOS-desktop" height="500" width="633"></a><p>Haiku OS 桌面</center><p>    
 categories: [Haiku OS, HaikuOS notes]  
 tags: [Haiku OS, HaikuOS notes]   
@@ -12,7 +12,7 @@ published: true
 {{page.summary}}
 
 
-## 一 历史 ##
+## I 历史 ##
 
 1990年，前苹果公司主管Jean-Louse Gassee创办了Be公司，历经4年艰苦，开发出了全新的BeOS操作系统([BeOS Wiki](http://en.wikipedia.org/wiki/BeOS)，[中文维基](http://zh.wikipedia.org/wiki/BeOS)，[百科](http://baike.baidu.com/link?url=RlMCN12Pq2RYX_9z1C_GsXaWVP7kK3e2SZF_PDZ6ptjrlRBS28YSQ-jUXIuAc4yx))。从设计之初，BeOS就针对多处理器、多线程和多媒体处理进行优化，性能异常优越，许多技术和理念遥遥领先于同期的操作系统。1996年，苹果公司放弃了自己开发新的操作系统，认为BeOS符合他对操作系统的要求，开价2亿美元收购Be公司，但遭到拒绝。转而以4.29亿美元的代价迎回了被踢出局的苹果创始人乔布斯和他的NeXTSTEP操作系统，乔布斯再次成了苹果掌门人，NeXTSTEP成了新的Mac OS X系统的基础。而Be公司，技术的先进并不能弥补市场开发的拙略，战略几经转变，均未获市场成功，在2001年，被Palm公司收购。BeOS这个领先于时代，却又命运多舛的多媒体操作系统也走到了尽头。
 
@@ -21,7 +21,7 @@ published: true
 HaikuOS官方主页：<http://www.haiku-os.org/><p>
 HaikuOS测试版本下载：<http://haiku-files.org/haiku/development/><p>
 
-## 二 设计理念和特点 ##
+## II 设计理念和特点 ##
 
 HaikuOS的设计理念继承于BeOS，专注于个人PC完全图形化的“多媒体操作系统”。设计目标是尽可能的减少内核延迟，从而实时处理大量多媒体数据，如音频和视频数据流。由于没有旧系统兼容的历史负担，它充分利用了现代硬件和技术的优点，如使用模块化I/O带宽的多处理器系统，深入的多线程，抢断式的多任务和被称为BFS的数据库式、全日志的64位文件系统等。因而，Haiku/Beos的性能异常优异，可以流畅地同时播放多个视频、音频；日志系统保证意外情况下的断点恢复，不会丢失数据；而数据库式文件系统又能快速、方便的存储、管理、查询多媒体文件的属性...
 
@@ -33,7 +33,7 @@ Haiku的GUI遵循清晰整洁的设计原则开发，简洁、优雅、人性化
 
 __参考__： [1] [2]
 
-## 三 诸多特性简介 ##
+## III 诸多特性简介 ##
 
 1. __统一、简洁、优雅的全图形用户界面 / unified，simple，decent graphic UI__<p>
     HaikuOS的图形化得到了内核级的深入支持，设计简洁、优雅、人性化，操作非常简单，几乎没有上手难度。
@@ -76,7 +76,7 @@ __参考__： [1] [2]
 __参考__：  [2] [3]
 
 
-## 四 系统架构 ##
+## IV 系统架构 ##
 
 Haiku操作系统架构分为三个层级：微内核层（microkernel）、服务层（server）、软件开发包层（software kits）。三层之间为服务-客户端关系：软件是服务的客户端，服务又是内核的客户端[6]。  
 <p><div align="center">
@@ -107,7 +107,7 @@ __参考__：  [3]
 4. [Development：Haiku开发相关资源](https://www.haiku-os.org/development)    
 
 
-此外，还可以阅读我后边列出的参考文献，或者关注我的学习笔记《Don's HaikuOS Notes》系列的后续篇，与我一起学习Haiku系统。
+此外，还可以阅读我后边列出的参考文献，或者关注我的[Github pages《Don's HaikuOS Notes》系列](http://doncn.github.io/blog)的更新，与我一起学习Haiku系统。
 
 
 -----------------------------
