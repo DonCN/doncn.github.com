@@ -109,6 +109,7 @@ __参考__：  [3]
 
 此外，还可以阅读我后边列出的参考文献，或者关注我的[Github pages《Don's HaikuOS Notes》系列](http://doncn.github.io/blog)的更新，与我一起学习Haiku系统。
 
+Copyright © Don Liu，Email：donliucn@gmail.com
 
 -----------------------------
 ###参考文献及扩展阅读：###
