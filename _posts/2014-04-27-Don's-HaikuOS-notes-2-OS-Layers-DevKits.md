@@ -41,12 +41,14 @@ published: true
 
 <table border="1" width="100%">
     <tr align="center" bgcolor="gray">
-        <th>Software Kits <p>Libraries</th>
+        <th>Software Kits </th>
+		<th>Library</th>
         <th>Servers</th>
-	<th>说明</th>
+		<th>说明</th>
     </tr>
     <tr align="left">
-        <th>Application kit <p>libbe.so</th>
+        <th>Application kit </th>
+		<th>libbe.so </th>
         <th>Application Server</th>
         <td>
 		应用程序服务是每个程序都要用到的一个服务，使用应用程序开发包调用该服务也是创建一个应用程序的开始，每个程序都是继承自该包中的BApplication类的一个实例。该类定义了程序、线程间通信的消息系统，用以传递用户界面交互、事件等。<p>
@@ -54,7 +56,8 @@ published: true
 		</td>
     </tr>
     <tr align="left">
-        <th>Interface kit <p>libbe.so</th>
+        <th>Interface kit </th>
+		<th>libbe.so </th>
         <th> </th>
         <td>		
     	界面开发包是目前最大的一个软件开发包。提供了基于应用开发包的消息系统之上的图形用户界面，定义了窗口及其包含的各种元素，如滑动条、按钮、列表、文本框等。每个用到窗体的程序都要用到界面开发包。<p> 
@@ -62,21 +65,24 @@ published: true
 		</td>
     </tr>
     <tr align="left">
-        <th>Storage Kit <p>libbe.so</th>
+        <th>Storage Kit </th>
+		<th>libbe.so </th>
         <th> </th>
         <td>
 		存储开发包Storage Ki包含了对文件系统操作的一些类，如在磁盘保存和更新数据等。			
 		</td>
     </tr>
     <tr align="left">
-        <th>Support Kit <p>libbe.so</th>
+        <th>Support Kit </th>
+		<th>libbe.so </th>
         <th> </th>
         <td>
 		支持开发包为其他开发包提供支持，如数据类型、常数等的定义。还包含程序中使用的一些支持类，包括线程安全、IO、和序列化（serialization）用到的资源。			
 		</td>
     </tr>
     <tr align="left">
-        <th>Media Kit <p>libmedia.so </th>
+        <th>Media Kit </th>
+		<th>libmedia.so </th>
         <th>media server </th>
         <td>
 		媒体服务用于实时处理数据，主要是多媒体数据流。媒体开发包通过调用媒体服务为媒体数据流和程序间通信提供了统一的接口。它通过缓存（buffer）的管道（popeline）将多媒体流分发给数据处理器（data  handler）。每个数据处理器都可以读写管道中的媒体数据流。而缓存作为共享存储，可以被多个程序访问，而不用复制。媒体服务还可以通过一个全局调度对象（global scheduling object）同步不同的媒体数据流。这对同时处理音频和视频非常重要。
@@ -84,99 +90,114 @@ published: true
     </tr>
     <tr align="left">
         <th>Print Kit </th>
+		<th> </th>
         <th>Print Server  </th>
         <td>
 		</td>
     </tr>
     <tr align="left">
-        <th>Midi Kit <p>libmidi.so libmidi2.so</th>
+        <th>Midi Kit </th>
+		<th>libmidi.so libmidi2.so </th>
         <th>Midi Server </th>
         <td>
 		音频设备数字接口开发包MIDI(Musical Instrument Digital Interface) Kit 提供了处理MIDI格式音频数据的接口。Haiku在此基础上新加了MIDI2 Kit，扩展了部分功能。			
 		</td>
     </tr>
     <tr align="left">
-        <th>Device Kit <p>libdevice.so</th>
+        <th>Device Kit </th>
+		<th>libdevice.so </th>
         <th> </th>
         <td>
 		设备开发包Device Kit提供了硬件连接的接口，主要用于驱动开发。	
 		</td>
     </tr>
     <tr align="left">
-        <th>Network Kit <p>libnet.so </th>
+        <th>Network Kit </th>
+		<th>libnet.so </th>
         <th>Network Server </th>
         <td>
 		网络服务提供网络、WiFi相关的服务，如DHCP、WEP、ftp、telnet等。网络开发包调用网络服务处理网络相关的各种事物。			</td>
     	</tr>
     <tr align="left">
-        <th>Translation Kit <p>libtranslation.so</th>
+        <th>Translation Kit </th>
+		<th>libtranslation.so </th>
         <th> </th>
         <td>
 		转换开发包Translation Kit不是传统意义上的语言翻译转换，而是媒体格式的转换，如jpg图片转换为png图片等。这是Haiku的一个特色，若想增加Haiku支持某种媒体格式，只需利用转换开发包将新媒体格式转换为Haiku支持的格式就可以用原来的媒体软件，而不用下载新软件。
 		</td>
     </tr>
     <tr align="left">
-        <th>Mail Kit <p>libmail.so </th>
+        <th>Mail Kit  </th>
+		<th>libmail.so </th>
         <th>Mail Server </th>
         <td>
 		邮件开发包Mail Kit提供了电子邮件的相关服务。			
 		</td>
     </tr>
     <tr align="left">
-        <th>Game Kit <p>libgame.so </th>
+        <th>Game Kit </th>
+		<th>libgame.so </th>
         <th> </th>
         <td>
 		游戏开发包Game Kit提供了处理游戏声音等全屏程序的一些类。
 		</td>
     </tr>
     <tr align="left">
-        <th> <p>libbe.so</th>
+        <th> </th>
+		<th>libbe.so </th>
         <th>Input Server </th>
         <td>
 		输入服务处理键盘、鼠标、手柄等输入设备操作。			
 		</td>
     </tr>
     <tr align="left">
-        <th>Package Kits <p>libpackage.so </th>
-        <th>包管理服务 Package Server </th>
+        <th>Package Kits </th>
+		<th>libpackage.so </th>
+        <th>Package Server </th>
         <td>
 		包管理开发包是Haiku在测试版Alpha4.1之后新增加的功能，通过命令行或包管理的客户端程序HaikuDepot可以直接安装下载程序。		</td>
     	</tr>
     <tr align="left">
-        <th>Locale Kit <p>liblocale.so </th>
+        <th>Locale Kit </th>
+		<th>liblocale.so </th>
         <th> </th>
         <td>
 		本地化开发包Locale Kit包含了本地化到各种语言、时区、数字格式等的类。这也是Haiku相对于BeOS增加的一个新特性。		</td>
     	</tr>
     <tr align="left">
-        <th>Screen Saver <p>libscreensaver.so </th>
+        <th>Screen Saver </th>
+		<th>libscreensaver.so </th>
         <th> </th>
         <td>
 		</td>
     </tr>
     <tr align="left">
-        <th>Deskbar <p>libtracker.so </th>
+        <th>Deskbar  </th>
+		<th>libtracker.so </th>
         <th>DeskBar </th>
         <td>
 		桌面栏Deskbar相当于Windows的任务栏			
 		</td>
     </tr>
     <tr align="left">
-        <th>Tracker <p>libtracker.so</th>
+        <th>Tracker </th>
+		<th>libtracker.so </th>
         <th>Tracker </th>
         <td>
 		文件浏览器 Tracker相当于Windows的Explorer文件浏览器，但是更好用^_^			
 		</td>
     </tr>
     <tr align="left">
-        <th>*Kernel Kit <p>libroot.so</th>
+        <th>*Kernel Kit </th>
+		<th>libroot.so </th>
         <th></th>
         <td>
 		内核开发包用于程序直接操作底层的内核，以及手动创建和维护线程。
 		</td>
     </tr>
     <tr align="left">
-        <th>*OpenGL Kit <p>libGL.so</th>
+        <th>*OpenGL Kit </th>
+		<th>libGL.so </th>
         <th></th>
         <td>
 		为程序增加3D效果，以及处理三维对象			
