@@ -38,6 +38,7 @@ published: true
 服务层包含的服务（servers）大都在开发包层有对应的开发包，程序通过使用开发包的应用编程接口（API）来调用服务层和内核的操作系统功能，因而可以将二者结合起来阅读。主要服务和开发包列表如下：
 
 **Table：**Haiku的开发包（Software Kits）与服务（Servers）对应说明 [1][5-7]
+
 <table border="1" width="100%">
     <tr align="center" bgcolor="gray">
         <th>Software Kits / Libraries</th>
@@ -48,8 +49,7 @@ published: true
         <th>应用程序开发包 Application kit / libbe.so</th>
         <th>应用程序服务 Application Server</th>
         <td>
-			每个程序都要用到的一个服务，使用应用程序开发包调用该服务也是创建一个应用程序的开始，每个程序都是继承自该包中的BApplication类的一个实例。该类定义了程序、线程间通信的消息系统，用以传递用户界面交互、事件等。<p>   
-
+			每个程序都要用到的一个服务，使用应用程序开发包调用该服务也是创建一个应用程序的开始，每个程序都是继承自该包中的BApplication类的一个实例。该类定义了程序、线程间通信的消息系统，用以传递用户界面交互、事件等。<p>
 			Haiku具有多线性化的特性，她的每个窗口默认包含两个线程，第一个处理图形更新，第二个处理用户交互，第一个运行在应用程序服务中，第二个运行在程序中[2]。这使得图形更新与IO交互分开，解决了多任务处理时响应慢的问题，保证了Haiku系统响应快速。
 		</td>
     </tr>
@@ -58,7 +58,6 @@ published: true
         <th> </th>
         <td>		
     		这是目前最大的一个软件开发包。提供了基于应用开发包的消息系统之上的图形用户界面，定义了窗口及其包含的各种元素，如滑动条、按钮、列表、文本框等。每个用到窗体的程序都要用到界面开发包。<p> 
-			
     		此外haiku在界面开发包之外又增加了布局接口Layout API，使程序布局更灵活和简单。			
 		</td>
     </tr>
@@ -158,7 +157,7 @@ published: true
         <th>Screen Saver / libscreensaver.so </th>
         <th> </th>
         <td>
-			。			
+						
 		</td>
     </tr>
     <tr>
