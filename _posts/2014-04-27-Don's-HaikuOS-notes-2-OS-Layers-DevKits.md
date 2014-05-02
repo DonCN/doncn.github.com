@@ -80,14 +80,12 @@ published: true
         <th>媒体服务 media server </th>
         <td>
 	媒体服务用于实时处理数据，主要是多媒体数据流。媒体开发包通过调用媒体服务为媒体数据流和程序间通信提供了统一的接口。它通过缓存（buffer）的管道（popeline）将多媒体流分发给数据处理器（data  handler）。每个数据处理器都可以读写管道中的媒体数据流。而缓存作为共享存储，可以被多个程序访问，而不用复制。媒体服务还可以通过一个全局调度对象（global scheduling object）同步不同的媒体数据流。这对同时处理音频和视频非常重要。
-						
 	</td>
     </tr>
     <tr>
         <th>打印开发包 Print Kit </th>
         <th>打印服务 Print Server  </th>
         <td>
-						
 	</td>
     </tr>
     <tr>
@@ -108,8 +106,7 @@ published: true
         <th>网络开发包 Network Kit / libnet.so </th>
         <th>网络服务 Network Server </th>
         <td>
-	提供网络、WiFi相关的服务，如DHCP、WEP、ftp、telnet等。网络开发包调用网络服务处理网络相关的各种事物。			
-	</td>
+	提供网络、WiFi相关的服务，如DHCP、WEP、ftp、telnet等。网络开发包调用网络服务处理网络相关的各种事物。			</td>
     </tr>
     <tr>
         <th>转换开发包 Translation Kit / libtranslation.so</th>
@@ -143,21 +140,18 @@ published: true
         <th>包管理开发包 Package Kits / libpackage.so </th>
         <th>包管理服务 Package Server </th>
         <td>
-	这是Haiku在测试版Alpha4.1之后新增加的功能，通过命令行或包管理的客户端程序HaikuDepot可以直接安装下载程序。			
-	</td>
+	这是Haiku在测试版Alpha4.1之后新增加的功能，通过命令行或包管理的客户端程序HaikuDepot可以直接安装下载程序。		</td>
     </tr>
     <tr>
         <th>本地化开发包 Locale Kit / liblocale.so </th>
         <th> </th>
         <td>
-	本地化开发包Locale Kit包含了本地化到各种语言、时区、数字格式等的类。这也是Haiku相对于BeOS增加的一个新特性。			
-	</td>
+	本地化开发包Locale Kit包含了本地化到各种语言、时区、数字格式等的类。这也是Haiku相对于BeOS增加的一个新特性。		</td>
     </tr>
     <tr>
         <th>Screen Saver / libscreensaver.so </th>
         <th> </th>
         <td>
-						
 	</td>
     </tr>
     <tr>
