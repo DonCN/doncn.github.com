@@ -7,7 +7,7 @@ tags: [Haiku OS, HaikuOS notes]
 published: true   
 ---  
 
-# {{ page.title }} #  
+# {{ page.title }} 
 
 {{page.summary}}
 
