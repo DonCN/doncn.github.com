@@ -1,13 +1,19 @@
----
+---  
 layout: post   
+<<<<<<< HEAD
 title: Don's HaikuOS Notes: (1) 简介 v1.01    
 summary: Haiku OS是一个开源、免费的操作系统，主要面向个人计算机，它快速、简洁、易学易用，但功能非常强大。它有：<ul><li>- 拼贴和标签式的窗口；</li><li>- 快速响应的内核；</li><li>- 针对多核处理器设计；</li><li>- 深入的多线程化；</li><li>- 先进的全日志、数据库式64位文件系统；</li><li>- 基于属性的快速索引和查询；</li></ul>有人说，Haiku给人一种别样的美好感觉，她将让你重新认识个人计算机。的确，自从认识了Haiku，我就被她的别样风情和众多特性迷住了。这篇文章是我的HaikuOS学习笔记，以及一些相关材料的整理。希望能让大家认识、感受到一个别样美好的操作系统。——Don Liu， Email：donliucn@gmail.com<p><center><a href="/images/HaikuOS-desktop.png" target="_blank"><img src="/images/HaikuOS-desktop.png" alt="HaikuOS-desktop" height="500" width="633"></a><p>Haiku OS 桌面</center><p>    
 categories: [Haiku OS, HaikuOS notes]  
+=======
+title: Don's HaikuOS Notes:(1)简介 v1.01   
+summary: Haiku OS是一个开源、免费的操作系统，主要面向个人计算机，它快速、简洁、易学易用，功能又非常强大。它有：<ul><li>- 拼贴和标签式的窗口；</li><li>- 快速响应的内核；</li><li>- 针对多核处理器设计；</li><li>- 深入的多线程化；</li><li>- 先进的全日志、数据库式64位文件系统；</li><li>- 基于属性的快速索引和查询；</li></ul>有人说，Haiku给人一种别样的美好感觉，它将让你重新认识个人计算机。的确，自从认识了Haiku，我就被她的别样风情和众多特性迷住了。这篇文章是我的HaikuOS学习笔记，以及一些相关材料的整理。希望能让大家认识、感受到一个别样美好的操作系统。<p> <center><a href="/images/HaikuOS-desktop.png" target="_blank"><img src="/images/HaikuOS-desktop.png" alt="HaikuOS-desktop" height="500" width="633"></a><p>Haiku OS 桌面</center><p>   
+categories: [Haiku OS, HaikuOS notes]   
+>>>>>>> a7bb27aac819301c211dee407f6de50071088413
 tags: [Haiku OS, HaikuOS notes]   
-published: true  
----
+published: true   
+---  
 
-# {{ page.title }} #
+# {{ page.title }} 
 
 {{page.summary}}
 
@@ -109,7 +115,7 @@ __参考__：  [3]
 
 此外，还可以阅读我后边列出的参考文献，或者关注我的更新，与我一起学习Haiku系统。
 
-首发地址：[Github pages《Don Liu's Blog》](http://doncn.github.io/blog)，如有错漏之处请不吝赐教，Email：donliucn@gmail.com。   
+首发地址：[Github pages《Don Liu's Blog》](http://doncn.github.io/blog)，如有错漏之处请不吝赐教， Email：donliucn@gmail.com。   
 Copyright © Don Liu
 
 -----------------------------
