@@ -1,7 +1,7 @@
 ---
 layout: post   
-title: Don's HaikuOS Notes (1):简介 v1.0    
-summary: Haiku OS是一个开源、免费的操作系统，主要面向个人计算机。它兼容、继承了BeOS的理念，是一个快速、简洁优雅、易学易用，而且非常强大的操作系统。它有着：<ul><li>- 统一的、简洁、优雅的全图形用户界面；</li><li>- 拼贴和标签式堆叠的窗口管理。</li><li>- 快速响应的内核；</li><li>- 对多处理器、多线程的完全支持和内存保护；</li><li>- 优雅的内置程序间通讯；</li><li>- 模块化设计和面向对象API便于快速开发；</li><li>- 先进的数据库式、全日志的64位文件系统；</li><li>- 基于属性的快速索引和查询；</li></ul>有人说，Haiku会给人一种别样的美好感觉，她将让你重新认识个人计算机。的确，自从认识了Haiku，我就被她的别样风情和众多特性迷住了。这篇文章是我的HaikuOS学习笔记，以及一些相关材料的整理。希望能让大家体会、认识到一个别样美好的操作系统。——Don Liu， Email：donliucn@gmail.com<p><center><a href="/images/HaikuOS-desktop.png" target="_blank"><img src="/images/HaikuOS-desktop.png" alt="HaikuOS-desktop" height="500" width="633"></a><p>Haiku OS 桌面</center><p>    
+title: Don's HaikuOS Notes (1):简介 v1.01    
+summary: Haiku OS是一个开源、免费的操作系统，主要面向个人计算机，是一个快速、简洁、优雅、易学易用，而且非常强大的操作系统。它有：<ul><li>- 统一的、简洁、易学易用的全图形用户界面；</li><li>- 拼贴和标签式的窗口管理。</li><li>- 快速响应的内核；</li><li>- 深入的多处理器、多线程支持和内存保护；</li><li>- 优雅的内置程序间通信；</li><li>- 模块化设计和面向对象API便于快速开发；</li><li>- 先进的全日志、数据库式64位文件系统；</li><li>- 基于属性的快速索引和查询；</li></ul>有人说，Haiku给人一种别样的美好感觉，她将让你重新认识个人计算机。的确，自从认识了Haiku，我就被她的别样风情和众多特性迷住了。这篇文章是我的HaikuOS学习笔记，以及一些相关材料的整理。希望能让大家认识、感受到一个别样美好的操作系统。——Don Liu， Email：donliucn@gmail.com<p><center><a href="/images/HaikuOS-desktop.png" target="_blank"><img src="/images/HaikuOS-desktop.png" alt="HaikuOS-desktop" height="500" width="633"></a><p>Haiku OS 桌面</center><p>    
 categories: [Haiku OS, HaikuOS notes]  
 tags: [Haiku OS, HaikuOS notes]   
 published: true  
@@ -95,11 +95,11 @@ Haiku操作系统架构分为三个层级：微内核层（microkernel）、服�
 3. __软件开发包层 / software kits__<p>
     软件开发包层是应用程序调用服务和内核的接口。各种开发包用C++编写，包含各种编程需要的面向对象的类库，以动态链接库形式（DLL）存在和使用。主要有应用程序开发包、界面开发包、媒体开发包等，这些类库构成了操作系统的应用程序接口API（haikuOS兼容BeOS的API）。   
 
-    HaikuOS(BeOS)包含十几个软件开发包，一般的编程只需熟悉几个常用的开发包，比如显示一个窗口只用到应用开发包（Application Kit）和界面开发包（Interface Kit），所有开发包介绍见下节：**软件开发包 / software kits**。  
+    HaikuOS(BeOS)包含十几个软件开发包，一般的编程只需熟悉几个常用的开发包，比如显示一个窗口只用到应用开发包（Application Kit）和界面开发包（Interface Kit）。  
 
 __参考__：  [3]
 
-关于Haiku系统的更细节的内容大都在其[官方网站www.haiku-os.org](www.haiku-os.org)。为方便，列出主要资料链接：     
+下篇将继续详细介绍Haiku的架构和各种软件开发包API，以及Haiku的消息机制，线程，程序间的通信等。关于Haiku系统的更细节的内容大都在其[官方网站www.haiku-os.org](www.haiku-os.org)。为方便，列出主要资料链接：     
 
 1. [Haiku用户指南（中文）](http://www.haiku-os.org/docs/userguide/zh_CN/contents.html)      
 2. [Documents：包含用户使用及编程指南](http://www.haiku-os.org/documents)    
@@ -107,9 +107,10 @@ __参考__：  [3]
 4. [Development：Haiku开发相关资源](https://www.haiku-os.org/development)    
 
 
-此外，还可以阅读我后边列出的参考文献，或者关注我的[Github pages《Don's HaikuOS Notes》系列](http://doncn.github.io/blog)的更新，与我一起学习Haiku系统。
+此外，还可以阅读我后边列出的参考文献，或者关注我的更新，与我一起学习Haiku系统。
 
-Copyright © Don Liu， Email：donliucn@gmail.com  
+首发地址：[Github pages《Don Liu's Blog》](http://doncn.github.io/blog)，如有错漏之处请不吝赐教，Email：donliucn@gmail.com。   
+Copyright © Don Liu
 
 -----------------------------
 ###参考文献及扩展阅读：###
