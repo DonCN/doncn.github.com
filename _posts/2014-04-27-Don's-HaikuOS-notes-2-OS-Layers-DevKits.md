@@ -24,7 +24,7 @@ published: true
 1. __内核层 / kernel__<p>
     操作系统的最底层是内核，它直接工作在硬件之上，处理计算机的底层任务，提供了上层所需的操作系统的基本功能，包括多线程、多处理器、抢占式多任务处理、内存保护、虚拟内存、消息传递、线程调度、文件系统工具等。内核的线程调度初始就设计成支持多线程、多处理器，这一特性是Haiku的固有属性，是Haiku API的核心和灵魂所在[2]。
 
-	上图是借用《Programming the Be Operating System》的一张图。实际上，Haiku的内核是混合内核(hybrid kernel)，并且是偏单一内核的混合内核[3]。首先，Haiku的硬件驱动运行于内核层，动态链接，图形驱动则分为两部分，分别位于内核和服务层。除去驱动的内核基本为模块化的单一内核。
+	Haiku的内核是混合内核(hybrid kernel)，并且是偏单一内核的混合内核[3]。首先，Haiku的硬件驱动运行于内核层，动态链接，图形驱动则分为两部分，分别位于内核和服务层。除去驱动的内核基本为模块化的单一内核。
 
 2. __服务层 / server__<p>
     内核之上是服务层。服务层包含多个服务（servers），在后台处理程序请求的系统功能，各个服务运行在自己受保护的内存空间[2]，因而是独立的、可重启的[4]，即使某个服务崩溃不会影响到其他服务。作为程序员，不能直接操作服务层，需要通过上层的软件开发包提供的接口操作服务层。	
@@ -166,39 +166,13 @@ published: true
         <td>
 		本地化开发包Locale Kit包含了本地化到各种语言、时区、数字格式等的类。这也是Haiku相对于BeOS增加的一个新特性。		
 		</td>
-    	</tr>
-    <tr align="left">
-        <th>Screen Saver </th>
-		<th>libscreensaver.so </th>
-		<th> </th>
-        <td>
-		</td>
     </tr>
-    <tr align="left">
-        <th>Deskbar  </th>
-		<th>libtracker.so </th>
-		<th>DeskBar </th>
-        <td>
-		桌面栏Deskbar相当于Windows的任务栏			
-		</td>
-    </tr>
-    <tr align="left">
-	</tr>
-    <tr align="left">
-        <th>Tracker </th>
-		<th>libtracker.so </th>
-		<th>Tracker </th>
-        <td>
-		文件浏览器 Tracker相当于Windows的Explorer文件浏览器，但是更好用^_^			
-		</td>
-    </tr>
-	</tr>
     <tr align="left">
         <th>*Kernel Kit </th>
 		<th>libroot.so </th>
 		<th></th>
         <td>
-		内核开发包用于程序直接操作底层的内核，以及手动创建和维护线程。
+		内核开发包用于程序直接操作底层的内核，以及手动创建和维护线程。是目前唯一没有C++类，而是C函数的开发包。
 		</td>
     </tr>
     <tr align="left">
@@ -223,7 +197,7 @@ published: true
 
 为了便于介绍开发包的类，首先简单介绍下源码的命名规则
 
-__Table 2-2:__ Haiku OS Naming Conventions
+__Table 2-2:__ Haiku OS 源代码命名规则
 
 <table border="1">
     <tr align="center" bgcolor="gray">
@@ -323,7 +297,7 @@ __Table 2-3:__ Haiku API类的继承举例 [5]
 - **深入的多线程化：** 我们前面说到，Haiku能快速响应的功劳要归于深入的多线性化。上述几个类就能说明这个机制：由于创建一个BLooper对象会自动产生一个新线程，而BApplication、BWindow又继承自BLooper，所以每创建一个新程序（新窗体）都会产生自身主线程及属于它的消息队列线程这两个线程。所以一个包含窗体的程序至少有4个线程，每个主线程都有它单独的消息线程，所以Haiku程序响应快，很少会延迟、卡顿。
 
 
-## III. 消息、线程，程序间通信 / Messages, Threads, and Application Communication
+## III. 消息、线程、程序间通信 / Messages, Threads, and Application Communication
 
 什么是消息呢？消息是用来在程序、窗口、线程之间通信，传递系统事件、用户操作等。由上述开发包的继承例子可以看到，消息机制对Haiku非常重要，消息系统使得Haiku的程序、线程之间的通信简单、可靠。与消息机制相关的几个重要的类[12]：
 
@@ -337,17 +311,46 @@ BLooper类用来接收、处理消息队列，它的每个对象都运行在自�
 
 通过PostMessage()函数可以将消息传给消息队列的BMessageQueue类的对象。
 
-#### 3. BHandler类
-
-BHandler类用来处理消息，一般都是与消息队列BLooper类关联的，创建BHandler类的对象后应该将它传给想要处理的消息队列的BLooper::AddHandler()函数，来获取消息。消息处理是在MessageReceived()中完成的，可以重写这个函数来定义自己消息处理操作。
-
-#### 4. BMessenger类
+#### 3. BMessenger类
 
 BMessenger类的对象可以将消息传给本程序和其他程序。
 
 我们知道BLooper::PostMessage()也是用来发送消息的。但通过调用BMessenger::SendMessage()传递消息有独特优势：允许同步回复，这样保证处理了消息回复给发送者。
 
-至于与其他程序通信，可以将其他程序签名的参数定义为BMessenger类型，这样就可以很方便的实现程序间通信。
+至于与其他程序通信，可以将其他程序的签名作为创建的BMessenger对象的参数，这样就可以很方便的实现程序间通信。示例代码如下：
+
+	BMessenger messenger("application/x-some-app");
+	messenger.SendMessage(new BMessage(DO_SOMETHING));
+
+#### 4. BInvoker类
+
+BInvoker类用于按钮和复选框等控件的消息发送。给它指定发送的消息和发送的目标，则每次该类的Invoke()函数调用时，就会将消息发送给指定目标。
+
+#### 5. BHandler类
+
+BHandler类用来处理消息，一般都是与消息队列BLooper类关联的，创建BHandler类的对象后应该将它传给想要处理的消息队列的BLooper::AddHandler()函数，来获取消息。消息处理是在MessageReceived()中完成的，可以重写这个函数来定义自己消息处理操作。它是一个 “hook函数()”，即由子类实现来响应不同事件的虚函数。任何继承了BHandler的子类，包括BLooper，BApplication，BWindow，Bview等都有该函数，都能接收处理消息。一个窗体的接收消息示例代码：
+
+	void MyWindow::MessageReceived(BMessage *msg)
+	{
+		switch (msg->what)
+		{
+			case M_SOME_MESSAGE:
+			{
+				DoSomething();
+				break;
+			}
+			default:
+			{
+				// 默认调用MyWindow父类BWindow的MessageReceived()函数   
+				BWindow::MessageReceived(msg);
+				break;
+			}
+		}
+	}
+
+
+由上述几个类，就能完成Haiku消息的发送、接收、处理过程。
+
 
 本篇就是这些内容，如有错漏之处，请不吝赐教。更多细节可参考后边的参考文献和扩展阅读。下篇将介绍如何利用Haiku API的Application Kit和Interface Kit中的BApplication, BMessage, BLooper, BWindow, BView等类创建简单的程序和窗体，以及窗体与程序的消息传递。
 
