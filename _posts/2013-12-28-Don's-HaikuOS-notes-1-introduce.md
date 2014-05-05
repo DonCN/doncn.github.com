@@ -110,7 +110,7 @@ __参考__：  [3]
 此外，还可以阅读我后边列出的参考文献，或者关注我的更新，与我一起学习Haiku系统。
 
 首发地址：[Github pages《Don Liu's Blog》](http://doncn.github.io/blog)，如有错漏之处请不吝赐教， Email：donliucn@gmail.com。   
-Copyright © Don Liu
+Don Liu Copyright © 2013-2014
 
 -----------------------------
 ###参考文献及扩展阅读：###
