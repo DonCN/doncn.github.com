@@ -168,7 +168,7 @@ published: true
 		</td>
     </tr>
     <tr align="left">
-        <th>*Kernel Kit </th>
+        <th>\*Kernel Kit </th>
 		<th>libroot.so </th>
 		<th></th>
         <td>
@@ -176,7 +176,7 @@ published: true
 		</td>
     </tr>
     <tr align="left">
-        <th>*OpenGL Kit </th>
+        <th>\*OpenGL Kit </th>
 		<th>libGL.so </th>
 		<th></th>
         <td>
