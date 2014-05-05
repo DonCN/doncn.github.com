@@ -349,7 +349,7 @@ BMessenger类的对象可以将消息传给本程序和其他程序。
 
 至于与其他程序通信，可以将其他程序签名的参数定义为BMessenger类型，这样就可以很方便的实现程序间通信。
 
-本篇就是这些内容，如有错漏请不吝赐教。详情可参考后边的参考文献和扩展阅读。下篇将介绍如何利用Haiku API的Application Kit和Interface Kit中的BApplication, BMessage, BLooper, BWindow, BView等类创建简单的程序和窗体，以及窗体与程序的消息传递。
+本篇就是这些内容，如有错漏之处，请不吝赐教。更多细节可参考后边的参考文献和扩展阅读。下篇将介绍如何利用Haiku API的Application Kit和Interface Kit中的BApplication, BMessage, BLooper, BWindow, BView等类创建简单的程序和窗体，以及窗体与程序的消息传递。
 
 
 首发地址：[Github pages《Don Liu's Blog》](http://doncn.github.io/blog)   
