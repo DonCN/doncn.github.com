@@ -1,7 +1,7 @@
 ---
 layout: post   
 title: Don's HaikuOS Notes:(2)系统架构、开发包、消息机制... v1.0   
-summary: 本篇详细介绍Haiku OS的系统架构的三个层级：内核层（kernel）、服务层（server）、软件开发包层（software kits）。三层之间为服务-客户端关系，底层为高层服务，高层调用底层功能；介绍了API开发包的继承关系；Haiku的消息机制，程序、进程间的通信等。通过本篇内容，可以更详细的了解Haiku系统的一些细节技术，也为以后Haiku编程做知识准备。 <p><div align="center"><img src="/images/BeOS_Structure.png" alt="BeOS_Structure.png"><p>应用程序和硬件之间的系统层次结构</div><p>   
+summary: 本篇详细介绍Haiku OS的系统架构的三个层级：内核层（kernel）、服务层（server）、软件开发包层（software kits）。三层之间为服务-客户端关系，底层为高层服务，高层调用底层功能；介绍了API开发包的继承关系；Haiku的消息机制，程序、进程间的通信等。通过本篇内容，可以更详细的了解Haiku系统的一些细节技术，也为以后Haiku编程做知识准备。 <p><div align="center"><img src="/images/haiku-notes/1_BeOS_Structure.png" alt="BeOS_Structure.png"><p>应用程序和硬件之间的系统层次结构</div><p>   
 categories: [Haiku OS, HaikuOS notes]  
 tags: [Haiku OS, HaikuOS notes]   
 published: true  
@@ -239,7 +239,7 @@ __Table 2-2:__ Haiku OS 源代码命名规则
 
 ### 2. 开发包的继承结构（以Interface Kit为例）
 
-![应用程序开发包（Application Kit）的继承结构](/images/ApplicationKit_hierarchy.png)
+![应用程序开发包（Application Kit）的继承结构](/images/haiku-notes/2_ApplicationKit_hierarchy.png)
 
 系统的开发包都是C++编写的，因此它的类都是面向对象的，自然的采用了类的继承结构，有包之间的类的继承，也有本包内的类的继承。继承结构在Haiku API中发挥了重要作用，理解这个继承结构，有利于快速选择采用哪个类来实现既定功能。
 

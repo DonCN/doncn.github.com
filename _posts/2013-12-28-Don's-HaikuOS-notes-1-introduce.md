@@ -1,7 +1,7 @@
 ---  
 layout: post   
 title: Don's HaikuOS Notes:(1)简介...v1.01    
-summary: Haiku OS是一个开源、免费的操作系统，主要面向个人计算机，它快速、简洁、易学易用，但功能非常强大。它有：<ul><li>- 拼贴和标签式的窗口；</li><li>- 快速响应的内核；</li><li>- 针对多核处理器设计；</li><li>- 深入的多线程化；</li><li>- 先进的全日志、数据库式64位文件系统；</li><li>- 基于属性的快速索引和查询；</li></ul>有人说，Haiku给人一种别样的美好感觉，她将让你重新认识个人计算机。的确，自从认识了Haiku，我就被她的别样风情和众多特性迷住了。这篇文章是我的HaikuOS学习笔记，以及一些相关材料的整理。希望能让大家认识、感受到一个别样美好的操作系统。<p><center><a href="/images/HaikuOS-desktop.png" target="_blank"><img src="/images/HaikuOS-desktop.png" alt="HaikuOS-desktop" height="500" width="633"></a><p>Haiku OS 桌面</center><p>     
+summary: Haiku OS是一个开源、免费的操作系统，主要面向个人计算机，它快速、简洁、易学易用，但功能非常强大。它有：<ul><li>- 拼贴和标签式的窗口；</li><li>- 快速响应的内核；</li><li>- 针对多核处理器设计；</li><li>- 深入的多线程化；</li><li>- 先进的全日志、数据库式64位文件系统；</li><li>- 基于属性的快速索引和查询；</li></ul>有人说，Haiku给人一种别样的美好感觉，她将让你重新认识个人计算机。的确，自从认识了Haiku，我就被她的别样风情和众多特性迷住了。这篇文章是我的HaikuOS学习笔记，以及一些相关材料的整理。希望能让大家认识、感受到一个别样美好的操作系统。<p><center><a href="/images/haiku-notes/1_HaikuOS-desktop.png" target="_blank"><img src="/images/haiku-notes/1_HaikuOS-desktop.png" alt="HaikuOS-desktop" height="500" width="633"></a><p>Haiku OS 桌面</center><p>     
 categories: [Haiku OS, HaikuOS notes]  
 tags: [Haiku OS, HaikuOS notes]   
 published: true   
@@ -80,7 +80,7 @@ __参考__：  [2] [3]
 
 Haiku操作系统架构分为三个层级：内核层（kernel）、服务层（server）、软件开发包层（software kits）。三层之间为服务-客户端关系：软件是服务的客户端，服务又是内核的客户端[6]。  
 <p><div align="center">
-<img src="/images/BeOS_Structure.png" alt="BeOS_Structure.png"><p>
+<img src="/images/haiku-notes/1_BeOS_Structure.png" alt="BeOS_Structure.png"><p>
 应用程序和硬件之间的系统层次结构
 </div>
 
