@@ -95,7 +95,7 @@ form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用
 我对系统的透明特性有着复杂的感觉。一方面，它新颖，有吸引力，有时的确有用。例如，能在另一个窗口下看到iTunes目前正在播放的歌曲就很好。感谢Tinker这个工具，使终端窗口部分透明，这样我就可以在使用命令行窗口的时候还能同时看到下面的Finder窗口的变化。
 
 <div align="center">
-<img src="/images/TalesBeOS-transparency.jpg" alt="transparency" height="212" width="633">
+<img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-transparency.jpg" alt="transparency" height="212" width="633">
 </div>
 <i>透明效果在OS X系统中相当普遍，有时候很方便，有时候又会带来干扰，感觉很纠结呀。比如，在读到下层窗口的一个网络地址或一段数据时候会很有用。但总体来说，透明效果的目的只是为了摆酷，这对我来说还行。</i>
 
@@ -136,14 +136,14 @@ OS X的网络已经比以前的Be更先进。虽然它的仍不完善，高级�
 在BeOS中, 我学会了用<tt>dd</tt>、<tt>mkisofs</tt>和<tt>mkfbs</tt>等命令<a href="http://betips.net/1997/09/09/burning-cds-with-beos/" target="_blank">刻录CD</a>，并加载到Tracker。这个过程一般情况都顺利，但也不是没有任何问题。而在OS X下， 苹果有自己的一套处理磁盘镜像的习惯。许多OS X下的软件下载下来是<tt>.dmg</tt>文件，打开它就能检查索引，并被加入Finder检索中。这对开发者来说是一种优雅方便的发布软件的方法，也便于用户创建磁盘和CD备份。隐藏了创建磁盘镜像以及加载、卸载的复杂性，苹果的DiskCopy工具就能完美的创建硬盘、数据CD、音乐CD的拷贝，而不用考虑文件系统。
 
 <div align="center">
-<img src="/images/TalesBeOS-diskimage.jpg" alt="diskimage" height="256" width="378">
+<img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-diskimage.jpg" alt="diskimage" height="256" width="378">
 </div>
 <i>许多OS X软件都是可加载磁盘镜像格式发行的 - 双击它就能通过虚拟光驱加载到桌面和Finder检索，爱死这些大图标了... </i>
 
 <br>
 
 <div align="center">
-<img src="/images/TalesBeOS-newimage.gif" alt="newimage" height="150" width="322">
+<img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-newimage.gif" alt="newimage" height="150" width="322">
 </div>
 <i>自带的DiskCopy工具使得从文件或光盘创建磁盘镜像极其简单。DiskCopy让Linux/BeOS的"dd"命令相形见绌</i>
 
@@ -179,14 +179,14 @@ BeOS在某些方面还是要超过其他系统的，比如总体易用性，音�
 在一个虚拟数据库之上建立一个操作系统会对整个操作系统的功能产生影响，MP3的存储就是一个例子。BeOS的MP3编码工具存储元数据，不只是存储在ID3标签中，还保存于文件系统中。这就意味着我们能够创建自定义的播放列表，而不像Windows或Linux那样需要借助第三方工具。例如，在BeOS中创建一个播放列表，包括1978-1984年之间的所有乡村或朋克类型的歌曲，那就是小菜一碟。
 
 <div align="center">
-<img src="/images/TalesBeOS-id3attrs.gif" alt="id3attrs" height="274" width="682">
+<img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-id3attrs.gif" alt="id3attrs" height="274" width="682">
 </div>
 <i>文件浏览器Tracker中的MP3文件列表，包含了多种属性，而隐藏了实际文件名。注意浏览器同时显示了多少属性信息。尽管OS X的查询工具Finder也支持元数据，但是它也无法在视图内显示这么多的数据，除非缩小字体。既然Tinker工具可以改变Finder的字体，那么我们或许可以期待未来的OS X在这方面做出改进。</i>
 
 我收藏的mp3音乐文件包含了详细的ID3标签，但是我在OS X中不得不顺从地接受事实，牺牲我那些自定义的播放列表。为了能显示更多的ID3列，我放大了iTunes窗口。我意识到可以用很多规则整理我的音乐文件。应用程序顶部的小的搜索窗口看起来不怎么样，可我很快意识到它能在任何ID3标签字段找到字符串。将搜索结果拖到一个新的播放列表，我就可以重现BFS的数据库功能，而无需属性功能。虽然在iTunes中，这些大量的，按任意规则的搜索不比直接在BFS文件系统下更快，但都是很快就能完成。在OS X下，因为一切都发生在iTunes这样单一的窗口内，反而会更好。
 
 <div align="center">
-<a href="http://www.birdhouse.org/beos/refugee/itunes.gif" target="_blank"><img src="/images/TalesBeOS-itunes.jpg" alt="itunes" border="0" height="304" width="500"></a>
+<a href="http://www.birdhouse.org/beos/refugee/itunes.gif" target="_blank"><img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-itunes.jpg" alt="itunes" border="0" height="304" width="500"></a>
 </div>
 <i>iTunes可以实现跟BeOS一样的元数据的存储和查询，只是BeOS限定在一个由操作系统供应商提供单一播放软件中。不幸的是，我无法在Finder中看到相同的元数据，而我在BeOS下就可以；我不能从Sherlock中查询，而BeOS下就可以。但我得承认，iTunes播放列表管理真的很好用，很有吸引力。此外，iTunes的皮肤更棒。</i>
 
@@ -225,7 +225,7 @@ OS X的强项是它的iTunes有非常棒的播放列表管理，而BeOS则是任
 尽管我不认同微软的理念，但是事实上OS X上一些最复杂的软件来自微软。我使用办公软件并不多，但当需要时还是需要的。对于微软为Mac平台提供的Offic X，就像<a href="http://www.wired.com/news/technology/0,1282,48160,00.html" target="_blank">连线杂志评论文章“乔布斯喜欢盖茨的新办公软件”</a>里说的，将一堆旧的办公套件变成一件艺术品。增加了成千上万行代码，数百新部件和图标。这是一件和OS X本身一样华丽的软件。入驻微软的Mac移植团队不只是移植软件，他们为满足Mac用户的需求重写了大量代码。
 
 <div align="center">
-<a href="http://www.birdhouse.org/beos/refugee/office.jpg" target="_blank"><img src="/images/TalesBeOS-office.jpg" alt="office" border="0" height="236" width="350"></a>
+<a href="http://www.birdhouse.org/beos/refugee/office.jpg" target="_blank"><img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-office.jpg" alt="office" border="0" height="236" width="350"></a>
 </div>
 <i>面对微软会有纠结。你最终离开了他们的操作系统，可是突然发现你喜欢上了他们在另一个平台上的软件。的确，面对Office和Internet Explorer你很难拒绝。</i>
 
@@ -261,7 +261,7 @@ BeOS用户抱怨最多的问题就是现有的Web浏览器很差。如果BeOS早
 从体系结构上来说，这轮比较BeOS获胜。
 
 <br><div align="center">
-<a href="http://www.birdhouse.org/beos/refugee/bemail.jpg" target="_blank"><img src="/images/TalesBeOS-bemail.jpg" alt="bemail" border="0" height="146" width="400"></a>
+<a href="http://www.birdhouse.org/beos/refugee/bemail.jpg" target="_blank"><img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-bemail.jpg" alt="bemail" border="0" height="146" width="400"></a>
 </div>
 <i>BeMail的每个消息都是一个单独的文件，存储于Tracker文件浏览器。可以按个人喜好排序，或通过定制系统查询来创建虚拟的邮件文件夹。可以通过BeMail客户端简单的阅读和书写邮件，而用其他的应用程序提供的更强大功能处理集中保存的邮件消息。</i>
 
@@ -270,7 +270,7 @@ BeOS用户抱怨最多的问题就是现有的Web浏览器很差。如果BeOS早
 另一方面，Qualcomm很早之前就移植了Beta测试版的Eudora到OS X平台，这个测试版达到了98%的完成度。我在BeOS上使用Eudora工作多年，于是在OS X上也使用它。但是，出于好奇，我尝试了几天苹果自带的邮件客户端，然后再也没有回到Eudora。这是超级整洁，可以处理多个帐户，有足够（但不是很棒）的规则/过滤器，有颜色标签代表的资料等级——与我一直非常喜欢的Mail-It上的特性相同，这也是为什么我遗憾的放弃了Eudora。 
 
 <br><div align="center">
-<img src="/images/TalesBeOS-mail.gif" alt="mail" border="0" height="575" width="552">
+<img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-mail.gif" alt="mail" border="0" height="575" width="552">
 </div>
 <i>苹果的邮件客户端不够强大，但用起来不错，看起来很好看。我非常喜欢它的彩色标签，使得同一个主题的邮件增多时更易于阅读。邮件也很好地处理引用的文本，所以同主题邮件多次引用时，锯齿状缩进引用的的文本，加上不同颜色标签，赏心悦目。</i>
 
@@ -556,7 +556,7 @@ new file types with entirely new arrays of attributes. In other words,
 the Be File System doubles as a database. 
 
 <div align="center">
-<a href="http://www.birdhouse.org/beos/refugee/trackerbase.gif"><img src="/images/TalesBeOS-trackerbase.gif" alt="trackerbase" border="0" height="169" width="405"></a>
+<a href="http://www.birdhouse.org/beos/refugee/trackerbase.gif"><img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-trackerbase.gif" alt="trackerbase" border="0" height="169" width="405"></a>
 </div>
 <i>Be's filesystem doubles as a database. Users can use built-in 
 filetypes with existing attributes, or create entirely new filetypes 
@@ -669,7 +669,7 @@ the file type third - the exact opposite of what logic and usability
 would dictate.
 
 <div align="center">
-<img src="/images/TalesBeOS-binding_prio.gif" alt="xray" height="343" width="468">
+<img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-binding_prio.gif" alt="xray" height="343" width="468">
 </div>
 <i>OS X prioritizes Creator code over file type in the application 
 binding process. Since the document's creator is logically irrelevant to
@@ -731,7 +731,7 @@ would give the user much more control over every aspect of file types
 and bindings.
 
 <div align="center">
-<img src="/images/TalesBeOS-filetypes.jpg" alt="be_filetypes" border="0" height="406" width="570">
+<img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-filetypes.jpg" alt="be_filetypes" border="0" height="406" width="570">
 </div>
 <i>The BeOS FileTypes preferences panel gives the user total control 
 over MIME types, icons, associations between applications and filetypes 
@@ -782,7 +782,7 @@ copying, and moving files around in a file system of any I've
 encountered.
 
 <div align="center">
-<a href="http://www.birdhouse.org/beos/refugee/horiz_scroll.gif" target="_blank"><img src="/images/TalesBeOS-horiz_scroll_thumb.jpg" alt="horiz" border="0" height="161" width="400"></a>
+<a href="http://www.birdhouse.org/beos/refugee/horiz_scroll.gif" target="_blank"><img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-horiz_scroll_thumb.jpg" alt="horiz" border="0" height="161" width="400"></a>
 </div>
 <i>The Finder's horizontal scrolling view is easy to work in and quite 
 elegant, but I still miss spring-loaded folders. Click for larger  
@@ -826,7 +826,7 @@ Finder needs to become more adept at displaying them.
 
 
 <div align="center">
-<img src="/images/TalesBeOS-shortnames.gif" alt="shortnames" height="330" width="535">
+<img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-shortnames.gif" alt="shortnames" height="330" width="535">
 </div>
 <i>Short filenames like these are no way to treat your MP3 collection, 
 but neither iTunes nor Audion will generate anything but. Then again, 
@@ -949,7 +949,7 @@ default Replace. In OS X, I have to stop and reach for the mouse, which
 interrupts the workflow and the train of thought.
 
 <div align="center">
-<img src="/images/TalesBeOS-dialog.png" alt="dialog" height="258" width="187">
+<img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-dialog.png" alt="dialog" height="258" width="187">
 </div>
 <i>I have two problems with OS X dialogs. 1) You can tab through fields 
 with the Tab key, but you can't use the arrow or tab keys to move 
