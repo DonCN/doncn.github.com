@@ -1,7 +1,7 @@
 ---
 layout: post   
 title: Don's HaikuOS Notes:(2)系统架构、开发包、消息机制... v1.0   
-summary: 本篇详细介绍Haiku OS的系统架构的三个层级：内核层（kernel）、服务层（server）、软件开发包层（software kits）。三层之间为服务-客户端关系，底层为高层服务，高层调用底层功能；介绍了API开发包的继承关系；Haiku的消息机制，程序、进程间的通信等。通过本篇内容，可以更详细的了解Haiku系统的一些细节技术，也为以后Haiku编程做知识准备。 <p>   
+summary: 本篇详细介绍Haiku OS的系统架构的三个层级：内核层（kernel）、服务层（server）、软件开发包层（software kits）。三层之间为服务-客户端关系，底层为高层服务，高层调用底层功能；介绍了API开发包的继承关系；Haiku的消息机制，程序、进程间的通信等。通过本篇内容，可以更详细的了解Haiku系统的一些细节技术，也为以后Haiku编程做知识准备。 <p><div align="center"><img src="/images/BeOS_Structure.png" alt="BeOS_Structure.png"><p>应用程序和硬件之间的系统层次结构</div><p>   
 categories: [Haiku OS, HaikuOS notes]  
 tags: [Haiku OS, HaikuOS notes]   
 published: true  
@@ -14,10 +14,7 @@ published: true
 
 ## I 系统架构 ##
 
-<p><div align="center">
-<img src="/images/BeOS_Structure.png" alt="BeOS_Structure.png"><p>
-应用程序和硬件之间的系统层次结构
-</div>
+
 
 《Don's HaikuOS Notes》系列的前一篇“简介”中介绍了Haiku操作系统的历史、特点、特性，介绍了系统架构分为三个层级：内核层（kernel）、服务层（server）、软件开发包层（software kits）。三层之间为服务-客户端关系：软件是服务的客户端，服务又是内核的客户端[2]，总之是，底层为高层服务，高层调用底层功能。各个层级简介如下：
 
@@ -168,7 +165,7 @@ published: true
 		</td>
     </tr>
     <tr align="left">
-        <th>\*Kernel Kit </th>
+        <th>*Kernel Kit </th>
 		<th>libroot.so </th>
 		<th></th>
         <td>
@@ -176,7 +173,7 @@ published: true
 		</td>
     </tr>
     <tr align="left">
-        <th>\*OpenGL Kit </th>
+        <th>*OpenGL Kit </th>
 		<th>libGL.so </th>
 		<th></th>
         <td>
