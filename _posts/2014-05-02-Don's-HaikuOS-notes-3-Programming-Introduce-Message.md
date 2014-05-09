@@ -43,13 +43,17 @@ App.cpp
 
 	#include "App.h"
 
-	/* 引用头文件包含需要用到的类型或方法，因为要在程序构造中创建窗体的对象并完成显示，所以要包含自己定义的主窗体的头文件MainWindow.h */	
+	/* 引用头文件包含需要用到的类型或方法，因为要在程序构造中
+	   创建窗体的对象并完成显示，所以要包含自己定义的主窗体的头文件
+       MainWindow.h */	
 	#include "MainWindow.h"
 
-	/* 定义应用程序时，要为每个程序起一个唯一的名字——标签，如双引号中所示。格式就是“application/发行商名.程序名”  */
+	/* 定义应用程序时，要为每个程序起一个唯一的名字——标签，
+       如双引号中所示。格式就是“application/发行商名.程序名”  */
 	App::App(void) : BApplication(“application/x-vnd.MyFirstApp”)
 	{
-	//创建自定义窗口类型对象，并通过调用Show() 函数来显示窗体，并创建它的消息队列线程
+	/* 创建自定义窗口类型对象，并通过调用Show() 函数来显示窗体，
+       并创建它的消息队列线程 */
 	MainWindow *mainwin = new MainWindow();
 	mainwin->Show();
 	}
@@ -59,7 +63,9 @@ App.cpp
 	{
 	App *app = new App();
 
-	/*创建的程序对象必须调用它的运行函数Run()来创建它的消息队列线程（这个消息机制在上篇有详细介绍）。当Run()返回后，必须删除Application对象app来释放内存空间。*/
+	/* 创建的程序对象必须调用它的运行函数Run()来创建它的消息队列线程
+      （这个消息机制在上篇有详细介绍）。当Run()返回后，
+       必须删除Application对象app来释放内存空间。*/
 	app->Run();
 	delete app;
 
@@ -75,7 +81,10 @@ MainWindow.h
 
 	#include <Window.h>
 
-	/*创建窗体一般总是创建 BWindow 的子类，通过与Application server会话来管理窗口元素，所以对窗体的操作都通过Application对象来传递消息,如上App程序中,通过调用Show() 函数来显示窗体，并创建它的消息队列线程。*/
+	/* 创建窗体一般总是创建 BWindow 的子类，通过与Application server
+       会话来管理窗口元素，所以对窗体的操作都通过Application对象来
+       传递消息,如上App程序中,通过调用Show() 函数来显示窗体，
+       并创建它的消息队列线程。*/
 	class MainWindow : public BWindow
 	{
 	public:
@@ -106,20 +115,25 @@ MainWindow.cpp
 	// BString类用于处理字符串相关问题
 	#include <String.h>
 	
-	// 定义了按钮要发送的消息的代号常数，单引号内的字符会转换成整数赋值给代号常数作为唯一标识. 
+	/* 定义了按钮要发送的消息的代号常数，单引号内的字符会转换成整数
+       赋值给代号常数作为唯一标识. */
 	enum
 	{
 		M_BUTTON_CLICKED = 'btcl'
 	};
 	
 			
-	/*定义窗体变量，并给定参数:指定窗口大小，括号中四个参数分别是左/上/右/下边框到屏幕左边和上边的像素数。然后是标题,B_TITLED_WINDOW指明要显示标题, B_QUIT_ON_WINDOW_CLOSE指明关闭窗口时通知程序退出)。fCount(0)为赋初值0 */
+	/* 定义窗体变量，并给定参数:指定窗口大小，括号中四个参数分别是
+       左/上/右/下边框到屏幕左边和上边的像素数。然后是标题,
+       B_TITLED_WINDOW指明要显示标题, B_QUIT_ON_WINDOW_CLOSE指明
+       关闭窗口时通知程序退出)。fCount(0)为赋初值0 */
 	MainWindow::MainWindow(void)
 		:	BWindow(BRect(100,100,300,200),"ClickMe",B_TITLED_WINDOW, B_ASYNCHRONOUS_CONTROLS | 
 																		B_QUIT_ON_WINDOW_CLOSE),
 			fCount(0)
 	{
-		/* BRect()作为按钮类的参数定义了按钮的大小，后边参数依次是控件名，控件上显示字符，按下后发送的消息
+		/* BRect()作为按钮类的参数定义了按钮的大小，后边参数依次是
+           控件名，控件上显示字符，按下后发送的消息 */
 		BButton *button = new BButton(BRect(10,10,11,11),"button","Click Me!",
 										new BMessage(M_BUTTON_CLICKED));
 		
@@ -154,7 +168,10 @@ MainWindow.cpp
 			}
 			default:
 			{
-				/* 若来的消息不符合我们自定义的消息，那肯定是系统消息，所以调用我们窗体的父类BWindow的MessageReceived()函数，它能处理这些系统消息。若想让你的窗体拥有系统默认的窗体功能（如关闭/最大/最小化等）必须要有这个函数。*/
+				/* 若来的消息不符合我们自定义的消息，那肯定是系统消息，
+                   所以调用我们窗体的父类BWindow的MessageReceived()
+                   函数，它能处理这些系统消息。若想让你的窗体拥有系统
+                   默认的窗体功能（如关闭/最大/最小化等）必须要有这个函数。*/
 				BWindow::MessageReceived(msg);
 
 				break;
@@ -248,7 +265,10 @@ BMessage也能在消息中包含额外数据，它提供了一些成员函数将
 			}
 			default:
 			{
-				/* 若来的消息不符合我们自定义的消息，那肯定是系统消息，所以调用我们窗体的父类BWindow的MessageReceived()函数，它能处理这些系统消息。若想让你的窗体拥有系统默认的窗体功能（如关闭/最大/最小化等）必须要有这个函数。*/
+				/* 若来的消息不符合我们自定义的消息，那肯定是系统消息，
+                   所以调用我们窗体的父类BWindow的MessageReceived()
+                   函数，它能处理这些系统消息。若想让你的窗体拥有系统
+                   默认的窗体功能（如关闭/最大/最小化等）必须要有这个函数。*/
 				BWindow::MessageReceived(msg);
 
 				break;
