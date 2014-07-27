@@ -126,7 +126,7 @@ OS X的网络已经比以前的Be更先进。虽然它的仍不完善，高级�
  
 总的来说，OS X中网络功能大体上式世界级水平的。它是安全、稳定的，跟UNIX一样…只是它还没有完成。如果我们把它与Linux网络相比较，Linux会赢。但是若与BeOS比较，OS X就成了赢家。然而，没有理由认为在未来OS X不能成为Linux和BSD那样世界级的服务器操作系统。现在，那些想在Mac上运行ISP（Internet service provider，网络服务提供商），则需要选择MAC OS X的服务器版本。
 
-<h3>CD刻录与磁盘镜像 / CD Burning, Disk Images</h3>
+### CD刻录与磁盘镜像 / CD Burning, Disk Images
 
 仔细观察OS X系统的任何地方，你只会想到‘融合、统一’这个描述。以CD刻录为例，插入一张空白CD，OS X会问你是想让制作一个ISO，HFS +，还是音频CD。如果你选择ISO或HFS+，光盘会加载到桌面，只要把你想要刻录的东西拖到里面，然后将它拖到垃圾桶。一旦你开始拖，垃圾桶图标变成一个刻录图标（人们常抱怨将希望刻录的光盘拖到垃圾桶让人费解）。点击刻录，等等吧，剩下的工作由系统搞定，无需第三方软件。 
 
@@ -150,7 +150,7 @@ OS X的网络已经比以前的Be更先进。虽然它的仍不完善，高级�
 一个不协调的缺点就是：刻录数据CD，需要将镜像拖到垃圾桶图标。而刻录音乐CD，就不需要。原因是iTunes不显示加载的镜像。而是直接在播放列表里刻录。一点小瑕疵。
 
 
-<h3>到处都是PDF / PDF Everywhere</h3>
+### 到处都是PDF / PDF Everywhere
 
 
 OS X的一个有趣的创新就是PDF技术在系统中得到了广泛的应用--石英显示引擎（Quartz display engine）建立在PDF的页面描述语言PostScript之上，这和NeXTStep上是一样的。这意味着任何程序都可以直接打印输出到PDF。选择打印，再点击预览（Preview），文本就转换为PDF，并显示在内置的预览程序中，另存就可以得到PDF文件了。不用再购买、安装Acrobat或者第三方软件。就这么简单，棒极了！
@@ -158,7 +158,7 @@ OS X的一个有趣的创新就是PDF技术在系统中得到了广泛的应用-
 本文的<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">英文PDF版本</a>就是用这个方法得到的。
 
 
-<h2>应用软件 / Applications</h2>
+## 应用软件 / Applications
 
 我曾经听到某些‘专家’说OS X仍然缺少应用软件。的确，Photoshop还没有从OS 9升级到OS X新界面，但是有许多软件在发行的第一年就会发布它的OS X版本。而BeOS则软件很少，我们这些BeOS用户已经习惯了请求软件发行者发布BeOS版本，任何小的软件都让我们感激。实际上还未升级到新界面的程序在OS 9经典模式*下都能很好运行。我没有老的Mac软件，所以不需要在经典模式下花费太多时间。偶尔使用，也很顺利（除了这些经典模式下的程序不能使用Samba共享，我的大量图像和文件都是采用的这个方式保存的）。
 
@@ -168,7 +168,7 @@ OS X的一个有趣的创新就是PDF技术在系统中得到了广泛的应用-
 下面的大部分软件都不是关于操作系统的，只是操作系统提供的一些软件，你可以跳过去看接下来的操作系统比较。但是我觉得这些程序是操作系统及操作体验的一部分，还是应该包含进来。
 </blockquote>
 
-<h3>音乐播放器 / iTunes</h3>
+### 音乐播放器 / iTunes
 
 BeOS在某些方面还是要超过其他系统的，比如总体易用性，音频文件的创建、存储与播放。结合数据库式的文件系统——BFS（Be File System），Be操作系统处理多媒体文件及其高效，比如音频播放软件<a href="http://www.bebits.com/app/156" target="_blank">SoundPlay</a>与系统融合的很好，使用又非常灵活。作为对MP3音乐的爱好者，我马上就在OS X上寻找能达到Be系统里那样功能的MP3播放器。在BeOS中，任意的元数据（meta-data，属性标签）都可以与文件或某类型文件结合起来，并保存为属性（attributes）。这些属性可以在文件浏览器中进行筛选、排序和查询。因为属性是系统自动索引的，所以查询结果瞬间可得，不管查询的数据量有多大。在本质上，Be的文件系统就是一个数据库。
 
@@ -194,10 +194,10 @@ iTunes给我的另一个惊喜是，有一天我用一个批处理工具批量�
 
 我对iTunes的一大抱怨就是缺少插件。目前，我见到的唯一的插件是可视化工具（visualizers）。用起来不错，但是谁在乎呢？我希望的是一些真正有用的插件，就像WinAmp或者BeOS的SoundPlay的那种插件。最近，我花了一晚上时间，尝试了能在<a href="http://www.versiontracker.com/" target="_blank">VersionTracker</a>找到的各种MP3播放器。我所需要的就是在某个指定端口广播前降低采样频率。可我还是空手而归。而用BeOS的SoundPlay实现同样的功能就很容易——启用LiveEncoder插件，指定使用的位率（比特率）、采样频率以及广播端口就好了。这样你在SoundPlay播放的音乐也会同时广播到网络。BeOS还有各种工具来控制你的MP3收藏，即使是远程的，比如搜索、随机播放，远程建立播放列表等等。我不知道iTunes的插件是否有这些功能，还是因为某些原因开发者没有实现，可插件目录却是开放的，很怪。
 
-OS X的强项是它的iTunes有非常棒的播放列表管理，而BeOS则是任何关于MP3的创建、保存、远程控制、立体声接口等等。
+**评价：** OS X的强项是它的iTunes有非常棒的播放列表管理，而BeOS则是任何关于MP3的创建、保存、远程控制、立体声接口等等。
 
 
-<h3>视频播放 / iMovie, iDVD</h3>
+### 视频播放 / iMovie, iDVD
 
 既然苹果希望成为用户生活的数字中心，那么她的操作系统中就应该包含基本的视频制作程序。当我在<a href="http://www.adamation.com/" target="_blank">Adamation</a>工作时了解到编辑数字视频无论从程序员角度还是用户角度都是一个很复杂的过程。在Adamation我曾经花了几周时间尝试各种非线性编辑器。经过尝试，我发现没有一种非线性编辑器像iMovie这样容易学习和使用。苹果已经尽力去除了很多视频编辑的让人困惑的体验，让用户可以无故障、流畅播放的视频。
 
@@ -207,10 +207,10 @@ OS X的强项是它的iTunes有非常棒的播放列表管理，而BeOS则是任
 
 至于平台对比，这正是BeOS的设计目标，以及为什么Adamation试图实时处理10个层次而不渲染。苹果需要从Adamation当初在BeOS上，以及目前在windows上的工作中学习很多。在实际应用中，MAC一直是DV编辑和视频制作的不错的平台。由于Adamation离开了BeOS平台，这个平台完全没有可用的非线性编辑器。另一方面，Final Cut Pro 3（FCP）已经宣布发行OS X版本。随着FCP迅速成为行业标准，风行于非线性编辑器领域，MAC仍然是DV编辑的一个好选项。
 
-这次比较，OS X险胜。
+**评价：** 这次比较，OS X小胜。
 
 
-<h3>Camera</h3>
+### 相机 / Camera
 
 在我得到我的MAC前一周，我花了一些时间将老爸的电脑从BeOS转移到了Windows 98。在那之前，他应该就是地球上最老的熟悉BeOS的用户了。他爱用BeOS。它也从没让人失望，100%防病毒（因为没有已知的BeOS病毒），并且像古老的Macintosh一样简单易用。但他厌倦了收到邮件，却打不开附件，访问网站，BeOS的垃圾浏览器却无法工作。
 
@@ -220,7 +220,7 @@ OS X的强项是它的iTunes有非常棒的播放列表管理，而BeOS则是任
 
 我听说Windows XP能更好的支持相机，若windows具有类似的能力，我也不会惊讶。但是，如果我钱够的话，我会为爸爸买一台OS X电脑。
 
-<h3>办公软件 / Office X</h3>
+### 办公软件 / Office X
 
 尽管我不认同微软的理念，但是事实上OS X上一些最复杂的软件来自微软。我使用办公软件并不多，但当需要时还是需要的。对于微软为Mac平台提供的Offic X，就像<a href="http://www.wired.com/news/technology/0,1282,48160,00.html" target="_blank">连线杂志评论文章“乔布斯喜欢盖茨的新办公软件”</a>里说的，将一堆旧的办公套件变成一件艺术品。增加了成千上万行代码，数百新部件和图标。这是一件和OS X本身一样华丽的软件。入驻微软的Mac移植团队不只是移植软件，他们为满足Mac用户的需求重写了大量代码。
 
@@ -235,12 +235,12 @@ OS X的强项是它的iTunes有非常棒的播放列表管理，而BeOS则是任
 
 可惜的是，因为微软没有公开它的Office文件格式，Word和Excel文件的兼容性与Gobe Productive并不完美。在大多数情况下，完全可用，但它不能处理一些更复杂的文件类型，如文档与数据透视表和修订跟踪。而Office X就一切正常，十分完美。不仅如此，但他们终于解决了所有的MAC和Windows Office DOC的兼容性问题，包括扩展字符集和向后兼容（Office X的文件可以在Windows的Word 97中完美的打开，而无需先保存为老的兼容格式）。
 
-这轮比较OS X胜。
+**评价：** 这轮比较OS X胜。
 
 <i>*注：Gobe Productive 3 只发行了Windows版，他们声明计划在近期发布Linux版本。</i>
 
 
-<h3>浏览器和邮件 / Browsers and E-Mail</h3>
+### 浏览器和邮件 / Browsers and E-Mail
 
 BeOS用户抱怨最多的问题就是现有的Web浏览器很差。如果BeOS早出现几年，那么Netscape可能会为BeOS发行一个浏览器版本。可事实不是如此。多年来，BeOS上唯一的浏览器就是自带的netpositive，它是快速和高效的，事实上在大多时候用着还不错，但它不能处理Java、JavaScript、DHTML或CSS。无论BeOS多么现代或科幻，如果她上面没有相应现代的的软件，那她就名不副实。Opera 3.62可以用在BeOS上，但它仍然不完美。Mozilla的浏览器也可以用在BeOS，但它臃肿，经常崩溃。BeOS上没有好的浏览器呀。
 
@@ -248,7 +248,7 @@ BeOS用户抱怨最多的问题就是现有的Web浏览器很差。如果BeOS早
 
 如果你不讨厌在Mac上运行MS的软件，还有一个更好的替代品。<a href="http://www.omnigroup.com/" target="_blank">OmniWeb</a>是一个稍慢，但是我见过的将网页显示的最漂亮的，只需启用OS X的脚本功能。iCab、Opera和Navigator 6都是现代的浏览器。OS X下浏览器的选择取决于个人的偏好，而不是像在BeOS上那样妥协和牺牲。 
 
-浏览器的比较，OS X胜。
+**评价：** 浏览器的比较，OS X胜。
 
 对于email客户端前台程序，Be的理念非常棒：提供一个单一的、标准的邮件格式，将邮件头的多属性元数据（如收件人、发件人、主题等），作为属性存储在统一的、共享的消息存储中。将每个消息（邮件）当作一个单独的文件存在用户的个人文件夹中。这种方法有两大优势：
 
@@ -258,7 +258,7 @@ BeOS用户抱怨最多的问题就是现有的Web浏览器很差。如果BeOS早
 	<li>所有的电子邮件应用程序都可以使用同一个消息存储。BeOS上没有专有的电子邮件格式，用户可以自由的更换各种电子邮件客户端，而不必担心格式之间的转换。用户甚至可以使用Tracker文件浏览器本身作为电子邮件的组织程序，利用简洁的BeMail客户端读写邮件。</li>
 </ol>
 
-从体系结构上来说，这轮比较BeOS获胜。
+**评价：** 从体系结构上来说，这轮邮件客户端的比较BeOS获胜。
 
 <br><div align="center">
 <a href="http://www.birdhouse.org/beos/refugee/bemail.jpg" target="_blank"><img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-bemail.jpg" alt="bemail" border="0" height="146" width="400"></a>
@@ -274,33 +274,18 @@ BeOS用户抱怨最多的问题就是现有的Web浏览器很差。如果BeOS早
 </div>
 <i>苹果的邮件客户端不够强大，但用起来不错，看起来很好看。我非常喜欢它的彩色标签，使得同一个主题的邮件增多时更易于阅读。邮件也很好地处理引用的文本，所以同主题邮件多次引用时，锯齿状缩进引用的的文本，加上不同颜色标签，赏心悦目。</i>
 
-如果这还不够的话，Office X中还包括Entourage，这是Windows下Outlook/Express的MAC版本。我还没试过，但听说不错。由于有这三款不错的选择，还有另外的多款其他电子邮件应用程序，所以这轮比较OS X获胜。如果有什么办法让这些厂商抛弃私有的邮件消息存储，而是以一个统一的格式存储，那就完美了。
+**评价：** 如果这还不够的话，Office X中还包括Entourage，这是Windows下Outlook/Express的MAC版本。我还没试过，但听说不错。由于有这三款不错的选择，还有另外的多款其他电子邮件应用程序，所以这轮比较OS X获胜。如果有什么办法让这些厂商抛弃私有的邮件消息存储，而是以一个统一的格式存储，那就完美了。
 
-<h3>文本编辑 / Power Editors</h3>
+### 文本编辑 / Power Editors
 
-The most powerful text / scripting / HTML editor for BeOS is Maarten Hekkelman's <a href="http://www.birdhouse.org/www.hekkelman.com/" target="_blank">Pe</a>.
- I lived in Pe for years. I maintained three web sites, did all my shell
- scripting, and wrote two books and countless articles in Pe. Hekkelman 
-has ported Pe to OS X under the name Pepper, so this transition could 
-have been super easy for me. But for the sake of change, and because I 
-wanted to see why <a href="http://www.barebones.com/" target="_blank">BBEdit</a>
- has the reputation it does, I adopted BBEdit for my power editing needs
- under OS X. That was a tough one for me, since I feel a certain loyalty
- to Maarten, and because it would be like a sentimental tie to my past. 
-What finally swayed me was the fact that I wanted access to the huge 
-community of BBEdit code wizards out there through the BareBones mailing
- lists.
+BeOS上最强大的文本/脚本/HTML编辑器是Maarten Hekkelman的＜a href =“http://www.birdhouse.org/www.hekkelman.com/”target=“_blank”> Pe </a>。我使用Pe多年，用Pe编辑维护了三个网站，编辑各种脚本，并写了两本书和无数的文章。Hekkelman已经将Pe改名为Pepper移植到OS X下，所以这种转变对我来说非常容易。不过为了防止意外，也因为我想知道为什么＜a href =“http://www.barebones.com/”target=“_blank”> BBEdit </a>在OS X中很有声望，我在OS X中的编辑器选了BBEdit。这对我来说是艰难的，因为Pe就像一种连接我的过去的感情纽带，我对它一时难以割舍。最终使我下定决心的事实是，我想通过BareBones邮件列表进入BBEdit巨大的
+应用代码社区。
 
-Because BBEdit has been around longer, and because it comes from a team 
-of programmers rather than an individual, BBEdit wins, 
-feature-for-feature. But in practice, and for the kind of work I do, 
-BBEdit hasn't offered any real-world advantages over Pe. They're equally
- elegant and powerful (roughly speaking), and the differences in the big
- picture are fairly minor. So this one is a draw.
+因为BBEdit应用已久，并且它来自一个程序员团队而不是个人，所以就特性来说BBEdit胜。但在实践中，根据我的工作性质，BBEdit没有提供任何相对于Pe的实际优势。简单来说，他们同样优雅和强大，大的方面的差异是相当小的。所以这是一个平局。
 
-Point: love-love.
+**评价：** 二者平局，都很喜欢。
 
-<h3>X Compatibility</h3>
+### X兼容性 / X Compatibility
 
 For those wanting to run *nix applications both BeOS and OS X have the 
 ability to run an X server and client, and to run X applications. In OS 
@@ -319,29 +304,15 @@ categories, and so far I haven't found an app category not filled either
  by Carbon/Cocoa apps or by Classic mode. I'm happy to let XonX remain 
 the domain of people who keep one foot planted firmly in the *nix world.
  
-Point goes to OS X.
+**评价：** 这轮比较OS X胜，它的兼容性更好。
 
-<h3>Software Costs</h3>
+### 软件花费 / Software Costs
 
-One downside I didn't expect about OS X software is that it gets 
-expensive fast. I don't come from the camp that believes software must 
-be free, and I love to support developers who do good work. It makes me 
-happy. But like anyone, I enjoy having access to free software as well, 
-and there's very little in the way of freeware available for OS X. 
-Freeware just isn't a part of the OS X culture, and shareware apps cost 
-about 50% more on average than equivalent BeOS shareware apps. By the 
-time you add up everything you pay to populate your machine with all the
- app launchers, text editors, image viewers, and other doo-dads you need
- to get through the day, it's easy to add a hefty sum to the initial 
-price of purchase. Hey, it's a free market, and I respect it. But 
-migrating users should be prepared.
+对于OS X，有个我没有想到的缺点就是它的软件贵多了。我并不属于免费软件鼓吹者，但是我认为软件必须是自由的，我乐意支持做出好软件的开发者。但是和其他人一样，我也很高兴使用免费的软件，但是OS X下很少有免费软件。免费提供软件不是的OS X的文化的一部分，它的共享应用程序的成本比起BeOS的共享软件大约要贵出50%以上。等到你的机器装好各种程序、文本编辑器、图片浏览器，以及你需要的其他软件，你会发现在购买机器的费用之外，你很容易又付出一大笔钱。是的，这是一个自由市场，我要尊重它。但新用户要有心理准备。 
 
-Fortunately, the quality of the software I've  been digging up has been 
-extremely high in general - independent Mac OS developers really seem to
- put a lot of care into their craft. In a way, software for Mac OS is 
-kind of like Apple hardware - you pay more, but you  also get more.
+幸运的是，我使用的软件质量都非常高——Mac OS的独立开发者的确在他们的作品上花费了大量精力。可以说，Mac OS的软件在一定程度上类似它的硬件——你花费多，你得到的也多。
 
-<h2>Community</h2>
+## 社区 / Community
 
 Hang out on some of the BeOS mailing lists for a while and you'll notice
  something interesting: There is a larger concentration of intelligent 
@@ -388,7 +359,7 @@ corresponding, and soon listed each other as "sister sites." I even
 helped Rob to edit his excellent <a href="http://homepage.mac.com/rgriff/osxguide2.html" target="_blank">OS X Power Guide</a>, which I highly recommed to anyone looking for ways to get more productive in OS X quickly.
 </blockquote>
 
-<h2>Happiness Quotient</h2>
+## 幸福指数 / Happiness Quotient
 
 So. I'm using this OS that provides a great experience. Everywhere I 
 turn, things are integrated, smooth, composed, designed, fluid, 
@@ -419,7 +390,7 @@ beautiful marriage of elegance and power.
 </blockquote>
 
 
-<h1>The Bad and The Ugly</h1>
+# 缺点与不足 / The Bad and The Ugly
 
 Overall, I'm happier than a pig in shit. What could I possibly find to complain about? 
 
@@ -506,72 +477,26 @@ Be's performance bar is going to be a tough hurdle for Apple.
 Unfortunately, the vast, vast majority of the Mac-using population has 
 never tried BeOS, and doesn't know what they're missing. 
 
-<h2>File System Shoot-Out</h2>
+## 文件系统对比 / File System Shoot-Out
 
-Speaking of not know what you're missing, we now come to the single 
-largest usability difference between BeOS and OS X  --  the file system 
-and the practices and policies used to work in it. I've written at great
- length about Be's file system, as it remains the one functional aspect 
-of the operating system which truly sets BeOS apart from anything else 
-on the market (not that BeOS is really "in the market" anymore).
+还有哪些没有涉及？那现在我们看看BeOS和OS X在使用上的最大不同——文件系统及其使用规则和体验。我曾经写了很多关于Be的文件系统，它是真正使BeOS与市场上的其他任何操作系统相区别的功能特性（尽管市场上已经没了BeOS）。
 
-BFS (the Be File System) is fully journaled, which means that data 
-integrity is guaranteed even in the event of a loss of power. Pull the 
-plug on a BeOS box and it boots back up in 15 seconds with no loss of 
-data. File system operations that were in process at the time of the 
-outage are simply replayed from the journal. No ScanDisk, no fschk, no 
-rebuilding the desktop. OS X does not have a journaled file system 
-(although, to be fair, I have lost power on this machine and found that 
-it booted back up in a normal time span without appearing to do anything
- special). 
+BFS（Be文件系统）是完全日志式的，这意味着即使在断电的情况下也能保证数据的完整性。拔掉BeOS电源，15秒后她启动起来，没有数据丢失，文件系统记录了在断电时刻正进行的任务，只要重新调出日志就能恢复原有数据，不用磁盘扫描程序，不用文件系统检查，不用重建桌面。而OS X没有日志式的文件系统（尽管公平的说，我曾经遇到OS X断电，发现它仍能正常启动，而不需做任何特别的事情）。
 
-BFS is also fully multithreaded for optimum performance, and in keeping 
-with the rest of BeOS, which is multithreaded from the lowest levels to 
-the highest. I do not know whether HFS+ is multithreaded (I've heard 
-that  it's not), but it sure doesn't feel as fast as BFS. However, I do 
-not have equivalent hardware on which to run comparative disk access 
-benchmarks under various conditions.
+BFS深入的利用多线程来达到最佳性能，并与BeOS其他部分不同程度的多线程协调配合。我不知道HFS+是不是多线程的（我听说不是），但它的确不如BFS那样快。不过，我并没有在相同的硬件上进行不同条件下的磁盘访问测试。
 
-The address space in BFS is 64-bit, meaning that the theoretical maximum
- file size on a BFS volume is 18,000 petabytes (the practical maximum is
- much smaller for various reasons, but is still in the tens of thousands
- of gigabytes range). The 32-bit HFS+, like all 32-bit file systems, has
- a maximum file size of around four gigabytes. Larger files are possible
- via behind-the-scenes magic which transparently stitches files 
-together, but it seems like this is an issue Apple would have addressed 
-as long as they were creating a new operating system and had the chance 
-to get it right.
+BFS的地址空间是64位的，这意味着一个BFS磁盘理论上的最大文件大小为18000亿兆字节（petabytes）（由于多种原因实际上的最大值比这要小得多，但也有万G字节（gigabytes）左右）。32位的HFS+，像所有其他的32位文件系统，只有4G字节（gigabytes）。更大的文件也可以通过后台技术将文件分成几个部分，再连接起来，但看起来，这是一个苹果需要解决的问题，除非他们开发一个新的64位操作系统才能改变这种状况。 
 
-For the everyday user, though, BFS has much more tangible advantages. 
-Any file or file type on a BFS volume can have arrays of metadata 
-associated with it, in the form of "attributes." There is no limit to 
-the amount, size, or type of attributes, and attributes can be displayed
- and edited, sifted, sorted, and queried for directly in the Tracker 
-(Be's equivalent of the Finder). Because most attributes are indexed, 
-search results are nearly instantaneous, regardless the size of the 
-volume or the number of files being searched through. By default, BeOS 
-ships with reasonable sets of attributes for common file types, but 
-users are allowed to extend and customize these, and to create entirely 
-new file types with entirely new arrays of attributes. In other words, 
-the Be File System doubles as a database. 
+虽然对于日常用户，BFS更具有明显优势。在一个BFS磁盘上的任何文件或文件类型可以有一组与它相关联的元数据，以“属性”的形式存在，对于属性，没有数量、大小或类型的限制，并且属性可以直接在Tracker（Be的Finder）中显示、编辑、筛选、排序和查询。因为大多数属性都经过索引，搜索的结果几乎瞬间显现，无论搜索磁盘的大小或文件的数量。默认情况下，BeOS带有常见的文件类型的属性，用户还可以扩展和定制这些属性，并创造具有全新属性的新的文件类型。换句话说，Be的文件系统可以看做一个数据库。
 
 <div align="center">
 <a href="http://www.birdhouse.org/beos/refugee/trackerbase.gif"><img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-trackerbase.gif" alt="trackerbase" border="0" height="169" width="405"></a>
 </div>
-<i>Be's filesystem doubles as a database. Users can use built-in 
-filetypes with existing attributes, or create entirely new filetypes 
-with custom collections of attributes. These files were used to deliver a
- dynamic web site out of the BFS database without using 3rd-party 
-database software. Click for larger image.</i>
+<i>Be的文件系统可以看做一个数据库。用户可以使用内置的文件类型的现有属性，或者创建全新的文件类型及其特有的一组属性。图中的这些文件用来存储动态网站的数据，而不用第三方数据库软件。点击可以放大图片。</i>
 
-It is difficult to describe to users of other operating systems just how
- advantageous an operating system built on top of a virtual database can
- be. Only other BeOS users really seem to understand the power and 
-flexibility of the database-like file system, and it is the single 
-feature I miss the most from BeOS. 
+为其他操作系统用户解释建立在虚拟数据库之上的操作系统的优势比较困难。只有BeOS用户才能体会到数据库式文件系统的强大和灵活，这是我最怀念的BeOS特性。
 
-Some examples of Be's database-like file system in action:
-
+Be的数据库式文件系统的一些操作举例：
 
 <ul>
 	<li>Copy your MP3 files' ID3 tags to Artist, Title, Year, Genre 
