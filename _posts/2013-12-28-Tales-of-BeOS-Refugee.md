@@ -1208,4 +1208,7 @@ _【译文结束】_
 
 (<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">本文英文版PDF下载</a>)
 
+参考：  
+[Mac OS X背后的故事](http://code-tech.diandian.com/post/2013-01-24/40046406335)
+
 
