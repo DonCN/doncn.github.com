@@ -287,53 +287,24 @@ BeOS上最强大的文本/脚本/HTML编辑器是Maarten Hekkelman的＜a href =
 
 ### X兼容性 / X Compatibility
 
-For those wanting to run *nix applications both BeOS and OS X have the 
-ability to run an X server and client, and to run X applications. In OS 
-X, X can run either "rooted" or "rootless." In rootless mode, the X 
-system does not take over the entire desktop, so one can run *nix GUI 
-apps side by side with Carbon/Cocoa apps. In BeOS, X runs in a large 
-window, so the experience is fairly similar. However, the <a href="http://sourceforge.net/projects/xonx/" target="_blank">XonX</a>
- project has more developers and more momentum. Compatibility is 
-greater, and we can expect to see the experience continue to improve 
-with time. Whether or not BeOS' X implementation gets any better (it was
- fairly shaky last time I tried it) is anybody's guess.
+对那些希望使用Unix类软件的人来说，BeOS和OS X都有运行X服务/客户端和X程序的能力。在OS X中，X程序可以运行在根权限（rooted）或非根权限（rootless）之下。 在非根权限模式下，X系统不会全面接管桌面，所以可以与Carbon/Cocoa程序一起运行*nix图形界面程序。在BeOS下，X在一个大窗口下运行，所以二者运行体验类似。但是，<a href="http://sourceforge.net/projects/xonx/" target="_blank">XonX</a>
+工程拥有更多的开发者和更有希望。兼容性方面作的更好，以后我们可以见证体验随时间的进一步提升。BeOS下的X实现是否做的更好（我上次的体验不咋地）还不得而知。
 
-In any case, I haven't found much reason to run XonX, as the only 
-reasons I might want to are to compensate for missing application 
-categories, and so far I haven't found an app category not filled either
- by Carbon/Cocoa apps or by Classic mode. I'm happy to let XonX remain 
-the domain of people who keep one foot planted firmly in the *nix world.
+在任何情况下，我并没有找到太多的理由来运行XonX，唯一的理由我想是为了弥补应用分类的缺失，到目前为止我还没有找到一个应用程序分类不是通过Carbon/Cocoa或经典模式实现的。我很高兴把XonX保持在*nix粉丝世界里。
  
 **评价：** 这轮比较OS X胜，它的兼容性更好。
 
 ### 软件花费 / Software Costs
 
-对于OS X，有个我没有想到的缺点就是它的软件贵多了。我并不属于免费软件鼓吹者，但是我认为软件必须是自由的，我乐意支持做出好软件的开发者。但是和其他人一样，我也很高兴使用免费的软件，但是OS X下很少有免费软件。免费提供软件不是的OS X的文化的一部分，它的共享应用程序的成本比起BeOS的共享软件大约要贵出50%以上。等到你的机器装好各种程序、文本编辑器、图片浏览器，以及你需要的其他软件，你会发现在购买机器的费用之外，你很容易又付出一大笔钱。是的，这是一个自由市场，我要尊重它。但新用户要有心理准备。 
+对于OS X，有个我没有预料到的缺点就是它的软件贵多了。我并不属于免费软件鼓吹者，但是我认为软件必须是自由的，我乐意支持做出好软件的开发者。但是和其他人一样，我也很高兴使用免费的软件，但是OS X下很少有免费软件。免费提供软件不是的OS X的文化的一部分，它的共享应用程序的成本比起BeOS的共享软件大约要贵出50%以上。等到你的机器装好各种程序、文本编辑器、图片浏览器，以及你需要的其他软件，你会发现在购买机器的费用之外，你很容易又付出一大笔钱。是的，这是一个自由市场，我要尊重它。但新用户要有心理准备。 
 
 幸运的是，我使用的软件质量都非常高——Mac OS的独立开发者的确在他们的作品上花费了大量精力。可以说，Mac OS的软件在一定程度上类似它的硬件——你花费多，你得到的也多。
 
 ## 社区 / Community
 
-Hang out on some of the BeOS mailing lists for a while and you'll notice
- something interesting: There is a larger concentration of intelligent 
-and friendly users in BeOS-land than in any computing community I've 
-ever stumbled across. There's just something about the system that 
-attracts sophisticated, articulate users with high standards (present 
-writer excluded, of course). You almost never see the kind of rudeness 
-and arrogance in BeOS-land that you see in Windows or Linux communities 
-(Linux especially), and while there are always BeOS newbies, there are 
-seldom computing newbies hanging out on BeOS lists. Over the years, I've
- hooked up with dozens of people whom I now count as genuine friends.
+在BeOS的邮件列表闲逛一段时间之后，你就会发现一些有趣的事： 社区里聪明友好的用户相对其他计算社区更专注于BeOS，这个系统里有些东西能吸引高端用户（当然笔者除外）。在BeOS社区几乎见不到Windows和Linux社区里你见到的粗鲁无礼（Linux社区尤其如此），当然社区里会有BeOS新手，但是他们并不是电脑新手。 这些年来，在BeOS社区我结识了不少人，现在都是我的挚友。
 
-The Mac communities are much better than the Windows and Linux 
-communities as far as signal/noise ratio goes, but suffer from a 
-different kind of problem: Stubborn-ness. There seem to be endless 
-armies of Mac users who feel that the old ways are the best. Who kick 
-and moan and bitch about OS X and its cursed Unix underbelly and how 
-evil the command line is and how Apple is off its rocker. These people 
-would rather keep using a slow, crashy, OS with no remote administration
- and no appeal to command-line power users and no position in the server
- niche than be dragged kicking and screaming into the modern world. 
+就有用信息来说，Mac社区要好于Windows和Linux社区，但是有其他的问题：固执。 似乎有无尽的Mac用户觉得旧的Mac OS方式才是最好的，他们攻击OS X、命令行，抱怨苹果偏离了轨道。这些人宁愿使用缓慢、容易崩溃，并且没有远程管理、命令行强大功能，没有服务器功能的系统，也不愿进入现代世界。 
 
 Granted, these voices seem to grow a little less loud and a little less 
 prolific with every passing month. But they're still there, and the fact
@@ -347,7 +318,7 @@ Aside from the highly vocal nay sayers, the Mac community has about the
 same level of friendliness, if not the same level of technical savvy as 
 the BeOS community. 
 
-Point: BeOS, by a narrow margin.
+**评价：** BeOS微弱胜出。
 
 <blockquote>
  On the community note: As I began to pick up steam on OS X, I decided 
