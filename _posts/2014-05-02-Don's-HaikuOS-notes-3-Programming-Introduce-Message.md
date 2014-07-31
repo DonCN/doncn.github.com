@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Don's HaikuOS Notes 3: Haiku编程简介——创建窗体程序及消息演示 v1.1
+title: Don's HaikuOS Notes 3:Haiku编程简介——创建窗体程序及消息演示 v1.1
 summary: 本篇通过实例介绍Haiku的编程基础，实现一个简单的窗体程序，通过按钮改变窗体标题，这样就可以演示Haiku的消息机制，各程序、窗体之间如何利用消息通信。![click me window](/images/haiku-notes/3_click_me.png)<p>
 categories: [Haiku OS, HaikuOS notes]  
 tags: [Haiku OS, HaikuOS notes]
