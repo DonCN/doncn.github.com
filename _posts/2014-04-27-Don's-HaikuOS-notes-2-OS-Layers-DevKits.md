@@ -1,6 +1,6 @@
 ---
 layout: post   
-title: Don's HaikuOS Notes:(2)系统架构、开发包、消息机制... v1.0   
+title: Don's HaikuOS Notes 2: 系统架构、开发包、消息机制... v1.1   
 summary: 本篇详细介绍Haiku OS的系统架构的三个层级：内核层（kernel）、服务层（server）、软件开发包层（software kits）。三层之间为服务-客户端关系，底层为高层服务，高层调用底层功能；介绍了API开发包的继承关系；Haiku的消息机制，程序、进程间的通信等。通过本篇内容，可以更详细的了解Haiku系统的一些细节技术，也为以后Haiku编程做知识准备。 <p><div align="center"><img src="/images/haiku-notes/1_BeOS_Structure.png" alt="BeOS_Structure.png"><p>应用程序和硬件之间的系统层次结构</div><p>   
 categories: [Haiku OS, HaikuOS notes]  
 tags: [Haiku OS, HaikuOS notes]   
@@ -288,7 +288,7 @@ __Table 2-3:__ Haiku API类的继承举例 [5]
     </tr>
 </table>
 
-由上表可见，子类可以通过继承很方便的“继承”父类的功能，并扩展出自己的新功能。上表几个类的除了说明了Haiku API的继承关系，还隐含了Haiku的两个重要机制：
+由上表可见，子类可以通过继承很方便的“继承”父类的功能，并扩展出自己的新功能。上表几个类的除了说明了Haiku API的继承关系，还包含了Haiku的两个重要机制：
 
 - **消息机制：** 上表几个类继承的功能（BLooper、BHandler）就是关于消息的接收、处理，也就是消息机制的，它在Haiku中发挥着重要作用。下节将具体介绍Haiku的消息机制。
 - **深入的多线程化：** 我们前面说到，Haiku能快速响应的功劳要归于深入的多线性化。上述几个类就能说明这个机制：由于创建一个BLooper对象会自动产生一个新线程，而BApplication、BWindow又继承自BLooper，所以每创建一个新程序（新窗体）都会产生自身主线程及属于它的消息队列线程这两个线程。所以一个包含窗体的程序至少有4个线程，每个主线程都有它单独的消息线程，所以Haiku程序响应快，很少会延迟、卡顿。
@@ -304,9 +304,9 @@ BMessage类就是用来封装消息内容的，包括消息类型和消息数据
 
 #### 2. BLooper类
 
-BLooper类用来接收、处理消息队列，它的每个对象都运行在自己单独的线程内。它不停的检查队列中进入的消息，再利用继承的Bhandler类的函数处理消息。
+BLooper类的每个对象都拥有一个单独的线程运行消息队列来分发消息，还继承了Bhandler类来结束和处理这些分发的消息。所以BLooper类的对象可以分发、接收、处理消息。
 
-通过PostMessage()函数可以将消息传给消息队列的BMessageQueue类的对象。
+此外，通过PostMessage()函数可以将消息传给消息队列的BMessageQueue类的对象。
 
 #### 3. BMessenger类
 
@@ -351,9 +351,9 @@ BHandler类用来处理消息，一般都是与消息队列BLooper类关联的�
 
 本篇就是这些内容，如有错漏之处，请不吝赐教。更多细节可参考后边的参考文献和扩展阅读。下篇将介绍如何利用Haiku API的Application Kit和Interface Kit中的BApplication, BMessage, BLooper, BWindow, BView等类创建简单的程序和窗体，以及窗体与程序的消息传递。
 
-
 首发地址：[Github pages《Don Liu's Blog》](http://doncn.github.io/blog)   
 Don Liu Copyright © 2013-2014， Email：donliucn@gmail.com  
+**创建于：**2014-04-27，**最后修改：**2014-07-30-v1.1
 
 -----------------------------
 ###参考文献及扩展阅读：

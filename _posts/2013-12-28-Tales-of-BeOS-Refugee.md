@@ -1,7 +1,7 @@
 ---
-layout: post 
-title: 2001：一个BeOS难民的故事(译文)(进行中...) 
-summary: 本文译自[Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/) - Scot Hacker。原作者Scot Hacker是[BeOS Bible](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在2001年[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统停止开发之后，无奈尝试转向其他操作系统，经历一番试用比较，最终转到MAC OS X。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优势做了深入的介绍。虽然BeOS已经停止了开发，但是很多忠诚爱好者还是不愿放弃，其中一批人在2001年开始了旨在重现BeOS的Haiku OS([英文主页](http://haiku-os.org/))开源项目，目前Haiku处于Beta测试阶段，在重现BeOS的同时也做了大量的改进。自从两年前发现了Haiku，我也成了她的忠诚粉丝。这篇文章虽然成于2001年，但是现在读来依然有趣，也非常有助于对Haiku OS的了解，特地翻译出来，希望大家喜欢。   
+layout: post
+title: 2001：一个BeOS难民的故事(译文)(进行中...)
+summary: 本文译自[Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/) - Scot Hacker。原作者Scot Hacker是[BeOS Bible](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在2001年[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统停止开发之后，无奈尝试转向其他操作系统，经历一番试用比较，最终转到MAC OS X。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优势做了深入的介绍。虽然BeOS已经停止了开发，但是很多忠诚爱好者还是不愿放弃，其中一批人在2001年开始了旨在重现BeOS的Haiku OS([英文主页](http://haiku-os.org/))开源项目，目前Haiku处于Beta测试阶段，在重现BeOS的同时也做了大量的改进。自从两年前发现了Haiku，我也成了她的忠诚粉丝。这篇文章虽然成于2001年，但是现在读来依然有趣，也非常有助于对Haiku OS的了解，特地翻译出来，希望大家喜欢。
 categories: [Haiku OS]  
 tags: [Haiku OS]  
 published: true  
@@ -39,13 +39,13 @@ published: true
 如果你不熟悉造就BeOS的全部科技，我会在下面一一介绍。这篇文章<a href="http://birdhouse.org/beos/byte/29-10000ft/" target="_blank">BeOS: The 10,000-Foot View</a>是一个简介。如果你对BeOS一点都不了解，你应该浏览下这篇文章。
 </blockquote>
 
-很显然，事情并没有完全按照Be的意愿发展，在90年代末，BeOS就不再向上发展。Be没能获得市场的成功，风险投资也渐渐枯竭。当Be宣布将转向网络应用的操作系统，大部分人意识到了不妙。应用程序开发者和用户开始离开这个平台，不再讨论半个世界都运行着BeOS会是怎样，转而讨论如何让这个平台继续活下去。 
+很显然，事情并没有完全按照Be的意愿发展，在90年代末，BeOS就不再向上发展。Be没能获得市场的成功，风险投资也渐渐枯竭。当Be宣布将转向网络应用的操作系统，大部分人意识到了不妙。应用程序开发者和用户开始离开这个平台，不再讨论半个世界都运行着BeOS会是怎样，转而讨论如何让这个平台继续活下去。
 
 在“焦点转移”之后，BeOS的场面就沉闷起来。BeOS用户并未奢求彻底的逆转，只是希望尽量将未完成的代码完成，私下交换着Be未完成的网络模块的代码，同时无奈的看着越来越多的Be不支持的硬件涌现。
 
 我觉得是时候继续向前，重新进入BeOS之外的PC世界了。在5年的BeOS时光之后，我再次回归到Windows(Win2K)。开始还好，自从我上次(5年前)使用Windows以后，它有了长足的进步，有了海量的软件。我已经习惯了BeOS下有限的软件可供选择，忘记了计算机里有任何你想要的软件会是什么样子的。
 
-但是这段快乐是如此短暂。不到一周，我就厌烦了。当然，Windows可以完成工作，海量的软件也值得探索，但是它的用户体验非常枯燥。只有功能，没有体验(All function and no 
+但是这段快乐是如此短暂。不到一周，我就厌烦了。当然，Windows可以完成工作，海量的软件也值得探索，但是它的用户体验非常枯燥。只有功能，没有体验(All function and no
 form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用BeOS的快乐。尽管Win2K比以前用的破烂Win95/98好太多，可Windows的使用方法多得让我难以忍受。对BeOS的深入研究让我对微软的商业行为有了深刻的认识。我无法摆脱和屈从于那深刻的厌烦之感。使用Windows让我感动虚伪和放荡。在糟糕的使用体验之间，我实在需要重新找到激情。
 
 ### ... 再获激情... / ... And Into the Fire...
@@ -81,7 +81,7 @@ form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用
 跟其他操作系统一样，OS X也是一个混合体。唯一能描述我从BeOS转到OS X的体验的方法也许就是我指出我对OS X的喜欢和失望之处。尽管有不足，但BeOS在某些方面树立了很高的标准，在这些方面OS X注定会令我失望了。我初始的，也许不一定正确的假设是OS X拥有BeOS所具有的所有现代操作系统的技术，并且拥有光明的前景。我认为苹果公司拥有Be公司曾经有过的那种机会：全新完美设计，没有历史负担，让用户不再背负以前的错误设计带来的历史遗留负担。这里，我忽略了苹果公司的一个重要因素：它并不是没有历史负担，他们得考虑向前兼容旧的Mac OS，并且满足数百万Mac用户的使用习惯和期望，以及过去二十多年Mac的高雅传统。
 
 我可能会离题，这很容易。我可能正兴高采烈的讲述着OS X，转眼就开始哀叹抱怨。
- 
+
 # 很多喜欢 / A Lot To Like
 
 ### 第一印象 / First Impressions
@@ -110,7 +110,7 @@ form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用
 
 BeOS一个失败的可能原因就是他们没有实现多用户功能。Be的文件系统有支持多用户的能力，应用可以实现这些，但系统级别的执行权限的限制却很少，也没有任何用户界面来管理用户。BeOS符合POSIX标准，并包括一个bash shell，但她本质上并不是一个Unix。而OS X则是一个真正的Unix(尽管可能有人对什么是真正的Unix有异议)【译者注：OS X的内核来源于Unix-BSD】。 苹果系统内建了漂亮的界面来管理用户，进行用户权限控制。但是目前却没有与用户管理相对应的组管理。我可以很方便的为朋友或家人建立桌面账号和SSH登陆账号。
 
-说到SSH和网络，我只需点击网络设置的一个按钮来运行一个安全壳守护进程，而不像BeOS那样不安全的telnet远程登录。远程管理我的OS X系统在开机后分分钟内就能实现。同样，每个OS X系统内都内置有Apache Web服务器，默认配置下<a href="http://oreillynet.com/pub/a/mac/2001/12/07/apache.html" target="_blank">[OS X的apache配置，英文]</a> 就能为公共root文件夹和<tt>~/Sites/</tt>文件夹下的页面服务. 
+说到SSH和网络，我只需点击网络设置的一个按钮来运行一个安全壳守护进程，而不像BeOS那样不安全的telnet远程登录。远程管理我的OS X系统在开机后分分钟内就能实现。同样，每个OS X系统内都内置有Apache Web服务器，默认配置下<a href="http://oreillynet.com/pub/a/mac/2001/12/07/apache.html" target="_blank">[OS X的apache配置，英文]</a> 就能为公共root文件夹和<tt>~/Sites/</tt>文件夹下的页面服务.
 
 苹果正在或将很快成为世界上最大的UNIX系统供应商。创建一个用户友好的UNIX，几十年来一直作为最高目标，当然是很多Linux开发人员的目标。事实上，苹果（也包括Be公司）成功地给那些需要的人提供UNIX的强大功能，而不会让一般用户具有我之前说的那样的感受——开源的产品很难有好的用户体验。创造一个良好的用户体验，要求为项目工作的每个人都有一致的观点——而开源社区很难达到这点。在当年我为BeOS写作的时候，我就一遍又一遍地指出这一点，现在苹果的新经历再次证明了它的正确。Be和苹果用了很少的开发人员就提供了UNIX shell的强大功能，同时又拥有良好的用户体验，这比开源社区引入X11窗口管理器要早多年。
 
@@ -123,12 +123,12 @@ OS X的网络已经比以前的Be更先进。虽然它的仍不完善，高级�
 <blockquote>
  如果主要用（OS X）作Apache和SSH服务器，就很好。但是你若想用塔连接你工作室的VPN，还是用windows吧。尽管（OS X）有一些pptp工具，但是相应文档很少，我也从没成功运行过它们。 许多人都跟我谈到他们遇到过无线网络的密码不能一直保存，会定期的‘被遗忘’，我自从重装系统后还没遇到这样的问题。不过我发现OS X的一个主要减分项也是关于网络的：如果所有的DNS服务器断了之后，你可能会忘了它，而OS X则需要10多分钟才能开机，并且会出现各种怪状。这可能只是一个很容易纠正的小错误。
 </blockquote>
- 
+
 总的来说，OS X中网络功能大体上式世界级水平的。它是安全、稳定的，跟UNIX一样…只是它还没有完成。如果我们把它与Linux网络相比较，Linux会赢。但是若与BeOS比较，OS X就成了赢家。然而，没有理由认为在未来OS X不能成为Linux和BSD那样世界级的服务器操作系统。现在，那些想在Mac上运行ISP（Internet service provider，网络服务提供商），则需要选择MAC OS X的服务器版本。
 
 ### CD刻录与磁盘镜像 / CD Burning, Disk Images
 
-仔细观察OS X系统的任何地方，你只会想到‘融合、统一’这个描述。以CD刻录为例，插入一张空白CD，OS X会问你是想让制作一个ISO，HFS +，还是音频CD。如果你选择ISO或HFS+，光盘会加载到桌面，只要把你想要刻录的东西拖到里面，然后将它拖到垃圾桶。一旦你开始拖，垃圾桶图标变成一个刻录图标（人们常抱怨将希望刻录的光盘拖到垃圾桶让人费解）。点击刻录，等等吧，剩下的工作由系统搞定，无需第三方软件。 
+仔细观察OS X系统的任何地方，你只会想到‘融合、统一’这个描述。以CD刻录为例，插入一张空白CD，OS X会问你是想让制作一个ISO，HFS +，还是音频CD。如果你选择ISO或HFS+，光盘会加载到桌面，只要把你想要刻录的东西拖到里面，然后将它拖到垃圾桶。一旦你开始拖，垃圾桶图标变成一个刻录图标（人们常抱怨将希望刻录的光盘拖到垃圾桶让人费解）。点击刻录，等等吧，剩下的工作由系统搞定，无需第三方软件。
 
 
 如果你刻录一个音频CD，iTunes会自动启动。将要刻录的音乐从你的音乐库拖动到一个播放列表，点击刻录，就行了。再次强调，无需第三方软件。没有歧义的，没有折磨，没有意外发生。虽然Be的cd刻录程序在刻录音乐的时候也有很多相同的易于使用的特点，刻录数据CD一直都不那么好用。而在Linux上，无论是用Mandrake发行版自带图形界面工具，还是命令行的<tt>cdrecord</tt>，我从来没有成功过，就像过山车一样，会有各种惊险发生。对于命令行，我在BeOS下就已经掌握了. 在OS X中, 这些事就是"小菜一碟" 。
@@ -246,7 +246,7 @@ BeOS用户抱怨最多的问题就是现有的Web浏览器很差。如果BeOS早
 
 而相反的，苹果是与魔鬼共骑。OS X将移植的IE 5.5作为它的默认浏览器。虽然与Windows上的版本不完全相同，但是很漂亮，所有的网站都能完美解析，打开也非常快。它对于我的最大不足就是不支持日益流行的PNG图像格式。
 
-如果你不讨厌在Mac上运行MS的软件，还有一个更好的替代品。<a href="http://www.omnigroup.com/" target="_blank">OmniWeb</a>是一个稍慢，但是我见过的将网页显示的最漂亮的，只需启用OS X的脚本功能。iCab、Opera和Navigator 6都是现代的浏览器。OS X下浏览器的选择取决于个人的偏好，而不是像在BeOS上那样妥协和牺牲。 
+如果你不讨厌在Mac上运行MS的软件，还有一个更好的替代品。<a href="http://www.omnigroup.com/" target="_blank">OmniWeb</a>是一个稍慢，但是我见过的将网页显示的最漂亮的，只需启用OS X的脚本功能。iCab、Opera和Navigator 6都是现代的浏览器。OS X下浏览器的选择取决于个人的偏好，而不是像在BeOS上那样妥协和牺牲。
 
 **评价：** 浏览器的比较，OS X胜。
 
@@ -267,7 +267,7 @@ BeOS用户抱怨最多的问题就是现有的Web浏览器很差。如果BeOS早
 
 可问题是，目前还没有很好的电子邮件软件来处理邮件消息。有几款不错的软件，如BeatWare的<a href="http://www.bebits.com/app/502" target="_blank">Mail-It</a>就是Eudora的一个很好的替代。但是BeatWare很早就放弃了BeOS平台的发展，所以这个Mail-It有不少缺陷和不足，无法得到修正。
 
-另一方面，Qualcomm很早之前就移植了Beta测试版的Eudora到OS X平台，这个测试版达到了98%的完成度。我在BeOS上使用Eudora工作多年，于是在OS X上也使用它。但是，出于好奇，我尝试了几天苹果自带的邮件客户端，然后再也没有回到Eudora。这是超级整洁，可以处理多个帐户，有足够（但不是很棒）的规则/过滤器，有颜色标签代表的资料等级——与我一直非常喜欢的Mail-It上的特性相同，这也是为什么我遗憾的放弃了Eudora。 
+另一方面，Qualcomm很早之前就移植了Beta测试版的Eudora到OS X平台，这个测试版达到了98%的完成度。我在BeOS上使用Eudora工作多年，于是在OS X上也使用它。但是，出于好奇，我尝试了几天苹果自带的邮件客户端，然后再也没有回到Eudora。这是超级整洁，可以处理多个帐户，有足够（但不是很棒）的规则/过滤器，有颜色标签代表的资料等级——与我一直非常喜欢的Mail-It上的特性相同，这也是为什么我遗憾的放弃了Eudora。
 
 <br><div align="center">
 <img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-mail.gif" alt="mail" border="0" height="575" width="552">
@@ -291,12 +291,12 @@ BeOS上最强大的文本/脚本/HTML编辑器是Maarten Hekkelman的＜a href =
 工程拥有更多的开发者和更有希望。兼容性方面作的更好，以后我们可以见证体验随时间的进一步提升。BeOS下的X实现是否做的更好（我上次的体验不咋地）还不得而知。
 
 在任何情况下，我并没有找到太多的理由来运行XonX，唯一的理由我想是为了弥补应用分类的缺失，到目前为止我还没有找到一个应用程序分类不是通过Carbon/Cocoa或经典模式实现的。我很高兴把XonX保持在*nix粉丝世界里。
- 
+
 **评价：** 这轮比较OS X胜，它的兼容性更好。
 
 ### 软件花费 / Software Costs
 
-对于OS X，有个我没有预料到的缺点就是它的软件贵多了。我并不属于免费软件鼓吹者，但是我认为软件必须是自由的，我乐意支持做出好软件的开发者。但是和其他人一样，我也很高兴使用免费的软件，但是OS X下很少有免费软件。免费提供软件不是的OS X的文化的一部分，它的共享应用程序的成本比起BeOS的共享软件大约要贵出50%以上。等到你的机器装好各种程序、文本编辑器、图片浏览器，以及你需要的其他软件，你会发现在购买机器的费用之外，你很容易又付出一大笔钱。是的，这是一个自由市场，我要尊重它。但新用户要有心理准备。 
+对于OS X，有个我没有预料到的缺点就是它的软件贵多了。我并不属于免费软件鼓吹者，但是我认为软件必须是自由的，我乐意支持做出好软件的开发者。但是和其他人一样，我也很高兴使用免费的软件，但是OS X下很少有免费软件。免费提供软件不是的OS X的文化的一部分，它的共享应用程序的成本比起BeOS的共享软件大约要贵出50%以上。等到你的机器装好各种程序、文本编辑器、图片浏览器，以及你需要的其他软件，你会发现在购买机器的费用之外，你很容易又付出一大笔钱。是的，这是一个自由市场，我要尊重它。但新用户要有心理准备。
 
 幸运的是，我使用的软件质量都非常高——Mac OS的独立开发者的确在他们的作品上花费了大量精力。可以说，Mac OS的软件在一定程度上类似它的硬件——你花费多，你得到的也多。
 
@@ -304,149 +304,119 @@ BeOS上最强大的文本/脚本/HTML编辑器是Maarten Hekkelman的＜a href =
 
 在BeOS的邮件列表闲逛一段时间之后，你就会发现一些有趣的事： 社区里聪明友好的用户相对其他计算社区更专注于BeOS，这个系统里有些东西能吸引高端用户（当然笔者除外）。在BeOS社区几乎见不到Windows和Linux社区里你见到的粗鲁无礼（Linux社区尤其如此），当然社区里会有BeOS新手，但是他们并不是电脑新手。 这些年来，在BeOS社区我结识了不少人，现在都是我的挚友。
 
-就有用信息来说，Mac社区要好于Windows和Linux社区，但是有其他的问题：固执。 似乎有无尽的Mac用户觉得旧的Mac OS方式才是最好的，他们攻击OS X、命令行，抱怨苹果偏离了轨道。这些人宁愿使用缓慢、容易崩溃，并且没有远程管理、命令行强大功能，没有服务器功能的系统，也不愿进入现代世界。 
+就有用信息来说，Mac社区要好于Windows和Linux社区，但是有其他的问题：固执。 似乎有无尽的Mac用户觉得旧的Mac OS方式才是最好的，他们攻击OS X、命令行，抱怨苹果偏离了轨道。这些人宁愿使用缓慢、容易崩溃，并且没有远程管理、命令行强大功能，没有服务器功能的系统，也不愿进入现代世界。
 
-Granted, these voices seem to grow a little less loud and a little less 
-prolific with every passing month. But they're still there, and the fact
- that they're clinging to OS9 for reasons mostly beyond my comprehension
- are bad for us all. App vendors who haven't yet ported point to a lack 
-of wide-scale adoption of OS X. And whose fault is that? The very 
-Macintosh userbase those app vendors are here to support! Note to the 
-stubborn ones: You're a drag on us all. Get on board.
+诚然，这些声音看起来在逐渐的减少，但它们会仍然存在，而事实上，他们死守OS9的原因是我无法理解  ，这对我们所有人都不好。应用程序供应商认为OS X尚未广泛采用，所以不愿将OS9下程序移植到新平台。这是谁的错呢？Macintosh的用户群应该支持这些应用程序供应商！那些顽固的人注意：你是我们大家的累赘。从OS9更新到OS X上来吧。
 
-Aside from the highly vocal nay sayers, the Mac community has about the 
-same level of friendliness, if not the same level of technical savvy as 
-the BeOS community. 
+这些反对声之外， Mac社区有跟BeOS社区一样的友好态度，只不过精通技术的水平跟BeOS的社区不在同一级别。
 
 **评价：** BeOS微弱胜出。
 
 <blockquote>
- On the community note: As I began to pick up steam on OS X, I decided 
-to create a site similar to betips.net, but for OS X users. But when I 
-discovered that <a href="http://www.macosxhints.com/" target="_blank">MacOSXhints.com</a>
- already had a database of nearly 1,000 tips and tricks for OS X users, I
- gave up that idea. The site's founder Rob Griffiths and I started 
-corresponding, and soon listed each other as "sister sites." I even 
-helped Rob to edit his excellent <a href="http://homepage.mac.com/rgriff/osxguide2.html" target="_blank">OS X Power Guide</a>, which I highly recommed to anyone looking for ways to get more productive in OS X quickly.
+ 说到社区，我刚开始转到OS X的时候，准备创建一个类似betips.net那样的针对OS X用户的网站。但是，当我发现<a href="http://www.macosxhints.com/" target="_blank">MacOSXhints.com</a>
+已经有了将近1,000条针对OS X用户的建议和技巧，我放弃了早先的想法。我和这个网站的创建者Rob Griffiths开始通信，并很快将对方网站列在自己网站的列表里作为兄弟网站。我甚至帮助Rob编辑他的很棒的 <a href="http://homepage.mac.com/rgriff/osxguide2.html" target="_blank">OS X 高级指南</a>，我强烈推荐这个指南给那些希望尽快能高效使用OS X的人。
 </blockquote>
 
 ## 幸福指数 / Happiness Quotient
 
-So. I'm using this OS that provides a great experience. Everywhere I 
-turn, things are integrated, smooth, composed, designed, fluid, 
-beautiful to look at, a joy to use. I'm pretty much convinced that OS X 
-is the best consumer OS on the market, with none of the compromises of 
-BeOS (compromises that result not from bad design, but from lack of 
-industry momentum  --  unfinished apps and an OS vendor that's been 
-close to bankruptcy for years, not to mention the hassles of dealing 
-with hardware and software vendors who won't give you the time of day 
-until you can guarantee them a big userbase / chunk of change). I've got
- world-class stability, pretty good multitasking, true memory 
-protection, all kinds of open source networking software, and a Unix 
-command line. 
+总的来说，我使用这个OS X系统的体验很棒。每个地方都是统一、平滑、流畅、静心设计、非常漂亮，用起来赏心悦目。 我坚信OS X
+是市场上最好的个人电脑操作系统，没有BeOS的不足 (这个不足不是来自于设计，而是市场--由于开发商停止开发，一些程序尚未完成，并且没有大量了用户基础，也不会吸引硬件和软件开发商提供支持。) 从OS X中，我体验到一流的稳定性，很好的多任务处理，真正的内存保护，各种开源网络软件，以及Unix命令行。
 
-I know I'm not alone in finding OS X a happy campground for the despairing BeOS refugee. This LiveJournal <a href="http://www.livejournal.com/talkread.bml?itemid=13186510&amp;view=16922846#t16922846" target="_blank">comment</a> from Balatro mirrors my own experiences pretty accurately:
+我知道不止我这一个BeOS难民找到了OS X这个宿营地。这个LiveJournal上Balatro的 <a href="http://www.livejournal.com/talkread.bml?itemid=13186510&amp;view=16922846#t16922846" target="_blank">评论</a> 准确的反映了我的经历：
 
 <blockquote>
-I suffered with OS9 for a while, it was usable but crash prone. Then OS X
- came out (Which I had been waiting for months). It was a dream come 
-true (though slow as hell on the iBooks 66Mhz bus). Finally I bought the
- bullet and bought a Titanium 400.
+我使用OS9遭受了一番痛苦经历，它可用，但是很容易崩溃。然后OS X出现了，我为它等了几个月。它正是理想中的样子，最终我买了Titanium 400。
 
-OS X 10.1 is the only OS other than BeOS that I truly ENJOY working 
-with. Windows is just "there." It offers me no joy -- only 
-compatibility. Linux/Unix is like pulling teeth, and has a horrible 
-appearance no matter how hard you try to dress it up. OS X is a 
-beautiful marriage of elegance and power.
+OS X 10.1是除BeOS之外，我唯一喜欢使用的系统。Windows同样是操作系统，可是我从中找不到快乐，只是兼容性不错。 Linux/Unix让人牙痛，不管怎么装饰，外观都很难看。OS X将优雅和功能完美的结合起来。
 </blockquote>
 
 
 # 缺点与不足 / The Bad and The Ugly
 
-Overall, I'm happier than a pig in shit. What could I possibly find to complain about? 
+Overall, I'm happier than a pig in shit. What could I possibly find to complain about?
 
-Whereas BeOS is renowned as one of the fastest and most efficient 
-operating systems ever designed, OS X may well be one of the slowest. 
-Problems with performance and efficiency in OS X have been discussed ad 
-nauseam all over the net, but the BeOS user feels this contrast more 
-acutely than most, because the BeOS user has been so completely spoiled 
-by the amazing speed of BeOS. 
+Whereas BeOS is renowned as one of the fastest and most efficient
+operating systems ever designed, OS X may well be one of the slowest.
+Problems with performance and efficiency in OS X have been discussed ad
+nauseam all over the net, but the BeOS user feels this contrast more
+acutely than most, because the BeOS user has been so completely spoiled
+by the amazing speed of BeOS.
 
-According to some reports, the PowerMac 867 is functionally equivalent 
-to a 2Ghz Pentium, CPU-wise. Loaded up with 640Mbs of memory, this 
-machine should absolutely fly through just about anything I could care 
-to throw at it. But that's not the case. With this much horsepower, 
-performance is merely acceptable. OS X on a lesser machine is an 
-exercise in pain. OS X apologists have a myriad of excuses for OS X's 
-high resource requirements  --  it's the Finder's fault, it's Quartz' 
+According to some reports, the PowerMac 867 is functionally equivalent
+to a 2Ghz Pentium, CPU-wise. Loaded up with 640Mbs of memory, this
+machine should absolutely fly through just about anything I could care
+to throw at it. But that's not the case. With this much horsepower,
+performance is merely acceptable. OS X on a lesser machine is an
+exercise in pain. OS X apologists have a myriad of excuses for OS X's
+high resource requirements  --  it's the Finder's fault, it's Quartz'
 fault, it's the window buffers that give you all those cool transparency
  effects, etc. etc.
 
 
 I'll allow for one thing: Optimization is the very last thing developers
- do with a code base, and Apple has steadily increased performance with 
-every point upgrade to the OS to date. There's no reason to think that 
+ do with a code base, and Apple has steadily increased performance with
+every point upgrade to the OS to date. There's no reason to think that
 future updates won't raise the performance bar as well. In fact, <a href="http://forums.macnn.com/cgi-bin/ultimatebb.cgi?ubb=get_topic&amp;f=46&amp;t=000100" target="_blank">this discussion</a>
  implies that the next release may offer significant efficiency gains in
- the window buffering department. In reality, I don't think the problem 
-can be localized to any one OS element  --  there are probably 
-improvements to be made in nearly every aspect of the OS. 
+ the window buffering department. In reality, I don't think the problem
+can be localized to any one OS element  --  there are probably
+improvements to be made in nearly every aspect of the OS.
 
-Still, BeOS never had this problem. While BeOS did get faster as years 
-went by, the OS was a speed demon from day one  --  radical efficiency 
-was one of its hallmarks from the start, and one of its great drawing 
-cards. The fact of the matter is, BeOS on a Pentium 233 with 64 Mbs of 
+Still, BeOS never had this problem. While BeOS did get faster as years
+went by, the OS was a speed demon from day one  --  radical efficiency
+was one of its hallmarks from the start, and one of its great drawing
+cards. The fact of the matter is, BeOS on a Pentium 233 with 64 Mbs of
 memory is faster than OS X is on this so-called supercomputer. The Mac's
- CPU is roughly 8x faster and the machine is stocked with 10x more 
-memory, but the BeOS machine out-performs the Mac. BeOS boots faster, 
-applications launch faster, windows resize more smoothly, you can play 
-more simultaneous audio and video clips without affecting system 
+ CPU is roughly 8x faster and the machine is stocked with 10x more
+memory, but the BeOS machine out-performs the Mac. BeOS boots faster,
+applications launch faster, windows resize more smoothly, you can play
+more simultaneous audio and video clips without affecting system
 performance.
 
-This wide delta is partly explained by the fact that BeOS was designed 
+This wide delta is partly explained by the fact that BeOS was designed
 from the ground up and didn't carry any baggage, partly explained by the
- fact that OS X's windowing system is so advanced and does so much, and 
-partly explained by OS X's youth. But I can't help but think that Apple 
-is being somewhat lazy here. Fast CPUs and memory are very cheap these 
+ fact that OS X's windowing system is so advanced and does so much, and
+partly explained by OS X's youth. But I can't help but think that Apple
+is being somewhat lazy here. Fast CPUs and memory are very cheap these
 days, and Apple seems to be using that fact as an excuse for inefficient
- OS design. If Moore's law weren't in effect, the market would not be 
-stocked with so many fast machines, and OS X would be dead in the water 
+ OS design. If Moore's law weren't in effect, the market would not be
+stocked with so many fast machines, and OS X would be dead in the water
 without radical improvements to general efficiency.
 
-Try this: open a Terminal window (instantaneous on BeOS, a few seconds 
-on OS X) and run "top." Then resize its window. The resize operation is 
+Try this: open a Terminal window (instantaneous on BeOS, a few seconds
+on OS X) and run "top." Then resize its window. The resize operation is
 clunky and blocky. Now try the same on a far lesser BeOS machine  --  
-the resize operation is silky smooth, even if several CPU-intensive 
-processes are going on. I even tried this on a dual 800 at MacWorld 
+the resize operation is silky smooth, even if several CPU-intensive
+processes are going on. I even tried this on a dual 800 at MacWorld
 Expo, and found the same chunky resizing behavior.
 
-Now launch four QuickTime movies and get them all playing at once. Move 
-them around on screen, and resize them while playing. Try the same on a 
-far lesser BeOS machine. The difference is night and day. 
+Now launch four QuickTime movies and get them all playing at once. Move
+them around on screen, and resize them while playing. Try the same on a
+far lesser BeOS machine. The difference is night and day.
 
-I do a lot of MP3 encoding, so it's a drag to discover that other tasks 
-in the OS are noticeably affected (not hugely, but noticeably) when 
+I do a lot of MP3 encoding, so it's a drag to discover that other tasks
+in the OS are noticeably affected (not hugely, but noticeably) when
 encoding is in process. Not so in BeOS. Neither OS creates glitched MP3s
  when encoding under load though.
 
-There is not a single operation I can find that involves multithreading 
-and multitasking that is not leagues faster on a lesser BeOS machine 
+There is not a single operation I can find that involves multithreading
+and multitasking that is not leagues faster on a lesser BeOS machine
 than it is on a hot-rod OS X box. If the performance hit is a tough pill
- for OS 9 users to swallow, imagine how much harder it is for the BeOS 
-user. We could go into a long discussion about priorities, kernel 
+ for OS 9 users to swallow, imagine how much harder it is for the BeOS
+user. We could go into a long discussion about priorities, kernel
 scheduling, and effective multithreading techniques, but the bottom line
  is that it's all about the user experience. Be nailed this one a decade
- ago, while Apple still hasn't gotten it right. 
+ ago, while Apple still hasn't gotten it right.
 
-I should, however, take a moment to say that most of the time, and for 
-most of what I do, OS X on this machine is fast enough. I'm not typing 
-ahead of the cursor, I'm not sitting on my thumbs waiting for 
-hourglasses, and I'm not in any real-world way stymied by OS X on my 
-current hardware. It's just that I have lived with a very high standard 
-of performance for long enough that it started to feel normal to me. 
-Be's performance bar is going to be a tough hurdle for Apple. 
-Unfortunately, the vast, vast majority of the Mac-using population has 
-never tried BeOS, and doesn't know what they're missing. 
+I should, however, take a moment to say that most of the time, and for
+most of what I do, OS X on this machine is fast enough. I'm not typing
+ahead of the cursor, I'm not sitting on my thumbs waiting for
+hourglasses, and I'm not in any real-world way stymied by OS X on my
+current hardware. It's just that I have lived with a very high standard
+of performance for long enough that it started to feel normal to me.
+Be's performance bar is going to be a tough hurdle for Apple.
+Unfortunately, the vast, vast majority of the Mac-using population has
+never tried BeOS, and doesn't know what they're missing.
 
 ## 文件系统对比 / File System Shoot-Out
 
@@ -456,7 +426,7 @@ BFS（Be文件系统）是完全日志式的，这意味着即使在断电的情
 
 BFS深入的利用多线程来达到最佳性能，并与BeOS其他部分不同程度的多线程协调配合。我不知道HFS+是不是多线程的（我听说不是），但它的确不如BFS那样快。不过，我并没有在相同的硬件上进行不同条件下的磁盘访问测试。
 
-BFS的地址空间是64位的，这意味着一个BFS磁盘理论上的最大文件大小为18000亿兆字节（petabytes）（由于多种原因实际上的最大值比这要小得多，但也有万G字节（gigabytes）左右）。32位的HFS+，像所有其他的32位文件系统，只有4G字节（gigabytes）。更大的文件也可以通过后台技术将文件分成几个部分，再连接起来，但看起来，这是一个苹果需要解决的问题，除非他们开发一个新的64位操作系统才能改变这种状况。 
+BFS的地址空间是64位的，这意味着一个BFS磁盘理论上的最大文件大小为18000亿兆字节（petabytes）（由于多种原因实际上的最大值比这要小得多，但也有万G字节（gigabytes）左右）。32位的HFS+，像所有其他的32位文件系统，只有4G字节（gigabytes）。更大的文件也可以通过后台技术将文件分成几个部分，再连接起来，但看起来，这是一个苹果需要解决的问题，除非他们开发一个新的64位操作系统才能改变这种状况。
 
 虽然对于日常用户，BFS更具有明显优势。在一个BFS磁盘上的任何文件或文件类型可以有一组与它相关联的元数据，以“属性”的形式存在，对于属性，没有数量、大小或类型的限制，并且属性可以直接在Tracker（Be的Finder）中显示、编辑、筛选、排序和查询。因为大多数属性都经过索引，搜索的结果几乎瞬间显现，无论搜索磁盘的大小或文件的数量。默认情况下，BeOS带有常见的文件类型的属性，用户还可以扩展和定制这些属性，并创造具有全新属性的新的文件类型。换句话说，Be的文件系统可以看做一个数据库。
 
@@ -470,182 +440,182 @@ BFS的地址空间是64位的，这意味着一个BFS磁盘理论上的最大文
 Be的数据库式文件系统的一些操作举例：
 
 <ul>
-	<li>Copy your MP3 files' ID3 tags to Artist, Title, Year, Genre 
-attributes. Sift and sort through your collection in the Tracker in 
-almost anyway imaginable, or build playlists from MP3 attribute queries 
+	<li>Copy your MP3 files' ID3 tags to Artist, Title, Year, Genre
+attributes. Sift and sort through your collection in the Tracker in
+almost anyway imaginable, or build playlists from MP3 attribute queries
 with far more flexibility than you get in other OSes. </li>
 
-	<li>BeMail messages store Subject, From, To, CC:, Date, etc. in 
-attributes. Create virtual mailboxes based on live, instantaneous query 
-results. This lets you obtain views of your email store that are 
+	<li>BeMail messages store Subject, From, To, CC:, Date, etc. in
+attributes. Create virtual mailboxes based on live, instantaneous query
+results. This lets you obtain views of your email store that are
 irrespective of the actual folder locations of BeMail messages on disk.</li>
 
-	<li>Years ago, I created a custom file type based on text, with 
+	<li>Years ago, I created a custom file type based on text, with
 attributes for author, title, email, URL, etc. Then I wrote a CGI script
- in perl to extract and dish up these attributes over the web. In other 
-words, I was serving up a database-backed web site without having to 
+ in perl to extract and dish up these attributes over the web. In other
+words, I was serving up a database-backed web site without having to
 install or learn any database software whatsoever. That site now runs on
  <a href="http://www.onlamp.com/" target="_blank">LAMP</a>, but you can see how the site was created <a href="http://www.betips.net/TrackerBase/" target="_blank">here</a>.</li>
 
 </ul>
 
 OS X's closest approximation is the pathetic <a href="http://www.Mac%20OS%20Xhints.com/article.php?story=2001103013060434" target="_blank">comments field</a>,
- which is a pain to use (hell, you can't even enter Comments directly 
-into the Finder), and which offers next to nothing in comparison to BFS 
+ which is a pain to use (hell, you can't even enter Comments directly
+into the Finder), and which offers next to nothing in comparison to BFS
 attributes.
 
 
-The great usability of BFS and the Tracker don't end with plain-sight 
-attributes. Additional attributes describe each file's type via the 
-Internet-standard MIME system, which provides a great deal of 
+The great usability of BFS and the Tracker don't end with plain-sight
+attributes. Additional attributes describe each file's type via the
+Internet-standard MIME system, which provides a great deal of
 compatibility with the world at large (download a file from the internet
- and its type can be gleaned from the HTTP header, without use of 
-extensions), and BeOS web servers don't need to maintain separate MIME 
-tables - each file's type is taken directly from the file system. 
+ and its type can be gleaned from the HTTP header, without use of
+extensions), and BeOS web servers don't need to maintain separate MIME
+tables - each file's type is taken directly from the file system.
 
-Attributes are used by StyledEdit to allow for rich formatting in plain 
-text documents, which are still viewable as plain text on other 
-platforms. Attributes are used to retain cursor position in documents 
-even after they're closed and re-opened, and are used to store 
-equalization and cross-fade settings for MP3 files. The possibilities 
+Attributes are used by StyledEdit to allow for rich formatting in plain
+text documents, which are still viewable as plain text on other
+platforms. Attributes are used to retain cursor position in documents
+even after they're closed and re-opened, and are used to store
+equalization and cross-fade settings for MP3 files. The possibilities
 are endless.
 
 
 <h3>Application-Binding Policies</h3>
 
 Neither BeOS nor Mac  OS 9 require users to add extensions to their  
-filenames. Without extensions, some other means of identifying a file's 
-type and associated application is necessary. All versions of Mac OS 
-assume that the application that created a document is also the best 
-application to launch it in, resulting in situations where files of the 
+filenames. Without extensions, some other means of identifying a file's
+type and associated application is necessary. All versions of Mac OS
+assume that the application that created a document is also the best
+application to launch it in, resulting in situations where files of the
 same type launch in different applications when double-clicked. For some
- reason, a lot of Mac users don't seem to see this creator-based 
-launching schema as a problem, but I do. It results in not-infrequent 
+ reason, a lot of Mac users don't seem to see this creator-based
+launching schema as a problem, but I do. It results in not-infrequent
 unexpected and undesired behavior on the part of the OS, and seems like a
- major usability disadvantage. Just recently an OS 8 user in our 
-department sent me a bunch of JPEG images as an attachment. When I 
-double-clicked them, the Classic environment started to launch. Turns 
+ major usability disadvantage. Just recently an OS 8 user in our
+department sent me a bunch of JPEG images as an attachment. When I
+double-clicked them, the Classic environment started to launch. Turns
 out they had a Creator code for the Classic version of QuickTime.  
 Excuse me? When did I ever tell the OS that I'd rather not view JPEGs in
  my viewer of choice? What  does QuickTime have to do with these images,
- other than the fact that she created them in it on her system? I've 
-experienced similar events half a dozen times in the few months I've 
-been using OS X, and have heard  similar  stories from others. Why Mac 
-users are so complacent about Creator-based launching is beyond me. 
+ other than the fact that she created them in it on her system? I've
+experienced similar events half a dozen times in the few months I've
+been using OS X, and have heard  similar  stories from others. Why Mac
+users are so complacent about Creator-based launching is beyond me.
 
-In an attempt  to become more compatible with the Windows world, OS X 
-requires extensions for file type identification. Meanwhile, it 
-continues to respect the Creator code for application binding. In other 
-words, rather than moving forward by dropping the Creator code and 
-moving to a complete FileTypes preferences panel, OS X adopted a bad 
-habit from Windows (extensions) and retained its own bad habits (using 
-the Creator code for application binding). While the rest of the OS was 
-moving forward, filetyping left  one foot in the mud and stepped 
-backwards with the other foot. This is utterly baffling to me. 
+In an attempt  to become more compatible with the Windows world, OS X
+requires extensions for file type identification. Meanwhile, it
+continues to respect the Creator code for application binding. In other
+words, rather than moving forward by dropping the Creator code and
+moving to a complete FileTypes preferences panel, OS X adopted a bad
+habit from Windows (extensions) and retained its own bad habits (using
+the Creator code for application binding). While the rest of the OS was
+moving forward, filetyping left  one foot in the mud and stepped
+backwards with the other foot. This is utterly baffling to me.
 Filetyping under OS X is now doubly problematic, rather than better than
  it was.
 
 Recently, a <a href="http://www.macslash.com/article.pl?sid=01%2F12%2F05%2F1624227" target="_blank">discussion</a>
- explored this issue in the context of metadata in OS X in general. In 
-the course of that discussion, it was pointed out to me that it is not 
-the Creator code per se' that I don't like, but rather the application 
-binding policy of the OS / Finder. What's needed to provide maximum 
-flexibility to the user, IMO, is to allow for storage of any type of 
-metadata. And one of those pieces of metadata needs to be a 
-"preferred_app" attribute. The operating system's application-binding 
-policy should look first to see if the user has established a preferred 
+ explored this issue in the context of metadata in OS X in general. In
+the course of that discussion, it was pointed out to me that it is not
+the Creator code per se' that I don't like, but rather the application
+binding policy of the OS / Finder. What's needed to provide maximum
+flexibility to the user, IMO, is to allow for storage of any type of
+metadata. And one of those pieces of metadata needs to be a
+"preferred_app" attribute. The operating system's application-binding
+policy should look first to see if the user has established a preferred
 application for handling the current file. If not, it should look to see
- if there's a globally preferred application for handling this file's 
-type. If not, it can try and use the Creator code if necessary. 
-Respecting the Creator code should only be a last resort, since it's so 
-often responsible for unexpected and undesirable behavior. But as seen 
+ if there's a globally preferred application for handling this file's
+type. If not, it can try and use the Creator code if necessary.
+Respecting the Creator code should only be a last resort, since it's so
+often responsible for unexpected and undesirable behavior. But as seen
 in the screenshot below from <a href="http://www.brockerhoff.net/xray/" target="_blank">X-Ray</a>,
- the Creator code is looked at first, the file's extension second, and 
-the file type third - the exact opposite of what logic and usability 
+ the Creator code is looked at first, the file's extension second, and
+the file type third - the exact opposite of what logic and usability
 would dictate.
 
 <div align="center">
 <img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-binding_prio.gif" alt="xray" height="343" width="468">
 </div>
-<i>OS X prioritizes Creator code over file type in the application 
+<i>OS X prioritizes Creator code over file type in the application
 binding process. Since the document's creator is logically irrelevant to
- the determination of the best app to launch the document in, and 
-because it often results in unexpected and undesirable document 
-launching behavior, and because more flexible and powerful application 
+ the determination of the best app to launch the document in, and
+because it often results in unexpected and undesirable document
+launching behavior, and because more flexible and powerful application
 binding can be accomplished through file type-based binding, I find this
  100% backwards.</i>
 
 
 If Apple is ultimately to provide a central FileTypes preferences panel,
- and simultaneously wants to satsify users who for some reason feel 
-strongly about the Creator code, there's another possible option here. 
-Rather than simply elevating the importance of  the file type and 
-deprecating the importance of the creator, Apple could let the user 
-select the order of the binding rules. For example, users who want 
-maximum control over binding preferences could opt to have the file's 
-preferred app checked first, the preferred  app for that file's type 
-checked second, and the creator third. Died-in-the wool traditionalists 
-could have the Creator checked first, and other options checked second 
-and third. In other words, Apple could not only match Be's level of 
+ and simultaneously wants to satsify users who for some reason feel
+strongly about the Creator code, there's another possible option here.
+Rather than simply elevating the importance of  the file type and
+deprecating the importance of the creator, Apple could let the user
+select the order of the binding rules. For example, users who want
+maximum control over binding preferences could opt to have the file's
+preferred app checked first, the preferred  app for that file's type
+checked second, and the creator third. Died-in-the wool traditionalists
+could have the Creator checked first, and other options checked second
+and third. In other words, Apple could not only match Be's level of
 flexibility, but could surpass it.
 
 
-The other part of the problem is that OS X offers no central file types 
-preferences panel. It needs one, badly. Without it, OS X will never be 
-able to depart from the cursed practice of respecting the Creator code, 
+The other part of the problem is that OS X offers no central file types
+preferences panel. It needs one, badly. Without it, OS X will never be
+able to depart from the cursed practice of respecting the Creator code,
 and will never be able to approach Be's level of flexibility. BeOS ships
- with reasonable defaults for file type-to-application bindings, and 
-these are configurable by the user on a system-wide basis, at the 
-individual file level, and on batches of files at once via a built-in 
+ with reasonable defaults for file type-to-application bindings, and
+these are configurable by the user on a system-wide basis, at the
+individual file level, and on batches of files at once via a built-in
 Tracker Add-On. The BeOS user does not need to put extensions on his/her
- files, BeOS never makes the rotten assumption that the creating app is 
-also the best launching app, and the BeOS user has control over 
+ files, BeOS never makes the rotten assumption that the creating app is
+also the best launching app, and the BeOS user has control over
 application binding from the micro to the macro level.
 
 The BeOS filetyping and application binding system has more  
-flexibility, more usability, and is more logical than OS X's. After the 
-performance issues, OS X's backwards filetyping schema is my single 
+flexibility, more usability, and is more logical than OS X's. After the
+performance issues, OS X's backwards filetyping schema is my single
 largest disappointment with OS X.  
 
 
-After several weeks of using OS X, it was pointed out to me that OS X 
-does offer some semblance of control here. Get Info on a file, select 
-"Open With Application", and navigate to the new app. You can then 
-re-set the binding for that document, or choose to make the change 
-globally. It's great that it's possible to do so, but there's a logic 
+After several weeks of using OS X, it was pointed out to me that OS X
+does offer some semblance of control here. Get Info on a file, select
+"Open With Application", and navigate to the new app. You can then
+re-set the binding for that document, or choose to make the change
+globally. It's great that it's possible to do so, but there's a logic
 problem here:
 
-The Get Info panel relates to info on a selected file or files. But 
+The Get Info panel relates to info on a selected file or files. But
 here, it is being used to make a system-wide change -- in other words, a
- System Preference. It is not intuitive to look in a single file's Info 
-panel for a system preference, which is why I never found the option 
+ System Preference. It is not intuitive to look in a single file's Info
+panel for a system preference, which is why I never found the option
 when looking around, and why a friend had to point out to me that it was
  even possible to do so.
 
-A central FileTypes panel would be more intuitive, more powerful, and 
-would give the user much more control over every aspect of file types 
+A central FileTypes panel would be more intuitive, more powerful, and
+would give the user much more control over every aspect of file types
 and bindings.
 
 <div align="center">
 <img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-filetypes.jpg" alt="be_filetypes" border="0" height="406" width="570">
 </div>
-<i>The BeOS FileTypes preferences panel gives the user total control 
-over MIME types, icons, associations between applications and filetypes 
-(application binding), optional filename extensions, and attributes. 
-This is the global (system-wide) preferences panel. A separate FileType 
-panel for individual files or groups of files lets you override the 
+<i>The BeOS FileTypes preferences panel gives the user total control
+over MIME types, icons, associations between applications and filetypes
+(application binding), optional filename extensions, and attributes.
+This is the global (system-wide) preferences panel. A separate FileType
+panel for individual files or groups of files lets you override the
 global settings on a local level.</i>
 
-On this note, an additional BeOS advantage is that the MIME typing 
+On this note, an additional BeOS advantage is that the MIME typing
 system allows the OS to easily keep track of which apps can handle which
  file types, and thus to suggest candidate applications. For example, if
- I create a custom filetype with the MIME type <tt>text/x-shacker</tt> 
+ I create a custom filetype with the MIME type <tt>text/x-shacker</tt>
 and send it to a user who hasn't registered that filetype on his system,
  BeOS will still be able to tell that it's a text file. Since every BeOS
- app registers itself to handle certain MIME types, BeOS can instantly 
-provide a list of all text-handling apps on the user's system. This 
-capability also comes into play when displaying the "Open With..." 
-context menu when right-clicking a file in the Tracker. 
+ app registers itself to handle certain MIME types, BeOS can instantly
+provide a list of all text-handling apps on the user's system. This
+capability also comes into play when displaying the "Open With..."
+context menu when right-clicking a file in the Tracker.
 
 <blockquote>
 For a detailed discussion on the entire filetyping / binding / identification / customization schema in BeOS, buy a copy of <a href="http://www.birdhouse.org/beos/bible/" target="_blank">The BeOS Bible</a>. To read an excerpt from the chapter on filetyping, <a href="http://www.beosbible.com/exc_filetype.html" target="_blank">click here</a>.
@@ -654,144 +624,144 @@ For a detailed discussion on the entire filetyping / binding / identification / 
 
 <h3>Alien Filesystems</h3>
 
-In BeOS, file systems (even the native BFS) are handled via plug-ins 
-called add-ons. Download a file system add-on, drop it into place, and 
-you have the immediate capability to read (and often write to) alien 
-file systems. Out of the box, every BeOS machine, whether x86 or 
+In BeOS, file systems (even the native BFS) are handled via plug-ins
+called add-ons. Download a file system add-on, drop it into place, and
+you have the immediate capability to read (and often write to) alien
+file systems. Out of the box, every BeOS machine, whether x86 or
 PowerPC, can read and write BFS, HFS, HFS+, FAT16, and FAT32 volumes. It
- can also read (but not write to) ext2fs and NTFS. More obscure file 
-system add-ons can be written by developers and posted for others to 
+ can also read (but not write to) ext2fs and NTFS. More obscure file
+system add-ons can be written by developers and posted for others to
 use. OS X did a great job of reading a FAT32 volume I stuck in my G4 for
- a while, but as far as I know, does not handle other file systems as 
+ a while, but as far as I know, does not handle other file systems as
 elegantly.
 
 
 <h3>Finder</h3>
- 
+
 Overall, my experience with the OS X Finder has been a wash -- it's both
- better and worse than the BeOS Tracker. On one hand, I love and use 
+ better and worse than the BeOS Tracker. On one hand, I love and use
 constantly the horizontal scrolling column view. And dynamic resizing of
- icons is a nice touch. On the other hand, the current Finder does not 
-offer spring-loaded folders, as OS 9 and BeOS do. Be's right-click 
-scroll | navigate mechanism provides the fastest means of navigating, 
-copying, and moving files around in a file system of any I've 
+ icons is a nice touch. On the other hand, the current Finder does not
+offer spring-loaded folders, as OS 9 and BeOS do. Be's right-click
+scroll | navigate mechanism provides the fastest means of navigating,
+copying, and moving files around in a file system of any I've
 encountered.
 
 <div align="center">
 <a href="http://www.birdhouse.org/beos/refugee/horiz_scroll.gif" target="_blank"><img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-horiz_scroll_thumb.jpg" alt="horiz" border="0" height="161" width="400"></a>
 </div>
-<i>The Finder's horizontal scrolling view is easy to work in and quite 
+<i>The Finder's horizontal scrolling view is easy to work in and quite
 elegant, but I still miss spring-loaded folders. Click for larger  
 version.</i>
 
-But my real complaint with the Finder is that it does a poor job of 
-displaying large quantities of information at once. The default Finder 
-font is too large, and is not user-configurable. However, the 3rd-party 
-Tinker Tool will allow you to change the Finder font. Since Tinker Tool 
-only exposes existing but hidden preferences in the OS, it seems 
+But my real complaint with the Finder is that it does a poor job of
+displaying large quantities of information at once. The default Finder
+font is too large, and is not user-configurable. However, the 3rd-party
+Tinker Tool will allow you to change the Finder font. Since Tinker Tool
+only exposes existing but hidden preferences in the OS, it seems
 probable that Apple will open this up in the future.
 
-Which leads to yet another complaint: Compared to BeOS, OS X is 
-downright hostile to long filenames. Sure, OS X now supports filenames 
-up to 255 characters just like BeOS, but displaying long filenames is a 
-pain because of that huge Finder font. Worse, something about the LFN 
+Which leads to yet another complaint: Compared to BeOS, OS X is
+downright hostile to long filenames. Sure, OS X now supports filenames
+up to 255 characters just like BeOS, but displaying long filenames is a
+pain because of that huge Finder font. Worse, something about the LFN
 API (I'm not a programmer) makes it very difficult to add LFN support to
- applications. When it came time to move my MP3 collection from BeOS to 
-OS X via FTP, I found that both Interarchy and Fetch, both of which are 
-Carbonized, truncated the filenames on transfer (I finally solved that 
-one by putting via FTP from the BeOS machine to the OS X box, rather 
-than the other way around). Another day, I was trying to export movies 
-from iMovie with filenames long enough to describe all the video and 
-audio codecs and settings I was using, for the purposes of comparison. 
-The filenames were truncated with garbage characters when viewed in the 
-Finder. 
+ applications. When it came time to move my MP3 collection from BeOS to
+OS X via FTP, I found that both Interarchy and Fetch, both of which are
+Carbonized, truncated the filenames on transfer (I finally solved that
+one by putting via FTP from the BeOS machine to the OS X box, rather
+than the other way around). Another day, I was trying to export movies
+from iMovie with filenames long enough to describe all the video and
+audio codecs and settings I was using, for the purposes of comparison.
+The filenames were truncated with garbage characters when viewed in the
+Finder.
 
-And neither of the two most popular MP3 encoding tools for OS X -- 
-iTunes and Audion -- give you any control whatsoever over file naming 
+And neither of the two most popular MP3 encoding tools for OS X --
+iTunes and Audion -- give you any control whatsoever over file naming
 convention. Every MP3 encoder I've tried on any platform offers a dialog
- giving the user full control over how the MP3 filenames should be 
+ giving the user full control over how the MP3 filenames should be
 constructed. But both of these tools simply spit out <tt>songname.mp3</tt>.
  Sure, they're nested in artist and album parent folders, as is also the
- case on other platforms, but the filenames are next to useless without 
-the parent folders or ID3 tags. Fine for personal use, but rotten for 
+ case on other platforms, but the filenames are next to useless without
+the parent folders or ID3 tags. Fine for personal use, but rotten for
 (god forbid) Internet use. Since Apple wants to be the digital hub of my
- entertainment life, they'll need to recognize that MP3 storage is one 
-of the most common / popular situations where people use very long 
-filenames. OS X apps need to learn to start creating them, and the 
+ entertainment life, they'll need to recognize that MP3 storage is one
+of the most common / popular situations where people use very long
+filenames. OS X apps need to learn to start creating them, and the
 Finder needs to become more adept at displaying them.
 
 
 <div align="center">
 <img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-shortnames.gif" alt="shortnames" height="330" width="535">
 </div>
-<i>Short filenames like these are no way to treat your MP3 collection, 
-but neither iTunes nor Audion will generate anything but. Then again, 
-this Finder view is terrible at displaying long filenames. But on the 
-other other hand, being able to preview MP3s and movies directly in the 
+<i>Short filenames like these are no way to treat your MP3 collection,
+but neither iTunes nor Audion will generate anything but. Then again,
+this Finder view is terrible at displaying long filenames. But on the
+other other hand, being able to preview MP3s and movies directly in the
 Finder is pretty cool...</i>
 
 
-The BeOS Tracker uses a technology called "node monitoring" which lets 
-the Tracker give instant feedback to the user and to other apps. For 
-example, you can see the size of a file increase in the Tracker's info 
-panel in real time as it's being downloaded from the Internet. Fancy 
-node monitoring need not be a priority for Apple, but there's one area 
-where something similar should be considered important: Finder views 
-don't seem to reflect changes in the filesystem until forced to. Try 
-this: Open a Terminal session and a Finder window on the same folder. 
-Type <tt>touch foo</tt> and watch the Finder. In BeOS, "foo" appears in 
-the Tracker instantaneously. In Windows, the change is reflected 
-quickly. In OS X, the file doesn't show up until I click in that Finder 
-view. This becomes a problem on occasssion when unpacking a tar.gz 
-archive, and the contents don't appear on the desktop until I basically 
+The BeOS Tracker uses a technology called "node monitoring" which lets
+the Tracker give instant feedback to the user and to other apps. For
+example, you can see the size of a file increase in the Tracker's info
+panel in real time as it's being downloaded from the Internet. Fancy
+node monitoring need not be a priority for Apple, but there's one area
+where something similar should be considered important: Finder views
+don't seem to reflect changes in the filesystem until forced to. Try
+this: Open a Terminal session and a Finder window on the same folder.
+Type <tt>touch foo</tt> and watch the Finder. In BeOS, "foo" appears in
+the Tracker instantaneously. In Windows, the change is reflected
+quickly. In OS X, the file doesn't show up until I click in that Finder
+view. This becomes a problem on occasssion when unpacking a tar.gz
+archive, and the contents don't appear on the desktop until I basically
 force them to.
 
 
 
 <h3>Sherlock Shmerlock</h3>
 
-The OS X Find panel is still known as Sherlock, and basically gets the 
+The OS X Find panel is still known as Sherlock, and basically gets the
 job done, but is a bit too cutesy for my tastes. Cosmetics aside, search
- capabilities under OS X are not as flexible as they are BeOS, with its 
-virtual database. Attributes aside, Sherlock won't even let me limit my 
+ capabilities under OS X are not as flexible as they are BeOS, with its
+virtual database. Attributes aside, Sherlock won't even let me limit my
 search to specific file types (though the Custom search panel does offer
  a few generic type categories).  
 
 
 
 
-More problematic, though, is the difference in the way the two systems 
-create indexes. Indexed file systems provide lightning-fast search 
-results. BeOS indexes most attributes and keeps its index up to date 
-automatically, every time a file or attribute is added, modified, or 
-removed. But before you can perform fast searches with Sherlock, you 
-have to let it index your file system, an excruciatingly slow process. 
+More problematic, though, is the difference in the way the two systems
+create indexes. Indexed file systems provide lightning-fast search
+results. BeOS indexes most attributes and keeps its index up to date
+automatically, every time a file or attribute is added, modified, or
+removed. But before you can perform fast searches with Sherlock, you
+have to let it index your file system, an excruciatingly slow process.
 One volume on my machine, with around 8,000 MP3s, took almost four hours
  to index. I'm not kidding.
-Another cool advantage to BeOS queries is that they can be saved for 
-later execution. Drag a query onto the desktop and have instant access 
-to all emails from a certain person, or all MP3s downloaded in the past 
-five days, or all bookmarks related to Mac OS (BeOS bookmark files have 
-keyword attributes), or whatever you like. Queries are always live and 
-real-time, so you always get the freshest data, immediately. You can 
-even "navigate" a query with the right-click | scroll technique 
-mentioned earlier, so you don't even to have to "launch" a query to get 
-at any one of the items in its found set. Sherlock offers nothing 
+Another cool advantage to BeOS queries is that they can be saved for
+later execution. Drag a query onto the desktop and have instant access
+to all emails from a certain person, or all MP3s downloaded in the past
+five days, or all bookmarks related to Mac OS (BeOS bookmark files have
+keyword attributes), or whatever you like. Queries are always live and
+real-time, so you always get the freshest data, immediately. You can
+even "navigate" a query with the right-click | scroll technique
+mentioned earlier, so you don't even to have to "launch" a query to get
+at any one of the items in its found set. Sherlock offers nothing
 similar.
 
-Sherlock's one advantage* over BeOS queries is that it allows searching 
-on actual file contents, rather than just filename and attributes. BeOS 
-users wanting to search through file contents have to resort either to 
+Sherlock's one advantage* over BeOS queries is that it allows searching
+on actual file contents, rather than just filename and attributes. BeOS
+users wanting to search through file contents have to resort either to
 bash tools or to the 3rd-party Tracker add-on <a href="http://www.bebits.com/app/1306" target="_blank">Tracker Grep</a>.
- Speaking of which, I know that Mac OS 9 had context menus for the 
-Finder which allowed functionality similar to that provided by BeOS 
-Tracker add-ons. Having the functionality of the file manager be 
+ Speaking of which, I know that Mac OS 9 had context menus for the
+Finder which allowed functionality similar to that provided by BeOS
+Tracker add-ons. Having the functionality of the file manager be
 essentially infinitely expandable is a powerful feature, and I'm looking
  forward to seeing that functionality restored in OS X.
 
-<i>* Sherlock has other advantages if you want to use it to search the 
-Internet, but I'm happy with the mighty Google, and get the impression 
-from talking to other people that Sherlock is used for file finding the 
+<i>* Sherlock has other advantages if you want to use it to search the
+Internet, but I'm happy with the mighty Google, and get the impression
+from talking to other people that Sherlock is used for file finding the
 vast majority of the time.</i>
 
 <h2>Miscellaneous Moans and Groans</h2>
@@ -802,30 +772,30 @@ So, those are my biggest complaints about OS X. But there are other, smaller dif
 
 <h3>Scripting</h3>
 
-OS X embraces and enhances the time-honored AppleScript system for 
-automating tasks. AppleScript is a pretty cool language, with one big 
-disadvantage -- you have to learn it,  even if you already consider 
+OS X embraces and enhances the time-honored AppleScript system for
+automating tasks. AppleScript is a pretty cool language, with one big
+disadvantage -- you have to learn it,  even if you already consider
 yourself a master in another scripting language.
 
-BeOS takes a different approach to application scripting. Applications 
-provide whatever array of scriptable "hooks" they deem appropriate, and 
-expose / document them as they see fit. These hooks are addressable by 
-the BeOS interapplication messaging model, the BMessage. BMessages can 
-be sent from within compiled applications, or from scripts. From what 
-kind of scripts? Any kind of scripts! Bash, perl, Python, PHP, REBOL, 
-whatever you like and know. All that's required for any scripting 
-language to talk to any application is a command-line utility called 
-"hey," which is conceptually very similar to the Mac OS "tell" command 
+BeOS takes a different approach to application scripting. Applications
+provide whatever array of scriptable "hooks" they deem appropriate, and
+expose / document them as they see fit. These hooks are addressable by
+the BeOS interapplication messaging model, the BMessage. BMessages can
+be sent from within compiled applications, or from scripts. From what
+kind of scripts? Any kind of scripts! Bash, perl, Python, PHP, REBOL,
+whatever you like and know. All that's required for any scripting
+language to talk to any application is a command-line utility called
+"hey," which is conceptually very similar to the Mac OS "tell" command
 found in AppleScript.
 
-As long as your scripting language of choice can invoke "hey," or can 
-otherwise send BMesssages, it can be used to script the behavior of 
-applications running on the system. 
+As long as your scripting language of choice can invoke "hey," or can
+otherwise send BMesssages, it can be used to script the behavior of
+applications running on the system.
 
-But while the BeOS scripting system is more flexible than Apple's 
-system, the reality is that Apple is much larger, there are more 
-scriptable Mac OS applications out there, and there are far, far more 
-AppleScripts than hey scripts available to make your daily computing 
+But while the BeOS scripting system is more flexible than Apple's
+system, the reality is that Apple is much larger, there are more
+scriptable Mac OS applications out there, and there are far, far more
+AppleScripts than hey scripts available to make your daily computing
 life easier and more productive.
 
 I don't mind AppleScript. I wish the system were open to other languages, but AppleScript does a fine job, and is very powerful.
@@ -833,92 +803,92 @@ I don't mind AppleScript. I wish the system were open to other languages, but Ap
 
 <h3>Keyboardability</h3>
 
-Mac OS has never stood up to other operating systems in the 
-keyboardability department. OS X is a little better than OS 9 in this 
-regard, but still has some puzzling omissions. For example, it is not 
+Mac OS has never stood up to other operating systems in the
+keyboardability department. OS X is a little better than OS 9 in this
+regard, but still has some puzzling omissions. For example, it is not
 possible to tab around or arrow-key amongst the buttons in dialog boxes,
- which means reaching for the mouse. MS Windows dialogs also have a 
-shortcut key for each possible field and button, which makes many tasks 
+ which means reaching for the mouse. MS Windows dialogs also have a
+shortcut key for each possible field and button, which makes many tasks
 much faster. For example, if I'm doing a search and replace in a Windows
- app, Alt+A is going to activate the Replace All button rather than the 
-default Replace. In OS X, I have to stop and reach for the mouse, which 
+ app, Alt+A is going to activate the Replace All button rather than the
+default Replace. In OS X, I have to stop and reach for the mouse, which
 interrupts the workflow and the train of thought.
 
 <div align="center">
 <img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-dialog.png" alt="dialog" height="258" width="187">
 </div>
-<i>I have two problems with OS X dialogs. 1) You can tab through fields 
-with the Tab key, but you can't use the arrow or tab keys to move 
-between buttons. 2) Buttons don't have associated trigger keys, which 
-means you can't activate any but the default button from the keyboard. 
+<i>I have two problems with OS X dialogs. 1) You can tab through fields
+with the Tab key, but you can't use the arrow or tab keys to move
+between buttons. 2) Buttons don't have associated trigger keys, which
+means you can't activate any but the default button from the keyboard.
 If I want to Replace All from this BBEdit dialog, I'll have to reach for
- the mouse. </i> 
+ the mouse. </i>
 
 
-For the record, I was never completely happy with BeOS' keyboardability 
-either, and found Linux inconsistent here (Gnome and KDE dialogs behave 
-differently, for example). I've never used an OS that was as 
-keyboardable as Windows, and have never understood why it's so hard for 
+For the record, I was never completely happy with BeOS' keyboardability
+either, and found Linux inconsistent here (Gnome and KDE dialogs behave
+differently, for example). I've never used an OS that was as
+keyboardable as Windows, and have never understood why it's so hard for
 other OSes to catch up with Windows here.
 
-As with BeOS, Cmd-Tab cycles between open apps rather than toggling 
-between the current and the last-used app (yes, there are third-party 
-solutions for this). The Windows and Linux Alt+Tab method is far more 
+As with BeOS, Cmd-Tab cycles between open apps rather than toggling
+between the current and the last-used app (yes, there are third-party
+solutions for this). The Windows and Linux Alt+Tab method is far more
 efficient. It just is.
 
 There is an "Enable full keyboard access" panel in the System Prefs, but
- it doesn't get you very far. E.g. you can use a hotkey to activate an 
-app's toolbar, but then have to arrow around to get to things. Windows 
-gives us a trigger for each menu and each menu item. Thus, getting a 
-word count in Word for Windows is a quick Alt+T, W. Getting the same in 
-Word for OS X is yet another reach, move, navigate, click -- a 
-mouse-driven workflow interruption that takes a good four to five times 
-longer to accomplish. 
+ it doesn't get you very far. E.g. you can use a hotkey to activate an
+app's toolbar, but then have to arrow around to get to things. Windows
+gives us a trigger for each menu and each menu item. Thus, getting a
+word count in Word for Windows is a quick Alt+T, W. Getting the same in
+Word for OS X is yet another reach, move, navigate, click -- a
+mouse-driven workflow interruption that takes a good four to five times
+longer to accomplish.
 
-There are other old Mac OS keyboard habits which are retained in OS X, 
-such as Home and End keys moving to the top and bottom of the document 
-rather than start or end of the current line. As a result, the Home and 
+There are other old Mac OS keyboard habits which are retained in OS X,
+such as Home and End keys moving to the top and bottom of the document
+rather than start or end of the current line. As a result, the Home and
 End keys sit unused on the keyboard, because the need to move to the top
- or bottom of a document is extremely rare. To get to the start or end 
-of the current line in Mac OS, you use the Cmd+right/left arrow 
-shortcuts. These aren't as easy to learn, as intuitive, or as easy to 
-reach. 
+ or bottom of a document is extremely rare. To get to the start or end
+of the current line in Mac OS, you use the Cmd+right/left arrow
+shortcuts. These aren't as easy to learn, as intuitive, or as easy to
+reach.
 
 
 The same argument applies to launching files and folders from the Finder
- with the Enter key. In Mac OS, Enter puts you into rename mode. How 
-often do you want to rename something compared to how often you want to 
-launch it? In Mac OS, you need to hit Cmd-O to "open" a file or folder. 
-Why not have the most-used action be the default for the Enter key, and 
+ with the Enter key. In Mac OS, Enter puts you into rename mode. How
+often do you want to rename something compared to how often you want to
+launch it? In Mac OS, you need to hit Cmd-O to "open" a file or folder.
+Why not have the most-used action be the default for the Enter key, and
 the less-used action (renaming) be a hotkey? (In BeOS, rename is Alt+E).
 
 
-Yes, I know that muscle memory is worth a lot, but user testing should 
-make it easy to see which tasks are performed most often. Common sense 
-dictates mapping the easiest / most plainly marked keys to those tasks. 
+Yes, I know that muscle memory is worth a lot, but user testing should
+make it easy to see which tasks are performed most often. Common sense
+dictates mapping the easiest / most plainly marked keys to those tasks.
 Or am I missing something?
 
 
 <h3>Workspaces</h3>
 
-I'm pretty surprised to see some equivalent of workspaces missing from 
+I'm pretty surprised to see some equivalent of workspaces missing from
 OS X. In BeOS, you get up to 32 virtual desktops to spread your apps and
  windows amongst. Each desktop can have a different resolution and color
- depth, and a different background color or bitmap. Users can toggle 
-through desktops 1-12 with the Alt+Fx keys, and can move windows from 
-one workspace to another by clicking and holding the window's title tab 
-while switching workspaces. BeOS also includes a Workspaces panel that 
+ depth, and a different background color or bitmap. Users can toggle
+through desktops 1-12 with the Alt+Fx keys, and can move windows from
+one workspace to another by clicking and holding the window's title tab
+while switching workspaces. BeOS also includes a Workspaces panel that
 lets you drag apps between workspaces visually, if you prefer. Linux has
- similar tools, though none I've seen are quite as elegant as those in 
+ similar tools, though none I've seen are quite as elegant as those in
 BeOS.
 
-After you get used to working in workspaces, it's hard to go back to a 
+After you get used to working in workspaces, it's hard to go back to a
 single desktop. They're a major usability advantage, have been around in
- various forms for 15 years, and just make good sense. The only 
+ various forms for 15 years, and just make good sense. The only
 3rd-party utility I've seen for OS X to replicate this behavior is <a href="http://www.Mac%20OS%20Xapps.com/article.php?story=20010207042546723" target="_blank">Space</a>.
- Space will indeed clear your desktop so you can launch other apps in a 
-clean environment, but that's about it. This should be an OS-level 
-service, and one I hope more OS X users will begin to demand it from 
+ Space will indeed clear your desktop so you can launch other apps in a
+clean environment, but that's about it. This should be an OS-level
+service, and one I hope more OS X users will begin to demand it from
 Apple.
 
 
@@ -927,22 +897,22 @@ Apple.
 
 I love the Samba connectivity in OS X, but am frustrated that the Finder
  creates .dotfiles in every directory it touches on the remote SMB host.
- This, unfortunately, puts OS X users in the uncomfortable position of 
-not being able to use their Macs on work and school networks without 
-littering the directory listings for others on the same network. And 
+ This, unfortunately, puts OS X users in the uncomfortable position of
+not being able to use their Macs on work and school networks without
+littering the directory listings for others on the same network. And
 I've seen posts from more than one user complaining that their sysadmins
  wouldn't allow them to continue using OS X's SMB tools if they couldn't
- get this fixed. So far, I haven't seen a fix posted anywhere. Let's 
+ get this fixed. So far, I haven't seen a fix posted anywhere. Let's
 hope one is forthcoming.
 
 
 
 <h3>Window Positions</h3>
 
-This is fairly minor, but it seems that some apps remember their window 
+This is fairly minor, but it seems that some apps remember their window
 positions when closed and some do not. Mail.app and Internet Explorer do
- remember their exact size and position between runs, but Terminal and 
-many others do not. This is another good candidate for consistency in 
+ remember their exact size and position between runs, but Terminal and
+many others do not. This is another good candidate for consistency in
 the user experience.
 
 
@@ -950,16 +920,16 @@ the user experience.
 <h3>Cropping Images</h3>
 
 Another fairly minor point: In BeOS, the concept of snippets / clippings
- is extended to images. Launch an image in the built-in ShowImage app, 
-drag out a region of it, and drag it to the desktop -- you get a new 
+ is extended to images. Launch an image in the built-in ShowImage app,
+drag out a region of it, and drag it to the desktop -- you get a new
 image file containing just that selection. I've never seen an easier way
  to crop images and screenshots in any app, any platform.
 
-OS X offers something good enough and similar to nearly make up for it 
-though -- Cmd-Shift-4 activates screenshot mode, but gives you a set of 
-cross-hairs. Drag out a selection and that region is saved to the 
-desktop as a new image file. Very nice, but limited to screenshots, 
-rather than all images, as you get with BeOS (of course, one can always 
+OS X offers something good enough and similar to nearly make up for it
+though -- Cmd-Shift-4 activates screenshot mode, but gives you a set of
+cross-hairs. Drag out a selection and that region is saved to the
+desktop as a new image file. Very nice, but limited to screenshots,
+rather than all images, as you get with BeOS (of course, one can always
 take a regional screenshot of a screenshot...)
 
 
@@ -971,16 +941,16 @@ Open a Terminal and type:
 touch Foo
 </pre>
 
-The shell returns no errors, so you conclude that OS X is properly case 
+The shell returns no errors, so you conclude that OS X is properly case
 sensitive. But get a directory listing, and you'll find that you've got a
  "foo," but no "Foo." As it turns out, the problem is in the filesystem,
- not in the OS -- HFS+ is case-respecting, but case-insensitive. Maybe 
-that's old-hat for old-timers, but to me it seems just  plain weird. As 
-if Apple got started on case-sensitivity but never got around to 
+ not in the OS -- HFS+ is case-respecting, but case-insensitive. Maybe
+that's old-hat for old-timers, but to me it seems just  plain weird. As
+if Apple got started on case-sensitivity but never got around to
 finishing it. Those  who want true case sensitivity need to install OS X
- with UFS, rather than HFS+. I'm sure someone somewhere can provide a 
-whole host  of reasons why  HFS+ was constructed this way, but I still 
-hope  to see true  case sensitivity in HFS+ in the future. BeOS (or, 
+ with UFS, rather than HFS+. I'm sure someone somewhere can provide a
+whole host  of reasons why  HFS+ was constructed this way, but I still
+hope  to see true  case sensitivity in HFS+ in the future. BeOS (or,
 rather, BFS) got this one right.
 
 
@@ -990,111 +960,111 @@ rather, BFS) got this one right.
 <h2>All Told, Life Is Good</h2>
 
 I was once fond of referring to BeOS as "the promised land" of operating
- systems. Well, I wasn't wrong -- it really was, in many ways. 
+ systems. Well, I wasn't wrong -- it really was, in many ways.
 Unfortunately, BeOS never attracted enough visitors to turn the promised
- land into a thriving metropolis. But the best OS in the world ain't 
-worth jack without millions of users, billions of dollars, and 
-kajillions of programmer hours flowing through it. 
+ land into a thriving metropolis. But the best OS in the world ain't
+worth jack without millions of users, billions of dollars, and
+kajillions of programmer hours flowing through it.
 
-While OS X can't boast about jaw-dropping performance like BeOS could 
-(although the new Core Audio services offer audio latencies nearly as 
+While OS X can't boast about jaw-dropping performance like BeOS could
+(although the new Core Audio services offer audio latencies nearly as
 low as Be's, and in some cases (MIDI and jitter) even better than Be's),
- and while its file system is mesozoic in comparison to Be's, the 
-"traction" problem that always plagued BeOS is not a problem for OS X. 
-There are users. The world is paying attention. Multi-million dollar 
-companies are releasing polished, mature applications for it. The press 
-is taking notice. The same sort of excitement that filled the BeOS 
-community with eagerness for the future is taking hold in the OS X 
-community. 
+ and while its file system is mesozoic in comparison to Be's, the
+"traction" problem that always plagued BeOS is not a problem for OS X.
+There are users. The world is paying attention. Multi-million dollar
+companies are releasing polished, mature applications for it. The press
+is taking notice. The same sort of excitement that filled the BeOS
+community with eagerness for the future is taking hold in the OS X
+community.
 
 
 Do I think Apple should have bought Be when they had the chance? Yes and
- no. On one hand, Apple would have gotten a fantastic architecture on 
-which they could build their modern OS. And OS X would have a 
-state-of-the-art filesystem and superior multithreading / multitasking 
-today. OS X might have gotten out the door sooner, and it would be a 
-faster, more efficient operating system. 
+ no. On one hand, Apple would have gotten a fantastic architecture on
+which they could build their modern OS. And OS X would have a
+state-of-the-art filesystem and superior multithreading / multitasking
+today. OS X might have gotten out the door sooner, and it would be a
+faster, more efficient operating system.
 
 
 
-Those observations are in no way meant to disparage Darwin or the many 
-NeXTStep technologies that live on in OS X. Together, they form a 
-rock-solid OS core with a mostly great user experience. Rather, I mean 
-that Be had achieved "the grace of the Mac, the power of Unix" nearly a 
-decade before Apple got OS X out the door, and that many of the 
+Those observations are in no way meant to disparage Darwin or the many
+NeXTStep technologies that live on in OS X. Together, they form a
+rock-solid OS core with a mostly great user experience. Rather, I mean
+that Be had achieved "the grace of the Mac, the power of Unix" nearly a
+decade before Apple got OS X out the door, and that many of the
 complaints I list above would not be issues for OS X today.
 
-But. Apple would not have gotten Steve Jobs back if they had purchased 
-Be. They would have gotten Jean-Louis Gass閑 and Steve Sakoman instead. 
+But. Apple would not have gotten Steve Jobs back if they had purchased
+Be. They would have gotten Jean-Louis Gass閑 and Steve Sakoman instead.
 JLG is a brilliant man, a rare literate intellectual in a sea of stuffed
- shirts. Despite the ultimate failure of Be, I think he's got his head 
-screwed on straight, and is a man of true vision -- a fine CEO. But 
-Steve Jobs is Steve Jobs, and Steve Jobs makes things happen. He has 
-pulled Apple out of a long downward spiral, has succeeded in finally 
-dragging Mac users kicking and screaming into the 21st century, and is 
+ shirts. Despite the ultimate failure of Be, I think he's got his head
+screwed on straight, and is a man of true vision -- a fine CEO. But
+Steve Jobs is Steve Jobs, and Steve Jobs makes things happen. He has
+pulled Apple out of a long downward spiral, has succeeded in finally
+dragging Mac users kicking and screaming into the 21st century, and is
 doing it with tremendous style. While I've said just the opposite in the
- past, I now believe Apple ultimately made the right decision by going 
+ past, I now believe Apple ultimately made the right decision by going
 with NeXT and Jobs rather than Be and Gass閑.
 
-In software development you don't often get a chance to break all the 
+In software development you don't often get a chance to break all the
 rules and start over. Being able to start from scratch was Be's greatest
- trump card. Apple <i>sort of</i> had that opportunity. OS X is a brand 
-new operating system, yes, but it is also a mutt bred from Unix and 
-NeXTStep -- two truly excellent, but also historically laden operating 
-systems. Apple also got dealt the backwards compatibility card, both 
-technologically (so that old Mac apps would continue to run) and 
-psychologically (there had to be enough similarities between pre-X Mac 
-OS and OS X that the existing userbase would not become alienated. 
+ trump card. Apple <i>sort of</i> had that opportunity. OS X is a brand
+new operating system, yes, but it is also a mutt bred from Unix and
+NeXTStep -- two truly excellent, but also historically laden operating
+systems. Apple also got dealt the backwards compatibility card, both
+technologically (so that old Mac apps would continue to run) and
+psychologically (there had to be enough similarities between pre-X Mac
+OS and OS X that the existing userbase would not become alienated.
 
-All of that is a long way of saying that I truly love what Apple has 
-created in OS X and am happy to have made the switch. But I also lament 
+All of that is a long way of saying that I truly love what Apple has
+created in OS X and am happy to have made the switch. But I also lament
 that OS X falls so short of BeOS in a few important categories. Now that
- OS X is out there in the field and developers are busily coding for 
-Carbon and Cocoa, it's going to be much harder for them to change the 
+ OS X is out there in the field and developers are busily coding for
+Carbon and Cocoa, it's going to be much harder for them to change the
 application binding policy (for example) than it would have been if they
  had gotten it right prior to release. Not impossible, but much harder.
 
 
 The trouble with BeOS is that gets under your skin and stays there. BeOS
- showed the world how much power is really locked away in their 
-computers, and how much efficiency is wasted by bloated operating 
-systems. It showed the world what can be done when a company sits back, 
-examines all the problems in the market's OS offerings, and decides to 
-build something that doesn't have those problems. 
+ showed the world how much power is really locked away in their
+computers, and how much efficiency is wasted by bloated operating
+systems. It showed the world what can be done when a company sits back,
+examines all the problems in the market's OS offerings, and decides to
+build something that doesn't have those problems.
 
-At the height of the BeOS revolution that never really happened, it 
-seemed that the world couldn't possibly do anything but see the light 
-and switch to BeOS. In retrospect, BeOS seems like little more than a 
-tremendously expensive proof-of-concept. But that's a pessimistic view 
-of things. I agree with Urban Lindeskog, who recently posted on a Be 
+At the height of the BeOS revolution that never really happened, it
+seemed that the world couldn't possibly do anything but see the light
+and switch to BeOS. In retrospect, BeOS seems like little more than a
+tremendously expensive proof-of-concept. But that's a pessimistic view
+of things. I agree with Urban Lindeskog, who recently posted on a Be
 mailing list:
 
 <blockquote>
 ... in that sense BeOS has not been a waste of time, on the contrary. It
- has added to the collective knowledge, and showed us some interesting 
+ has added to the collective knowledge, and showed us some interesting
 views of the art of computing.
 </blockquote>
 
-In any case, anyone who has spent time with BeOS is forever spoiled, their expectations for OS technology permanently affected. 
+In any case, anyone who has spent time with BeOS is forever spoiled, their expectations for OS technology permanently affected.
 
 
 
 
-As a migrating user, I'm torn between admiration for and frustration 
-with OS X. But I know that, deep down, Jobs and Gass閑 have similar 
-ideas about creating the ultimate user experience, and about bringing 
-together the ultimate in ease of use with the ultimate in power and 
-flexibility. Gass閑 never got to finish painting in the details of his 
+As a migrating user, I'm torn between admiration for and frustration
+with OS X. But I know that, deep down, Jobs and Gass閑 have similar
+ideas about creating the ultimate user experience, and about bringing
+together the ultimate in ease of use with the ultimate in power and
+flexibility. Gass閑 never got to finish painting in the details of his
 vision. Jobs has just gotten started on his.
- 
-<b>Note: The publication of this article  generated more than 500 email 
+
+<b>Note: The publication of this article  generated more than 500 email
 responses. Rather than respond to everyone individually, I've written an
- addendum to this document  summarizing reactions and my responses to 
+ addendum to this document  summarizing reactions and my responses to
 them, as well as errors in this piece. Please read <a href="http://www.birdhouse.org/beos/refugee/redux.html">BeOS Refugee Redux</a> before responding to this  article.</b>
 
 <blockquote>
-<i>Many thanks to Irfon Kim-Ahmad, Kurt von Finck, Balatro, Allen 
-Brunson, and Jim Rippie for their comments on and contributions to this 
+<i>Many thanks to Irfon Kim-Ahmad, Kurt von Finck, Balatro, Allen
+Brunson, and Jim Rippie for their comments on and contributions to this
 piece.</i>
 </blockquote>
 
@@ -1106,5 +1076,3 @@ _【译文结束】_
 
 参考：  
 [Mac OS X背后的故事](http://code-tech.diandian.com/post/2013-01-24/40046406335)
-
-
