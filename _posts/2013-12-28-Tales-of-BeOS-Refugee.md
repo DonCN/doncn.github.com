@@ -333,90 +333,27 @@ OS X 10.1是除BeOS之外，我唯一喜欢使用的系统。Windows同样是操
 
 # 缺点与不足 / The Bad and The Ugly
 
-Overall, I'm happier than a pig in shit. What could I possibly find to complain about?
+总的来说，我对OS X非常满意。我还有什么可抱怨的吗？
 
-Whereas BeOS is renowned as one of the fastest and most efficient
-operating systems ever designed, OS X may well be one of the slowest.
-Problems with performance and efficiency in OS X have been discussed ad
-nauseam all over the net, but the BeOS user feels this contrast more
-acutely than most, because the BeOS user has been so completely spoiled
-by the amazing speed of BeOS.
+BeOS是著名的目前为止最快和最高效的操作系统之一，而OS X可能是最慢的。OS X的性能和效率的问题在网络上到处都有讨论，但BeOS用户对此比大多数其他人有更深刻的体会，因为BeOS用户已完全习惯了BeOS惊人的速度。
 
-According to some reports, the PowerMac 867 is functionally equivalent
-to a 2Ghz Pentium, CPU-wise. Loaded up with 640Mbs of memory, this
-machine should absolutely fly through just about anything I could care
-to throw at it. But that's not the case. With this much horsepower,
-performance is merely acceptable. OS X on a lesser machine is an
-exercise in pain. OS X apologists have a myriad of excuses for OS X's
-high resource requirements  --  it's the Finder's fault, it's Quartz'
-fault, it's the window buffers that give you all those cool transparency
- effects, etc. etc.
+据报道，PowerMac 867的性能相当于一个2GHz的Pentium CPU，若加上640Mb的内存，不管我进行什么操作，这台机器都应该可以运行如飞。但事实并非如此。拥有这样强大的CPU，达到的性能仅仅可以接受。OS X运行在较差的机器上是在痛苦的经历。OS X的辩护者认为是由于OS X的高资源需求，还有其他无数的理由——Finder的问题，时钟频率问题，所有那些很酷的透明效果的窗口的缓冲区问题，等等。
 
+我只说一件事：优化是程序员对一个代码库所能做的最后一件事。苹果在操作系统升级的同时不断提高系统的性能。没有理由认为，未来的更新不会提高性能。事实上，<a href="http://forums.macnn.com/cgi-bin/ultimatebb.cgi?ubb=get_topic&amp;f=46&amp;t=000100" target="_blank">论坛的讨论</a>暗示着下一个版本在窗口的缓冲上会有明显的效率提升。实际上，我不认为这个改进只是影响到操作系统的某个部分，相反它有可能改善操作系统的几乎每个方面。
 
-I'll allow for one thing: Optimization is the very last thing developers
- do with a code base, and Apple has steadily increased performance with
-every point upgrade to the OS to date. There's no reason to think that
-future updates won't raise the performance bar as well. In fact, <a href="http://forums.macnn.com/cgi-bin/ultimatebb.cgi?ubb=get_topic&amp;f=46&amp;t=000100" target="_blank">this discussion</a>
- implies that the next release may offer significant efficiency gains in
- the window buffering department. In reality, I don't think the problem
-can be localized to any one OS element  --  there are probably
-improvements to be made in nearly every aspect of the OS.
+当然，BeOS从来没有这个性能问题。尽管BeOS变得越来越快，但这个操作系统是从一开始就速度惊人——绝对高效从开始就是她的特征之一，也是它的绘图卡的特点。事实上，BeOS只是运行在64MB内存的奔腾233CPU上，这都比OS X运行在所谓的超级计算机上的速度快。MAC的CPU速度大约是BeOS的8倍，而内存更是BeOS的10倍以上，但BeOS机器性能还是超越了MAC。BeOS开机更快，应用程序启动更快，窗口大小调整的更流畅，你可以同时运行多个音频和视频剪辑，而不影响系统的性能。
 
-Still, BeOS never had this problem. While BeOS did get faster as years
-went by, the OS was a speed demon from day one  --  radical efficiency
-was one of its hallmarks from the start, and one of its great drawing
-cards. The fact of the matter is, BeOS on a Pentium 233 with 64 Mbs of
-memory is faster than OS X is on this so-called supercomputer. The Mac's
- CPU is roughly 8x faster and the machine is stocked with 10x more
-memory, but the BeOS machine out-performs the Mac. BeOS boots faster,
-applications launch faster, windows resize more smoothly, you can play
-more simultaneous audio and video clips without affecting system
-performance.
+造成这种巨大差距的原因，一方面是由于BeOS是从完全重新设计的，并没有携带任何历史兼容的包袱，另一方面因为OS X窗口系统非常先进，但OS X的发展才刚开始不久。但我认为只是苹果在这里有点懒。由于目前快速的CPU和内存非常廉价，苹果就以此为借口做了低效的操作系统的设计。如果摩尔定律没有起作用，市场将不会有那么多速度飞快的电脑，而OS X在性能上若没有根本的改变，也就只能被淘汰。
 
-This wide delta is partly explained by the fact that BeOS was designed
-from the ground up and didn't carry any baggage, partly explained by the
- fact that OS X's windowing system is so advanced and does so much, and
-partly explained by OS X's youth. But I can't help but think that Apple
-is being somewhat lazy here. Fast CPUs and memory are very cheap these
-days, and Apple seems to be using that fact as an excuse for inefficient
- OS design. If Moore's law weren't in effect, the market would not be
-stocked with so many fast machines, and OS X would be dead in the water
-without radical improvements to general efficiency.
+在OS X中试试这个：打开一个终端窗口（在BeOS中是瞬时的，而在OS X上需要几秒）和运行“top”，然后调整它的窗口大小。这个调整操作卡顿的很厉害。然后试着在配置低得多的BeOS机器上做同样的操作却非常流畅，即使同时有其他程序在运行。我甚至在Macworld博览会上的双核800MHz的机器上尝试过这样的操作，发现缩放操作同样不流畅。 
 
-Try this: open a Terminal window (instantaneous on BeOS, a few seconds
-on OS X) and run "top." Then resize its window. The resize operation is
-clunky and blocky. Now try the same on a far lesser BeOS machine  --  
-the resize operation is silky smooth, even if several CPU-intensive
-processes are going on. I even tried this on a dual 800 at MacWorld
-Expo, and found the same chunky resizing behavior.
+现在在两个系统中分别打开四部QuickTime电影，当播放时，在屏幕上移动播放窗口，调整它们的大小。OS X的表现与配置差的多的BeOS相比也是天壤之别。
 
-Now launch four QuickTime movies and get them all playing at once. Move
-them around on screen, and resize them while playing. Try the same on a
-far lesser BeOS machine. The difference is night and day.
+我做了很多的MP3编码任务，发现在处理过程中，OS X系统的其他运行任务的明显受到影响（不是非常明显，但在可以感受到）。但在BeOS中却没有这种情况，即使编码时遇到有问题的MP3也不会有影响。
 
-I do a lot of MP3 encoding, so it's a drag to discover that other tasks
-in the OS are noticeably affected (not hugely, but noticeably) when
-encoding is in process. Not so in BeOS. Neither OS creates glitched MP3s
- when encoding under load though.
+我发现了不止一种操作，只要涉及到多线程和多任务处理，配置较差的BeOS机器都要比豪华配置的OS X速度快一个量级。如果性能降低是OS 9用户面临的问题，想象一下这对前BeOS用户会是多么困难的一件事情。我们可以解释这涉及到优先级、内核的调度、高效的多线程技术，但最根本的是它关系到用户体验。Be在十年前已经做得很好，而苹果公司至今能无能为力。 
 
-There is not a single operation I can find that involves multithreading
-and multitasking that is not leagues faster on a lesser BeOS machine
-than it is on a hot-rod OS X box. If the performance hit is a tough pill
- for OS 9 users to swallow, imagine how much harder it is for the BeOS
-user. We could go into a long discussion about priorities, kernel
-scheduling, and effective multithreading techniques, but the bottom line
- is that it's all about the user experience. Be nailed this one a decade
- ago, while Apple still hasn't gotten it right.
-
-I should, however, take a moment to say that most of the time, and for
-most of what I do, OS X on this machine is fast enough. I'm not typing
-ahead of the cursor, I'm not sitting on my thumbs waiting for
-hourglasses, and I'm not in any real-world way stymied by OS X on my
-current hardware. It's just that I have lived with a very high standard
-of performance for long enough that it started to feel normal to me.
-Be's performance bar is going to be a tough hurdle for Apple.
-Unfortunately, the vast, vast majority of the Mac-using population has
-never tried BeOS, and doesn't know what they're missing.
+当然，我应该说明，大部分的情况下的大部分操作，这台OS X机器是足够快的。打字时光标没有卡顿，我不用等待沙漏，我当前的硬件下的OS X也没有影响我的工作。只是由于我习惯了BeOS的高性能。而Be的表现对苹果将是一个难点。不幸的是，绝大多数的MAC用户从来没试过BeOS，不知道他们错过了什么。 
 
 ## 文件系统对比 / File System Shoot-Out
 
@@ -440,22 +377,11 @@ BFS的地址空间是64位的，这意味着一个BFS磁盘理论上的最大文
 Be的数据库式文件系统的一些操作举例：
 
 <ul>
-	<li>Copy your MP3 files' ID3 tags to Artist, Title, Year, Genre
-attributes. Sift and sort through your collection in the Tracker in
-almost anyway imaginable, or build playlists from MP3 attribute queries
-with far more flexibility than you get in other OSes. </li>
+	<li>Copy your MP3 files' ID3 tags to Artist, Title, Year, Genre attributes. Sift and sort through your collection in the Tracker in almost anyway imaginable, or build playlists from MP3 attribute queries with far more flexibility than you get in other OSes. </li>
 
-	<li>BeMail messages store Subject, From, To, CC:, Date, etc. in
-attributes. Create virtual mailboxes based on live, instantaneous query
-results. This lets you obtain views of your email store that are
-irrespective of the actual folder locations of BeMail messages on disk.</li>
+	<li>BeMail messages store Subject, From, To, CC:, Date, etc. in attributes. Create virtual mailboxes based on live, instantaneous query results. This lets you obtain views of your email store that are irrespective of the actual folder locations of BeMail messages on disk.</li>
 
-	<li>Years ago, I created a custom file type based on text, with
-attributes for author, title, email, URL, etc. Then I wrote a CGI script
- in perl to extract and dish up these attributes over the web. In other
-words, I was serving up a database-backed web site without having to
-install or learn any database software whatsoever. That site now runs on
- <a href="http://www.onlamp.com/" target="_blank">LAMP</a>, but you can see how the site was created <a href="http://www.betips.net/TrackerBase/" target="_blank">here</a>.</li>
+	<li>Years ago, I created a custom file type based on text, with attributes for author, title, email, URL, etc. Then I wrote a CGI script  in perl to extract and dish up these attributes over the web. In other words, I was serving up a database-backed web site without having to install or learn any database software whatsoever. That site now runs on  <a href="http://www.onlamp.com/" target="_blank">LAMP</a>, but you can see how the site was created <a href="http://www.betips.net/TrackerBase/" target="_blank">here</a>.</li>
 
 </ul>
 
