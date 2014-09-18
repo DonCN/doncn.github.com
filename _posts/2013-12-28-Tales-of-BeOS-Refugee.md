@@ -377,208 +377,71 @@ BFS的地址空间是64位的，这意味着一个BFS磁盘理论上的最大文
 Be的数据库式文件系统的一些操作举例：
 
 <ul>
-	<li>Copy your MP3 files' ID3 tags to Artist, Title, Year, Genre attributes. Sift and sort through your collection in the Tracker in almost anyway imaginable, or build playlists from MP3 attribute queries with far more flexibility than you get in other OSes. </li>
+	<li>复制MP3文件的ID3标签到艺术家、名称、年、流派等属性。在Tracker文件浏览器中几乎以各种方式对你的音乐库进行筛选、排序，或者根据MP3属性的查询结果创建播放列表，这比其他系统中的方法灵活多了。 </li>
 
-	<li>BeMail messages store Subject, From, To, CC:, Date, etc. in attributes. Create virtual mailboxes based on live, instantaneous query results. This lets you obtain views of your email store that are irrespective of the actual folder locations of BeMail messages on disk.</li>
+	<li>BeMail的邮件可以直接在属性中存储主题、发件人、收件人、日期等信息，并在文件浏览器直接查询。 可以创建虚拟的收件箱，其中的邮件可以根据属性实时查询。这样可以浏览你的邮件，而不管它的保存位置。</li>
 
-	<li>Years ago, I created a custom file type based on text, with attributes for author, title, email, URL, etc. Then I wrote a CGI script  in perl to extract and dish up these attributes over the web. In other words, I was serving up a database-backed web site without having to install or learn any database software whatsoever. That site now runs on  <a href="http://www.onlamp.com/" target="_blank">LAMP</a>, but you can see how the site was created <a href="http://www.betips.net/TrackerBase/" target="_blank">here</a>.</li>
+	<li>多年前，我根据文本类型创建了一个新的文件类型，包含的属性有：作者、名称、邮箱地址，网址等。然后我用perl写了CGI脚本将这些属性的文件传到我的网站。也就是说我不用数据库就能保存网站的信息，也不用费力去学习数据库了。 这些网站现在运行于<a href="http://www.onlamp.com/" target="_blank">LAMP</a>，你可以在 <a href="http://www.betips.net/TrackerBase/" target="_blank">这里</a>看网站是如何建立的。</li>
 
 </ul>
 
-OS X's closest approximation is the pathetic <a href="http://www.Mac%20OS%20Xhints.com/article.php?story=2001103013060434" target="_blank">comments field</a>,
- which is a pain to use (hell, you can't even enter Comments directly
-into the Finder), and which offers next to nothing in comparison to BFS
-attributes.
+OS X中与BeOS的属性最类似的是她那可怜的<a href="http://www.Mac%20OS%20Xhints.com/article.php?story=2001103013060434" target="_blank">注释字段（comments field）</a>，它非常难用（你都不能在Finder中直接输入注释），与BFS的属性相比，它几乎没有任何功能。
+
+BeOS的BFS文件系统和Tracker浏览器的良好体验不止于直观的属性，还通过网络标准MIME系统描述文件类型，这带来很好的兼容性——如从网上下载文件，可以直接从HTTP包的头部得到文件类型信息，而不用扩展名；此外，BeOS网络服务器也不用维护独立的MIME表——每个文件的类型可以直接从文件系统得到。
+
+Attributes are used by BeOS的StyledEdit文本编辑器利用了属性，就可以在纯文本中包含富文本信息，这在其他平台仍被视为纯文本。属性可以用来在文件中保存光标位置，这样即使关掉文件，下次打开能能记得上次的光标位置；属性还可以保存MP3文件的调谐和混音信息。各种应用的可能性是无穷的。
 
 
-The great usability of BFS and the Tracker don't end with plain-sight
-attributes. Additional attributes describe each file's type via the
-Internet-standard MIME system, which provides a great deal of
-compatibility with the world at large (download a file from the internet
- and its type can be gleaned from the HTTP header, without use of
-extensions), and BeOS web servers don't need to maintain separate MIME
-tables - each file's type is taken directly from the file system.
+###二者共有的应用策略 / Application-Binding Policies
 
-Attributes are used by StyledEdit to allow for rich formatting in plain
-text documents, which are still viewable as plain text on other
-platforms. Attributes are used to retain cursor position in documents
-even after they're closed and re-opened, and are used to store
-equalization and cross-fade settings for MP3 files. The possibilities
-are endless.
+无论是BeOS还是MAC OS 9都不需要用户为他们的文件名添加扩展名。没有扩展名就意味着需要通过其他一些手段识别文件的类型，及相关联的应用程序。所有版本的MAC OS都假设创建文件的应用也是打开这个文件的最佳应用，这导致双击相同类型的文件，可能会被不同的应用程序打开。对很多MAC用户似乎这种创建者作为默认打开程序的机制不是一个问题，但我认为是。这经常会导致在操作系统的某些操作行为并不是你期望的和需要的，这似乎是可用性上的一个主要缺点。最近在我们的部门一个OS 8的用户用附件方式发给我一堆JPEG图像。当我点击它们，经典的环境开始启动。原来是因为他们是经典环境下的QuickTime创建的。但是，我什么时候告诉操作系统我不需要用我自己的图片浏览器观看JPEG？QuickTime除了创建了这些图片之外，还能对它们进行什么操作？在我使用OS X的几个月里，我已经经历了六次类似事件，也从别人那里听到类似的故事。我不明白为什么MAC用户对这种创建者作为默认打开程序的机制没有意见。
 
+为了与Windows世界更好的兼容，OS X需要增加扩展名标识文件类型。同时，它可以继续保存创作程序作为默认应用程序。也就是说，OS X没有完全抛弃创建程序作为默认程序的机制采用全新的文件类型配置方法，而是采用了Windows那种单纯依靠扩展名判断文件类型的坏习惯，同时保留自己的坏习惯（使用创建程序作为默认打开程序）。OS X操作系统的其余部分在前进，而文件类型机制仍旧在拖后腿。这对我来说完全是令人费解。OS X下的文件类型机制比以前没有改进，反倒添加了Windows机制的问题。
 
-<h3>Application-Binding Policies</h3>
-
-Neither BeOS nor Mac  OS 9 require users to add extensions to their  
-filenames. Without extensions, some other means of identifying a file's
-type and associated application is necessary. All versions of Mac OS
-assume that the application that created a document is also the best
-application to launch it in, resulting in situations where files of the
-same type launch in different applications when double-clicked. For some
- reason, a lot of Mac users don't seem to see this creator-based
-launching schema as a problem, but I do. It results in not-infrequent
-unexpected and undesired behavior on the part of the OS, and seems like a
- major usability disadvantage. Just recently an OS 8 user in our
-department sent me a bunch of JPEG images as an attachment. When I
-double-clicked them, the Classic environment started to launch. Turns
-out they had a Creator code for the Classic version of QuickTime.  
-Excuse me? When did I ever tell the OS that I'd rather not view JPEGs in
- my viewer of choice? What  does QuickTime have to do with these images,
- other than the fact that she created them in it on her system? I've
-experienced similar events half a dozen times in the few months I've
-been using OS X, and have heard  similar  stories from others. Why Mac
-users are so complacent about Creator-based launching is beyond me.
-
-In an attempt  to become more compatible with the Windows world, OS X
-requires extensions for file type identification. Meanwhile, it
-continues to respect the Creator code for application binding. In other
-words, rather than moving forward by dropping the Creator code and
-moving to a complete FileTypes preferences panel, OS X adopted a bad
-habit from Windows (extensions) and retained its own bad habits (using
-the Creator code for application binding). While the rest of the OS was
-moving forward, filetyping left  one foot in the mud and stepped
-backwards with the other foot. This is utterly baffling to me.
-Filetyping under OS X is now doubly problematic, rather than better than
- it was.
-
-Recently, a <a href="http://www.macslash.com/article.pl?sid=01%2F12%2F05%2F1624227" target="_blank">discussion</a>
- explored this issue in the context of metadata in OS X in general. In
-the course of that discussion, it was pointed out to me that it is not
-the Creator code per se' that I don't like, but rather the application
-binding policy of the OS / Finder. What's needed to provide maximum
-flexibility to the user, IMO, is to allow for storage of any type of
-metadata. And one of those pieces of metadata needs to be a
-"preferred_app" attribute. The operating system's application-binding
-policy should look first to see if the user has established a preferred
-application for handling the current file. If not, it should look to see
- if there's a globally preferred application for handling this file's
-type. If not, it can try and use the Creator code if necessary.
-Respecting the Creator code should only be a last resort, since it's so
-often responsible for unexpected and undesirable behavior. But as seen
-in the screenshot below from <a href="http://www.brockerhoff.net/xray/" target="_blank">X-Ray</a>,
- the Creator code is looked at first, the file's extension second, and
-the file type third - the exact opposite of what logic and usability
-would dictate.
+最近, <a href="http://www.macslash.com/article.pl?sid=01%2F12%2F05%2F1624227" target="_blank">网上讨论</a>OS X的元数据（metadata）时提到了这个问题。在这一讨论过程中，有人向我指出，不是创建程序信息让我不喜欢，而是应用程序绑定策略。我认为，操作系统需要为用户提供的最大的灵活性，就是允许存储任何类型的元数据。其中一个元数据就应该是“首选程序”属性。操作系统的应用程序绑定策略应该先看看用户是否已经建立了一个用于处理当前文件的首选应用。如果没有，再看是否有处理这种文件类型的全局的首选应用。如果没有，它则可以在必要时使用默认的创建程序。创建程序应该是打开文件的最后选项，因为它的反应行为经常是意想不到、不受欢迎的。但从下面的<a href="http://www.brockerhoff.net/xray/" target="_blank">X-Ray</a>截图中看到，创建程序作为了首选，文件的扩展名第二，而文件类型第三，这个逻辑跟最具可用性的顺序正好相反。
 
 <div align="center">
 <img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-binding_prio.gif" alt="xray" height="343" width="468">
 </div>
-<i>OS X prioritizes Creator code over file type in the application
-binding process. Since the document's creator is logically irrelevant to
- the determination of the best app to launch the document in, and
-because it often results in unexpected and undesirable document
-launching behavior, and because more flexible and powerful application
-binding can be accomplished through file type-based binding, I find this
- 100% backwards.</i>
+<i>OS X在为文件选择默认打开程序过程中使创建程序的优先级高于文件类型。因为文件的创建程序与打开该文件的最好应用之间并无任何逻辑关系，这常常导致意外的文件启动或不希望的文件操作。我认为通过文件类型的结合来完成的应用程序绑定更加灵活和强大，而OSX却并没有这样做。</i>
 
+如果苹果最终提供一个集中的文件类型配置面板，同时为用户提供文件的创建程序信息，那么就有了其他的选择，而不是仅仅比较文件类型与创建程序的重要程度，苹果可以让用户来选择这两者的优先顺序。例如，用户希望最大程度的控制绑定配置可能会选择优先使用文件的最佳应用程序，然后是该文件类型的绑定程序，其次才是文件的创建程序。另一个选项可能是只选择第二个和第三个。也就是说，苹果不能只是达到Be的灵活性，应该加油超过她。
 
-If Apple is ultimately to provide a central FileTypes preferences panel,
- and simultaneously wants to satsify users who for some reason feel
-strongly about the Creator code, there's another possible option here.
-Rather than simply elevating the importance of  the file type and
-deprecating the importance of the creator, Apple could let the user
-select the order of the binding rules. For example, users who want
-maximum control over binding preferences could opt to have the file's
-preferred app checked first, the preferred  app for that file's type
-checked second, and the creator third. Died-in-the wool traditionalists
-could have the Creator checked first, and other options checked second
-and third. In other words, Apple could not only match Be's level of
-flexibility, but could surpass it.
+问题的另一个方面是，OS X没有一个集中的文件类型配置面板，但正是她急需的。没有文件类型配置面板，OS X永远不能摆脱创建程序关联造成的困扰，也永远无法达到Be的灵活性。BeOS有一个合理的基于文件类型的绑定应用程序默认规则，而这些是在全系统范围内可配置的，可以具体到单个文件，也可以利用Tracker浏览器的附件批量的绑定程序。BeOS用户不需要为文件添加扩展名，BeOS从不会将创建程序假设为最好的绑定程序，并且BeOS用户对应用绑定可以从微观到宏观的控制。 
 
+BeOS的文件类型绑定程序机制比OS X的更加灵活，可用，更符合逻辑。除了性能，OS X蹩脚的文件类型绑定机制是我最失望的。
 
-The other part of the problem is that OS X offers no central file types
-preferences panel. It needs one, badly. Without it, OS X will never be
-able to depart from the cursed practice of respecting the Creator code,
-and will never be able to approach Be's level of flexibility. BeOS ships
- with reasonable defaults for file type-to-application bindings, and
-these are configurable by the user on a system-wide basis, at the
-individual file level, and on batches of files at once via a built-in
-Tracker Add-On. The BeOS user does not need to put extensions on his/her
- files, BeOS never makes the rotten assumption that the creating app is
-also the best launching app, and the BeOS user has control over
-application binding from the micro to the macro level.
+在使用OS X几周之后, 有人说OS X提供了文件绑定的设置功能。查看文件信息，选择
+"Open With Application"，然后浏览新程序，这样你可以重新设置绑定程序，或者做全局改变。若真的可行那就很棒，但是这里有个逻辑问题：
 
-The BeOS filetyping and application binding system has more  
-flexibility, more usability, and is more logical than OS X's. After the
-performance issues, OS X's backwards filetyping schema is my single
-largest disappointment with OS X.  
+查看信息面板只与选定文件的信息有关，但是却可以用来改变全局——也就变成了一个全局的配置。从单个文件的信息面板来配置全局信息很不直观，这也是为什么，我的朋友告诉我有这个功能，我仍然没找到它。
 
-
-After several weeks of using OS X, it was pointed out to me that OS X
-does offer some semblance of control here. Get Info on a file, select
-"Open With Application", and navigate to the new app. You can then
-re-set the binding for that document, or choose to make the change
-globally. It's great that it's possible to do so, but there's a logic
-problem here:
-
-The Get Info panel relates to info on a selected file or files. But
-here, it is being used to make a system-wide change -- in other words, a
- System Preference. It is not intuitive to look in a single file's Info
-panel for a system preference, which is why I never found the option
-when looking around, and why a friend had to point out to me that it was
- even possible to do so.
-
-A central FileTypes panel would be more intuitive, more powerful, and
-would give the user much more control over every aspect of file types
-and bindings.
+一个集中的文件类型面板会更直观，更强大，让用户可以更多的控制文件类型的程序绑定。
 
 <div align="center">
 <img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-filetypes.jpg" alt="be_filetypes" border="0" height="406" width="570">
 </div>
-<i>The BeOS FileTypes preferences panel gives the user total control
-over MIME types, icons, associations between applications and filetypes
-(application binding), optional filename extensions, and attributes.
-This is the global (system-wide) preferences panel. A separate FileType
-panel for individual files or groups of files lets you override the
-global settings on a local level.</i>
+<i>BeOS文件类型配置面板给予用户对MIME类型、图标、文件类型和程序绑定、可选文件扩展名、属性的完全控制。这是全局的配置面板。还有一个独立的文件类型面板用于单个或一组文件，可以覆盖全局的设置。</i>
 
-On this note, an additional BeOS advantage is that the MIME typing
-system allows the OS to easily keep track of which apps can handle which
- file types, and thus to suggest candidate applications. For example, if
- I create a custom filetype with the MIME type <tt>text/x-shacker</tt>
-and send it to a user who hasn't registered that filetype on his system,
- BeOS will still be able to tell that it's a text file. Since every BeOS
- app registers itself to handle certain MIME types, BeOS can instantly
-provide a list of all text-handling apps on the user's system. This
-capability also comes into play when displaying the "Open With..."
-context menu when right-clicking a file in the Tracker.
+在此请注意，BeOS额外的优点是MIME类型系统使得操作系统能够轻松地跟踪应用程序可以处理的文件类型，进而建议绑定合适的应用程序。例如，如果我利用MIME类型创建一个自定义文件类型<TT>text/x-shacker</tt>，然后将其发送给没有在自己的BeOS系统中注册该文件类型的用户，这样BeOS仍然能够根据MIME类型告诉用户它是一个文本文件。由于每个BeOS的应用程序将自己注册为可以处理某些特定的MIME类型， BeOS就可以即时提供系统上所有的可以进行文字处理的应用程序列表。这种功能也嵌入了“打开方式...”菜单中，当鼠标右键单击文件时，“打开方式...”菜单的候选程序就是可以打开该文件的程序列表。
 
 <blockquote>
-For a detailed discussion on the entire filetyping / binding / identification / customization schema in BeOS, buy a copy of <a href="http://www.birdhouse.org/beos/bible/" target="_blank">The BeOS Bible</a>. To read an excerpt from the chapter on filetyping, <a href="http://www.beosbible.com/exc_filetype.html" target="_blank">click here</a>.
+想要了解详细的关于BeOS文件类型、绑定、识别、定制机制等内容，可以购买<a href="http://www.birdhouse.org/beos/bible/" target="_blank">BeOS圣经The BeOS Bible</a>。 <a href="http://www.beosbible.com/exc_filetype.html" target="_blank">这里</a>是其中文件类型章节选段。
 </blockquote>
 
 
-<h3>Alien Filesystems</h3>
+<h3>陌生的文件系统 / Alien Filesystems</h3>
 
-In BeOS, file systems (even the native BFS) are handled via plug-ins
-called add-ons. Download a file system add-on, drop it into place, and
-you have the immediate capability to read (and often write to) alien
-file systems. Out of the box, every BeOS machine, whether x86 or
-PowerPC, can read and write BFS, HFS, HFS+, FAT16, and FAT32 volumes. It
- can also read (but not write to) ext2fs and NTFS. More obscure file
-system add-ons can be written by developers and posted for others to
-use. OS X did a great job of reading a FAT32 volume I stuck in my G4 for
- a while, but as far as I know, does not handle other file systems as
-elegantly.
+BeOS的文件系统(即使是原生的BFS)通过插件——也被称作附件(add-ons)处理。下载一个文件系统插件，安装到合适的位置，你马上就有了读写陌生文件系统的能力。每台BeOS的电脑，无论是x86或PowerPC的，都可以读写BFS, HFS, HFS+, FAT16, FAT32格式的磁盘。它也可以读（但不能写）EXT2和NTFS格式的磁盘 。其他目前不支持的文件系统可以由开发者开发插件，发布供其他人使用。 OS X上对FAT32格式的支持很棒，但据我所知，她不能优雅的处理其他的文件系统。
 
+<h3>搜索 / Finder</h3>
 
-<h3>Finder</h3>
-
-Overall, my experience with the OS X Finder has been a wash -- it's both
- better and worse than the BeOS Tracker. On one hand, I love and use
-constantly the horizontal scrolling column view. And dynamic resizing of
- icons is a nice touch. On the other hand, the current Finder does not
-offer spring-loaded folders, as OS 9 and BeOS do. Be's right-click
-scroll | navigate mechanism provides the fastest means of navigating,
-copying, and moving files around in a file system of any I've
-encountered.
+总体来说，我使用OS X上的Finder的经验不多 - 它有比BeOS的浏览器好的方面也有不好的方面。一方面，我喜欢并经常使用水平滚动栏视图。图标动态调整是一个很好体验。另一方面，当前的Finder和OS 9、BeOS上一样，不提供文件夹内容的预览（does not offer spring-loaded folders）。是的右键单击滚动|导航机制提供浏览，复制，并在所有我遇到一个文件系统移动文件的速度最快的手段。BeOS的右键滚动和浏览机制提供了最快的浏览、复制、移动文件的功能。
 
 <div align="center">
 <a href="http://www.birdhouse.org/beos/refugee/horiz_scroll.gif" target="_blank"><img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-horiz_scroll_thumb.jpg" alt="horiz" border="0" height="161" width="400"></a>
 </div>
-<i>The Finder's horizontal scrolling view is easy to work in and quite
-elegant, but I still miss spring-loaded folders. Click for larger  
-version.</i>
+<i>Finder的水平滚动栏视图易于使用，十分优雅，但是仍然缺少文件夹内容预览。</i>
 
 But my real complaint with the Finder is that it does a poor job of
 displaying large quantities of information at once. The default Finder
