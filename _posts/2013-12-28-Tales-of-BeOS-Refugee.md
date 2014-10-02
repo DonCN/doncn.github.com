@@ -443,71 +443,21 @@ BeOS的文件系统(即使是原生的BFS)通过插件——也被称作附件(a
 </div>
 <i>Finder的水平滚动栏视图易于使用，十分优雅，但是仍然缺少文件夹内容预览。</i>
 
-But my real complaint with the Finder is that it does a poor job of
-displaying large quantities of information at once. The default Finder
-font is too large, and is not user-configurable. However, the 3rd-party
-Tinker Tool will allow you to change the Finder font. Since Tinker Tool
-only exposes existing but hidden preferences in the OS, it seems
-probable that Apple will open this up in the future.
+我对Finder的抱怨是它同时显示的信息实在有限。Finder的默认字体太大，并且不能人为修改，除非用第三方工具Tinker才能修改字体，但是Tinker也只能修改现有的配置，一些隐藏的配置却不能修改。也许未来苹果会开放这些功能吧。
 
-Which leads to yet another complaint: Compared to BeOS, OS X is
-downright hostile to long filenames. Sure, OS X now supports filenames
-up to 255 characters just like BeOS, but displaying long filenames is a
-pain because of that huge Finder font. Worse, something about the LFN
-API (I'm not a programmer) makes it very difficult to add LFN support to
- applications. When it came time to move my MP3 collection from BeOS to
-OS X via FTP, I found that both Interarchy and Fetch, both of which are
-Carbonized, truncated the filenames on transfer (I finally solved that
-one by putting via FTP from the BeOS machine to the OS X box, rather
-than the other way around). Another day, I was trying to export movies
-from iMovie with filenames long enough to describe all the video and
-audio codecs and settings I was using, for the purposes of comparison.
-The filenames were truncated with garbage characters when viewed in the
-Finder.
+这会引出另一个争论：与BeOS相比，OS X不支持长文件名。当然，OS X现在可以跟BeOS一样支持255字符的长文件名了，但是由于Finder的大字体，长文件名在其中显示的实在不好。更糟的是LFN API(我不是程序员)使得为程序增加LFN支持非常困难。比如，我通过FTP将MP3文件从BeOS拷贝到OS X时，我发现Mac下的FTP软件Interarchy和Fetch都是通过Carbon从OS重新编译到OS X，传输过程中文件名被截短了（最终，我解决了FTP传输过程中的这个问题）。有一天，我从iMovie向外导出电源，文件名很长，足够描述文件的编码设置等信息。结果在Finder中查看这些电影时，文件名都被截短了，且都是乱码。
 
-And neither of the two most popular MP3 encoding tools for OS X --
-iTunes and Audion -- give you any control whatsoever over file naming
-convention. Every MP3 encoder I've tried on any platform offers a dialog
- giving the user full control over how the MP3 filenames should be
-constructed. But both of these tools simply spit out <tt>songname.mp3</tt>.
- Sure, they're nested in artist and album parent folders, as is also the
- case on other platforms, but the filenames are next to useless without
-the parent folders or ID3 tags. Fine for personal use, but rotten for
-(god forbid) Internet use. Since Apple wants to be the digital hub of my
- entertainment life, they'll need to recognize that MP3 storage is one
-of the most common / popular situations where people use very long
-filenames. OS X apps need to learn to start creating them, and the
-Finder needs to become more adept at displaying them.
-
+OS X操作系统的两个最流行的MP3播放工具——iTunes和Audion——都不能提供任何对文件命名的配置功能。我也没在其他任何平台上的MP3播放器中发现对MP3文件命名的控制。这些软件都只是提供<tt>songname.mp3</tt>这样的命名方式。当然，他们是嵌套在艺术家和专辑文件夹，其它平台也是如此，但文件名中没有父文件夹或ID3标签就变得几乎没用。当然，这对个人使用没什么影响，但是在互联网中传递信息量就太少了。苹果若想作为娱乐主机，他们需要认识到MP3的储存时使用长文件名是一种很常见的情况。OS X应用程序需要学会开始创建长文件名，Finder也需要适于显示长文件名。
 
 <div align="center">
 <img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-shortnames.gif" alt="shortnames" height="330" width="535">
 </div>
-<i>Short filenames like these are no way to treat your MP3 collection,
-but neither iTunes nor Audion will generate anything but. Then again,
-this Finder view is terrible at displaying long filenames. But on the
-other other hand, being able to preview MP3s and movies directly in the
-Finder is pretty cool...</i>
+<i>这种短文件名不利于管理MP3文件，但是iTunes和Audion都是如此。Finder中查看长文件名也很差。当然，在Finder中预览MP3和电影很酷...</i>
+
+BeOS中的文件浏览器Tracker使用的技术称为“节点监控”，让Tracker提供即时反馈给用户和其他应用程序。例如，你可以在信息面板跟踪看到从网上下载的文件大小的实时增加。华丽的节点监控不需要是苹果的优先选择，但有一个地方有类似的问题需要特别重视：Finder视图中除非强制否则不会实时显示文件的实时变化。可以试试这个：在同一个文件夹打开终端和一个Finder窗口，输入<tt>touch foo</tt>，观看Finder的显示。在BeOS中，“foo”会瞬时出现在文件浏览器。在Windows中，这个变化也会很快反映出来。而在OS X中，直到我点击搜索视图文件才会显示。当解压tar.gz压缩文件时就会有问题，内容不会出现在桌面上直到手动操作。
 
 
-The BeOS Tracker uses a technology called "node monitoring" which lets
-the Tracker give instant feedback to the user and to other apps. For
-example, you can see the size of a file increase in the Tracker's info
-panel in real time as it's being downloaded from the Internet. Fancy
-node monitoring need not be a priority for Apple, but there's one area
-where something similar should be considered important: Finder views
-don't seem to reflect changes in the filesystem until forced to. Try
-this: Open a Terminal session and a Finder window on the same folder.
-Type <tt>touch foo</tt> and watch the Finder. In BeOS, "foo" appears in
-the Tracker instantaneously. In Windows, the change is reflected
-quickly. In OS X, the file doesn't show up until I click in that Finder
-view. This becomes a problem on occasssion when unpacking a tar.gz
-archive, and the contents don't appear on the desktop until I basically
-force them to.
-
-
-
-<h3>Sherlock Shmerlock</h3>
+<h3>吝啬的夏洛克 / Sherlock Shmerlock</h3>
 
 The OS X Find panel is still known as Sherlock, and basically gets the
 job done, but is a bit too cutesy for my tastes. Cosmetics aside, search
