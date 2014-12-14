@@ -101,7 +101,7 @@ MainWindow.h
 		// 为了演示按钮与窗体通信的消息机制，在窗体中定义消息接收函数，会覆盖掉BWindow本身的MessageReceived函数
 		void	MessageReceived(BMessage *msg);
 
-		//增加新的关闭功能
+		//增加新的窗口关闭功能（hook function）
 		virtual bool QuitRequested();
 
 	private:
@@ -208,8 +208,7 @@ MainWindow.cpp
 
 每类系统消息都有一个命令常量与之对应，如"M\_BUTTON_CLICKED"。Application Kit中定义了两个类BLooper和BHandler来收发、处理消息。如下的BButton类就继承了这两个消息处理类。创建消息BMessage对象作为按钮对象的参数：
 
-	BButton *button = new BButton(BRect(10,10,11,11),"button","Click Me!",
-										new BMessage(M_BUTTON_CLICKED));
+	BButton *button = new BButton(BRect(10,10,11,11),"button","Click Me!",new BMessage(M_BUTTON_CLICKED));
 
 当按钮按下，就会自动发送这个M_BUTTON_CLICKED消息。还可以在程序中自己定义消息BMessage对象，来封装自定义的消息：
 

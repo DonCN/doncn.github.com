@@ -459,57 +459,24 @@ BeOS中的文件浏览器Tracker使用的技术称为“节点监控”，让Tra
 
 <h3>吝啬的夏洛克 / Sherlock Shmerlock</h3>
 
-The OS X Find panel is still known as Sherlock, and basically gets the
-job done, but is a bit too cutesy for my tastes. Cosmetics aside, search
- capabilities under OS X are not as flexible as they are BeOS, with its
-virtual database. Attributes aside, Sherlock won't even let me limit my
-search to specific file types (though the Custom search panel does offer
- a few generic type categories).  
+OS X的Find面板还被称为夏洛克(Sherlock)，能完成基本功能，但在我看来还是有点名不副实。 除了各种修饰，其在OS X下的搜索功能不如具有虚拟数据库的BeOS下灵活。除了属性，Find不允许搜索特定的文件类型，尽管搜索配置面板提供了有些通用的类型分类。
+
+更多的问题是这两个系统不同的索引方式。索引的文件系统提供了即时的搜索结果。BeOS 索引了大部分的属性，并在文件的属性增加、修改或删除后自动更新索引。但是OS X下用Find搜索时，首先要索引文件系统，这是一个缓慢的过程。一个拥有8000MP3文件的单个磁盘几乎需要4个小时的时间完成索引，这是真的。
+
+BeOS查询的另一个非常酷的优势是它的查询可以保存下来以后再执行。可以将你保存的查询拖到桌面，比如某个人的所有邮件、5天内下载的所有MP3文件、关于Mac OS的所有书签(BeOS的书签文件也有属性关键字)等等各种查询。查询总是实时的，所以总能瞬时得到最新的结果。查询甚至可以通过右键和滚轮浏览来实现，所以甚至不必在查询框内输入内容来建立查询。而OS X内的Find则没有类似功能。
+
+OS X的Find(Sherlock)相对于BeOS查询的一个优势是允许查询文件内容，而不只是文件名称和属性。BeOS用户为了搜索文件内容需要借用bash工具或Tracker文件浏览器的第三方插件<a href="http://www.bebits.com/app/1306" target="_blank">Tracker Grep</a>。说到这，我知道MAC OS 9的Finder有上下文菜单允许类似于BeOS Tracker的这种第三方插件的功能。文件管理器的功能可以无限扩展的是非常强大的特性，我希望能在OS X中看到这种特性。
+
+<i>* OS X的Find(Sherlock)还有一个优点是可以进行网络搜索，但是我更喜欢使用强大的Google，而sherlock主要用在文件搜索上。</i>
 
 
+## 各种抱怨 / Miscellaneous Moans and Groans ##
 
 
-More problematic, though, is the difference in the way the two systems
-create indexes. Indexed file systems provide lightning-fast search
-results. BeOS indexes most attributes and keeps its index up to date
-automatically, every time a file or attribute is added, modified, or
-removed. But before you can perform fast searches with Sherlock, you
-have to let it index your file system, an excruciatingly slow process.
-One volume on my machine, with around 8,000 MP3s, took almost four hours
- to index. I'm not kidding.
-Another cool advantage to BeOS queries is that they can be saved for
-later execution. Drag a query onto the desktop and have instant access
-to all emails from a certain person, or all MP3s downloaded in the past
-five days, or all bookmarks related to Mac OS (BeOS bookmark files have
-keyword attributes), or whatever you like. Queries are always live and
-real-time, so you always get the freshest data, immediately. You can
-even "navigate" a query with the right-click | scroll technique
-mentioned earlier, so you don't even to have to "launch" a query to get
-at any one of the items in its found set. Sherlock offers nothing
-similar.
-
-Sherlock's one advantage* over BeOS queries is that it allows searching
-on actual file contents, rather than just filename and attributes. BeOS
-users wanting to search through file contents have to resort either to
-bash tools or to the 3rd-party Tracker add-on <a href="http://www.bebits.com/app/1306" target="_blank">Tracker Grep</a>.
- Speaking of which, I know that Mac OS 9 had context menus for the
-Finder which allowed functionality similar to that provided by BeOS
-Tracker add-ons. Having the functionality of the file manager be
-essentially infinitely expandable is a powerful feature, and I'm looking
- forward to seeing that functionality restored in OS X.
-
-<i>* Sherlock has other advantages if you want to use it to search the
-Internet, but I'm happy with the mighty Google, and get the impression
-from talking to other people that Sherlock is used for file finding the
-vast majority of the time.</i>
-
-<h2>Miscellaneous Moans and Groans</h2>
+下面是我对OS X抱怨最多的几个方面，除这些之外还有一些小的不足之处。
 
 
-So, those are my biggest complaints about OS X. But there are other, smaller differences I have to get off my chest.
-
-
-<h3>Scripting</h3>
+### 脚本 / Scripting ###
 
 OS X embraces and enhances the time-honored AppleScript system for
 automating tasks. AppleScript is a pretty cool language, with one big
