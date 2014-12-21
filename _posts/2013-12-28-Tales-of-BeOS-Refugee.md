@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 2001：一个BeOS难民的故事(译文)(进行中...)
-summary: 本文译自[Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/) - Scot Hacker。原作者Scot Hacker是[BeOS Bible](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在2001年[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统停止开发之后，无奈尝试转向其他操作系统，经历一番试用比较，最终转到MAC OS X。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优势做了深入的介绍。虽然BeOS已经停止了开发，但是很多忠诚爱好者还是不愿放弃，其中一批人在2001年开始了旨在重现BeOS的Haiku OS([英文主页](http://haiku-os.org/))开源项目，目前Haiku处于Beta测试阶段，在重现BeOS的同时也做了大量的改进。自从两年前发现了Haiku，我也成了她的忠诚粉丝。这篇文章虽然成于2001年，但是现在读来依然有趣，也非常有助于对Haiku OS的了解，特地翻译出来，希望大家喜欢。
+title: <2001 BeOS VS OS X>：一个BeOS难民的故事(译文)(进行中...)
+summary: 本文译自[Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/)，转载请告知，并注明出处。原作者Scot Hacker是[BeOS Bible](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在2001年[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统停止开发之后，无奈尝试转向其他操作系统，经历一番试用比较，最终转到MAC OS X的感悟。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优点做了深入的介绍。虽然BeOS已经停止了开发，但是很多忠诚爱好者还是不愿放弃，其中一批人在2001年开始了旨在重现BeOS的Haiku OS([英文主页](http://haiku-os.org/))开源项目，目前Haiku处于Beta测试阶段，在重现BeOS的同时也做了大量的改进。自从两年前发现了Haiku，我也成了她的忠诚粉丝。这篇文章虽然成于2001年，但是现在读来依然有趣，也非常有助于对Haiku OS的了解，特地翻译出来，希望大家喜欢。最后，借用原作者的一句话：**无论如何，任何在BeOS上花了时间的人都被永远宠坏了，他们对操作系统技术的期望被永久改变了。(In any case, anyone who has spent time with BeOS is forever spoiled, their expectations for OS technology permanently affected.) —— Scot Hacker**<p>   
 categories: [Haiku OS]  
 tags: [Haiku OS]  
 published: true  
@@ -14,41 +14,39 @@ published: true
 
 ## 一个BeOS难民的故事 / Tales of a BeOS Refugee
 
-—— 从BeOS到OS X (也试用过Windows、Linux) / From BeOS to OS X (by way of Windows and Linux)
+—— 从BeOS到OS X (中间试用过Windows、Linux) / From BeOS to OS X (by way of Windows and Linux)
 
-<i>这个故事讲述了一个BeOS难民丧失了对计算机的未来的信仰，进而转向Windows，却发现它及其糟糕，linux也会让你拔光自己的头发，最后在Mac OS X那里才再次找到计算机的乐趣。</i>
+<i>这个故事讲述了一个BeOS难民丧失了对计算机未来的信仰，进而转向Windows，却发现它及其糟糕，linux也会让你拔光自己的头发，最后在Mac OS X那里才再次找到计算机的乐趣。</i>
 
-<b>注: 这篇文章发表后收到500多封邮件回复. 因此，我写了一篇附文作为对这篇文章的补充，也作为这些邮件的回应，不再对每篇来信一一回复。附文请见 <a href="http://www.birdhouse.org/beos/refugee/redux.html">BeOS Refugee Redux</a> </b>
 
 ### 走出煎熬... / Out of the Frying Pan...
 
-大部分用户都是渐进的转到Mac OS X上 - 他们已经用了多年的Mac计算机, 经历了Win32(即windows)和*nix用户抱怨Mac OS糟糕的内存管理、过时的协作式多任务处理(cooperative multitasking)和缓慢的文件系统。 更糟的是，反对者们向来喜欢指责Mac OS蹩脚的单键鼠标操作习惯和缺乏类似命令行的功能。
+大部分Mac OS X用户都是在他们用了多年的Mac计算机后才转到OS X上的，而经历了windows和*nix用户则抱怨Mac OS糟糕的内存管理、过时的协作式多任务处理(cooperative multitasking)和缓慢的文件系统。 更糟的是，反对者们一直在指责Mac OS蹩脚的单键鼠标操作习惯和缺乏类似命令行的功能。
 
-我知道所有这些对Mac OS的挖苦和嘲讽，因为我自己曾经就是一个Mac反对者。我承认，在一些聚会和论坛等公共场所，我公开说过我不喜欢Mac计算机和Mac OS的一切(尽管我很欣赏Mac光滑、细腻的图形界面)。
+我理解所有这些对Mac OS的挖苦和嘲讽，因为我自己曾经就是一个Mac的反对者。我承认，我在一些聚会和论坛等公共场所公开说过，尽管很欣赏Mac漂亮、细腻的图形界面，但我不喜欢Mac计算机和Mac OS的一切。
 
-德语中有个形容这种放肆挖苦的词叫<i>Schadenfreude(幸灾乐祸)</i>，简单翻译过来就是：将自己的快乐建立在别人的痛苦之上。对许多 Windows和Linux用户来说，仅仅自己不使用Mac OS还不够，还要向别人宣扬自己对Mac的厌恶。
+德语中有个形容这种放肆挖苦的词叫<i>Schadenfreude(幸灾乐祸)</i>，简单翻译过来就是：将自己的快乐建立在别人的痛苦之上。对许多Windows和Linux用户来说，仅仅自己不使用Mac OS还不够，还要向别人宣扬自己对Mac的厌恶。
 
-是的，我有时是对Mac世界的遭遇幸灾乐祸，也激怒了很多人。但我不是个坏人，我没为此骄傲。我只是对我的计算机要求很多，可Mac却只能满足我很少的苛求，却又有太多让我不满意。但是最近，我又看到了希望，我收回对Mac的挖苦，为我这个曾经的Mac反对者道歉。不止于此，我应该感谢OS X，我现在是一个真诚的Mac OS爱好者了。让过去的都随风而去吧。
+是的，我有时是对Mac世界的遭遇幸灾乐祸，也激怒了很多人。但我不是个坏人，我没为此骄傲。只是我对计算机的要求很多，可Mac只能满足我很少的需求，却又有太多地方让我不满意。但是最近，我又看到了希望，我收回对Mac的挖苦，为我这个曾经的Mac反对者道歉。甚至，我应该感谢OS X，现在我是一个真诚的Mac OS爱好者了。让过去的嘲讽都随风而去吧。
 
-需要指出的是，我从来不是爱好Windows或Linux的Mac反对者，我曾经是爱好BeOS的Mac反对者，我同样不喜欢Windows或Linux。
+需要指出的是，我从来不是爱好Windows或Linux的Mac反对者，而是爱好BeOS的Mac反对者，我同样不喜欢Windows或Linux。
 
-在90年代中期，我发现了BeOS，并喜欢上了它。我第一次发现了一个真正快速、高效的操作系统，为满足未来的个人计算而重新设计，采用了大量的现代科技和设计理念，同样拥有Unix那样的命令行。我发现了它同时具有Mac那样的优雅和Unix的强大(这超前Mac达到同等水平很多年)。 我开始了BeOS的专业写作，我创立了<a href="http://www.betips.net/" target="_blank">BeOS Tip Server</a>，创作了<a href="http://www.birdhouse.org/beos/bible/" target="_blank">The BeOS Bible</a>。
-对我而言，BeOS是一个让我非常满意的操作系统，人们很快就会发现这一点。
+在90年代中期，我发现了BeOS，并喜欢上了它。那是我第一次发现了一个真正快速、高效的操作系统，它为满足未来的个人计算而重新设计，采用了大量的现代科技和设计理念，同样拥有Unix那样强大的命令行。因而，它同时具有Mac那样的优雅和Unix的强大(这比Mac达到同等水平要早很多年)。 从此，我开始了BeOS的专业写作，并创立了<a href="http://www.betips.net/" target="_blank">BeOS Tip Server</a>，创作了详细介绍BeOS的<a href="http://www.birdhouse.org/beos/bible/" target="_blank">The BeOS Bible</a>。对我而言，BeOS是一个让我非常满意的操作系统，人们很快就会发现这一点。
 
 <blockquote>
-如果你不熟悉造就BeOS的全部科技，我会在下面一一介绍。这篇文章<a href="http://birdhouse.org/beos/byte/29-10000ft/" target="_blank">BeOS: The 10,000-Foot View</a>是一个简介。如果你对BeOS一点都不了解，你应该浏览下这篇文章。
+如果你不熟悉造就BeOS的全部技术，我会在下面一一介绍。这篇文章<a href="http://birdhouse.org/beos/byte/29-10000ft/" target="_blank">BeOS: The 10,000-Foot View</a>是一个简介。如果你对BeOS一点都不了解，你应该先浏览下这篇文章。
 </blockquote>
 
-很显然，事情并没有完全按照Be的意愿发展，在90年代末，BeOS就不再向上发展。Be没能获得市场的成功，风险投资也渐渐枯竭。当Be宣布将转向网络应用的操作系统，大部分人意识到了不妙。应用程序开发者和用户开始离开这个平台，不再讨论半个世界都运行着BeOS会是怎样，转而讨论如何让这个平台继续活下去。
+很显然，事情并没有完全按照Be的意愿发展，在90年代末，BeOS就不再向前发展。Be没能取得市场的成功，风险投资也渐渐枯竭。当Be宣布将转向网络应用的操作系统，大部分人意识到了不妙。应用程序开发者和用户开始离开这个平台，不再讨论半个世界都运行着BeOS会是怎样，转而讨论如何让这个平台继续活下去。
 
 在“焦点转移”之后，BeOS的场面就沉闷起来。BeOS用户并未奢求彻底的逆转，只是希望尽量将未完成的代码完成，私下交换着Be未完成的网络模块的代码，同时无奈的看着越来越多的Be不支持的硬件涌现。
 
-我觉得是时候继续向前，重新进入BeOS之外的PC世界了。在5年的BeOS时光之后，我再次回归到Windows(Win2K)。开始还好，自从我上次(5年前)使用Windows以后，它有了长足的进步，有了海量的软件。我已经习惯了BeOS下有限的软件可供选择，忘记了计算机里有任何你想要的软件会是什么样子的。
+我觉得是时候继续向前，重新进入BeOS之外的PC世界了。在5年的BeOS时光之后，我再次回归到Windows(Win2K)。开始还好，自从我上次(5年前)使用Windows以后，它有了长足的进步，有了海量的软件。我已经习惯了BeOS下只有很少的软件可供选择，都忘记了计算机里有任何你想要的软件会是什么样子。
 
 但是这段快乐是如此短暂。不到一周，我就厌烦了。当然，Windows可以完成工作，海量的软件也值得探索，但是它的用户体验非常枯燥。只有功能，没有体验(All function and no
-form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用BeOS的快乐。尽管Win2K比以前用的破烂Win95/98好太多，可Windows的使用方法多得让我难以忍受。对BeOS的深入研究让我对微软的商业行为有了深刻的认识。我无法摆脱和屈从于那深刻的厌烦之感。使用Windows让我感动虚伪和放荡。在糟糕的使用体验之间，我实在需要重新找到激情。
+form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用BeOS的快乐。尽管Win2K比以前用的破烂Win95/98好太多，可Windows的使用方法多得让我难以忍受。对BeOS的深入研究让我对微软的商业行为有了深刻的认识。我无法摆脱和屈从于那深刻的厌烦之感。使用Windows让我感到虚伪和放荡。在糟糕的使用体验之间，我实在需要重新找到激情。
 
-### ... 再获激情... / ... And Into the Fire...
+### ... 误入泥潭... / ... And Into the Fire...
 
 那么我做了什么？我让事情变得更糟。我选择了转向Linux。我当时是怎么想的？我深入了解了Linux，我很欣赏开源软件的很多优点，但是开源同样有着深刻和棘手的问题，这些问题导致了可怕的用户体验。我了解到Mandrake被认为是最好用的Linux发行版，所以我选择了它。
 
@@ -66,9 +64,9 @@ form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用
 
 ### 家的感觉 / Smells Like Home Cookin'
 
-科技人员成天工作在操作系统提供的工作环境中，一段时间之后，这个工作环境应该给人家的感觉。但Linux从没给我这种感觉，从没让我感到家的舒适。Linux没有那种<i>风水 </i>，它的各个部分从没有统一起来、浑然一体的工作。我怀念这种在BeOS上体验，就像我和系统注定要在一起，它就是我理想的家园。在BeOS上，我几乎拥有我想要的Unix所有的功能，同时还能乐在其中。我的妻子都厌倦了我不断的抱怨Linux电脑。
+科技人员成天工作在操作系统提供的工作环境中，一段时间之后，这个工作环境应该给人家的感觉。但Linux从没给我这种感觉，从没让我感到家的舒适。Linux没有那种<i>风水 </i>，它的各个部分从没有统一起来、浑然一体的工作。我怀念这种在BeOS上体验，就像我和系统注定要在一起，它就是我理想的家园。在BeOS上，我几乎拥有我想要的Unix的所有功能，同时还能乐在其中。我的妻子都厌倦了我不断的抱怨Linux电脑。
 
-半年前，我曾经给Byte网站写过一篇关于Mac OS X的文章，关于我之前对Mac OS X的良好印象。在文中，我的结论是OS X可能会达到BeOS所未达到的高度。BeOS和OS X的设计都是为了弥补Mac OS的缺陷。BeOS是由一组前苹果工程师设计和开发，Be的 执行总裁曾经领导苹果的产品研发多年。BeOS和OS X都具有Mac的优雅和Unix功能，都有很好的用户体验，并且都把多媒体的制作和播放作为一个重要目的。
+半年前，我曾经给Byte网站写过一篇关于Mac OS X的文章，关于我之前对Mac OS X的良好印象。在文中，我的结论是OS X可能会达到BeOS所未达到的高度。BeOS和OS X的设计都是为了弥补Mac OS的缺陷。BeOS是由一批前苹果工程师设计和开发，Be的执行总裁曾经领导苹果的产品研发多年。BeOS和OS X都具有Mac的优雅和Unix功能，都有很好的用户体验，并且都把多媒体的制作和播放作为一个重要目的。
 
 在2001年的10月，我最后看了一眼Linux机器，然后去买了台Mac机器。现在，这台Linux机器仍然正常的运行着，是任务不重的没有图形界面的环境，从没出问题或者崩溃。在家有台Linux服务器也不错，它安静、可靠，不时地调整一下也很有趣。但是我估计很长时间都不会把Linux用作桌面操作系统了。
 
@@ -76,19 +74,19 @@ form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用
 
 当时不知道，在接下来的几个月里我将交织在兴奋与失望之中。我之前的一些期待将有结果，我将会发现Mac能做到的超出我的想象。我将遇到我期待的最好的个人桌面操作系统，甚至是服务器操作系统。但是同时，也会对其中的某些部分感到失望。
 
-没有完美的操作系统，每种系统都有它的优点和不足。同样，每种系统都有好和不好的支持者。之所以称他们为不好的支持者，是因为他们只是他们宣扬的某个系统的<a href="http://www.adequacy.org/public/stories/2001.10.2.33542.4010.html" target="_blank">卫道士</a>。他们总是鼓吹他们喜欢的系统的优点，并为系统的缺点和糟糕的设计找各种理由，比如，这不是系统开发公司的错，这些错误马上就可以解决。
+没有完美的操作系统，每种系统都有它的优点和不足。同样，每种系统都有好和不好的支持者。之所以称他们为不好的支持者，是因为他们只是他们宣扬的某个系统的<a href="http://www.adequacy.org/public/stories/2001.10.2.33542.4010.html" target="_blank">卫道士</a>。他们总是鼓吹他们喜欢的系统的优点，并为系统的缺点和糟糕的设计找各种理由，比如，这不是系统开发公司的错，这些错误马上就可以解决等等。
 
-跟其他操作系统一样，OS X也是一个混合体。唯一能描述我从BeOS转到OS X的体验的方法也许就是我指出我对OS X的喜欢和失望之处。尽管有不足，但BeOS在某些方面树立了很高的标准，在这些方面OS X注定会令我失望了。我初始的，也许不一定正确的假设是OS X拥有BeOS所具有的所有现代操作系统的技术，并且拥有光明的前景。我认为苹果公司拥有Be公司曾经有过的那种机会：全新完美设计，没有历史负担，让用户不再背负以前的错误设计带来的历史遗留负担。这里，我忽略了苹果公司的一个重要因素：它并不是没有历史负担，他们得考虑向前兼容旧的Mac OS，并且满足数百万Mac用户的使用习惯和期望，以及过去二十多年Mac的高雅传统。
+跟其他操作系统一样，OS X也是一个混合体。唯一能描述我从BeOS转到OS X的体验的方法也许就是说出我对OS X的喜欢和失望之处。尽管有不足，但BeOS在某些方面树立了很高的标准，在这些方面OS X注定会令我失望了。我开始的，也许不一定正确的假设是OS X拥有BeOS所具有的所有现代操作系统的技术，并且拥有光明的前景。我认为苹果公司拥有Be公司曾经有过的那种机会：全新完美设计，没有历史负担，让用户不再背负以前的错误设计带来的历史遗留负担。这里，我忽略了苹果公司的一个重要因素：它并不是没有历史负担，他们得考虑向前兼容旧的Mac OS，并且满足数百万Mac用户的使用习惯和期望，以及过去二十多年Mac的高雅传统。
 
-我可能会离题，这很容易。我可能正兴高采烈的讲述着OS X，转眼就开始哀叹抱怨。
+我可能会离题，这很容易。我可能正兴高采烈的讲述着OS X，转眼就开始哀叹、抱怨。
 
-# 很多喜欢 / A Lot To Like
+# 很多喜欢的 / A Lot To Like
 
 ### 第一印象 / First Impressions
 
-从盒子中取出苹果PowerBook G4跟打开x86机器时可不一样。泡沫板的波浪曲线包裹着机器柔和的圆角, 即使印刷材料看起来都很诱人。你只要在USB键盘上按一个键就能打开光驱，还有按键可以控制内置的Harmon-Kardon扬声器(它的声音比起其他的内置扬声器好太多了)。按下音量控制键，桌面会有个精致的图标显示出来，然后就慢慢隐去。 手指划过苹果电脑显示器（Apple Cinema display）的小光点，屏幕上就会出现显示设置面板。显示器上的电源按钮不只是用来关掉显示器，还能通过挥手的手势让机器进入睡眠模式。
+从盒子中取出苹果PowerBook G4跟打开x86机器时完全不同。泡沫板的波浪曲线包裹着机器柔和的圆角, 印刷材料看起来都很诱人。你只要在USB键盘上按一个键就能打开光驱，还有按键可以控制内置的Harmon-Kardon扬声器(它的声音比起其他的内置扬声器好太多了)。按下音量控制键，桌面会有个精致的图标显示出来，然后就慢慢隐去。 手指划过苹果电脑显示器（Apple Cinema display）的小光点，屏幕上就会出现显示设置面板。显示器上的电源按钮不只是用来关掉显示器，还能通过挥手的手势让机器进入睡眠模式。
 
-硬件之外，很难描述OS X系统界面在视觉上是如何的美。屏幕截图并不能完全表现出这点来。前面已经描述了很多OS X的动画效果--滑入位置的对话框，精灵般的窗口最小化效果，从Dock拖走图标时的幻影，等等。但更重要的是这些动画效果不只是为了吸引眼球，它们还是精心设计的操作反馈，系统通过这个反馈提示用户某物消失或下一步需要做什么。这些动画小提示足以表达含义，又不会干扰到高级用户。
+硬件之外，很难描述OS X系统界面在视觉上是如何的美。屏幕截图并不能完全表现出这点来。前面已经描述了很多OS X的动画效果--滑入的对话框，精灵般的窗口最小化效果，从Dock拖走图标时的幻影，等等。但更重要的是这些动画效果不只是为了吸引眼球，它们还是精心设计的操作反馈，系统通过这个反馈提示用户某物消失或下一步需要做什么。这些动画小提示足以表达含义，又不会干扰到高级用户。
 
 在视觉上，OS X是惊人的。这并不只体现在它直接表现出来的不寻常的浅绿色界面（我对此并不介意，但我知道有人不喜欢这个），还体现在其他方面。由于显示引擎是基于矢量的，因而可以根据界面的大小调整图标大小，而不会引起图像失真。
 
@@ -108,32 +106,31 @@ form)。我感觉我就像工作在一个剪贴画工厂。我开始怀念使用
 
 网络和多用户功能关系相近，所以在这里一起讨论。
 
-BeOS一个失败的可能原因就是他们没有实现多用户功能。Be的文件系统有支持多用户的能力，应用可以实现这些，但系统级别的执行权限的限制却很少，也没有任何用户界面来管理用户。BeOS符合POSIX标准，并包括一个bash shell，但她本质上并不是一个Unix。而OS X则是一个真正的Unix(尽管可能有人对什么是真正的Unix有异议)【译者注：OS X的内核来源于Unix-BSD】。 苹果系统内建了漂亮的界面来管理用户，进行用户权限控制。但是目前却没有与用户管理相对应的组管理。我可以很方便的为朋友或家人建立桌面账号和SSH登陆账号。
+BeOS一个失败的可能原因就是他们没有实现多用户功能。Be的文件系统有支持多用户的能力，在应用上可以实现这些，但对系统级别的执行权限的限制却很少，也没有任何用户界面来管理用户。BeOS符合POSIX标准，并包括一个bash shell，但她本质上并不是一个Unix。而OS X则是一个真正的Unix(尽管可能有人对什么是真正的Unix有异议)【译者注：OS X的内核来源于Unix-BSD】。 苹果系统内建了漂亮的界面来管理用户，进行用户权限控制。但是目前却没有与用户管理相对应的组管理。我可以很方便的为朋友或家人建立桌面账号和SSH登陆账号。
 
-说到SSH和网络，我只需点击网络设置的一个按钮来运行一个安全壳守护进程，而不像BeOS那样不安全的telnet远程登录。远程管理我的OS X系统在开机后分分钟内就能实现。同样，每个OS X系统内都内置有Apache Web服务器，默认配置下<a href="http://oreillynet.com/pub/a/mac/2001/12/07/apache.html" target="_blank">[OS X的apache配置，英文]</a> 就能为公共root文件夹和<tt>~/Sites/</tt>文件夹下的页面服务.
+说到SSH和网络，我只需点击网络设置的一个按钮来运行一个安全壳守护进程，而不像BeOS那样不安全的telnet远程登录。在开机后分分钟内就能实现远程管理我的OS X系统。同样，每个OS X系统内都内置有Apache Web服务器，默认配置下<a href="http://oreillynet.com/pub/a/mac/2001/12/07/apache.html" target="_blank">[OS X的apache配置，英文]</a> 就能为公共root文件夹和<tt>~/Sites/</tt>文件夹下的页面服务.
 
-苹果正在或将很快成为世界上最大的UNIX系统供应商。创建一个用户友好的UNIX，几十年来一直作为最高目标，当然是很多Linux开发人员的目标。事实上，苹果（也包括Be公司）成功地给那些需要的人提供UNIX的强大功能，而不会让一般用户具有我之前说的那样的感受——开源的产品很难有好的用户体验。创造一个良好的用户体验，要求为项目工作的每个人都有一致的观点——而开源社区很难达到这点。在当年我为BeOS写作的时候，我就一遍又一遍地指出这一点，现在苹果的新经历再次证明了它的正确。Be和苹果用了很少的开发人员就提供了UNIX shell的强大功能，同时又拥有良好的用户体验，这比开源社区引入X11窗口管理器要早多年。
+苹果正在或将很快成为世界上最大的UNIX系统供应商。创建一个用户友好的UNIX，几十年来一直作为最高目标，当然也是很多Linux开发人员的目标。事实上，苹果（也包括Be公司）成功地给那些需要的人提供了UNIX的强大功能，而不会让一般用户具有我之前说的那样的感受——开源的产品很难有好的用户体验。创造一个良好的用户体验，要求开发项目中的每个人都有一致的观点——而开源社区很难达到这点。在当年我为BeOS写作的时候，我就一遍又一遍地指出这一点，现在苹果的新经历再次证明了它的正确。Be和苹果用了很少的开发人员就提供了UNIX shell的强大功能，同时又拥有良好的用户体验，这比开源社区引入X11窗口管理器要早多年。
 
-为一般的消费者提供UNIX的力量，就在一定程度上应该知道如何将用户体验与具体实现细节分开。例如，如果你希望使用Apache默认设置之外的高级配置，你应该知道如何找到并编辑<tt>/etc/httpd/httpd.conf</tt>。因为<tt>/etc</tt>在默认情况下对Finder是隐藏的，并且需要管理员密码权限来编辑,因而对普通用户是安全的。而这些普通用户可以从一个世界级的网络服务器上提交页面，而不用打开终端或输入一行命令。多棒！
+为一般的消费者提供UNIX的力量，就在一定程度上应该知道如何将用户体验与具体实现细节分开。例如，如果你希望使用Apache默认设置之外的高级配置，你应该知道如何找到并编辑<tt>/etc/httpd/httpd.conf</tt>。因为<tt>/etc</tt>在默认情况下对Finder是隐藏的，并且需要管理员密码权限来编辑,因而对普通用户是安全的。而这些普通用户可以在一个世界级的网络服务器上提交页面，而不用打开终端或输入一行Apache命令。多棒！
 
-更棒的是，PHP预装并配置好了，可以直接与Apache工作, 而MySQL按照简单明了的安装说明就能下载. 相反，BeOS的内核缺少<tt>mmap()</tt>意味着她仍然不能安装MySQL。苹果还包括一个内置的FTP服务器，可以工作在用户目录，还可以载入Samba，AFP和WebDAV共享。Be内置的FTP服务器只是单用户登录，并可以访问整个文件系统。在BeOS，SMB（Server Message Block，服务消息块，协议名）勉强能用。
+更棒的是，PHP预装并配置好了，可以直接与Apache工作, 而MySQL按照简单明了的安装说明就能下载. 相反，BeOS的内核缺少<tt>mmap()</tt>意味着她仍然不能安装MySQL。苹果还包括一个内置的FTP服务器，可以工作在用户目录，还可以载入Samba，AFP和WebDAV共享。Be内置的FTP服务器只是单用户登录，并可以访问整个文件系统。在BeOS，SMB（Server Message Block，服务消息块，协议名）只是勉强能用。
 
-OS X的网络已经比以前的Be更先进。虽然它的仍不完善，高级用户会遇到一些问题。Irfon-Kim Ahmad提供了这些笔记：
+OS X在网络方面已经比以前的Be更先进。虽然它的仍不完善，高级用户会遇到某些问题。Irfon-Kim Ahmad描述如下：
 
 <blockquote>
- 如果主要用（OS X）作Apache和SSH服务器，就很好。但是你若想用塔连接你工作室的VPN，还是用windows吧。尽管（OS X）有一些pptp工具，但是相应文档很少，我也从没成功运行过它们。 许多人都跟我谈到他们遇到过无线网络的密码不能一直保存，会定期的‘被遗忘’，我自从重装系统后还没遇到这样的问题。不过我发现OS X的一个主要减分项也是关于网络的：如果所有的DNS服务器断了之后，你可能会忘了它，而OS X则需要10多分钟才能开机，并且会出现各种怪状。这可能只是一个很容易纠正的小错误。
+ 如果OS X主要用作Apache和SSH服务器，就很好。但是你若想用它连接你工作室的VPN，还是用windows吧。尽管OS X有一些pptp工具，但是相应文档很少，我也从没成功运行过它们。 许多人都跟我谈到他们遇到过无线网络的密码不能一直保存，会定期的‘被遗忘’，我自从重装系统后还没遇到这样的问题。不过我发现OS X的一个主要减分项也是关于网络的：如果所有的DNS服务器断了之后，你可能会忘了它，而OS X则需要10多分钟才能开机，并且会出现各种怪状。这可能只是一个很容易纠正的小错误。
 </blockquote>
 
-总的来说，OS X中网络功能大体上式世界级水平的。它是安全、稳定的，跟UNIX一样…只是它还没有完成。如果我们把它与Linux网络相比较，Linux会赢。但是若与BeOS比较，OS X就成了赢家。然而，没有理由认为在未来OS X不能成为Linux和BSD那样世界级的服务器操作系统。现在，那些想在Mac上运行ISP（Internet service provider，网络服务提供商），则需要选择MAC OS X的服务器版本。
+总的来说，OS X中网络功能大体上是世界级水平的。它是安全、稳定的，跟UNIX一样强大…只是它还没有完成。如果我们把它与Linux的网络功能相比较，Linux会赢。但是若与BeOS比较，OS X就成了赢家。然而，没有理由认为未来OS X不能成为Linux和BSD那样世界级的服务器操作系统。现在，那些想在Mac上运行ISP（Internet service provider，网络服务提供商），则需要选择MAC OS X的服务器版本。
 
 ### CD刻录与磁盘镜像 / CD Burning, Disk Images
 
-仔细观察OS X系统的任何地方，你只会想到‘融合、统一’这个描述。以CD刻录为例，插入一张空白CD，OS X会问你是想让制作一个ISO，HFS +，还是音频CD。如果你选择ISO或HFS+，光盘会加载到桌面，只要把你想要刻录的东西拖到里面，然后将它拖到垃圾桶。一旦你开始拖，垃圾桶图标变成一个刻录图标（人们常抱怨将希望刻录的光盘拖到垃圾桶让人费解）。点击刻录，等等吧，剩下的工作由系统搞定，无需第三方软件。
+仔细观察OS X系统的各个部分，你只会想到‘融合、统一’这个描述。以CD刻录为例，插入一张空白CD，OS X会问你是想让制作一个ISO，HFS +，还是音频CD。如果你选择ISO或HFS+，光盘会加载到桌面，只要把你想要刻录的东西拖到里面，然后将它拖到垃圾桶（Trash）。一旦你开始拖，垃圾桶图标变成一个刻录图标（人们常抱怨将希望刻录的光盘拖到垃圾桶让人费解）。点击刻录，剩下的工作由系统搞定，无需第三方软件。
 
+如果你刻录一个音频CD，iTunes会自动启动。将要刻录的音乐从你的音乐库拖动到一个播放列表，点击刻录，就行了。再次强调，无需第三方软件。没有歧义，没有折磨，没有意外发生。虽然Be的cd刻录程序在刻录音乐的时候也有很多相同的易于使用的特点，刻录数据CD一直都不那么好用。而在Linux上，无论是用Mandrake发行版自带图形界面工具，还是命令行的<tt>cdrecord</tt>，我从来没有成功过，就像过山车一样，会有各种惊险发生。对于命令行，我在BeOS下就已经掌握了. 在OS X中, 这些事就是"小菜一碟" 。
 
-如果你刻录一个音频CD，iTunes会自动启动。将要刻录的音乐从你的音乐库拖动到一个播放列表，点击刻录，就行了。再次强调，无需第三方软件。没有歧义的，没有折磨，没有意外发生。虽然Be的cd刻录程序在刻录音乐的时候也有很多相同的易于使用的特点，刻录数据CD一直都不那么好用。而在Linux上，无论是用Mandrake发行版自带图形界面工具，还是命令行的<tt>cdrecord</tt>，我从来没有成功过，就像过山车一样，会有各种惊险发生。对于命令行，我在BeOS下就已经掌握了. 在OS X中, 这些事就是"小菜一碟" 。
-
-在BeOS中, 我学会了用<tt>dd</tt>、<tt>mkisofs</tt>和<tt>mkfbs</tt>等命令<a href="http://betips.net/1997/09/09/burning-cds-with-beos/" target="_blank">刻录CD</a>，并加载到Tracker。这个过程一般情况都顺利，但也不是没有任何问题。而在OS X下， 苹果有自己的一套处理磁盘镜像的习惯。许多OS X下的软件下载下来是<tt>.dmg</tt>文件，打开它就能检查索引，并被加入Finder检索中。这对开发者来说是一种优雅方便的发布软件的方法，也便于用户创建磁盘和CD备份。隐藏了创建磁盘镜像以及加载、卸载的复杂性，苹果的DiskCopy工具就能完美的创建硬盘、数据CD、音乐CD的拷贝，而不用考虑文件系统。
+在BeOS中, 我学会了用<tt>dd</tt>、<tt>mkisofs</tt>和<tt>mkfbs</tt>等命令<a href="http://betips.net/1997/09/09/burning-cds-with-beos/" target="_blank">刻录CD</a>，并加载到文件浏览器Tracker。这个过程一般情况都顺利，但也不是没有任何问题。而在OS X下， 苹果有自己的一套处理磁盘镜像的习惯。许多OS X下的软件下载下来是<tt>.dmg</tt>文件，打开它就能检查索引，并被加入Finder检索中。这对开发者来说是一种优雅方便的发布软件的方法，也便于用户创建磁盘和CD备份。隐藏了创建磁盘镜像以及加载、卸载的复杂性，苹果的DiskCopy工具就能完美的创建硬盘、数据CD、音乐CD的拷贝，而不用考虑文件系统。
 
 <div align="center">
 <img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-diskimage.jpg" alt="diskimage" height="256" width="378">
@@ -152,7 +149,6 @@ OS X的网络已经比以前的Be更先进。虽然它的仍不完善，高级�
 
 ### 到处都是PDF / PDF Everywhere
 
-
 OS X的一个有趣的创新就是PDF技术在系统中得到了广泛的应用--石英显示引擎（Quartz display engine）建立在PDF的页面描述语言PostScript之上，这和NeXTStep上是一样的。这意味着任何程序都可以直接打印输出到PDF。选择打印，再点击预览（Preview），文本就转换为PDF，并显示在内置的预览程序中，另存就可以得到PDF文件了。不用再购买、安装Acrobat或者第三方软件。就这么简单，棒极了！
 
 本文的<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">英文PDF版本</a>就是用这个方法得到的。
@@ -170,7 +166,7 @@ OS X的一个有趣的创新就是PDF技术在系统中得到了广泛的应用-
 
 ### 音乐播放器 / iTunes
 
-BeOS在某些方面还是要超过其他系统的，比如总体易用性，音频文件的创建、存储与播放。结合数据库式的文件系统——BFS（Be File System），Be操作系统处理多媒体文件及其高效，比如音频播放软件<a href="http://www.bebits.com/app/156" target="_blank">SoundPlay</a>与系统融合的很好，使用又非常灵活。作为对MP3音乐的爱好者，我马上就在OS X上寻找能达到Be系统里那样功能的MP3播放器。在BeOS中，任意的元数据（meta-data，属性标签）都可以与文件或某类型文件结合起来，并保存为属性（attributes）。这些属性可以在文件浏览器中进行筛选、排序和查询。因为属性是系统自动索引的，所以查询结果瞬间可得，不管查询的数据量有多大。在本质上，Be的文件系统就是一个数据库。
+BeOS在某些方面还是要超过其他系统的，比如总体易用性，音频文件的创建、存储与播放。结合数据库式的文件系统——BFS（Be File System），Be操作系统处理多媒体文件极其高效，比如音频播放软件<a href="http://www.bebits.com/app/156" target="_blank">SoundPlay</a>与系统融合的很好，使用又非常灵活。作为对MP3音乐的爱好者，我马上就在OS X上寻找能达到Be系统里那样功能的MP3播放器。在BeOS中，任意的元数据（meta-data，属性标签）都可以与文件或某类型文件结合起来，并保存为属性（attributes）。这些属性可以在文件浏览器中进行筛选、排序和查询。因为属性是系统自动索引的，所以查询结果瞬间可得，不管查询的数据量有多大。在本质上，Be的文件系统就是一个数据库。
 
 <blockquote>
 注：微软还处于将所有的应用程序和操作系统本身置于一个基于SQL Server的共同的数据存储之上的早期阶段。如果他们能够成功，这将是微软历史上Windows产品线的一个重大变化。
@@ -183,14 +179,14 @@ BeOS在某些方面还是要超过其他系统的，比如总体易用性，音�
 </div>
 <i>文件浏览器Tracker中的MP3文件列表，包含了多种属性，而隐藏了实际文件名。注意浏览器同时显示了多少属性信息。尽管OS X的查询工具Finder也支持元数据，但是它也无法在视图内显示这么多的数据，除非缩小字体。既然Tinker工具可以改变Finder的字体，那么我们或许可以期待未来的OS X在这方面做出改进。</i>
 
-我收藏的mp3音乐文件包含了详细的ID3标签，但是我在OS X中不得不顺从地接受事实，牺牲我那些自定义的播放列表。为了能显示更多的ID3列，我放大了iTunes窗口。我意识到可以用很多规则整理我的音乐文件。应用程序顶部的小的搜索窗口看起来不怎么样，可我很快意识到它能在任何ID3标签字段找到字符串。将搜索结果拖到一个新的播放列表，我就可以重现BFS的数据库功能，而无需属性功能。虽然在iTunes中，这些大量的，按任意规则的搜索不比直接在BFS文件系统下更快，但都是很快就能完成。在OS X下，因为一切都发生在iTunes这样单一的窗口内，反而会更好。
+我收藏的mp3音乐文件包含了详细的ID3标签，但是我在OS X中不得不顺从地接受事实，牺牲我那些自定义的播放列表。为了能显示更多的ID3列，我放大了iTunes窗口。我意识到可以用很多规则整理我的音乐文件。应用程序顶部的小的搜索窗口看起来不怎么样，可我很快意识到它能在任何ID3标签字段找到字符串。将搜索结果拖到一个新的播放列表，我就可以重现BFS的数据库功能，而无需属性功能。虽然在iTunes中，这些大量的，按任意规则的搜索不如直接在BFS文件系统下更快，但都是很快就能完成。在OS X下，因为一切都发生在iTunes这样单一的窗口内，反而会更好。
 
 <div align="center">
 <a href="http://www.birdhouse.org/beos/refugee/itunes.gif" target="_blank"><img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-itunes.jpg" alt="itunes" border="0" height="304" width="500"></a>
 </div>
-<i>iTunes可以实现跟BeOS一样的元数据的存储和查询，只是BeOS限定在一个由操作系统供应商提供单一播放软件中。不幸的是，我无法在Finder中看到相同的元数据，而我在BeOS下就可以；我不能从Sherlock中查询，而BeOS下就可以。但我得承认，iTunes播放列表管理真的很好用，很有吸引力。此外，iTunes的皮肤更棒。</i>
+<i>iTunes可以实现跟BeOS一样的元数据的存储和查询，只是BeOS限定在一个由操作系统供应商提供的单一播放软件中。不幸的是，我无法在Finder中看到相同的元数据，而我在BeOS下就可以；我不能从Sherlock中查询，而BeOS下就可以。但我得承认，iTunes播放列表管理真的很好用，很有吸引力。此外，iTunes的皮肤更棒。</i>
 
-iTunes给我的另一个惊喜是，有一天我用一个批处理工具批量修改mp3文件的名字。我以为修改后所有的文件名称都改变了，需要重新建立播放列表。但是，当操作完之后，我惊讶的发现，所有的播放列表仍然完好。这是符号链接的魔力，它在对象移动时还能保持链接。这样的功能在老的Mac用户看来是理所当然的，但对我传统的x86思维却是极大的震撼。
+iTunes给我的另一个惊喜是，有一天我用一个批处理工具批量修改mp3文件的名字。我以为修改后所有的文件名称都改变了，需要重新建立播放列表。但是，当操作完之后，我惊讶的发现，所有的播放列表仍然完好。这是超链接的魔力，它在对象移动时还能保持链接。这样的功能在老的Mac用户看来是理所当然的，但对我传统的x86思维却是极大的震撼。
 
 我对iTunes的一大抱怨就是缺少插件。目前，我见到的唯一的插件是可视化工具（visualizers）。用起来不错，但是谁在乎呢？我希望的是一些真正有用的插件，就像WinAmp或者BeOS的SoundPlay的那种插件。最近，我花了一晚上时间，尝试了能在<a href="http://www.versiontracker.com/" target="_blank">VersionTracker</a>找到的各种MP3播放器。我所需要的就是在某个指定端口广播前降低采样频率。可我还是空手而归。而用BeOS的SoundPlay实现同样的功能就很容易——启用LiveEncoder插件，指定使用的位率（比特率）、采样频率以及广播端口就好了。这样你在SoundPlay播放的音乐也会同时广播到网络。BeOS还有各种工具来控制你的MP3收藏，即使是远程的，比如搜索、随机播放，远程建立播放列表等等。我不知道iTunes的插件是否有这些功能，还是因为某些原因开发者没有实现，可插件目录却是开放的，很怪。
 
@@ -207,18 +203,18 @@ iTunes给我的另一个惊喜是，有一天我用一个批处理工具批量�
 
 至于平台对比，这正是BeOS的设计目标，以及为什么Adamation试图实时处理10个层次而不渲染。苹果需要从Adamation当初在BeOS上，以及目前在windows上的工作中学习很多。在实际应用中，MAC一直是DV编辑和视频制作的不错的平台。由于Adamation离开了BeOS平台，这个平台完全没有可用的非线性编辑器。另一方面，Final Cut Pro 3（FCP）已经宣布发行OS X版本。随着FCP迅速成为行业标准，风行于非线性编辑器领域，MAC仍然是DV编辑的一个好选项。
 
-**评价：** 这次比较，OS X小胜。
+**评价：** 这轮比较，OS X小胜。
 
 
 ### 相机 / Camera
 
-在我得到我的MAC前一周，我花了一些时间将老爸的电脑从BeOS转移到了Windows 98。在那之前，他应该就是地球上最老的熟悉BeOS的用户了。他爱用BeOS。它也从没让人失望，100%防病毒（因为没有已知的BeOS病毒），并且像古老的Macintosh一样简单易用。但他厌倦了收到邮件，却打不开附件，访问网站，BeOS的垃圾浏览器却无法工作。
+在我得到我的MAC前一周，我花了一些时间将老爸的电脑从BeOS转移到了Windows 98。在那之前，他应该就是地球上最老的熟悉BeOS的用户了。他爱用BeOS。它也从没让人失望，100%防病毒（因为没有已知的BeOS病毒），并且像古老的Macintosh一样简单易用。但他厌倦了收到邮件，却打不开附件，而访问网站，BeOS的垃圾浏览器却无法工作。
 
-这次系统更换开始很顺利，直到他的数码相机串口连接电脑时。这在BeOS上用内置的摄像程序可以完美运行，用ImageGrinder批量修改照片大小也相当容易。而Windows的对应程序就很难看、难用，几乎不能完成。我花了半天时间寻找免费的、可用的替代品。最后的解决方案是，他得 切换到BeOS上处理照片，然后复制到windows分区，再重启回到windows，接着打印和发邮件。
+这次系统更换开始很顺利，直到他的数码相机串口连接电脑时。这在BeOS上用内置的摄像程序可以完美运行，用ImageGrinder批量修改照片大小也相当容易。而Windows的对应程序就很难看、难用，几乎不能完成。我花了半天时间寻找免费的、可用的替代品。最后的解决方案是，他得切换到BeOS上处理照片，然后复制到windows分区，再重启回到windows，接着打印和发邮件。
 
 开始遇到了这种让人头痛的问题，所以当我的相机接到MAC，有一个简单的，友好的应用窗口自动弹出，让我很吃惊。这个程序甚至提供用这些照片制作网页的选项。当我批量修改照片大小时，我发现OS X的软件强大到奢侈、功能过剩。这时，我记得我见到过苹果网站有很多集成在Finder的脚本。我找到了一个嵌入Finder工具栏的脚本，将一批照片拖到这个图标，输入一个百分数比例，所有的照片瞬间就可以改变大小。无需第三方软件。
 
-我听说Windows XP能更好的支持相机，若windows具有类似的能力，我也不会惊讶。但是，如果我钱够的话，我会为爸爸买一台OS X电脑。
+我听说Windows XP能更好的支持相机，若windows具有类似的能力，我也不会惊讶。但是，如果我钱够的话，我会为老爸买一台OS X电脑。
 
 ### 办公软件 / Office X
 
@@ -231,7 +227,7 @@ iTunes给我的另一个惊喜是，有一天我用一个批处理工具批量�
 
 值得讽刺的是，我对微软的主观反感是我离开Windows系统的一个原因，而现在我发现我喜欢上了Mac OS上的微软的Office软件。残酷的现实啊。
 
-在BeOS上，人们使用Gobe Productive办公软件。这可能是BeOS上最复杂的软件了，它以一种独特的方法集成文字处理/表格/演示/位图编辑/矢量图形——一个应用程序，一种文件格式，却集成五个模式。我很喜欢它，希望它能移植到OS X*上。
+在BeOS上，人们使用Gobe Productive办公软件。这可能是BeOS上最复杂的软件了，它以一种独特的方法集成文字处理/表格/演示/位图编辑/矢量图形——一个应用程序，一种文件格式，却集成五个模式。我很喜欢它，希望它能移植到OS X上*。
 
 可惜的是，因为微软没有公开它的Office文件格式，Word和Excel文件的兼容性与Gobe Productive并不完美。在大多数情况下，完全可用，但它不能处理一些更复杂的文件类型，如文档与数据透视表和修订跟踪。而Office X就一切正常，十分完美。不仅如此，但他们终于解决了所有的MAC和Windows Office DOC的兼容性问题，包括扩展字符集和向后兼容（Office X的文件可以在Windows的Word 97中完美的打开，而无需先保存为老的兼容格式）。
 
@@ -246,7 +242,7 @@ BeOS用户抱怨最多的问题就是现有的Web浏览器很差。如果BeOS早
 
 而相反的，苹果是与魔鬼共骑。OS X将移植的IE 5.5作为它的默认浏览器。虽然与Windows上的版本不完全相同，但是很漂亮，所有的网站都能完美解析，打开也非常快。它对于我的最大不足就是不支持日益流行的PNG图像格式。
 
-如果你不讨厌在Mac上运行MS的软件，还有一个更好的替代品。<a href="http://www.omnigroup.com/" target="_blank">OmniWeb</a>是一个稍慢，但是我见过的将网页显示的最漂亮的，只需启用OS X的脚本功能。iCab、Opera和Navigator 6都是现代的浏览器。OS X下浏览器的选择取决于个人的偏好，而不是像在BeOS上那样妥协和牺牲。
+如果你不喜欢在Mac上运行MS的软件，还有一个更好的替代品。<a href="http://www.omnigroup.com/" target="_blank">OmniWeb</a>是一个稍慢，但是我见过的将网页显示的最漂亮的，只需启用OS X的脚本功能。iCab、Opera和Navigator 6都是现代的浏览器。OS X下浏览器的选择取决于个人的偏好，而不是像在BeOS上那样妥协和牺牲。
 
 **评价：** 浏览器的比较，OS X胜。
 
@@ -278,8 +274,7 @@ BeOS用户抱怨最多的问题就是现有的Web浏览器很差。如果BeOS早
 
 ### 文本编辑 / Power Editors
 
-BeOS上最强大的文本/脚本/HTML编辑器是Maarten Hekkelman的＜a href =“http://www.birdhouse.org/www.hekkelman.com/”target=“_blank”> Pe </a>。我使用Pe多年，用Pe编辑维护了三个网站，编辑各种脚本，并写了两本书和无数的文章。Hekkelman已经将Pe改名为Pepper移植到OS X下，所以这种转变对我来说非常容易。不过为了防止意外，也因为我想知道为什么＜a href =“http://www.barebones.com/”target=“_blank”> BBEdit </a>在OS X中很有声望，我在OS X中的编辑器选了BBEdit。这对我来说是艰难的，因为Pe就像一种连接我的过去的感情纽带，我对它一时难以割舍。最终使我下定决心的事实是，我想通过BareBones邮件列表进入BBEdit巨大的
-应用代码社区。
+BeOS上最强大的文本/脚本/HTML编辑器是Maarten Hekkelman的＜a href =“http://www.birdhouse.org/www.hekkelman.com/”target=“_blank”> Pe </a>。我使用Pe多年，用Pe编辑维护了三个网站，编辑各种脚本，并写了两本书和无数的文章。Hekkelman已经将Pe改名为Pepper移植到OS X下，所以这种转变对我来说非常容易。不过为了防止意外，也因为我想知道为什么＜a href =“http://www.barebones.com/”target=“_blank”> BBEdit </a>在OS X中很有声望，我在OS X中的编辑器选了BBEdit。这对我来说是艰难的，因为Pe就像一种连接我的过去的感情纽带，我对它一时难以割舍。最终使我下定决心的事实是，我想通过BareBones邮件列表进入BBEdit巨大的应用代码社区。
 
 因为BBEdit应用已久，并且它来自一个程序员团队而不是个人，所以就特性来说BBEdit胜。但在实践中，根据我的工作性质，BBEdit没有提供任何相对于Pe的实际优势。简单来说，他们同样优雅和强大，大的方面的差异是相当小的。所以这是一个平局。
 
@@ -300,15 +295,16 @@ BeOS上最强大的文本/脚本/HTML编辑器是Maarten Hekkelman的＜a href =
 
 幸运的是，我使用的软件质量都非常高——Mac OS的独立开发者的确在他们的作品上花费了大量精力。可以说，Mac OS的软件在一定程度上类似它的硬件——你花费多，你得到的也多。
 
+
 ## 社区 / Community
 
-在BeOS的邮件列表闲逛一段时间之后，你就会发现一些有趣的事： 社区里聪明友好的用户相对其他计算社区更专注于BeOS，这个系统里有些东西能吸引高端用户（当然笔者除外）。在BeOS社区几乎见不到Windows和Linux社区里你见到的粗鲁无礼（Linux社区尤其如此），当然社区里会有BeOS新手，但是他们并不是电脑新手。 这些年来，在BeOS社区我结识了不少人，现在都是我的挚友。
+在BeOS的邮件列表闲逛一段时间之后，你就会发现一些有趣的事： 相对其他计算机社区，BeOS的社区的用户更加聪明友好，这个系统里有些东西能吸引高端用户（当然笔者除外:) ）。在BeOS社区几乎见不到Windows和Linux社区里你见到的粗鲁无礼（Linux社区尤其如此），当然社区里会有BeOS新手，但是他们并不是电脑新手。 这些年来，在BeOS社区我结识了不少人，现在都是我的挚友。
 
-就有用信息来说，Mac社区要好于Windows和Linux社区，但是有其他的问题：固执。 似乎有无尽的Mac用户觉得旧的Mac OS方式才是最好的，他们攻击OS X、命令行，抱怨苹果偏离了轨道。这些人宁愿使用缓慢、容易崩溃，并且没有远程管理、命令行强大功能，没有服务器功能的系统，也不愿进入现代世界。
+就有用信息来说，Mac社区要好于Windows和Linux社区，但是有其他的问题：固执。 似乎有无尽的Mac用户觉得旧的Mac OS方式才是最好的，他们攻击OS X、命令行，抱怨苹果偏离了轨道。这些人宁愿使用缓慢、容易崩溃，并且没有远程管理、命令行强大功能，没有服务器功能的旧系统，也不愿进入现代世界。
 
-诚然，这些声音看起来在逐渐的减少，但它们会仍然存在，而事实上，他们死守OS9的原因是我无法理解  ，这对我们所有人都不好。应用程序供应商认为OS X尚未广泛采用，所以不愿将OS9下程序移植到新平台。这是谁的错呢？Macintosh的用户群应该支持这些应用程序供应商！那些顽固的人注意：你是我们大家的累赘。从OS9更新到OS X上来吧。
+诚然，这些声音看起来在逐渐的减少，但它们会仍然存在，而事实上，他们死守OS9的原因是我无法理解，这对我们所有人都不好。应用程序供应商认为OS X尚未广泛采用，所以不愿将OS9下程序移植到新平台。这是谁的错呢？Macintosh的用户群应该支持这些应用程序供应商！那些顽固的人注意：你是我们大家的累赘。从OS9更新到OS X上来吧。
 
-这些反对声之外， Mac社区有跟BeOS社区一样的友好态度，只不过精通技术的水平跟BeOS的社区不在同一级别。
+这些反对声之外，Mac社区有跟BeOS社区一样的友好态度，只不过精通技术的水平跟BeOS的社区不在同一级别。
 
 **评价：** BeOS微弱胜出。
 
@@ -319,10 +315,9 @@ BeOS上最强大的文本/脚本/HTML编辑器是Maarten Hekkelman的＜a href =
 
 ## 幸福指数 / Happiness Quotient
 
-总的来说，我使用这个OS X系统的体验很棒。每个地方都是统一、平滑、流畅、静心设计、非常漂亮，用起来赏心悦目。 我坚信OS X
-是市场上最好的个人电脑操作系统，没有BeOS的不足 (这个不足不是来自于设计，而是市场--由于开发商停止开发，一些程序尚未完成，并且没有大量了用户基础，也不会吸引硬件和软件开发商提供支持。) 从OS X中，我体验到一流的稳定性，很好的多任务处理，真正的内存保护，各种开源网络软件，以及Unix命令行。
+总的来说，我使用这个OS X系统的体验很棒。每个地方都是统一、平滑、流畅、安静、设计优良、非常漂亮，用起来赏心悦目。 我坚信OS X是市场上最好的个人电脑操作系统，没有BeOS的不足 (这个不足不是来自于设计，而是市场--由于开发商停止开发，一些程序尚未完成，并且没有大量了用户基础，也不会吸引硬件和软件开发商提供支持。) 从OS X中，我体验到一流的稳定性，很好的多任务处理，真正的内存保护，各种开源网络软件，以及Unix命令行。
 
-我知道不止我这一个BeOS难民找到了OS X这个宿营地。这个LiveJournal上Balatro的 <a href="http://www.livejournal.com/talkread.bml?itemid=13186510&amp;view=16922846#t16922846" target="_blank">评论</a> 准确的反映了我的经历：
+我知道不止我这一个BeOS难民找到了OS X这个宿营地。这个LiveJournal上Balatro的 <a href="http://www.livejournal.com/talkread.bml?itemid=13186510&amp;view=16922846#t16922846" target="_blank">评论</a> 准确的反映了我的经历和感受：
 
 <blockquote>
 我使用OS9遭受了一番痛苦经历，它可用，但是很容易崩溃。然后OS X出现了，我为它等了几个月。它正是理想中的样子，最终我买了Titanium 400。
@@ -335,13 +330,13 @@ OS X 10.1是除BeOS之外，我唯一喜欢使用的系统。Windows同样是操
 
 总的来说，我对OS X非常满意。我还有什么可抱怨的吗？
 
-BeOS是著名的目前为止最快和最高效的操作系统之一，而OS X可能是最慢的。OS X的性能和效率的问题在网络上到处都有讨论，但BeOS用户对此比大多数其他人有更深刻的体会，因为BeOS用户已完全习惯了BeOS惊人的速度。
+BeOS以目前为止最快和最高效的操作系统之一而著称，而OS X可能是最慢的。OS X的性能和效率的问题在网络上到处都有讨论，但BeOS用户对此比大多数其他人有更深刻的体会，因为BeOS用户已完全习惯了BeOS惊人的速度。
 
-据报道，PowerMac 867的性能相当于一个2GHz的Pentium CPU，若加上640Mb的内存，不管我进行什么操作，这台机器都应该可以运行如飞。但事实并非如此。拥有这样强大的CPU，达到的性能仅仅可以接受。OS X运行在较差的机器上是在痛苦的经历。OS X的辩护者认为是由于OS X的高资源需求，还有其他无数的理由——Finder的问题，时钟频率问题，所有那些很酷的透明效果的窗口的缓冲区问题，等等。
+据报道，PowerMac 867的性能相当于一个2GHz的Pentium CPU，若加上640Mb的内存，不管我进行什么操作，这台机器都应该可以运行如飞。但事实并非如此。拥有这样强大的CPU，达到的性能仅仅可以接受。OS X运行在较差的机器上是个痛苦的经历。OS X的辩护者认为是由于OS X的高资源需求，还有其他无数的理由——Finder的问题，时钟频率问题，所有那些很酷的透明效果的窗口的缓冲区问题，等等。
 
 我只说一件事：优化是程序员对一个代码库所能做的最后一件事。苹果在操作系统升级的同时不断提高系统的性能。没有理由认为，未来的更新不会提高性能。事实上，<a href="http://forums.macnn.com/cgi-bin/ultimatebb.cgi?ubb=get_topic&amp;f=46&amp;t=000100" target="_blank">论坛的讨论</a>暗示着下一个版本在窗口的缓冲上会有明显的效率提升。实际上，我不认为这个改进只是影响到操作系统的某个部分，相反它有可能改善操作系统的几乎每个方面。
 
-当然，BeOS从来没有这个性能问题。尽管BeOS变得越来越快，但这个操作系统是从一开始就速度惊人——绝对高效从开始就是她的特征之一，也是它的绘图卡的特点。事实上，BeOS只是运行在64MB内存的奔腾233CPU上，这都比OS X运行在所谓的超级计算机上的速度快。MAC的CPU速度大约是BeOS的8倍，而内存更是BeOS的10倍以上，但BeOS机器性能还是超越了MAC。BeOS开机更快，应用程序启动更快，窗口大小调整的更流畅，你可以同时运行多个音频和视频剪辑，而不影响系统的性能。
+当然，BeOS从来没有这个性能的问题。尽管BeOS变得越来越快，但这个操作系统是从一开始就速度惊人——绝对高效从开始就是她的特征之一，也是它的绘图卡的特点。事实上，BeOS只是运行在64MB内存的奔腾233CPU上，这都比OS X运行在所谓的超级计算机上的速度快。MAC的CPU速度大约是BeOS的8倍，而内存更是BeOS的10倍以上，但BeOS机器性能还是超越了MAC。BeOS开机更快，应用程序启动更快，窗口大小调整更流畅，你可以同时运行多个音频和视频剪辑，而不影响系统的性能。
 
 造成这种巨大差距的原因，一方面是由于BeOS是从完全重新设计的，并没有携带任何历史兼容的包袱，另一方面因为OS X窗口系统非常先进，但OS X的发展才刚开始不久。但我认为只是苹果在这里有点懒。由于目前快速的CPU和内存非常廉价，苹果就以此为借口做了低效的操作系统的设计。如果摩尔定律没有起作用，市场将不会有那么多速度飞快的电脑，而OS X在性能上若没有根本的改变，也就只能被淘汰。
 
@@ -359,18 +354,18 @@ BeOS是著名的目前为止最快和最高效的操作系统之一，而OS X可
 
 还有哪些没有涉及？那现在我们看看BeOS和OS X在使用上的最大不同——文件系统及其使用规则和体验。我曾经写了很多关于Be的文件系统，它是真正使BeOS与市场上的其他任何操作系统相区别的功能特性（尽管市场上已经没了BeOS）。
 
-BFS（Be文件系统）是完全日志式的，这意味着即使在断电的情况下也能保证数据的完整性。拔掉BeOS电源，15秒后她启动起来，没有数据丢失，文件系统记录了在断电时刻正进行的任务，只要重新调出日志就能恢复原有数据，不用磁盘扫描程序，不用文件系统检查，不用重建桌面。而OS X没有日志式的文件系统（尽管公平的说，我曾经遇到OS X断电，发现它仍能正常启动，而不需做任何特别的事情）。
+BFS（Be文件系统）是完全日志式的，这意味着即使在断电的情况下也能保证数据的完整性。拔掉BeOS电源，15秒后她启动起来，数据不会丢失，文件系统记录了在断电时刻正进行的任务，只要重新调出日志就能恢复原有数据，不用磁盘扫描程序，不用文件系统检查，不用重建桌面。而OS X没有日志式的文件系统（尽管公平的说，我曾经遇到OS X断电，发现它仍能正常启动，而不需做任何特别的事情）。
 
 BFS深入的利用多线程来达到最佳性能，并与BeOS其他部分不同程度的多线程协调配合。我不知道HFS+是不是多线程的（我听说不是），但它的确不如BFS那样快。不过，我并没有在相同的硬件上进行不同条件下的磁盘访问测试。
 
-BFS的地址空间是64位的，这意味着一个BFS磁盘理论上的最大文件大小为18000亿兆字节（petabytes）（由于多种原因实际上的最大值比这要小得多，但也有万G字节（gigabytes）左右）。32位的HFS+，像所有其他的32位文件系统，只有4G字节（gigabytes）。更大的文件也可以通过后台技术将文件分成几个部分，再连接起来，但看起来，这是一个苹果需要解决的问题，除非他们开发一个新的64位操作系统才能改变这种状况。
+BFS的地址空间是64位的，这意味着一个BFS磁盘理论上的最大文件大小为18000亿兆字节（petabytes），由于多种原因实际上的最大值比这要小得多，但也有万G字节（gigabytes）左右。32位的HFS+，像所有其他的32位文件系统，只有4G字节（gigabytes）。更大的文件也可以通过后台技术将文件分成几个部分，再连接起来，但看起来，这是一个苹果需要解决的问题，除非他们开发一个新的64位操作系统才能改变这种状况。
 
 虽然对于日常用户，BFS更具有明显优势。在一个BFS磁盘上的任何文件或文件类型可以有一组与它相关联的元数据，以“属性”的形式存在，对于属性，没有数量、大小或类型的限制，并且属性可以直接在Tracker（Be的Finder）中显示、编辑、筛选、排序和查询。因为大多数属性都经过索引，搜索的结果几乎瞬间显现，无论搜索磁盘的大小或文件的数量。默认情况下，BeOS带有常见的文件类型的属性，用户还可以扩展和定制这些属性，并创造具有全新属性的新的文件类型。换句话说，Be的文件系统可以看做一个数据库。
 
 <div align="center">
 <a href="http://www.birdhouse.org/beos/refugee/trackerbase.gif"><img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-trackerbase.gif" alt="trackerbase" border="0" height="169" width="405"></a>
 </div>
-<i>Be的文件系统可以看做一个数据库。用户可以使用内置的文件类型的现有属性，或者创建全新的文件类型及其特有的一组属性。图中的这些文件用来存储动态网站的数据，而不用第三方数据库软件。点击可以放大图片。</i>
+<i>Be的文件系统可以看做一个数据库。用户可以使用内置的文件类型的现有属性，或者创建全新的文件类型及其特有的一组属性。图中的这些文件用来存储动态网站的数据，而不用第三方数据库软件。</i>
 
 为其他操作系统用户解释建立在虚拟数据库之上的操作系统的优势比较困难。只有BeOS用户才能体会到数据库式文件系统的强大和灵活，这是我最怀念的BeOS特性。
 
@@ -389,16 +384,16 @@ OS X中与BeOS的属性最类似的是她那可怜的<a href="http://www.Mac%20O
 
 BeOS的BFS文件系统和Tracker浏览器的良好体验不止于直观的属性，还通过网络标准MIME系统描述文件类型，这带来很好的兼容性——如从网上下载文件，可以直接从HTTP包的头部得到文件类型信息，而不用扩展名；此外，BeOS网络服务器也不用维护独立的MIME表——每个文件的类型可以直接从文件系统得到。
 
-Attributes are used by BeOS的StyledEdit文本编辑器利用了属性，就可以在纯文本中包含富文本信息，这在其他平台仍被视为纯文本。属性可以用来在文件中保存光标位置，这样即使关掉文件，下次打开能能记得上次的光标位置；属性还可以保存MP3文件的调谐和混音信息。各种应用的可能性是无穷的。
+BeOS的StyledEdit文本编辑器利用了属性，就可以在纯文本中包含富文本信息，这在其他平台仍被视为纯文本。属性可以用来在文件中保存光标位置，这样即使关掉文件，下次打开能能记得上次的光标位置；属性还可以保存MP3文件的调谐和混音信息。各种应用的可能性是无穷的。
 
 
 ###二者共有的应用策略 / Application-Binding Policies
 
-无论是BeOS还是MAC OS 9都不需要用户为他们的文件名添加扩展名。没有扩展名就意味着需要通过其他一些手段识别文件的类型，及相关联的应用程序。所有版本的MAC OS都假设创建文件的应用也是打开这个文件的最佳应用，这导致双击相同类型的文件，可能会被不同的应用程序打开。对很多MAC用户似乎这种创建者作为默认打开程序的机制不是一个问题，但我认为是。这经常会导致在操作系统的某些操作行为并不是你期望的和需要的，这似乎是可用性上的一个主要缺点。最近在我们的部门一个OS 8的用户用附件方式发给我一堆JPEG图像。当我点击它们，经典的环境开始启动。原来是因为他们是经典环境下的QuickTime创建的。但是，我什么时候告诉操作系统我不需要用我自己的图片浏览器观看JPEG？QuickTime除了创建了这些图片之外，还能对它们进行什么操作？在我使用OS X的几个月里，我已经经历了六次类似事件，也从别人那里听到类似的故事。我不明白为什么MAC用户对这种创建者作为默认打开程序的机制没有意见。
+无论是BeOS还是MAC OS 9都不需要用户为他们的文件名添加扩展名。没有扩展名就意味着需要通过其他一些手段识别文件的类型，及相关联的应用程序。所有版本的MAC OS都假设创建文件的应用也是打开这个文件的最佳应用，这导致双击相同类型的文件，可能会被不同的应用程序打开。对很多MAC用户似乎这种创建者作为默认打开程序的机制不是一个问题，但我认为是。这经常会导致在操作系统的某些操作行为并不是你期望的和需要的，这似乎是可用性上的一个主要缺点。最近我们部门的一个OS 8用户用附件方式发给我一堆JPEG图像。当我点击它们，经典的环境开始启动。原来是因为他们是经典环境下的QuickTime创建的。但是，我什么时候告诉操作系统我不需要用我自己的图片浏览器观看JPEG？QuickTime除了创建了这些图片之外，还能对它们进行什么操作？在我使用OS X的几个月里，我已经经历了六次类似事件，也从别人那里听到类似的事。我不明白为什么MAC用户对这种创建者作为默认打开程序的机制没有意见。
 
 为了与Windows世界更好的兼容，OS X需要增加扩展名标识文件类型。同时，它可以继续保存创作程序作为默认应用程序。也就是说，OS X没有完全抛弃创建程序作为默认程序的机制采用全新的文件类型配置方法，而是采用了Windows那种单纯依靠扩展名判断文件类型的坏习惯，同时保留自己的坏习惯（使用创建程序作为默认打开程序）。OS X操作系统的其余部分在前进，而文件类型机制仍旧在拖后腿。这对我来说完全是令人费解。OS X下的文件类型机制比以前没有改进，反倒添加了Windows机制的问题。
 
-最近, <a href="http://www.macslash.com/article.pl?sid=01%2F12%2F05%2F1624227" target="_blank">网上讨论</a>OS X的元数据（metadata）时提到了这个问题。在这一讨论过程中，有人向我指出，不是创建程序信息让我不喜欢，而是应用程序绑定策略。我认为，操作系统需要为用户提供的最大的灵活性，就是允许存储任何类型的元数据。其中一个元数据就应该是“首选程序”属性。操作系统的应用程序绑定策略应该先看看用户是否已经建立了一个用于处理当前文件的首选应用。如果没有，再看是否有处理这种文件类型的全局的首选应用。如果没有，它则可以在必要时使用默认的创建程序。创建程序应该是打开文件的最后选项，因为它的反应行为经常是意想不到、不受欢迎的。但从下面的<a href="http://www.brockerhoff.net/xray/" target="_blank">X-Ray</a>截图中看到，创建程序作为了首选，文件的扩展名第二，而文件类型第三，这个逻辑跟最具可用性的顺序正好相反。
+最近, <a href="http://www.macslash.com/article.pl?sid=01%2F12%2F05%2F1624227" target="_blank">网上讨论</a>OS X的元数据（metadata）时提到了这个问题。在这一讨论过程中，有人向我指出，不是创建程序信息让我不喜欢，而是应用程序绑定策略。我认为，操作系统需要为用户提供的最大的灵活性，就是允许存储任何类型的元数据。其中一个元数据就应该是“默认程序”属性。操作系统的应用程序绑定策略应该先看看用户是否已经建立了一个用于处理当前文件的默认应用。如果没有，再看是否有处理这种文件类型的全局的首选应用。如果没有，它则可以在必要时使用默认的创建程序。创建程序应该是打开文件的最后选项，因为它的反应行为经常是意想不到、不受欢迎的。但从下面的<a href="http://www.brockerhoff.net/xray/" target="_blank">X-Ray</a>截图中看到，创建程序作为了默认，文件的扩展名第二，而文件类型第三，这个逻辑跟最具可用性的顺序正好相反。
 
 <div align="center">
 <img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-binding_prio.gif" alt="xray" height="343" width="468">
@@ -430,11 +425,11 @@ BeOS的文件类型绑定程序机制比OS X的更加灵活，可用，更符合
 </blockquote>
 
 
-<h3>陌生的文件系统 / Alien Filesystems</h3>
+### 陌生的文件系统 / Alien Filesystems
 
 BeOS的文件系统(即使是原生的BFS)通过插件——也被称作附件(add-ons)处理。下载一个文件系统插件，安装到合适的位置，你马上就有了读写陌生文件系统的能力。每台BeOS的电脑，无论是x86或PowerPC的，都可以读写BFS, HFS, HFS+, FAT16, FAT32格式的磁盘。它也可以读（但不能写）EXT2和NTFS格式的磁盘 。其他目前不支持的文件系统可以由开发者开发插件，发布供其他人使用。 OS X上对FAT32格式的支持很棒，但据我所知，她不能优雅的处理其他的文件系统。
 
-<h3>搜索 / Finder</h3>
+### 搜索 / Finder
 
 总体来说，我使用OS X上的Finder的经验不多 - 它有比BeOS的浏览器好的方面也有不好的方面。一方面，我喜欢并经常使用水平滚动栏视图。图标动态调整是一个很好体验。另一方面，当前的Finder和OS 9、BeOS上一样，不提供文件夹内容的预览（does not offer spring-loaded folders）。是的右键单击滚动|导航机制提供浏览，复制，并在所有我遇到一个文件系统移动文件的速度最快的手段。BeOS的右键滚动和浏览机制提供了最快的浏览、复制、移动文件的功能。
 
@@ -454,14 +449,14 @@ OS X操作系统的两个最流行的MP3播放工具——iTunes和Audion——�
 </div>
 <i>这种短文件名不利于管理MP3文件，但是iTunes和Audion都是如此。Finder中查看长文件名也很差。当然，在Finder中预览MP3和电影很酷...</i>
 
-BeOS中的文件浏览器Tracker使用的技术称为“节点监控”，让Tracker提供即时反馈给用户和其他应用程序。例如，你可以在信息面板跟踪看到从网上下载的文件大小的实时增加。华丽的节点监控不需要是苹果的优先选择，但有一个地方有类似的问题需要特别重视：Finder视图中除非强制否则不会实时显示文件的实时变化。可以试试这个：在同一个文件夹打开终端和一个Finder窗口，输入<tt>touch foo</tt>，观看Finder的显示。在BeOS中，“foo”会瞬时出现在文件浏览器。在Windows中，这个变化也会很快反映出来。而在OS X中，直到我点击搜索视图文件才会显示。当解压tar.gz压缩文件时就会有问题，内容不会出现在桌面上直到手动操作。
+BeOS中的文件浏览器Tracker使用的技术称为“节点监控”，让Tracker提供即时反馈给用户和其他应用程序。例如，你可以在信息面板跟踪看到从网上下载的文件大小的实时增加。华丽的节点监控不是苹果的优先选择，但有一个地方有类似的问题需要特别重视：Finder视图中除非强制否则不会实时显示文件的实时变化。可以试试这个：在同一个文件夹打开终端和一个Finder窗口，输入<tt>touch foo</tt>，观看Finder的显示。在BeOS中，“foo”会瞬时出现在文件浏览器。在Windows中，这个变化也会很快反映出来。而在OS X中，直到我点击搜索视图文件才会显示。当解压tar.gz压缩文件时就会有问题，内容不会出现在桌面上直到手动操作。
 
 
-<h3>吝啬的夏洛克 / Sherlock Shmerlock</h3>
+### 吝啬的夏洛克 / Sherlock Shmerlock
 
 OS X的Find面板还被称为夏洛克(Sherlock)，能完成基本功能，但在我看来还是有点名不副实。 除了各种修饰，其在OS X下的搜索功能不如具有虚拟数据库的BeOS下灵活。除了属性，Find不允许搜索特定的文件类型，尽管搜索配置面板提供了有些通用的类型分类。
 
-更多的问题是这两个系统不同的索引方式。索引的文件系统提供了即时的搜索结果。BeOS 索引了大部分的属性，并在文件的属性增加、修改或删除后自动更新索引。但是OS X下用Find搜索时，首先要索引文件系统，这是一个缓慢的过程。一个拥有8000MP3文件的单个磁盘几乎需要4个小时的时间完成索引，这是真的。
+更多的问题是这两个系统不同的索引方式。索引的文件系统提供了即时的搜索结果。BeOS 索引了大部分的属性，并在文件的属性增加、修改或删除后自动更新索引。但是OS X下用Find搜索时，首先要索引文件系统，这是一个缓慢的过程。一个拥有8000个MP3文件的单个磁盘几乎需要4个小时的时间完成索引，这是真的。
 
 BeOS查询的另一个非常酷的优势是它的查询可以保存下来以后再执行。可以将你保存的查询拖到桌面，比如某个人的所有邮件、5天内下载的所有MP3文件、关于Mac OS的所有书签(BeOS的书签文件也有属性关键字)等等各种查询。查询总是实时的，所以总能瞬时得到最新的结果。查询甚至可以通过右键和滚轮浏览来实现，所以甚至不必在查询框内输入内容来建立查询。而OS X内的Find则没有类似功能。
 
@@ -473,310 +468,117 @@ OS X的Find(Sherlock)相对于BeOS查询的一个优势是允许查询文件内�
 ## 各种抱怨 / Miscellaneous Moans and Groans ##
 
 
-下面是我对OS X抱怨最多的几个方面，除这些之外还有一些小的不足之处。
+下面是我对OS X抱怨最多的几个方面，除此之外还有一些小的不足之处。
 
 
 ### 脚本 / Scripting ###
 
-OS X embraces and enhances the time-honored AppleScript system for
-automating tasks. AppleScript is a pretty cool language, with one big
-disadvantage -- you have to learn it,  even if you already consider
-yourself a master in another scripting language.
+OS X继续使用并升级了久负盛名的AppleScript用来完成自动化的工作。 AppleScript是一种非常酷的语言，但也有一个不小的缺陷——即使你已经熟悉其他脚本语言也需要学习它才能使用。
 
-BeOS takes a different approach to application scripting. Applications
-provide whatever array of scriptable "hooks" they deem appropriate, and
-expose / document them as they see fit. These hooks are addressable by
-the BeOS interapplication messaging model, the BMessage. BMessages can
-be sent from within compiled applications, or from scripts. From what
-kind of scripts? Any kind of scripts! Bash, perl, Python, PHP, REBOL,
-whatever you like and know. All that's required for any scripting
-language to talk to any application is a command-line utility called
-"hey," which is conceptually very similar to the Mac OS "tell" command
-found in AppleScript.
+BeOS用了另一种方法来应用脚本。应用程序提供了可用于脚本的“钩子”，并以合适的形式提供给用户。这些钩子可以被BeOS应用程序间的消息传递系统——BMessage访问。BMessage可以由已编译的应用程序发送，也能由脚本发送，什么样的脚本？任何一种脚本！Bash、Perl、Python、PHP、REBOL等任何你所知的。这些脚本语言与任任一应用程序通讯所需要的只是一个命令行工具称为“hey”，这个工具在概念上非常类似于MAC OS的AppleScript中的“tell”命令。
 
-As long as your scripting language of choice can invoke "hey," or can
-otherwise send BMesssages, it can be used to script the behavior of
-applications running on the system.
+只要你选的脚本语言可以应用hey，或者说可以发送BMesssages，它就可以使用脚本控制BeOS系统的程序。
 
-But while the BeOS scripting system is more flexible than Apple's
-system, the reality is that Apple is much larger, there are more
-scriptable Mac OS applications out there, and there are far, far more
-AppleScripts than hey scripts available to make your daily computing
-life easier and more productive.
+尽管BeOS的脚本系统比苹果的更灵活，但是事实是，苹果的脚本系统更加庞大，它有更多的可用于脚本的应用程序，也有更多的AppleScripts用于日常工作，非常便利高效。 
 
-I don't mind AppleScript. I wish the system were open to other languages, but AppleScript does a fine job, and is very powerful.
+我不介意AppleScript。我只希望这个脚本系统向其他语言开放，AppleScript功能的确不错，也很强大。
 
 
-<h3>Keyboardability</h3>
+### 键盘操作能力 / Keyboardability
 
-Mac OS has never stood up to other operating systems in the
-keyboardability department. OS X is a little better than OS 9 in this
-regard, but still has some puzzling omissions. For example, it is not
-possible to tab around or arrow-key amongst the buttons in dialog boxes,
- which means reaching for the mouse. MS Windows dialogs also have a
-shortcut key for each possible field and button, which makes many tasks
-much faster. For example, if I'm doing a search and replace in a Windows
- app, Alt+A is going to activate the Replace All button rather than the
-default Replace. In OS X, I have to stop and reach for the mouse, which
-interrupts the workflow and the train of thought.
+Mac OS在键盘操作能力方面一直不如其他操作系统。OS X在这方面比OS 9要强一点，但是 仍有遗漏的地方。比如，Tab和方向键不能在一个对话窗口的按钮之间循环选择。而MS Windows的对话窗口的每个区域或按钮都有一个快捷键对应，这让操作更快捷。例如，在做搜索和替换的时候，Alt+A表示替换所有，而不是默认的替换。在OS X中，我不得不停下去用鼠标操作。
 
 <div align="center">
 <img src="/images/Tales-of-BeOS-Refugee/TalesBeOS-dialog.png" alt="dialog" height="258" width="187">
 </div>
-<i>I have two problems with OS X dialogs. 1) You can tab through fields
-with the Tab key, but you can't use the arrow or tab keys to move
-between buttons. 2) Buttons don't have associated trigger keys, which
-means you can't activate any but the default button from the keyboard.
-If I want to Replace All from this BBEdit dialog, I'll have to reach for
- the mouse. </i>
+<i>我在OS X对话窗上有两个问题：1) 可以用Tab键在区域间循环，但是不能用方向键和Tab键在按钮间循环。2) 按键没有关联的快捷键，这样使用键盘就只能选择默认的键，而不能切换。若我希望在BBEdit窗口中替换所有，就只能用鼠标选择。</i>
+
+当然，我对BeOS的键盘操作也从没满意过，而Linux也不统一（Gnome和KDE有不同的规则）。Windows的键盘操作能力是最好的，我不明白为什么其他操作系统赶上Windows就这么难。
+
+BeOS中Cmd-Tab键在运行程序间循环，而不是活动程序和上一个程序（当然，有第三方工具可以实现这一点）。Windows和Linux的Alt+Tab用起来更有效。
+
+在系统配置中有一个“允许全键盘操作（Enable full keyboard access）” 面板,但是功能很弱。比如，你可以使用热键激活程序的工具条，但是然后你需要用箭头选择具体的功能。而Windows对每个菜单和菜单的每个条目都有快捷键。在Windows的Word中计算字数用Alt+T，在OS X下Word中完成同样功能，需要移动、浏览、点击等鼠标操作，需要四五倍的时间才能完成。
+
+在OS X中有个Mac OS遗留下来的操作习惯，就是Home和End键到达文档的顶部和底部，而不是当前行的行首和行尾。这样，Home和End键就用的很少，因为需要到达文档顶部和底部的情景很少。在Mac OS下到达本行的行首和行尾使用Cmd+右/左方向键，这并不容易学比较直观，易于使用，但学起来并不容易。
+
+同样的争论出现在在Finder中用Enter键打开文件和文件夹。在MAC OS回车键使你进入重命名模式。为文件改名的频率高，还是打开文件频率高？在MAC OS，你需要打cmd-o来打开文件或文件夹。为什么不是默认用最常用的回车键，而为较少使用的操作（重命名）分配一个热键？（在BeOS，重命名为ALT + E）。
+
+是的，我知道，可以熟能生巧，多练习，但用户测试应该可以很容易找出最经常进行的操作。常识告诉我们，将最简单的/最容易操作的键给最常用的操作。我还有什么遗漏吗？
 
 
-For the record, I was never completely happy with BeOS' keyboardability
-either, and found Linux inconsistent here (Gnome and KDE dialogs behave
-differently, for example). I've never used an OS that was as
-keyboardable as Windows, and have never understood why it's so hard for
-other OSes to catch up with Windows here.
+### 工作区 / Workspaces
 
-As with BeOS, Cmd-Tab cycles between open apps rather than toggling
-between the current and the last-used app (yes, there are third-party
-solutions for this). The Windows and Linux Alt+Tab method is far more
-efficient. It just is.
+我感到很吃惊，在OS X下竟然没有类似BeOS的工作区（Workspaces）的功能。在BeOS中，你最多可以使用32个虚拟桌面来展开程序和窗口。每个桌面都可以有不同的分辨率、颜色深度、背景色和图像。用户可以通过Alt+Fx键来切换1-12工作区，可以在切换的同时将窗口拖动到新工作区。BeOS还有工作区展示面板，你可以拖动程序到某个工作区。Linux下也有类似的工具，但是都比不上BeOS这个优雅好用。
 
-There is an "Enable full keyboard access" panel in the System Prefs, but
- it doesn't get you very far. E.g. you can use a hotkey to activate an
-app's toolbar, but then have to arrow around to get to things. Windows
-gives us a trigger for each menu and each menu item. Thus, getting a
-word count in Word for Windows is a quick Alt+T, W. Getting the same in
-Word for OS X is yet another reach, move, navigate, click -- a
-mouse-driven workflow interruption that takes a good four to five times
-longer to accomplish.
-
-There are other old Mac OS keyboard habits which are retained in OS X,
-such as Home and End keys moving to the top and bottom of the document
-rather than start or end of the current line. As a result, the Home and
-End keys sit unused on the keyboard, because the need to move to the top
- or bottom of a document is extremely rare. To get to the start or end
-of the current line in Mac OS, you use the Cmd+right/left arrow
-shortcuts. These aren't as easy to learn, as intuitive, or as easy to
-reach.
+等你习惯了使用工作区，你就再不愿回到单桌面了。它在可用性上有很大的优势，尽管时间过去了15年，它仍然非常有用。我在OS X下看到唯一的第三方类似工具是<a href="http://www.Mac%20OS%20Xapps.com/article.php?story=20010207042546723" target="_blank">Space</a>。Space可以清理桌面来启动其他程序，但也就仅仅如此。虚拟桌面功能应该是系统级的服务，我希望更多的OS X用户开始呼吁Apple提供这个功能。
 
 
-The same argument applies to launching files and folders from the Finder
- with the Enter key. In Mac OS, Enter puts you into rename mode. How
-often do you want to rename something compared to how often you want to
-launch it? In Mac OS, you need to hit Cmd-O to "open" a file or folder.
-Why not have the most-used action be the default for the Enter key, and
-the less-used action (renaming) be a hotkey? (In BeOS, rename is Alt+E).
+### 配置文件 / Dotfiles
+
+我喜欢OS X的Samba连接，但我很沮丧的发现Finder在远程SMB主机的每个目录下创建dotfiles配置文件。这对OS X用户是不幸的，OS X不能在使用电脑工作和学校的网络的时候留给同一网络下的其他使用者干净的目录列表。我看不止一个用户抱怨，如果他们不能解决这个问题，他们的系统管理员就不允许他们继续使用OS X的SMB的工具。到目前为止，我还没有看到任何解决方案。希望很快能出个解决方案。
 
 
-Yes, I know that muscle memory is worth a lot, but user testing should
-make it easy to see which tasks are performed most often. Common sense
-dictates mapping the easiest / most plainly marked keys to those tasks.
-Or am I missing something?
+### 窗体位置 / Window Positions
+
+这是个小问题，但是貌似有些窗体能记住他们关闭前的位置，而其他的就不能。邮件和Internet Explorer可以记忆他们的大小和位置，但是终端和许多其他程序就不能，这是另一个OS X需要改进的地方。
 
 
-<h3>Workspaces</h3>
+### 裁剪图像 / Cropping Images</h3>
 
-I'm pretty surprised to see some equivalent of workspaces missing from
-OS X. In BeOS, you get up to 32 virtual desktops to spread your apps and
- windows amongst. Each desktop can have a different resolution and color
- depth, and a different background color or bitmap. Users can toggle
-through desktops 1-12 with the Alt+Fx keys, and can move windows from
-one workspace to another by clicking and holding the window's title tab
-while switching workspaces. BeOS also includes a Workspaces panel that
-lets you drag apps between workspaces visually, if you prefer. Linux has
- similar tools, though none I've seen are quite as elegant as those in
-BeOS.
+还有另一个小问题：在BeOS裁剪和粘贴功能扩展到了图片。在内置的ShowImage程序中打开一个图片，选中一个区域，并将它拖动到桌面，你就能得到一个包含这个选中区域的新图片。我在其他平台上还没有见到过能更简单处理图片和截屏的程序。
 
-After you get used to working in workspaces, it's hard to go back to a
-single desktop. They're a major usability advantage, have been around in
- various forms for 15 years, and just make good sense. The only
-3rd-party utility I've seen for OS X to replicate this behavior is <a href="http://www.Mac%20OS%20Xapps.com/article.php?story=20010207042546723" target="_blank">Space</a>.
- Space will indeed clear your desktop so you can launch other apps in a
-clean environment, but that's about it. This should be an OS-level
-service, and one I hope more OS X users will begin to demand it from
-Apple.
+尽管OS X提供了一些也不错的类似功能——Cmd-Shift-4激活截屏模式，但是一团糟：将一个选择区域拖到桌面是可以的，但是仅限于截屏，而不能像BeOS一样用于其他图片。
 
 
+### 大小写敏感 / Case (In)sensitivity</h3>
 
-<h3>Dotfiles</h3>
+打开一个终端，输入如下文字：
 
-I love the Samba connectivity in OS X, but am frustrated that the Finder
- creates .dotfiles in every directory it touches on the remote SMB host.
- This, unfortunately, puts OS X users in the uncomfortable position of
-not being able to use their Macs on work and school networks without
-littering the directory listings for others on the same network. And
-I've seen posts from more than one user complaining that their sysadmins
- wouldn't allow them to continue using OS X's SMB tools if they couldn't
- get this fixed. So far, I haven't seen a fix posted anywhere. Let's
-hope one is forthcoming.
+    <pre>touch foo
+    touch Foo
+    </pre>
+
+Shell未返回错误，所以你知道OS X 是大小写敏感的。但是打开目录列表，你会发现只有"foo," 而没有"Foo."。结果是，这个问题来自文件系统，而不是系统的——HFS+文件系统可以区分大小写，但是并不敏感。也许这很老套，但对我来说真的很奇怪。好像苹果开始区分大小写，但从来没有完成它。那些想要真正区分大小写，则需要在OS X安装UFS文件系统，而不是HFS+。我肯定有人可以说明HFS+这样处理的原因，但我仍然希望在未来看到HFS+真正具有大小写敏感能力。BeOS（或者说是BFS文件系统）是正确的。
 
 
+## 总之，生活是美好的 / All Told, Life Is Good
 
-<h3>Window Positions</h3>
+我曾经认为BeOS是理想的操作系统。是的，我没有错的——它真的是，在许多方面都是。但不幸的是，它没能吸引到足够的用户。而世界上最好的操作系统没有几百万用户、几十亿产值、以及众多的程序员投入就不能名副其实。
 
-This is fairly minor, but it seems that some apps remember their window
-positions when closed and some do not. Mail.app and Internet Explorer do
- remember their exact size and position between runs, but Terminal and
-many others do not. This is another good candidate for consistency in
-the user experience.
+尽管OS X不能吹嘘它有BeOS那样优异的性能（尽管其新核心音频服务的音频延迟跟BeOS一样低，在某些情况下（MIDI和jitter）甚至比BeOS更好），同样OS X的文件系统也不如BeOS，但一直困扰BeOS的用户不足的问题并未出现在OS X身上。OS X拥有用户，它得到了世界的关注，这个几百万美元的公司可以发布漂亮的、成熟的应用。它吸引了媒体的注意力。OS X社区同样拥有BeOS社区那样的激情，并充满了对未来的渴望。
 
+我对苹果有机会的话收购Be公司和它的BeOS态度是什么？我的回答是两方面的：一方面，苹果若收购了BeOS，它会得到优秀的架构，在这之上他们可以建立自己的现代操作系统。OS X将得到最先进的文件系统和优越的多线程/多任务。OS X可能已经成熟，成为了一个更快，更高效的操作系统。
 
+这些意见并不意味着贬低OS X的内核达尔文（Darwin）和NeXTStep的用在OS X中的许多技术，这两者的结合构成了一个可靠的操作系统内核和很棒的用户体验。相反，我的意思是，Be在OS X出现的十年前就达到了“MAC的优雅，UNIX的强大”，并且得到了BeOS的技术，上面我对OS X的许多抱怨将不会存在。
 
-<h3>Cropping Images</h3>
+但是，另一方面，若苹果收购了Be，他们将不会迎回乔布斯（Steve Jobs），而是由Be的Jean-Louis Gasse和Steve Sakoman领导。JLG是一个非常有才华的人，有着良好的文化素养。尽管最终他的Be公司失败了，我仍认为他的头脑是清醒的，是一个真正有远见的人——很好的首席执行官。但是史蒂夫·乔布斯就是史蒂夫·乔布斯，他能让事情获得成功。他把苹果从一个长的螺旋式下降中挽救出来，成功的在二十一世纪让MAC用户成为忠实的粉丝，并极具风格。过去我有不同的观点，但现在我相信苹果最终做了正确的决定：收购NeXT，迎回乔布斯，而不是Be和Gasse。
 
-Another fairly minor point: In BeOS, the concept of snippets / clippings
- is extended to images. Launch an image in the built-in ShowImage app,
-drag out a region of it, and drag it to the desktop -- you get a new
-image file containing just that selection. I've never seen an easier way
- to crop images and screenshots in any app, any platform.
+在软件开发中，并不经常有机会打破所有的规则和从头开始。能够从零开始是Be最大的王牌。苹果本来也有这个机会，OS X是一个全新的操作系统，但它也是UNIX和NeXTStep这两个优秀产品结合的产物，也因此背上了历史的包袱。苹果有向后兼容的优点，无论是技术上（让老MAC程序可以继续运行），还是应用习惯上（用户在MAC OS和OS X 的操作体验上将不会感到很大差异）。
 
-OS X offers something good enough and similar to nearly make up for it
-though -- Cmd-Shift-4 activates screenshot mode, but gives you a set of
-cross-hairs. Drag out a selection and that region is saved to the
-desktop as a new image file. Very nice, but limited to screenshots,
-rather than all images, as you get with BeOS (of course, one can always
-take a regional screenshot of a screenshot...)
+所有这一切说来话长，我真的热爱苹果公司对OS X的改变并很高兴从BeOS转到OS X。但我也感叹，OS X在几个重要的方面不如BeOS。现在，OS X正处于Carbon和Cocoa的开发中，相比调整好一切再发布，这种提前发布后再修正将使得他们做出一些改变更加困难，比如，默认应用程序的选择。不是不可能，但很难。
 
+但BeOS留给我的烦恼是，它已经深入我的内心，无法割舍。BeOS向世界展示了他们的电脑还有多少力量没有开发出来，有多少效率被浪费在臃肿的操作系统中。这向世界表明，需要一些公司静下心来，研究操作系统市场上存在的问题，去开发解决这些问题的系统。
 
-<h3>Case (In)sensitivity</h3>
-
-Open a Terminal and type:
-
-<pre>touch foo
-touch Foo
-</pre>
-
-The shell returns no errors, so you conclude that OS X is properly case
-sensitive. But get a directory listing, and you'll find that you've got a
- "foo," but no "Foo." As it turns out, the problem is in the filesystem,
- not in the OS -- HFS+ is case-respecting, but case-insensitive. Maybe
-that's old-hat for old-timers, but to me it seems just  plain weird. As
-if Apple got started on case-sensitivity but never got around to
-finishing it. Those  who want true case sensitivity need to install OS X
- with UFS, rather than HFS+. I'm sure someone somewhere can provide a
-whole host  of reasons why  HFS+ was constructed this way, but I still
-hope  to see true  case sensitivity in HFS+ in the future. BeOS (or,
-rather, BFS) got this one right.
-
-
-
-
-
-<h2>All Told, Life Is Good</h2>
-
-I was once fond of referring to BeOS as "the promised land" of operating
- systems. Well, I wasn't wrong -- it really was, in many ways.
-Unfortunately, BeOS never attracted enough visitors to turn the promised
- land into a thriving metropolis. But the best OS in the world ain't
-worth jack without millions of users, billions of dollars, and
-kajillions of programmer hours flowing through it.
-
-While OS X can't boast about jaw-dropping performance like BeOS could
-(although the new Core Audio services offer audio latencies nearly as
-low as Be's, and in some cases (MIDI and jitter) even better than Be's),
- and while its file system is mesozoic in comparison to Be's, the
-"traction" problem that always plagued BeOS is not a problem for OS X.
-There are users. The world is paying attention. Multi-million dollar
-companies are releasing polished, mature applications for it. The press
-is taking notice. The same sort of excitement that filled the BeOS
-community with eagerness for the future is taking hold in the OS X
-community.
-
-
-Do I think Apple should have bought Be when they had the chance? Yes and
- no. On one hand, Apple would have gotten a fantastic architecture on
-which they could build their modern OS. And OS X would have a
-state-of-the-art filesystem and superior multithreading / multitasking
-today. OS X might have gotten out the door sooner, and it would be a
-faster, more efficient operating system.
-
-
-
-Those observations are in no way meant to disparage Darwin or the many
-NeXTStep technologies that live on in OS X. Together, they form a
-rock-solid OS core with a mostly great user experience. Rather, I mean
-that Be had achieved "the grace of the Mac, the power of Unix" nearly a
-decade before Apple got OS X out the door, and that many of the
-complaints I list above would not be issues for OS X today.
-
-But. Apple would not have gotten Steve Jobs back if they had purchased
-Be. They would have gotten Jean-Louis Gass閑 and Steve Sakoman instead.
-JLG is a brilliant man, a rare literate intellectual in a sea of stuffed
- shirts. Despite the ultimate failure of Be, I think he's got his head
-screwed on straight, and is a man of true vision -- a fine CEO. But
-Steve Jobs is Steve Jobs, and Steve Jobs makes things happen. He has
-pulled Apple out of a long downward spiral, has succeeded in finally
-dragging Mac users kicking and screaming into the 21st century, and is
-doing it with tremendous style. While I've said just the opposite in the
- past, I now believe Apple ultimately made the right decision by going
-with NeXT and Jobs rather than Be and Gass閑.
-
-In software development you don't often get a chance to break all the
-rules and start over. Being able to start from scratch was Be's greatest
- trump card. Apple <i>sort of</i> had that opportunity. OS X is a brand
-new operating system, yes, but it is also a mutt bred from Unix and
-NeXTStep -- two truly excellent, but also historically laden operating
-systems. Apple also got dealt the backwards compatibility card, both
-technologically (so that old Mac apps would continue to run) and
-psychologically (there had to be enough similarities between pre-X Mac
-OS and OS X that the existing userbase would not become alienated.
-
-All of that is a long way of saying that I truly love what Apple has
-created in OS X and am happy to have made the switch. But I also lament
-that OS X falls so short of BeOS in a few important categories. Now that
- OS X is out there in the field and developers are busily coding for
-Carbon and Cocoa, it's going to be much harder for them to change the
-application binding policy (for example) than it would have been if they
- had gotten it right prior to release. Not impossible, but much harder.
-
-
-The trouble with BeOS is that gets under your skin and stays there. BeOS
- showed the world how much power is really locked away in their
-computers, and how much efficiency is wasted by bloated operating
-systems. It showed the world what can be done when a company sits back,
-examines all the problems in the market's OS offerings, and decides to
-build something that doesn't have those problems.
-
-At the height of the BeOS revolution that never really happened, it
-seemed that the world couldn't possibly do anything but see the light
-and switch to BeOS. In retrospect, BeOS seems like little more than a
-tremendously expensive proof-of-concept. But that's a pessimistic view
-of things. I agree with Urban Lindeskog, who recently posted on a Be
-mailing list:
+在BeOS瞄准但从没达到过的那个革命性的高度，似乎全世界只能看到BeOS的光环，并转向BeOS。回顾过去，BeOS似乎仅仅是这个理念的昂贵验证。这也许有些悲观。我同意Urban Lindeskog最近发布在Be的邮件列表说法：
 
 <blockquote>
-... in that sense BeOS has not been a waste of time, on the contrary. It
- has added to the collective knowledge, and showed us some interesting
-views of the art of computing.
+... 在这个意义上，BeOS不是浪费时间，相反，它增加了人们对计算机的认识，并向我们展示了一些有趣的计算的艺术。
 </blockquote>
 
-In any case, anyone who has spent time with BeOS is forever spoiled, their expectations for OS technology permanently affected.
+**无论如何，任何在BeOS上花了时间的人都被永远宠坏了，他们对操作系统技术的期望被永久改变了。/ In any case, anyone who has spent time with BeOS is forever spoiled, their expectations for OS technology permanently affected. —— Scot Hacker**
 
+作为一个新转移过来用户，我对OS X即欣赏又烦恼。但我知道，在内心深处，乔布斯和Gasse在创建终极用户体验、综合简单易用和强大灵活上具有类似的想法。Gasse没能将他的想法彻底实现，而乔布斯的行动才刚刚开始。
 
-
-
-As a migrating user, I'm torn between admiration for and frustration
-with OS X. But I know that, deep down, Jobs and Gass閑 have similar
-ideas about creating the ultimate user experience, and about bringing
-together the ultimate in ease of use with the ultimate in power and
-flexibility. Gass閑 never got to finish painting in the details of his
-vision. Jobs has just gotten started on his.
-
-<b>Note: The publication of this article  generated more than 500 email
-responses. Rather than respond to everyone individually, I've written an
- addendum to this document  summarizing reactions and my responses to
-them, as well as errors in this piece. Please read <a href="http://www.birdhouse.org/beos/refugee/redux.html">BeOS Refugee Redux</a> before responding to this  article.</b>
+<b>注: 这篇文章发表后收到了500多邮件回复。不能一一回复，所以继续写了一段文字，作为对这些邮件的回复。见<a href="http://www.birdhouse.org/beos/refugee/redux.html">BeOS Refugee Redux</a></b>（该处为原作者的注解，by Don）
 
 <blockquote>
-<i>Many thanks to Irfon Kim-Ahmad, Kurt von Finck, Balatro, Allen
-Brunson, and Jim Rippie for their comments on and contributions to this
-piece.</i>
+<i>非常感谢Irfon Kim-Ahmad, Kurt von Finck, Balatro, Allen
+Brunson, 和Jim Rippie的评论和支持</i>
 </blockquote>
 
 _【译文结束】_
 
-[译者Don Liu注：由于译者本人并没有苹果电脑的使用经历且英文水平有限，其中难免有疏漏之处，请不吝指出。Email: dongliucn@gmail.com]
+[译者Don Liu注：由于译者本人并没有使用苹果电脑的经历且英文水平有限，其中难免有疏漏之处，请不吝指出。转载请告知，并注明出处。Email: dongliucn@gmail.com]
 
 (<a href="http://www.birdhouse.org/beos/refugee/beos_osx.pdf" target="_blank">本文英文版PDF下载</a>)
 
