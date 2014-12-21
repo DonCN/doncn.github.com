@@ -1,6 +1,6 @@
 ---
 layout: post
-title: <2001 BeOS VS OS X>：一个BeOS难民的故事(译文) 
+title: 2001 BeOS VS OS X：一个BeOS难民的故事(译文) 
 summary: 本文译自[Tales of a BeOS Refugee](http://www.birdhouse.org/beos/refugee/)，转载请告知，并注明出处。原作者Scot Hacker是[BeOS Bible](http://www.amazon.com/BeOS-Bible-The-Scot-Hacker/dp/0201353776)的作者。这篇文章是他在2001年[BeOS](http://zh.wikipedia.org/zh-cn/BeOS)操作系统停止开发之后，无奈尝试转向其他操作系统，经历一番试用比较，最终转到MAC OS X的感悟。文中在多个方面比较了两种操作系统的异同，尤其是对BeOS的一些独特优点做了深入的介绍。虽然BeOS已经停止了开发，但是很多忠诚爱好者还是不愿放弃，其中一批人在2001年开始了旨在重现BeOS的Haiku OS([英文主页](http://haiku-os.org/))开源项目，目前Haiku处于Beta测试阶段，在重现BeOS的同时也做了大量的改进。自从两年前发现了Haiku，我也成了她的忠诚粉丝。这篇文章虽然成于2001年，但是现在读来依然有趣，也非常有助于对Haiku OS的了解，特地翻译出来，希望大家喜欢。最后，借用原作者的一句话：*无论如何，任何在BeOS上花了时间的人都被永远宠坏了，他们对操作系统技术的期望被永久改变了。(In any case, anyone who has spent time with BeOS is forever spoiled, their expectations for OS technology permanently affected.)* —— Scot Hacker<p>   
 categories: [Haiku OS]  
 tags: [Haiku OS]  
