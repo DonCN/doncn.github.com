@@ -284,10 +284,10 @@ BPoint point变量保存了应用服务传过来的鼠标按下时光标位置�
 
 在视图实现中，定义钩子函数的功能实现：
 
-	void MyHelloView::MouseDown(BPoint point)
-	{
-    	//功能实现
-	}
+void MyHelloView::MouseDown(BPoint point)
+{
+    //功能实现
+}
 
 ### III-3 按键和视图 / Key Presses and Views
 
