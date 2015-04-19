@@ -297,9 +297,15 @@ Don Liu Copyright © 2013-2014， Email：donliucn@gmail.com
 -----------------------------
 ###参考文献及扩展阅读：###
 [1] [Programming the Be Operating System](http://www.haiku-os.org/legacy-docs/programming_the_be_operating_system.pdf)  
+
 [2] [Learning to Program with Haiku, Lesson 17](http://darkwyrm.beemulated.net/downloads/pdf/Learning%20to%20Program%20With%20Haiku%20Lesson%2017.pdf)  
+
 [3] [学习系列第十七课](https://github.com/pengphei/haiku-cn/wiki/%E5%AD%A6%E4%B9%A0%E7%B3%BB%E5%88%97%E7%AC%AC%E5%8D%81%E4%B8%83%E8%AF%BE)  
+
 [4] [Haiku用户指南（中文）](http://www.haiku-os.org/docs/userguide/zh_CN/contents.html)  
+
 [5] [Documents：包含用户使用及编程指南](http://www.haiku-os.org/documents)  
+
 [6] [Articles：主要是历年来Haiku开发人员的写的一些关于Haiku开发相关文章](http://www.haiku-os.org/articles)  
+
 [7] [Development：Haiku开发相关资源](https://www.haiku-os.org/development)  

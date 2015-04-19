@@ -206,77 +206,91 @@ BView类包含多种画图或填充的成员函数，例如StrokeRect()、Stroke
 
 ### III-1 画笔位置 / Pen Location
 前边画矩形不用画笔，而是用Fillrect():
-`BRect aRect(10.0, 10.0, 110.0, 110.0);
-FillRect(aRect, B_SOLID_HIGH);`
+
+	BRect aRect(10.0, 10.0, 110.0, 110.0);
+	FillRect(aRect, B_SOLID_HIGH);
 
 使用画笔首先要将画笔移动到初始位置：MovePenTo()以视图左上角位置为原点，MovePenBy()以画笔当前位置为原点。
-`MovePenTo(BPoint(30.0, 40.0));
-MovePenTo(30.0, 40.0);
-DrawString("A");`
+
+	MovePenTo(BPoint(30.0, 40.0));
+	MovePenTo(30.0, 40.0);
+	DrawString("A");
 
 ### III-2 画笔大小 / Pen Size
 函数StrokeRect(aRect)画出矩形的边框，边框的粗细受当前画笔大小的影响。
 
 1）设定画笔大小：SetPenSize()
-`SetPenSize(3.0); 
-StrokeRect(aRect);`
+
+	SetPenSize(3.0); 
+	StrokeRect(aRect);
 
 2）获取画笔大小：PenSize()
-`savedPenSize = PenSize();
-SetPenSize(3.0);
-StrokeRect(aRect);
-SetPenSize(savedPenSize);`
+
+	savedPenSize = PenSize();
+	SetPenSize(3.0);
+	StrokeRect(aRect);
+	SetPenSize(savedPenSize);
 
 ## IV 形状 / Shapes
 
 1)BPoint定义点：
-`BPoint point1;
-BPoint point2;
-point1.Set(100.0, 200.0);
-point2.x = 100.0;
-point2.y = 200.0;`
+
+	BPoint point1;
+	BPoint point2;
+	point1.Set(100.0, 200.0);
+	point2.x = 100.0;
+	point2.y = 200.0;
 
 2)划线：StrokeLine()
-StrokeLine(point1, point2);
-StrokeLine(point1, point2, B_SOLID_HIGH);
-MovePenTo(start2);
-StrokELine(end2, B_SOLID_LOW);
+
+	StrokeLine(point1, point2);
+	StrokeLine(point1, point2, B_SOLID_HIGH);
+	MovePenTo(start2);
+	StrokELine(end2, B_SOLID_LOW);
 
 3)矩形
-StrokeRect(outerRect,B_MIXED_COLORS);//画出矩形，第二个参数可省略
-FillRect(innerRect,B_MIXED_COLORS);//填充矩形，第二个参数可省略
+
+	StrokeRect(outerRect,B_MIXED_COLORS);//画出矩形，第二个参数可省略
+	FillRect(innerRect,B_MIXED_COLORS);//填充矩形，第二个参数可省略
 
 4)圆角矩形Round rectangles，后两个参数指出圆角大小
-`StrokeRoundRect(aRect, 20.0, 20.0);
-FillRoundRect(aRect, 30.0, 30.0);`
+
+	StrokeRoundRect(aRect, 20.0, 20.0);
+	FillRoundRect(aRect, 30.0, 30.0);
 
 5)椭圆Ellipses：StrokeEllipse() or FillEllipse()
 两种参数：
-`StrokeEllipse(aRect);
-FillEllipse(aRect);`
+
+	StrokeEllipse(aRect);
+	FillEllipse(aRect);
+
 第二种：
-`rgb_color blueColor = {0, 0, 255, 255};
-BPoint center(100.0, 100.0);
-float xRadius = 40.0;
-float yRadius = 60.0;
-SetLowColor(blueColor);
-FillEllipse(center, xRadius, yRadius, B_MIXED_COLORS);
-StrokeEllipse(center, xRadius, yRadius);`
+
+	rgb_color blueColor = {0, 0, 255, 255};
+	BPoint center(100.0, 100.0);
+	float xRadius = 40.0;
+	float yRadius = 60.0;
+	SetLowColor(blueColor);
+	FillEllipse(center, xRadius, yRadius, B_MIXED_COLORS);
+	StrokeEllipse(center, xRadius, yRadius);
 
 6)五角形Polygons：StrokePolygon(aPolygon),FillPolygon(aPolygon)
 7)三角形StrokeTriangle(point1, point2, point3);FillTriangle().
 
 8)区域region
 定义区域对象和多个矩形：
-BRect aRect;
-BRegion *aRegion;
-aRegion = new BRegion();
-aRect.Set(20.0, 20.0, 70.0, 70.0);
-aRegion->Include(aRect);
-aRect.Set(50.0, 50.0, 150.0, 100.0);
-aRegion->Include(aRect);
+
+	BRect aRect;
+	BRegion *aRegion;
+	aRegion = new BRegion();
+	aRect.Set(20.0, 20.0, 70.0, 70.0);
+	aRegion->Include(aRect);
+	aRect.Set(50.0, 50.0, 150.0, 100.0);
+	aRegion->Include(aRect);
+
 填充区域：
-FillRegion(aRegion);
+
+	FillRegion(aRegion);
 
 ## VI 图片 / Pictures
 图片BPicture类型对象可以包含多个不同形状，通过调用图片对象，可以一次绘出多种不同形状。
@@ -325,8 +339,13 @@ Don Liu Copyright © 2013-2015， Email：donliucn@gmail.com
 -----------------------------
 ###参考文献及扩展阅读：###
 [1] [Programming the Be Operating System](http://www.haiku-os.org/legacy-docs/programming_the_be_operating_system.pdf)  
+
 [2] [Learning to Program with Haiku, Lesson 15](http://darkwyrm.beemulated.net/downloads/pdf/Learning%20to%20Program%20With%20Haiku%20Lesson%2015.pdf)
+
 [3] [Haiku用户指南（中文）](http://www.haiku-os.org/docs/userguide/zh_CN/contents.html)
+
 [4] [Documents：包含用户使用及编程指南](http://www.haiku-os.org/documents)
+
 [5] [Articles：主要是历年来Haiku开发人员的写的一些关于Haiku开发相关文章](http://www.haiku-os.org/articles)
+
 [6] [Development：Haiku开发相关资源](https://www.haiku-os.org/development)
