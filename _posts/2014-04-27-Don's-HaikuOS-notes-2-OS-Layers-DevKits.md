@@ -57,8 +57,9 @@ published: true
 		<th>libbe.so </th>
 		<th> </th>
         <td>		
-    	界面开发包是目前最大的一个软件开发包。提供了基于应用开发包的消息系统之上的图形用户界面，定义了窗口及其包含的各种元素，如滑动条、按钮、列表、文本框等。每个用到窗体的程序都要用到界面开发包。<p> 
-    	此外haiku在界面开发包之外又增加了布局接口Layout API，使程序布局更灵活和简单。			
+    	接口开发包是目前最大的一个软件开发包。提供了基于应用开发包的消息系统之上的图形用户界面，定义了窗口及其包含的各种元素，如滑动条、按钮、列表、文本框等。每个用到窗体的程序都要用到界面开发包。<p> 
+    	此外haiku在界面开发包之外又增加了布局接口Layout API，使程序布局更灵活和简单。		
+		打印也由这个开发包进行处理。	
 		</td>
 	</tr>
     <tr align="left">
@@ -66,7 +67,7 @@ published: true
 		<th>libbe.so </th>
 		<th> </th>
         <td>
-		存储开发包Storage Ki包含了对文件系统操作的一些类，如在磁盘保存和更新数据等。		
+		存储开发包Storage Ki包含了对文件系统操作的一些类，如在磁盘保存和更新数据等。还提供了一些用于读取目录，运行查询，以及属性处理的类。		
 		</td>
     </tr>
     <tr align="left">
@@ -83,13 +84,6 @@ published: true
 		<th>media server </th>
         <td>
 		媒体服务用于实时处理数据，主要是多媒体数据流。媒体开发包通过调用媒体服务为媒体数据流和程序间通信提供了统一的接口。它通过缓存（buffer）的管道（popeline）将多媒体流分发给数据处理器（data  handler）。每个数据处理器都可以读写管道中的媒体数据流。而缓存作为共享存储，可以被多个程序访问，而不用复制。媒体服务还可以通过一个全局调度对象（global scheduling object）同步不同的媒体数据流。这对同时处理音频和视频非常重要。
-		</td>
-    </tr>
-    <tr align="left">
-        <th>Print Kit </th>
-		<th> </th>
-		<th>Print Server  </th>
-        <td>打印有关服务
 		</td>
     </tr>
     <tr align="left">
@@ -121,7 +115,7 @@ published: true
 		<th>libtranslation.so </th>
 		<th> </th>
         <td>
-		转换开发包Translation Kit不是传统意义上的语言翻译转换，而是媒体格式的转换，如jpg图片转换为png图片、flac音频转换为wav等。这是Haiku的一个特色，若想增加Haiku支持某种媒体格式，只需利用转换开发包将新媒体格式转换为Haiku支持的格式就可以用原来的媒体软件，而不用下载新软件。
+		转换开发包Translation Kit不是传统意义上的语言翻译转换。它提供了用于读取和写入图像和文本的统一接口，无需了解其底层文件格式，也就是媒体格式的转换，如jpg图片转换为png图片、flac音频转换为wav等。这是Haiku的一个特色，若想增加Haiku支持某种媒体格式，只需利用转换开发包将新媒体格式转换为Haiku支持的格式就可以用原来的媒体软件，而不用下载新软件。
 		</td>
     </tr>
     <tr align="left">
@@ -137,7 +131,7 @@ published: true
 		<th>libgame.so </th>
 		<th> </th>
         <td>
-		游戏开发包Game Kit提供了处理游戏声音等全屏程序的一些类。
+		游戏开发包Game Kit提供了处理游戏声音等全屏程序的一些类，并且提供了对显示内存的直接访问。
 		</td>
     </tr>
     <tr align="left">
