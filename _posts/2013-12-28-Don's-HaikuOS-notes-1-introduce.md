@@ -83,7 +83,7 @@ HaikuOS的设计理念继承于BeOS，专注于个人计算机的全图形化的
 
 ### 系统架构
 Haiku操作系统架构分为三个层级：内核层（kernel）、服务层（server）、软件开发包层（software kits）。三层之间为服务-客户端关系：软件是服务的客户端，服务又是内核的客户端[6]。  
-![1_BeOS_Structure](images\haiku-notes\1_BeOS_Structure.png)
+![1_BeOS_Structure](/images/haiku-notes/1_BeOS_Structure.png)
 应用程序和硬件之间的系统层次结构
 
 1. __内核层 / kernel__<p>
