@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Haiku 操作系统的安装 
-summary: 本篇简单介绍了Haiku操作系统的安装流程<p> ![安装界面Installer](/images/haiku-notes/Haiku_Installer.png) <p>
+summary: 本篇简单介绍了Haiku操作系统的安装流程<p>![安装界面Installer](/images/haiku-notes/Haiku_Installer.jpg) <p>
 categories: [Haiku OS]  
 tags: [Haiku OS]  
 published: true  
@@ -33,7 +33,9 @@ Haiku 64-bit (Modern, Fast)，下载地址：https://download.haiku-os.org/night
 
 完成上述几步，U盘Haiku操作系统就制作完成了，可以U盘启动，在U盘中运行Haiku操作系统。也可以运行Haiku系统后，在程序列表中找到Installer，用Installer将Haiku安装的物理硬盘。
 
-官方的安装指南：[Installation Guide]https://www.haiku-os.org/get-haiku/installation-guide/）
+
+### 官方的安装指南
+[Installation Guide](https://www.haiku-os.org/get-haiku/installation-guide/）
 
 也可以在虚拟机中安装Haiku试玩：[Virtualizing Haiku in VirtualBox](https://www.haiku-os.org/guides/virtualizing/virtualbox#part_iso)
 
