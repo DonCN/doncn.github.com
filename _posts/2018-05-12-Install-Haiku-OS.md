@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Haiku 操作系统的安装 
-summary: 本篇简单介绍了Haiku操作系统的安装流程<p>![安装界面Installer](/images/haiku-notes/Haiku_Installer.jpg) <p>
+summary: 本篇简单介绍了Haiku操作系统的安装流程<a href="/images/haiku-notes/Haiku_Installer.jpg" target="_blank"><img src="/images/haiku-notes/Haiku_Installer.jpg" alt="安装界面Installer" height="500" width="633"></a> 
 categories: [Haiku OS]  
 tags: [Haiku OS]  
 published: true  
