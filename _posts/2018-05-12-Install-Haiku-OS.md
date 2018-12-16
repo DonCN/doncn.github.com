@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Haiku 操作系统的安装 
-summary: 本篇简单介绍了Haiku操作系统的安装流程![安装界面Installer](/images/haiku-notes/Haiku_Installer.png)<p>
+summary: 本篇简单介绍了Haiku操作系统的安装流程<p> ![安装界面Installer](/images/haiku-notes/Haiku_Installer.png) <p>
 categories: [Haiku OS]  
 tags: [Haiku OS]  
 published: true  
@@ -19,11 +19,11 @@ Haiku 32-bit Hybrid (Compatible, Stable)，下载地址：https://download.haiku
 Haiku 64-bit (Modern, Fast)，下载地址：https://download.haiku-os.org/nightly-images/x86_64/。
 选择最新的测试版，下载后解压得到Anyboot.ISO备用。
 
-##下载U盘写入工具Etcher
+## 下载U盘写入工具Etcher
 官网下载地址：https://etcher.io/，
 百度网盘：https://pan.baidu.com/s/1ljTiTplH0A_4z1uFL1_Wsg。
 
-##制作U盘操作系统
+## 制作U盘操作系统
 制作步骤：
 ![Etcher](/images/haiku-notes/Etcher.gif)
 （1）在Etcher界面最左侧"Select image"，选择Haiku安装镜像Anyboot.ISO。
